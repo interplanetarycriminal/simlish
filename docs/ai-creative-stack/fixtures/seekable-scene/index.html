@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Seekable scene fixture: gears, cam and rod</title>
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js" } }</script>
+<style>
+  :root { --bg:#F2F4F1; --fg:#17201E; --muted:#4F5C58; --accent:#1D6A84; --signal:#B57900; --line:#C9D0CB; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 16px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  canvas { display: block; width: 100%; height: 100%; }
+  .stage { position: fixed; inset: 0; }
+  .caption { position: absolute; left: 4vw; top: 4vh; margin: 0; padding: .9rem 1.1rem; border-radius: .75rem; background: color-mix(in srgb, var(--bg) 86%, transparent); max-width: min(30rem, 80vw); font-size: clamp(1.1rem, 2.4vw, 1.9rem); font-weight: 650; line-height: 1.2; text-wrap: balance; }
+  .beatno { display: block; font-size: 0.8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: .4rem; }
+  .bar { position: absolute; left: 0; right: 0; bottom: 0; display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; padding: .75rem 4vw 1rem; background: color-mix(in srgb, var(--bg) 88%, transparent); border-top: 1px solid var(--line); }
+  button { font: inherit; border: 1px solid var(--line); background: #fff; color: var(--fg); border-radius: .5rem; padding: .45rem .8rem; cursor: pointer; }
+  button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  #play { min-width: 5.5rem; }
+  #scrub { flex: 1 1 14rem; accent-color: var(--accent); }
+  #clock { font-variant-numeric: tabular-nums; color: var(--muted); min-width: 6.5rem; }
+  .beats { display: flex; gap: .35rem; flex-wrap: wrap; }
+  .predict { position: absolute; left: 4vw; top: calc(4vh + 9rem); display: none; gap: .5rem; flex-wrap: wrap; }
+  .predict.on { display: flex; }
+  .predict button { font-weight: 600; }
+  .verdict { position: absolute; left: 4vw; top: calc(4vh + 12rem); margin: 0; color: var(--muted); max-width: 30rem; }
+  body.render .bar, body.render .predict, body.render .verdict { display: none; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <canvas id="c" aria-label="A large blue gear drives a small amber gear. A cam on the small gear lifts a rod."></canvas>
+  <p class="caption" aria-live="polite"><span class="beatno" id="beatno"></span><span id="caption"></span></p>
+  <div class="predict" id="predict" role="group" aria-label="Your prediction"></div>
+  <p class="verdict" id="verdict" aria-live="polite"></p>
+  <div class="bar">
+    <button id="play" aria-label="Play">Play</button>
+    <input id="scrub" type="range" min="0" step="0.01" aria-label="Story time">
+    <span id="clock"></span>
+    <div class="beats" id="beats" role="group" aria-label="Jump to a beat"></div>
+  </div>
+</div>
+<script type="module">
+import { createScene, beatAt, BEATS, DURATION } from './scene.js';
+
+const params = new URLSearchParams(location.search);
+const RENDER = params.has('render');
+const canvas = document.getElementById('c');
+const W = Number(params.get('w') || 1280), H = Number(params.get('h') || 720);
+if (RENDER) document.body.classList.add('render');
+
+const s = createScene(canvas, RENDER ? { width: W, height: H, pixelRatio: 1 } : { pixelRatio: Math.min(2, devicePixelRatio) });
+const $ = (id) => document.getElementById(id);
+let t = 0, playing = false, wallStart = 0, tStart = 0, predicted = null;
+if (!RENDER) {
+  s.setSize(innerWidth, innerHeight);
+  addEventListener('resize', () => { s.setSize(innerWidth, innerHeight); s.setTime(t); });
+}
+
+function show(time) {
+  t = time;
+  const st = s.setTime(t);
+  const b = BEATS[st.beat];
+  $('beatno').textContent = `Beat ${st.beat + 1} of ${BEATS.length}`;
+  if ($('caption').textContent !== b.caption) $('caption').textContent = b.caption;
+  if (RENDER) return st;
+  $('scrub').value = t;
+  $('clock').textContent = `${t.toFixed(2)} / ${DURATION.toFixed(0)} s`;
+  [...$('beats').children].forEach((el, i) => el.setAttribute('aria-pressed', String(i === st.beat)));
+  $('predict').classList.toggle('on', st.beat === 4 && predicted === null);
+  if (predicted !== null && t >= 18) {
+    const p = BEATS[4];
+    $('verdict').textContent = predicted === p.answer
+      ? `You said ${p.choices[predicted].toLowerCase()}, and that is what happened.`
+      : `You said ${p.choices[predicted].toLowerCase()}. The rod came back to the same place: can you say why?`;
+  }
+  return st;
+}
+
+// Seek API shared by the live page and the frame renderer.
+window.__scene = { seek: (time) => show(time), digest: () => s.digest(), duration: DURATION, beats: BEATS, three: s.three };
+
+if (!RENDER) {
+  $('scrub').max = DURATION;
+  BEATS.forEach((b, i) => {
+    const el = document.createElement('button');
+    el.textContent = String(i + 1);
+    el.setAttribute('aria-label', `Beat ${i + 1}: ${b.id}`);
+    el.onclick = () => { pause(); show(b.t); };
+    $('beats').append(el);
+  });
+  BEATS[4].choices.forEach((label, i) => {
+    const el = document.createElement('button');
+    el.textContent = label;
+    el.onclick = () => {
+      predicted = i;
+      $('verdict').textContent = `You said: ${label}. Now watch the rod.`; // no verdict before the evidence
+      show(BEATS[5].t); play();
+    };
+    $('predict').append(el);
+  });
+
+  function frame(now) {
+    if (!playing) return;
+    let next = tStart + (now - wallStart) / 1000;
+    // Pause-to-predict: the live clock stops at the question until the learner answers.
+    if (predicted === null && t < BEATS[4].t && next >= BEATS[4].t) { show(BEATS[4].t); pause(); return; }
+    if (next >= DURATION) { show(DURATION); pause(); return; }
+    show(next);
+    requestAnimationFrame(frame);
+  }
+  function play() {
+    if (t >= DURATION) t = 0;
+    playing = true; wallStart = performance.now(); tStart = t;
+    $('play').textContent = 'Pause'; $('play').setAttribute('aria-label', 'Pause');
+    requestAnimationFrame(frame);
+  }
+  function pause() {
+    playing = false;
+    $('play').textContent = 'Play'; $('play').setAttribute('aria-label', 'Play');
+    history.replaceState(null, '', `#t=${t.toFixed(2)}`); // every pause is a shareable, exact moment
+  }
+  $('play').onclick = () => (playing ? pause() : play());
+  $('scrub').oninput = (e) => { pause(); show(Number(e.target.value)); };
+  addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' && e.key !== ' ') return;
+    if (e.key === ' ') { e.preventDefault(); playing ? pause() : play(); }
+    if (e.key === 'ArrowRight') { pause(); show(BEATS[Math.min(BEATS.length - 1, beatAt(t) + 1)].t); }
+    if (e.key === 'ArrowLeft') { pause(); show(BEATS[Math.max(0, beatAt(t) - (t - BEATS[beatAt(t)].t > 0.25 ? 0 : 1))].t); }
+  });
+
+  // Deep links: #t=12.5 or #beat=4 open paused at that exact state (the film's frame, made live).
+  const m = location.hash.match(/^#(t|beat)=([\d.]+)/);
+  if (m) show(m[1] === 't' ? Number(m[2]) : BEATS[Math.min(BEATS.length - 1, Number(m[2]) - 1)].t);
+  else { show(0); if (!matchMedia('(prefers-reduced-motion: reduce)').matches) play(); }
+} else {
+  show(0);
+}
+window.__ready = true;
+</script>
+</body>
+</html>

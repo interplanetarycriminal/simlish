@@ -1,0 +1,32 @@
+%% render: auto
+%% title: ComfyUI orchestration
+%% desc: Amber cards run as native ComfyUI-3D-Pack nodes. The rose card is outside ComfyUI and crosses as files through a reviewed adapter.
+flowchart TD
+    %% rank: F 3
+    A["Input assets • images, masks, meshes"]:::slate
+    B["Model selection • pinned checkpoint and hash"]:::purple
+    C["Native generation nodes • SF3D, TRELLIS v1, Hunyuan3D, TripoSG"]:::amber
+    D["Native geometry and splat nodes • mesh ops, 3DGS optimize"]:::amber
+    F["Reviewed external adapter • SAM 3D, TRELLIS.2, UniRig, MeshAnything"]:::rose
+    E["Native texture baking • UV and map output"]:::amber
+    G["Representation conversion • mesh or splat PLY, recorded"]:::amber
+    H["Export • GLB, OBJ, PLY"]:::amber
+    I["Validation • validate_asset.py per output"]:::green
+    J["Reusable workflow JSON • versions, seeds, paths"]:::slate
+    A --> B
+    B --> C
+    C --> D
+    B -.->|files out| F
+    D --> E
+    F -.->|GLB, OBJ, FBX back| G
+    E --> G
+    G --> H
+    H --> I
+    I -->|pass| J
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

@@ -1,0 +1,27 @@
+%% render: auto
+%% title: Video production
+%% desc: One timeline authority. Dashed steps are optional and need a reason.
+flowchart TD
+    A["Creative direction • DESIGN.md, motion rules"]:::purple
+    B["Storyboard and shot list • Video Shotcraft guidance"]:::slate
+    C["Asset creation • renders, illustrations, captures, audio"]:::amber
+    D["Composition • HyperFrames, Remotion or Motion Canvas"]:::teal
+    E["Optional editing • Scarlet or Video Use"]:::rose
+    F["Optional upscaling • Real-ESRGAN after an A/B test"]:::rose
+    G["Encoding and inspection • FFmpeg, ffprobe"]:::green
+    H["Delivery • masters, encodes, captions, report"]:::green
+    A --> B
+    B -->|shot list| C
+    C -->|versioned assets| D
+    D -.->|review master| E
+    E -.->|locked cut| F
+    F -.->|frames| G
+    D -->|master| G
+    G -->|probe report| H
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

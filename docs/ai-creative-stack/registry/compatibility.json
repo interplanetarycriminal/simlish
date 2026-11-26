@@ -1,0 +1,266 @@
+{
+ "classifications": {
+  "complementary": "Different jobs that combine well in one workflow.",
+  "recommended alternative": "Pick one; the choice depends on the brief.",
+  "optional": "Adds value only for specific briefs.",
+  "redundant": "Same job; using both adds cost without benefit.",
+  "potentially conflicting": "Both try to own the same asset, timeline, hook or rule set.",
+  "unverified": "No evidence either way yet."
+ },
+ "evidence_levels": {
+  "tested": "Run by a fixture in this catalogue; see the named fixture.",
+  "documented": "Stated in the pinned upstream documentation; not run here.",
+  "proposed": "A file handoff this catalogue suggests; not documented upstream and not run here."
+ },
+ "roles": {
+  "guidance": "Skills and lists that shape decisions.",
+  "execution": "Libraries, models and apps that produce artifacts.",
+  "orchestration": "Systems that run other tools in order.",
+  "storage": "Memory, graphs and logs that keep project knowledge."
+ },
+ "non_registry_tools": [
+  "blender",
+  "blender-retopology",
+  "blender-rigging",
+  "native-procedural-materials",
+  "standalone-execution",
+  "polygon-mesh-pipeline"
+ ],
+ "pairs": [
+  {
+   "tools": [
+    "taste-skill",
+    "anthropic-frontend",
+    "mengto-skills"
+   ],
+   "classification": "recommended alternative",
+   "role": "guidance",
+   "evidence": "documented",
+   "note": "Choose one design authority. Meng To skills are scoped recipes; load one for a specific effect rather than as the authority."
+  },
+  {
+   "tools": [
+    "impeccable",
+    "hallmark"
+   ],
+   "classification": "recommended alternative",
+   "role": "guidance",
+   "evidence": "documented",
+   "note": "One critic per pass. Impeccable's detector can still run in CI while Hallmark owns a review."
+  },
+  {
+   "tools": [
+    "magic-ui",
+    "react-bits"
+   ],
+   "classification": "redundant",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "Both supply animated React components. React Bits is MIT plus Commons Clause: the components may ship inside a product but may not be resold."
+  },
+  {
+   "tools": [
+    "stitch-skills",
+    "penpot",
+    "open-design"
+   ],
+   "classification": "recommended alternative",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "One prototype owner. Stitch is hosted; Penpot can be self-hosted; Open Design is a local-first agent workspace."
+  },
+  {
+   "tools": [
+    "designlang",
+    "awesome-design-md"
+   ],
+   "classification": "complementary",
+   "role": "guidance",
+   "evidence": "documented",
+   "note": "Designlang extracts tokens from a site; Awesome DESIGN.md is a set of example files. Both describe real brands: use them for principles on your own or permitted sites, never to copy a brand."
+  },
+  {
+   "tools": [
+    "graphify",
+    "claude-mem"
+   ],
+   "classification": "potentially conflicting",
+   "role": "storage",
+   "evidence": "documented",
+   "note": "Both install PreToolUse hooks that can block Read. Run at most one, or prefer a plain decision log. Claude Mem sends analytics by default."
+  },
+  {
+   "tools": [
+    "sam-3d-objects",
+    "stable-fast-3d",
+    "trellis-2"
+   ],
+   "classification": "recommended alternative",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "One generator per asset. SF3D needs about 6 GB VRAM; TRELLIS.2 at least 24 GB; SAM 3D Objects at least 32 GB plus a mask."
+  },
+  {
+   "tools": [
+    "meshanything-v2",
+    "blender-retopology"
+   ],
+   "classification": "recommended alternative",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "MeshAnything V2 caps output at 1,600 faces and its code license is non-commercial. Deformation topology for characters still needs Blender retopology."
+  },
+  {
+   "tools": [
+    "unirig",
+    "blender-rigging"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "UniRig predicts skeleton and skin; Blender corrects them. Blender rigging and weight validation were tested in fixtures/blender-glb; UniRig was not run."
+  },
+  {
+   "tools": [
+    "dream-textures",
+    "native-procedural-materials"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "proposed",
+   "note": "Dream Textures generates or projects color images; Blender nodes assemble the full PBR set and color spaces."
+  },
+  {
+   "tools": [
+    "blender-mcp",
+    "blender-skills"
+   ],
+   "classification": "complementary",
+   "role": "guidance",
+   "evidence": "documented",
+   "note": "Blender Skills can drive Blender headless or through an optional Blender MCP server."
+  },
+  {
+   "tools": [
+    "blender-mcp",
+    "dream-loop"
+   ],
+   "classification": "potentially conflicting",
+   "role": "orchestration",
+   "evidence": "documented",
+   "note": "Dream Loop routes image-to-3D through fal.ai and its Plus workflow says not to model in Blender. Choose one loop owner."
+  },
+  {
+   "tools": [
+    "comfyui-3d-pack",
+    "standalone-execution"
+   ],
+   "classification": "optional",
+   "role": "orchestration",
+   "evidence": "documented",
+   "note": "ComfyUI-3D-Pack runs SF3D, TRELLIS v1, Hunyuan3D, TripoSG and 3DGS nodes natively. SAM 3D Objects, TRELLIS.2, UniRig and MeshAnything V2 run standalone with file handoffs."
+  },
+  {
+   "tools": [
+    "gaussian-splatting",
+    "polygon-mesh-pipeline"
+   ],
+   "classification": "recommended alternative",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "Different representations for different deliverables. A Gaussian PLY is not a polygon mesh; conversion is lossy and unverified here."
+  },
+  {
+   "tools": [
+    "hyperframes",
+    "remotion",
+    "motion-canvas"
+   ],
+   "classification": "redundant",
+   "role": "orchestration",
+   "evidence": "documented",
+   "note": "One timeline authority. HyperFrames documents a Remotion port skill."
+  },
+  {
+   "tools": [
+    "scarlet",
+    "video-use"
+   ],
+   "classification": "potentially conflicting",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "Both edit the cut. Interchange of editable timelines is unverified."
+  },
+  {
+   "tools": [
+    "blender",
+    "three-js"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "tested",
+   "note": "fixtures/blender-glb: Blender 5.2.2 GLB with skin and clip loaded by three r187; scale, up axis, skin, clip and seek checks passed."
+  },
+  {
+   "tools": [
+    "three-js",
+    "ffmpeg"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "tested",
+   "note": "fixtures/seekable-scene: DevTools frame capture of a seekable Three.js scene encoded by FFmpeg 7.1; seekable, repeatable, pause-to-play and stream checks passed."
+  },
+  {
+   "tools": [
+    "open-design",
+    "hyperframes"
+   ],
+   "classification": "complementary",
+   "role": "orchestration",
+   "evidence": "documented",
+   "note": "Open Design documents a native HyperFrames workspace."
+  },
+  {
+   "tools": [
+    "video-use",
+    "hyperframes",
+    "remotion"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "Video Use generates animation overlays with HyperFrames or Remotion."
+  },
+  {
+   "tools": [
+    "comfyui-3d-pack",
+    "stable-fast-3d"
+   ],
+   "classification": "complementary",
+   "role": "orchestration",
+   "evidence": "documented",
+   "note": "ComfyUI-3D-Pack documents a native Stable Fast 3D node."
+  },
+  {
+   "tools": [
+    "unirig",
+    "blender"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "UniRig writes its merged results through Blender's Python module (bpy 4.2)."
+  },
+  {
+   "tools": [
+    "spec-kit",
+    "graphify"
+   ],
+   "classification": "unverified",
+   "role": "storage",
+   "evidence": "proposed",
+   "note": "A spec from Spec Kit could be indexed by Graphify. Spec Kit init was tested; the combination was not."
+  }
+ ]
+}

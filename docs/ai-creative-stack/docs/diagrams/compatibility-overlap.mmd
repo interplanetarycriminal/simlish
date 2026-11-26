@@ -1,0 +1,37 @@
+%% render: auto
+%% title: Compatibility and functional overlap
+%% desc: Each card holds alternatives: pick one. Solid arrows were tested by a fixture here; dashed ones are documented upstream or proposed.
+flowchart TD
+    %% rank: E 1
+    %% rank: I 1
+    %% rank: A 2
+    %% rank: J 2
+    %% rank: G 2
+    %% rank: B 3
+    %% rank: F 3
+    %% rank: C 4
+    D["One generator • SF3D, SAM 3D Objects or TRELLIS.2"]:::amber
+    H["One memory • Graphify, Claude Mem or a decision log"]:::purple
+    E["One rig owner • UniRig or Blender rigging"]:::amber
+    I["One critic per pass • Impeccable or Hallmark"]:::green
+    A["Blender • authoring and validation"]:::amber
+    J["One effects source • Magic UI or React Bits"]:::blue
+    G["One editor • Scarlet or Video Use"]:::rose
+    B["Three.js • interactive delivery"]:::blue
+    F["One timeline • HyperFrames, Remotion or Motion Canvas"]:::teal
+    C["FFmpeg • encode and probe"]:::rose
+    D -.->|GLB, proposed| E
+    E -.->|FBX, documented| A
+    G -.->|overlays, documented| F
+    A -->|GLB, tested| B
+    J -.->|components| B
+    F -.->|master, documented| C
+    B -->|frames, tested| C
+    H -.->|context| I
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

@@ -1,0 +1,56 @@
+%% render: auto
+%% title: Complete 3D asset production
+%% desc: Not every asset needs every stage. ComfyUI-3D-Pack can host only the stages inside its boundary.
+flowchart TD
+    A["Approved reference imagery • authorized, masked if required"]:::slate
+    B{"Select one generation approach"}:::purple
+    subgraph CUI ["ComfyUI-3D-Pack native"]
+    D["Stable Fast 3D • fast UV-unwrapped GLB, about 6 GB"]:::amber
+    end
+    C["SAM 3D Objects • real photo + mask, 32 GB"]:::amber
+    E["TRELLIS.2 • supplementary, PBR GLB, 24 GB"]:::amber
+    F["Geometry inspection • validate_asset.py"]:::green
+    G{"Retopology required?"}:::slate
+    H["MeshAnything V2 or Blender retopology • at most 1,600 faces"]:::amber
+    I["UV and attribute validation • rebuild after retopology"]:::amber
+    J["Dream Textures and Blender materials • PBR maps, color spaces"]:::amber
+    K{"Skeletal animation required?"}:::slate
+    L["UniRig skeleton and skinning • FBX"]:::amber
+    M["Blender refinement • weights, rest pose, scale"]:::amber
+    N["Animation or physics • only if the brief needs it"]:::teal
+    O["Asset quality gates • Floor, Reflex, Finish"]:::green
+    P["GLB / glTF • interactive"]:::blue
+    Q["FBX / Blender source • editable"]:::amber
+    R["Rendered frames • EXR or PNG"]:::teal
+    S["Three.js • GLTFLoader"]:::blue
+    T["Video composition • one timeline authority"]:::teal
+    A --> B
+    B -->|photo object| C
+    B -->|fast prop| D
+    B -->|high detail| E
+    C -->|GLB| F
+    D -->|GLB| F
+    E -->|GLB| F
+    F --> G
+    G -->|Yes| H
+    G -->|No| I
+    H -->|OBJ| I
+    I --> J
+    J --> K
+    K -->|Yes| L
+    K -->|No| M
+    L -->|FBX| M
+    M --> N
+    N --> O
+    O --> P
+    O --> Q
+    O --> R
+    P --> S
+    R --> T
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

@@ -1,0 +1,37 @@
+{
+  "test": "colour-space check",
+  "blender": "5.2.2 LTS",
+  "cases": {
+    "normal_via_normal_map": {
+      "expected_flag": true,
+      "flagged": true
+    },
+    "packed_orm_via_separate": {
+      "expected_flag": true,
+      "flagged": true
+    },
+    "base_colour_alpha": {
+      "expected_flag": false,
+      "flagged": false
+    },
+    "base_colour_noncolor": {
+      "expected_flag": true,
+      "flagged": true
+    },
+    "roughness_noncolor": {
+      "expected_flag": false,
+      "flagged": false
+    },
+    "height_via_bump": {
+      "expected_flag": true,
+      "flagged": true
+    }
+  },
+  "issues": [
+    "normal_via_normal_map:normal_srgb is sRGB but feeds data input ['Normal']; set Non-Color",
+    "packed_orm_via_separate:orm_srgb is sRGB but feeds data input ['Metallic', 'Roughness']; set Non-Color",
+    "base_colour_noncolor:albedo_noncolor is Non-Color but feeds colour input ['Base Color']; set sRGB",
+    "height_via_bump:height_srgb is sRGB but feeds data input ['Height']; set Non-Color"
+  ],
+  "pass": true
+}

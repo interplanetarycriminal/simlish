@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 1176" role="img" aria-labelledby="title desc">
+<title id="title">Surreal cinematic 3D art</title><desc id="desc">An original glass head of liquid and toys. Only the tools the shot needs are used.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="908" height="1176" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Surreal cinematic 3D art</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">An original glass head of liquid and toys. Only the tools the shot needs are used.</text>
+<path d="M454 180 V212 H266 V242" class="line" marker-end="url(#end)"/>
+<path d="M454 180 V212 H642 V242" class="line" marker-end="url(#end)"/>
+<path d="M266 316 V348 H454 V378" class="line" marker-end="url(#end)"/>
+<path d="M642 316 V348 H454 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V514" class="line" marker-end="url(#end)"/>
+<path d="M454 588 V650" class="line" marker-end="url(#end)"/>
+<path d="M454 724 V786" class="line" marker-end="url(#end)"/>
+<path d="M604 824 H828 V552 H606" class="line dash" marker-end="url(#end)"/>
+<path d="M454 860 V922" class="line" marker-end="url(#end)"/>
+<path d="M454 996 V1058" class="line" marker-end="url(#end)"/>
+<rect x="272" y="326" width="76" height="20" rx="5" class="lab"/><text x="278" y="340" font-size="12.5" font-weight="560" class="sub">GLB props</text>
+<rect x="499" y="326" width="133" height="20" rx="5" class="lab"/><text x="505" y="340" font-size="12.5" font-weight="560" class="sub">domain + obstacle</text>
+<rect x="460" y="475" width="48" height="20" rx="5" class="lab"/><text x="466" y="489" font-size="12.5" font-weight="560" class="sub">cache</text>
+<rect x="608" y="801" width="33" height="20" rx="5" class="lab"/><text x="614" y="815" font-size="12.5" font-weight="560" class="sub">fix</text>
+<rect x="460" y="883" width="69" height="20" rx="5" class="lab"/><text x="466" y="897" font-size="12.5" font-weight="560" class="sub">approved</text>
+<rect x="460" y="1019" width="55" height="20" rx="5" class="lab"/><text x="466" y="1033" font-size="12.5" font-weight="560" class="sub">frames</text>
+<rect x="304" y="108" width="300" height="72" rx="13" class="panel"/><rect x="316" y="132" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="140" font-size="16.5" font-weight="720">Visual direction</text><text x="332" y="160" font-size="13" font-weight="450" class="sub">palette, lens, mood board of own sketches</text>
+<rect x="116" y="244" width="300" height="72" rx="13" class="panel"/><rect x="128" y="268" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="276" font-size="16.5" font-weight="720">Miniature toys</text><text x="144" y="296" font-size="13" font-weight="450" class="sub">image-to-3D or modelled, cleaned</text>
+<rect x="492" y="244" width="300" height="72" rx="13" class="panel"/><rect x="504" y="268" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="276" font-size="16.5" font-weight="720">Transparent head</text><text x="520" y="296" font-size="13" font-weight="450" class="sub">modelled with real glass thickness</text>
+<rect x="304" y="380" width="300" height="72" rx="13" class="panel"/><rect x="316" y="404" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="332" y="412" font-size="16.5" font-weight="720">Liquid simulation</text><text x="332" y="432" font-size="13" font-weight="450" class="sub">Blender fluid, baked cache</text>
+<rect x="304" y="516" width="300" height="72" rx="13" class="panel"/><rect x="316" y="540" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="548" font-size="16.5" font-weight="720">Materials and lighting</text><text x="332" y="568" font-size="13" font-weight="450" class="sub">glass IOR, liquid, toy plastics</text>
+<rect x="304" y="652" width="300" height="72" rx="13" class="panel"/><rect x="316" y="676" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="332" y="684" font-size="16.5" font-weight="720">Camera and physics</text><text x="332" y="704" font-size="13" font-weight="450" class="sub">rigid bodies for floating toys</text>
+<rect x="304" y="788" width="300" height="72" rx="13" class="panel"/><rect x="316" y="812" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="820" font-size="16.5" font-weight="720">Test render</text><text x="332" y="840" font-size="13" font-weight="450" class="sub">reflections, refraction, motion</text>
+<rect x="304" y="924" width="300" height="72" rx="13" class="panel"/><rect x="316" y="948" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="956" font-size="16.5" font-weight="720">Final sequence</text><text x="332" y="976" font-size="13" font-weight="450" class="sub">EXR or PNG frames</text>
+<rect x="304" y="1060" width="300" height="72" rx="13" class="panel"/><rect x="316" y="1084" width="7" height="24" rx="3.5" fill="#bf315c"/>
+<text x="332" y="1092" font-size="16.5" font-weight="720">Composition and encode</text><text x="332" y="1112" font-size="13" font-weight="450" class="sub">optional titles, FFmpeg</text>
+</svg>

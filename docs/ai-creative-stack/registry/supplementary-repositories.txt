@@ -1,0 +1,12 @@
+https://github.com/Graphify-Labs/graphify
+https://github.com/github/spec-kit
+https://github.com/thedotmack/claude-mem
+https://github.com/VoltAgent/awesome-design-md
+https://github.com/Manavarya09/designlang
+https://github.com/wheresryan22/anatomy
+https://github.com/Vincentwei1021/video-shotcraft
+https://github.com/achimala/dream-loop
+https://github.com/EL4CTEO/blender-skills
+https://github.com/microsoft/TRELLIS.2
+https://github.com/DavidHDev/react-bits
+https://github.com/ComposioHQ/awesome-claude-skills

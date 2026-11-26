@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 632" role="img" aria-labelledby="title desc">
+<title id="title">Full creative ecosystem</title><desc id="desc">One shared source feeds every deliverable. Arrows name what is reused.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="908" height="632" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Full creative ecosystem</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">One shared source feeds every deliverable. Arrows name what is reused.</text>
+<path d="M454 180 V212 H266 V242" class="line" marker-end="url(#end)"/>
+<path d="M454 180 V212 H642 V242" class="line" marker-end="url(#end)"/>
+<path d="M642 316 V348 H454 V378" class="line" marker-end="url(#end)"/>
+<path d="M266 316 V348 H454 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V514" class="line" marker-end="url(#end)"/>
+<rect x="272" y="219" width="104" height="20" rx="5" class="lab"/><text x="278" y="233" font-size="12.5" font-weight="560" class="sub">frozen tokens</text>
+<rect x="648" y="219" width="104" height="20" rx="5" class="lab"/><text x="654" y="233" font-size="12.5" font-weight="560" class="sub">art direction</text>
+<rect x="514" y="326" width="118" height="20" rx="5" class="lab"/><text x="520" y="340" font-size="12.5" font-weight="560" class="sub">rendered frames</text>
+<rect x="272" y="326" width="118" height="20" rx="5" class="lab"/><text x="278" y="340" font-size="12.5" font-weight="560" class="sub">screen captures</text>
+<rect x="460" y="475" width="133" height="20" rx="5" class="lab"/><text x="466" y="489" font-size="12.5" font-weight="560" class="sub">master + manifest</text>
+<rect x="304" y="108" width="300" height="72" rx="13" class="panel"/><rect x="316" y="132" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="140" font-size="16.5" font-weight="720">Set brand direction</text><text x="332" y="160" font-size="13" font-weight="450" class="sub">tokens, type, imagery, motion rules</text>
+<rect x="116" y="244" width="300" height="72" rx="13" class="panel"/><rect x="128" y="268" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="144" y="276" font-size="16.5" font-weight="720">Build site and app</text><text x="144" y="296" font-size="13" font-weight="450" class="sub">same component review</text>
+<rect x="492" y="244" width="300" height="72" rx="13" class="panel"/><rect x="504" y="268" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="276" font-size="16.5" font-weight="720">Create interactive 3D</text><text x="520" y="296" font-size="13" font-weight="450" class="sub">one scene, live and rendered</text>
+<rect x="304" y="380" width="300" height="72" rx="13" class="panel"/><rect x="316" y="404" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="332" y="412" font-size="16.5" font-weight="720">Reuse assets in video</text><text x="332" y="432" font-size="13" font-weight="450" class="sub">approved clips and illustrations</text>
+<rect x="304" y="516" width="300" height="72" rx="13" class="panel"/><rect x="316" y="540" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="548" font-size="16.5" font-weight="720">Review the release</text><text x="332" y="568" font-size="13" font-weight="450" class="sub">side by side, versioned</text>
+</svg>

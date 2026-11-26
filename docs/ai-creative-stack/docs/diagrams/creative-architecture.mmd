@@ -1,0 +1,45 @@
+%% render: auto
+%% title: Master creative engineering architecture
+%% desc: Layers activate only when the brief needs them. Each card names the optional tools for that layer.
+flowchart TD
+    A["User intent and requirements • brief, audience, acceptance criteria"]
+    B["Optional project intelligence • Graphify · Claude Mem · decision log"]
+    C["Approved specification • Spec Kit or the project's own spec"]
+    D["Creative direction and DESIGN.md • Taste · Frontend Design · Meng To"]
+    E["Design and prototyping • Penpot · Stitch · Open Design · Figma"]
+    G["AI-assisted 3D assets • SAM 3D · SF3D · TRELLIS.2 · UniRig · Blender"]
+    H["Spatial reconstruction • Gaussian Splatting"]
+    F["Frontend and interactive UI • Magic UI · React Bits · Astryx · Three.js"]
+    I["Animation and composition • HyperFrames · Remotion · Motion Canvas"]
+    J["Post-production • Scarlet · Video Use · Real-ESRGAN · FFmpeg"]
+    K["Quality assurance and delivery • Impeccable · Hallmark · gates"]
+    L["Reusable assets and decisions • manifest, DESIGN.md, decision log"]
+    A --> B
+    B -->|authorized context| C
+    C --> D
+    D --> E
+    D -->|art direction| G
+    D --> H
+    E -->|tokens + prototype| F
+    G -->|GLB| F
+    G -->|renders| I
+    H -->|splat renders| I
+    F -->|build| K
+    I -->|master| J
+    J -->|encodes| K
+    K -->|approved| L
+    L -.->|next brief| B
+    class A,C slate
+    class B,D,L purple
+    class E,F blue
+    class G amber
+    class H,I teal
+    class J rose
+    class K green
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

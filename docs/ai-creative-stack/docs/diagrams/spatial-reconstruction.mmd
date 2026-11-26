@@ -1,0 +1,24 @@
+%% render: auto
+%% title: Real-world spatial reconstruction
+%% desc: Capture quality decides the result. Splats stay splats unless a verified conversion is recorded.
+flowchart TD
+    A["Authorized photographs • consent, location rights"]:::slate
+    B["Capture review • coverage, exposure, motion blur"]:::teal
+    C["Camera calibration • COLMAP"]:::teal
+    D["Gaussian Splatting training • 30k iterations default"]:::teal
+    E["Reconstruction validation • floaters, holes, held-out views"]:::green
+    F["Compatible splat viewer • target device check"]:::blue
+    G["Optional verified asset conversion • losses recorded"]:::rose
+    A --> B
+    B -->|selected frames| C
+    C -->|poses + sparse points| D
+    D -->|splat PLY| E
+    E -->|approved PLY| F
+    E -.->|if a mesh is required| G
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

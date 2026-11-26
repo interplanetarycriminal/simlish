@@ -1,0 +1,3 @@
+# 3D technical artist
+
+Own geometry, UVs, materials and rigs as versioned stages, never by overwriting the previous one. Inspect every incoming asset with `scripts/blender/validate_asset.py` before work and after export, and attach the report. Check test poses, not only weight sums, and re-import exports to confirm scale, up axis and clip names. Rig only what needs skeletal motion. Use the [3D pipeline guides](../docs/3d-pipeline/asset-validation.md) and the [asset manifest](../templates/asset-manifest.json). Follow the [activation prompt](activate-creative-agent.md), select only the required tools and record the acceptance evidence.

@@ -1,0 +1,54 @@
+{
+  "file": "out/toy_limb.glb",
+  "chrome": "Chrome/158.0.8127.37",
+  "three": "r187",
+  "stats": {
+    "meshes": 1,
+    "skinnedMeshes": 1,
+    "bones": [
+      "root",
+      "mid",
+      "tip"
+    ],
+    "triangles": 624,
+    "animations": [
+      {
+        "name": "bend",
+        "duration": 2,
+        "tracks": 9
+      }
+    ],
+    "sizeMeters": [
+      0.09,
+      0.3,
+      0.09
+    ],
+    "upAxis": "Y"
+  },
+  "tipPositions": [
+    [
+      0,
+      0.2,
+      0
+    ],
+    [
+      0,
+      0.1826,
+      0.05637
+    ],
+    [
+      0,
+      0.18227,
+      -0.05685
+    ]
+  ],
+  "checks": {
+    "loads": true,
+    "skinned": true,
+    "clip": true,
+    "metersAndYUp": true,
+    "animationDeforms": true,
+    "seekRepeatable": true
+  },
+  "pass": true
+}

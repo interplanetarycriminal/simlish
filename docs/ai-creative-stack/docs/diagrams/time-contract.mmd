@@ -1,0 +1,24 @@
+%% render: auto
+%% title: One scene, two clocks
+%% desc: The scene only knows story time. Drivers choose the clock; any paused frame reopens live.
+flowchart TD
+    N0["Wall clock • requestAnimationFrame, learner input"]:::blue
+    N1["Frame clock • frame / fps from the compositor"]:::teal
+    N2["Scene module • setTime(t), setBeat(n), digest()"]:::amber
+    N3["Explorable • play, scrub, predict"]:::blue
+    N4["Film • HyperFrames, Remotion, DevTools capture"]:::teal
+    N5["Same state at the same t • checked by digest"]:::green
+    N0 -->|setTime(t)| N2
+    N1 -->|setTime(i / fps)| N2
+    N2 -->|draws live| N3
+    N2 -->|draws frames| N4
+    N3 -->|#t= digest| N5
+    N4 -->|frame digest| N5
+    N4 -.->|#t= link| N3
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137
