@@ -1,0 +1,20 @@
+{
+  "tool": "remesh",
+  "input": "source.glb",
+  "target_faces": 800,
+  "before": {
+    "vertices": 4018,
+    "faces": 8032,
+    "watertight": true
+  },
+  "after": {
+    "vertices": 402,
+    "faces": 800,
+    "watertight": true
+  },
+  "open_edges_in_input": 0,
+  "params": {
+    "keep_boundary": 1000.0,
+    "max_flip": 0.2
+  }
+}

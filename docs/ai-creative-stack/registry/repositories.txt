@@ -42,3 +42,12 @@ https://github.com/EL4CTEO/blender-skills
 https://github.com/microsoft/TRELLIS.2
 https://github.com/DavidHDev/react-bits
 https://github.com/ComposioHQ/awesome-claude-skills
+https://github.com/alchaincyf/huashu-motion
+https://github.com/Vincentwei1021/anything2explainer
+https://github.com/getopenscreen/openscreen
+https://github.com/feitangyuan/onetake
+https://github.com/lemomo-ai/lemo-opuscar
+https://github.com/storytold/effectcraft
+https://github.com/greensock/GSAP
+https://github.com/Comfy-Org/ComfyUI
+https://github.com/remotion-dev/skills

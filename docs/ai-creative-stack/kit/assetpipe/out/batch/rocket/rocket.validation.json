@@ -1,0 +1,111 @@
+{
+  "asset": "D:\\Aitrepreneur\\ai-creative-stack\\kit\\assetpipe\\out\\batch\\rocket\\rig\\rocket.v2-retopo_rigged.glb",
+  "blender": "5.2.2 LTS",
+  "ignored_helpers": [
+    "Icosphere"
+  ],
+  "meshes": [
+    {
+      "object": "body",
+      "vertices": 7196,
+      "faces": 2400,
+      "triangles": 2400,
+      "ngons": 0,
+      "boundary_edges": 7196,
+      "boundary_edges_welded": 0,
+      "non_manifold_edges": 0,
+      "inconsistent_normal_edges": 0,
+      "degenerate_faces": 0,
+      "zero_length_edges": 0,
+      "loose_vertices": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bbox_m": {
+        "min": [
+          -0.05396,
+          -0.02143,
+          -0.0
+        ],
+        "max": [
+          0.05795,
+          0.0217,
+          0.19063
+        ],
+        "size": [
+          0.11191,
+          0.04313,
+          0.19063
+        ]
+      },
+      "uv": {
+        "layers": [
+          "UVMap"
+        ],
+        "outside_0_1": 0.0
+      },
+      "materials": [
+        {
+          "name": "inflated",
+          "textures": [
+            {
+              "image": "Image_0",
+              "colorspace": "sRGB",
+              "feeds": [
+                "Base Color"
+              ]
+            }
+          ]
+        }
+      ],
+      "colour_space_issues": []
+    }
+  ],
+  "rigs": [
+    {
+      "armature": "rig",
+      "bones": 4,
+      "deform_bones": 4,
+      "roots": [
+        "seg_0"
+      ],
+      "hierarchy": {
+        "seg_0": null,
+        "seg_1": "seg_0",
+        "seg_2": "seg_1",
+        "seg_3": "seg_2"
+      },
+      "unweighted_vertices": 0,
+      "vertices_over_4_influences": 0,
+      "non_normalised_vertices": 0
+    }
+  ],
+  "animations": [
+    {
+      "name": "swim",
+      "frames": [
+        1,
+        48
+      ]
+    }
+  ],
+  "floor": {
+    "has_geometry": true,
+    "no_non_manifold_edges": true,
+    "no_degenerate_faces": true,
+    "consistent_normals": true,
+    "no_loose_vertices": true,
+    "has_uvs": true,
+    "colour_spaces_valid": true,
+    "rig_weights_normalised": true
+  },
+  "reflex": {
+    "unit_scale": true,
+    "max_4_influences": true,
+    "watertight": true,
+    "no_ngons": true
+  },
+  "pass": true
+}

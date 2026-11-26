@@ -1,0 +1,56 @@
+{
+  "tool": "autorig",
+  "input": "rocket.v2-retopo.glb",
+  "bones": 4,
+  "weights": "segment",
+  "anim": "swim",
+  "frames": 48,
+  "axis": [
+    -0.0033,
+    0.0002,
+    1.0
+  ],
+  "joints_m": [
+    [
+      -0.00072,
+      -0.0,
+      0.00246
+    ],
+    [
+      0.00095,
+      3e-05,
+      0.0502
+    ],
+    [
+      0.00026,
+      -0.00259,
+      0.09792
+    ],
+    [
+      0.00019,
+      2e-05,
+      0.14566
+    ],
+    [
+      -0.0005,
+      -0.0,
+      0.19338
+    ]
+  ],
+  "bone_lengths_m": [
+    0.04777,
+    0.04781,
+    0.0478,
+    0.04773
+  ],
+  "root": "auto",
+  "thickness_ends_m": [
+    0.04205,
+    0.04289
+  ],
+  "vertices": 1202,
+  "outputs": [
+    "rocket.v2-retopo_rigged.glb",
+    "rocket.v2-retopo_rigged.fbx"
+  ]
+}

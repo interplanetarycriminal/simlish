@@ -70,9 +70,10 @@
      "E",
      "F",
      "G",
-     "H"
+     "H",
+     "I"
     ],
-    "description": "A creative direction, B design and prototyping, C frontend and creative coding, D illustration and animation, E core 3D, F video, G AI-assisted 3D (source C), H supplementary"
+    "description": "A creative direction, B design and prototyping, C frontend and creative coding, D illustration and animation, E core 3D, F video, G AI-assisted 3D (source C), H supplementary, I motion films, explainers and engines (user additions)"
    },
    "source_group": {
     "enum": [
@@ -80,6 +81,7 @@
      "B",
      "A+B",
      "C",
+     "D",
      "supplementary"
     ]
    },

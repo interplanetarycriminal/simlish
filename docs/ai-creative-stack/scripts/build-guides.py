@@ -19,8 +19,9 @@ CATEGORIES = {
     "F": "Video composition and post-production",
     "G": "AI-assisted 3D asset production",
     "H": "Supplementary research candidates",
+    "I": "Motion films, explainers and engines",
 }
-SOURCE = {"A": "Source A", "B": "Source B", "A+B": "Sources A and B", "C": "Source C", "supplementary": "Supplementary"}
+SOURCE = {"A": "Source A", "B": "Source B", "A+B": "Sources A and B", "C": "Source C", "D": "Added by the user", "supplementary": "Supplementary"}
 
 
 def link(i):

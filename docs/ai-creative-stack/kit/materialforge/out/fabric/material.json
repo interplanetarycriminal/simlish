@@ -1,0 +1,84 @@
+{
+  "generator": "materialforge",
+  "preset": "fabric",
+  "size": 256,
+  "seed": 7,
+  "tileable": true,
+  "tile_size_m": 0.04,
+  "height_depth_m": 0.0004,
+  "notes": "Plain weave, 32 threads per tile each way. Dark warp along V, light weft along U.",
+  "maps": {
+    "base_color": {
+      "file": "base_color.png",
+      "colorspace": "sRGB",
+      "bits": 8,
+      "channels": "RGB",
+      "gltf": "baseColorTexture"
+    },
+    "roughness": {
+      "file": "roughness.png",
+      "colorspace": "Non-Color",
+      "bits": 8,
+      "channels": "L",
+      "gltf": "metallicRoughnessTexture.g",
+      "mean": 0.8939
+    },
+    "metallic": {
+      "file": "metallic.png",
+      "colorspace": "Non-Color",
+      "bits": 8,
+      "channels": "L",
+      "gltf": "metallicRoughnessTexture.b",
+      "mean": 0.0
+    },
+    "normal": {
+      "file": "normal.png",
+      "colorspace": "Non-Color",
+      "bits": 8,
+      "channels": "RGB",
+      "convention": "OpenGL (+Y up), tangent space",
+      "gltf": "normalTexture",
+      "derived_from": "height.png with tile_size_m and height_depth_m"
+    },
+    "height": {
+      "file": "height.png",
+      "colorspace": "Non-Color",
+      "bits": 16,
+      "channels": "L",
+      "gltf": null,
+      "range_m": [
+        0.0,
+        0.0004
+      ]
+    },
+    "ao": {
+      "file": "ao.png",
+      "colorspace": "Non-Color",
+      "bits": 8,
+      "channels": "L",
+      "gltf": "occlusionTexture.r"
+    }
+  },
+  "principled_bsdf": {
+    "Base Color": "base_color.png",
+    "Metallic": 0.0,
+    "Roughness": "roughness.png",
+    "Sheen Weight": 0.6,
+    "Sheen Roughness": 0.4,
+    "Normal": "normal.png via a Normal Map node (Tangent Space, Strength 1.0)"
+  },
+  "displacement": {
+    "node": "Displacement",
+    "input": "height.png",
+    "Midlevel": 0.0,
+    "Scale": 0.0004,
+    "units": "metres, for a mesh at real scale"
+  },
+  "mapping": {
+    "Scale": [
+      25.0,
+      25.0
+    ],
+    "note": "texture repeats once per tile_size_m when UVs are in metres"
+  }
+}

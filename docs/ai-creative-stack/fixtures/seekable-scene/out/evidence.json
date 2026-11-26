@@ -1,6 +1,6 @@
 {
   "fixture": "seekable-scene",
-  "date": "2026-11-26T08:22:15.745Z",
+  "date": "2026-11-26T09:56:32.392Z",
   "fps": 30,
   "size": [
     1280,
@@ -155,6 +155,6 @@
     14,
     16
   ],
-  "renderSeconds": 61.108,
+  "renderSeconds": 69.32,
   "pass": true
 }

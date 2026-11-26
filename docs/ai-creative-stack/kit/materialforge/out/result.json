@@ -1,0 +1,359 @@
+{
+  "size": 256,
+  "seed": 7,
+  "presets": {
+    "wood": {
+      "seams": {
+        "base_color.png": {
+          "x": 1.0038887318925163,
+          "y": 0.8190416435422795
+        },
+        "roughness.png": {
+          "x": 1.0140131440678448,
+          "y": 1.0164245874884514
+        },
+        "metallic.png": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "normal.png": {
+          "x": 1.0174309169421552,
+          "y": 0.8670373513757903
+        },
+        "height.png": {
+          "x": 1.0268097406413383,
+          "y": 0.9325691940302889
+        },
+        "ao.png": {
+          "x": 0.9962084452368595,
+          "y": 1.1069625598198365
+        }
+      },
+      "normal": {
+        "max_len_err": 0.0045,
+        "corr_x": 0.9928,
+        "corr_y": 0.9988,
+        "sign": {
+          "x": {
+            "pixels": 8601,
+            "sign_agreement": 1.0
+          },
+          "y": {
+            "pixels": 50801,
+            "sign_agreement": 1.0
+          }
+        },
+        "mean_abs_err_vs_height": 0.00162,
+        "mean_tilt_deg": 2.27
+      },
+      "ranges": {
+        "base_lum_p1": 0.258,
+        "base_lum_p99": 0.492,
+        "rough_mean": 0.603,
+        "metal_mean": 0.0,
+        "ao_mean": 0.994
+      },
+      "deterministic": true
+    },
+    "brushed-metal": {
+      "seams": {
+        "base_color.png": {
+          "x": 0.9569983372224629,
+          "y": 1.1051784333594263
+        },
+        "roughness.png": {
+          "x": 0.9480035990523595,
+          "y": 1.1082607257723263
+        },
+        "metallic.png": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "normal.png": {
+          "x": 1.092086996760759,
+          "y": 1.062582497014394
+        },
+        "height.png": {
+          "x": 0.9436790959609571,
+          "y": 1.079122458720663
+        },
+        "ao.png": {
+          "x": 0.8935421432342073,
+          "y": 1.1800367562600504
+        }
+      },
+      "normal": {
+        "max_len_err": 0.0031,
+        "corr_x": 0.8994,
+        "corr_y": 0.9904,
+        "sign": {
+          "x": {
+            "pixels": 1348,
+            "sign_agreement": 1.0
+          },
+          "y": {
+            "pixels": 28811,
+            "sign_agreement": 1.0
+          }
+        },
+        "mean_abs_err_vs_height": 0.00137,
+        "mean_tilt_deg": 0.81
+      },
+      "ranges": {
+        "base_lum_p1": 0.631,
+        "base_lum_p99": 0.831,
+        "rough_mean": 0.297,
+        "metal_mean": 1.0,
+        "ao_mean": 0.998
+      },
+      "deterministic": true
+    },
+    "painted-plastic": {
+      "seams": {
+        "base_color.png": {
+          "x": 0.5003280224929709,
+          "y": 1.3076282651680717
+        },
+        "roughness.png": {
+          "x": 0.915928577116717,
+          "y": 0.9486853595291158
+        },
+        "metallic.png": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "normal.png": {
+          "x": 0.9535414980549827,
+          "y": 1.011016166582127
+        },
+        "height.png": {
+          "x": 0.978136075427126,
+          "y": 0.9515503496178148
+        },
+        "ao.png": {
+          "x": 1.0032922387223313,
+          "y": 0.9470330177788041
+        }
+      },
+      "normal": {
+        "max_len_err": 0.0011,
+        "corr_x": 0.9739,
+        "corr_y": 0.9741,
+        "sign": {
+          "x": {
+            "pixels": 14087,
+            "sign_agreement": 1.0
+          },
+          "y": {
+            "pixels": 14235,
+            "sign_agreement": 1.0
+          }
+        },
+        "mean_abs_err_vs_height": 0.00134,
+        "mean_tilt_deg": 0.72
+      },
+      "ranges": {
+        "base_lum_p1": 0.312,
+        "base_lum_p99": 0.367,
+        "rough_mean": 0.382,
+        "metal_mean": 0.0,
+        "ao_mean": 0.999
+      },
+      "deterministic": true
+    },
+    "fabric": {
+      "seams": {
+        "base_color.png": {
+          "x": 0.9380755940511166,
+          "y": 0.5936700987103267
+        },
+        "roughness.png": {
+          "x": 0.5129495832113653,
+          "y": 0.41925934017915667
+        },
+        "metallic.png": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "normal.png": {
+          "x": 1.596894693400366,
+          "y": 1.632267107656581
+        },
+        "height.png": {
+          "x": 0.834611501483052,
+          "y": 0.8118224758183293
+        },
+        "ao.png": {
+          "x": 1.384118371411891,
+          "y": 1.3710604205253798
+        }
+      },
+      "normal": {
+        "max_len_err": 0.0063,
+        "corr_x": 0.9976,
+        "corr_y": 0.9976,
+        "sign": {
+          "x": {
+            "pixels": 64125,
+            "sign_agreement": 1.0
+          },
+          "y": {
+            "pixels": 64080,
+            "sign_agreement": 1.0
+          }
+        },
+        "mean_abs_err_vs_height": 0.00197,
+        "mean_tilt_deg": 20.58
+      },
+      "ranges": {
+        "base_lum_p1": 0.192,
+        "base_lum_p99": 0.761,
+        "rough_mean": 0.894,
+        "metal_mean": 0.0,
+        "ao_mean": 0.961
+      },
+      "deterministic": true
+    },
+    "stone": {
+      "seams": {
+        "base_color.png": {
+          "x": 1.1342912777218883,
+          "y": 1.0175024097714007
+        },
+        "roughness.png": {
+          "x": 1.054288445023132,
+          "y": 1.0108723705389353
+        },
+        "metallic.png": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "normal.png": {
+          "x": 0.9548540775598112,
+          "y": 1.0089879833675384
+        },
+        "height.png": {
+          "x": 0.9618117449633117,
+          "y": 0.9916619202457824
+        },
+        "ao.png": {
+          "x": 1.0388992191526103,
+          "y": 0.801271079158941
+        }
+      },
+      "normal": {
+        "max_len_err": 0.0062,
+        "corr_x": 0.9799,
+        "corr_y": 0.98,
+        "sign": {
+          "x": {
+            "pixels": 61042,
+            "sign_agreement": 1.0
+          },
+          "y": {
+            "pixels": 61098,
+            "sign_agreement": 1.0
+          }
+        },
+        "mean_abs_err_vs_height": 0.00194,
+        "mean_tilt_deg": 17.02
+      },
+      "ranges": {
+        "base_lum_p1": 0.239,
+        "base_lum_p99": 0.527,
+        "rough_mean": 0.798,
+        "metal_mean": 0.0,
+        "ao_mean": 0.951
+      },
+      "deterministic": true
+    },
+    "rust": {
+      "seams": {
+        "base_color.png": {
+          "x": 1.04592170549697,
+          "y": 1.0637494935973086
+        },
+        "roughness.png": {
+          "x": 1.0581007799514266,
+          "y": 1.126341589762284
+        },
+        "metallic.png": {
+          "x": 1.0752323694254844,
+          "y": 1.1339681522190266
+        },
+        "normal.png": {
+          "x": 1.035390189265795,
+          "y": 0.9528366389240516
+        },
+        "height.png": {
+          "x": 1.006752327856988,
+          "y": 0.9428755165465589
+        },
+        "ao.png": {
+          "x": 1.042829951167896,
+          "y": 0.9645984116857691
+        }
+      },
+      "normal": {
+        "max_len_err": 0.0044,
+        "corr_x": 0.9984,
+        "corr_y": 0.9989,
+        "sign": {
+          "x": {
+            "pixels": 35319,
+            "sign_agreement": 1.0
+          },
+          "y": {
+            "pixels": 37475,
+            "sign_agreement": 1.0
+          }
+        },
+        "mean_abs_err_vs_height": 0.00186,
+        "mean_tilt_deg": 3.0
+      },
+      "metallic_binary_fraction": 0.9851,
+      "metal_fraction": 0.55,
+      "ranges": {
+        "base_lum_p1": 0.131,
+        "base_lum_p99": 0.655,
+        "rough_mean": 0.572,
+        "metal_mean": 0.55,
+        "ao_mean": 0.993
+      },
+      "deterministic": true
+    }
+  },
+  "seam_controls": {
+    "crop_200px": {
+      "x": {
+        "seam": 22.58667,
+        "interior_mean": 11.19,
+        "bound": 13.47818,
+        "ok": false
+      },
+      "y": {
+        "seam": 20.52333,
+        "interior_mean": 11.19157,
+        "bound": 13.57042,
+        "ok": false
+      }
+    },
+    "rolled": {
+      "x": {
+        "seam": 10.00391,
+        "interior_mean": 11.27318,
+        "bound": 13.4282,
+        "ok": true
+      },
+      "y": {
+        "seam": 10.44401,
+        "interior_mean": 11.2498,
+        "bound": 13.39322,
+        "ok": true
+      }
+    }
+  },
+  "pass": true,
+  "failures": [],
+  "seconds": 17.0
+}

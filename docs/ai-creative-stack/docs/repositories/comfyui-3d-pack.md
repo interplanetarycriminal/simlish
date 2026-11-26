@@ -69,7 +69,7 @@ Your ComfyUI Root Directory\python_embeded\python.exe install.py
 | Primary | Image-to-3D, Spatial reconstruction, Texturing |
 | Supporting | 3D rendering, 3D orchestration, Media processing |
 
-Skip if you need TRELLIS.2, SAM 3D Objects, UniRig or MeshAnything: none are in the node pack at the pinned commit (it has TRELLIS v1 image-large, Stable Fast 3D and its own 3DGS nodes only). Consider [stable-fast-3d](stable-fast-3d.md), [trellis-2](trellis-2.md), [sam-3d-objects](sam-3d-objects.md), [gaussian-splatting](gaussian-splatting.md), [dream-textures](dream-textures.md). Complementary tools include [blender-mcp](blender-mcp.md), [blender-skills](blender-skills.md), [unirig](unirig.md), [meshanything-v2](meshanything-v2.md), [real-esrgan](real-esrgan.md), [dream-loop](dream-loop.md).
+Skip if you need TRELLIS.2, SAM 3D Objects, UniRig or MeshAnything: none are in the node pack at the pinned commit (it has TRELLIS v1 image-large, Stable Fast 3D and its own 3DGS nodes only). Consider [stable-fast-3d](stable-fast-3d.md), [trellis-2](trellis-2.md), [sam-3d-objects](sam-3d-objects.md), [gaussian-splatting](gaussian-splatting.md), [dream-textures](dream-textures.md). Complementary tools include [blender-mcp](blender-mcp.md), [blender-skills](blender-skills.md), [unirig](unirig.md), [meshanything-v2](meshanything-v2.md), [real-esrgan](real-esrgan.md), [dream-loop](dream-loop.md), [comfyui](comfyui.md).
 
 The pinned README documents native nodes for Stable Fast 3D and TRELLIS v1 (not TRELLIS.2), Hunyuan3D, TripoSG, InstantMesh and its own 3D Gaussian Splatting nodes. SAM 3D Objects, UniRig and MeshAnything V2 have no native nodes at the pinned commit.
 

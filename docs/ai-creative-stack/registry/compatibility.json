@@ -24,7 +24,8 @@
   "blender-rigging",
   "native-procedural-materials",
   "standalone-execution",
-  "polygon-mesh-pipeline"
+  "polygon-mesh-pipeline",
+  "kit-framecap"
  ],
  "pairs": [
   {
@@ -261,6 +262,69 @@
    "role": "storage",
    "evidence": "proposed",
    "note": "A spec from Spec Kit could be indexed by Graphify. Spec Kit init was tested; the combination was not."
+  },
+  {
+   "tools": [
+    "anything2explainer",
+    "onetake",
+    "huashu-motion",
+    "lemo-opuscar"
+   ],
+   "classification": "recommended alternative",
+   "role": "orchestration",
+   "evidence": "documented",
+   "note": "Each turns a topic or product into a finished film with its own timeline. Pick one per film."
+  },
+  {
+   "tools": [
+    "gsap",
+    "kit-framecap"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "tested",
+   "note": "kit/framecap pauses gsap.globalTimeline and seeks it per frame: within 0.054 px in its test."
+  },
+  {
+   "tools": [
+    "gsap",
+    "hyperframes"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "HyperFrames lists GSAP among its animation runtimes."
+  },
+  {
+   "tools": [
+    "comfyui",
+    "comfyui-3d-pack"
+   ],
+   "classification": "complementary",
+   "role": "orchestration",
+   "evidence": "documented",
+   "note": "ComfyUI hosts the 3D node pack. Give the pack its own install."
+  },
+  {
+   "tools": [
+    "remotion-skills",
+    "remotion"
+   ],
+   "classification": "complementary",
+   "role": "guidance",
+   "evidence": "documented",
+   "note": "Agent skills for Remotion projects."
+  },
+  {
+   "tools": [
+    "effectcraft",
+    "hyperframes",
+    "remotion"
+   ],
+   "classification": "recommended alternative",
+   "role": "orchestration",
+   "evidence": "documented",
+   "note": "EffectCraft is an app-style compositor; HyperFrames and Remotion are code-first. One timeline authority."
   }
  ]
 }

@@ -1,0 +1,308 @@
+{
+  "pass": true,
+  "checks": {
+    "sort_unit": {
+      "n": 20000,
+      "permutation": true,
+      "max_inversion": 0.00020054936408975266,
+      "repeatable": true
+    },
+    "synth_ply": {
+      "count": 48000,
+      "quatNormErr": 4.7259799296206495e-8,
+      "opacity": [
+        0.9499999978700873,
+        0.9499999978700873
+      ]
+    },
+    "box_ply": {
+      "count": 30000,
+      "quatNormErr": 4.6657311569830995e-8,
+      "opacity": [
+        0.9000000035701357,
+        0.9000000035701357
+      ],
+      "mesh2splat_stdout": {
+        "output": "out\\box.ply",
+        "count": 30000,
+        "meshes": 1,
+        "colour_sources": {
+          "texture": 30000
+        },
+        "bounds": [
+          [
+            -1,
+            -0.7,
+            -0.6
+          ],
+          [
+            1,
+            0.7,
+            0.6
+          ]
+        ],
+        "median_scale": 0.020623471898481408
+      },
+      "plus_z_quadrants": {
+        "x<0,y>0": {
+          "want": "red",
+          "n": 1167,
+          "share": 0.9880034275921166
+        },
+        "x>0,y>0": {
+          "want": "green",
+          "n": 1203,
+          "share": 0.9866999168744804
+        },
+        "x<0,y<0": {
+          "want": "blue",
+          "n": 1190,
+          "share": 0.9882352941176471
+        },
+        "x>0,y<0": {
+          "want": "yellow",
+          "n": 1177,
+          "share": 0.9889549702633815
+        }
+      },
+      "min_thin_axis_dot_normal": 0.9999998358069035
+    },
+    "vertex_colour_ply": {
+      "count": 5000,
+      "quatNormErr": 4.024218636100585e-8,
+      "opacity": [
+        0.9000000035701357,
+        0.9000000035701357
+      ],
+      "share_correct": 1
+    },
+    "synth_viewer": {
+      "count": 48000,
+      "bounds": {
+        "min": [
+          -2.249788284301758,
+          -0.3499941825866699,
+          -1.2499576807022095
+        ],
+        "max": [
+          2.249985456466675,
+          1.499975562095642,
+          1.2497810125350952
+        ]
+      },
+      "views": [
+        {
+          "az": 0,
+          "el": 18,
+          "dist": 7,
+          "spheres": {
+            "red": {
+              "x": 320,
+              "y": 199,
+              "radius_px": 26.4,
+              "share": 1,
+              "holes": 0
+            },
+            "green": {
+              "x": 456,
+              "y": 279,
+              "radius_px": 25.1,
+              "share": 1,
+              "holes": 0
+            },
+            "blue": {
+              "x": 184,
+              "y": 279,
+              "radius_px": 25.1,
+              "share": 1,
+              "holes": 0
+            }
+          },
+          "outside": {
+            "box": [
+              104,
+              152,
+              536,
+              353
+            ],
+            "pixels": 220569,
+            "background_fraction": 1
+          },
+          "colour_pixels": {
+            "red": 2422,
+            "green": 2276,
+            "blue": 2278,
+            "yellow": 2262
+          },
+          "torus_pixels": 13442
+        },
+        {
+          "az": 40,
+          "el": 32,
+          "dist": 7.5,
+          "spheres": {
+            "red": {
+              "x": 320,
+              "y": 205,
+              "radius_px": 25,
+              "share": 1,
+              "holes": 0
+            },
+            "green": {
+              "x": 431,
+              "y": 326,
+              "radius_px": 26.6,
+              "share": 1,
+              "holes": 0
+            },
+            "blue": {
+              "x": 235,
+              "y": 231,
+              "radius_px": 20.4,
+              "share": 1,
+              "holes": 0
+            }
+          },
+          "outside": {
+            "box": [
+              139,
+              117,
+              523,
+              424
+            ],
+            "pixels": 189005,
+            "background_fraction": 1
+          },
+          "colour_pixels": {
+            "red": 2188,
+            "green": 2541,
+            "blue": 1494,
+            "yellow": 3719
+          },
+          "torus_pixels": 12292
+        },
+        {
+          "az": -35,
+          "el": 12,
+          "dist": 6.5,
+          "spheres": {
+            "red": {
+              "x": 320,
+              "y": 195,
+              "radius_px": 28.2,
+              "share": 1,
+              "holes": 0
+            },
+            "green": {
+              "x": 424,
+              "y": 262,
+              "radius_px": 23.4,
+              "share": 1,
+              "holes": 0
+            },
+            "blue": {
+              "x": 176,
+              "y": 313,
+              "radius_px": 32.4,
+              "share": 1,
+              "holes": 0
+            }
+          },
+          "outside": {
+            "box": [
+              96,
+              151,
+              527,
+              407
+            ],
+            "pixels": 196690,
+            "background_fraction": 1
+          },
+          "colour_pixels": {
+            "red": 2762,
+            "green": 1680,
+            "blue": 3772,
+            "yellow": 2199
+          },
+          "torus_pixels": 14816
+        }
+      ],
+      "deterministic": true,
+      "hashes": [
+        "0f8c8664ab3ca646",
+        "cc7d92c126376aed",
+        "f94e93787586ea85"
+      ]
+    },
+    "box_viewer": {
+      "count": 30000,
+      "views": [
+        {
+          "az": 25,
+          "el": 20,
+          "dist": 4.2,
+          "colour_pixels": {
+            "red": 13091,
+            "green": 17656,
+            "blue": 10897,
+            "yellow": 15044
+          },
+          "outside_background_fraction": 0.99995,
+          "plus_z": {
+            "x<0,y>0": {
+              "want": "red",
+              "share": 1
+            },
+            "x>0,y>0": {
+              "want": "green",
+              "share": 1
+            },
+            "x<0,y<0": {
+              "want": "blue",
+              "share": 1
+            },
+            "x>0,y<0": {
+              "want": "yellow",
+              "share": 1
+            }
+          }
+        },
+        {
+          "az": 140,
+          "el": 35,
+          "dist": 4.2,
+          "colour_pixels": {
+            "red": 17077,
+            "green": 17144,
+            "blue": 11914,
+            "yellow": 12336
+          },
+          "outside_background_fraction": 0.99989
+        },
+        {
+          "az": -110,
+          "el": -25,
+          "dist": 4.2,
+          "colour_pixels": {
+            "red": 12142,
+            "green": 9892,
+            "blue": 15537,
+            "yellow": 13266
+          },
+          "outside_background_fraction": 0.99984
+        }
+      ],
+      "rerender_diff": {
+        "bytes": 0,
+        "max": 0
+      },
+      "deterministic": true,
+      "sort_ms": 4.299999952316284
+    }
+  },
+  "chrome": "Chrome/158.0.8127.37",
+  "synth.ply_bytes": 3264448,
+  "box.ply_bytes": 2040448,
+  "failures": [],
+  "seconds": 23.965
+}

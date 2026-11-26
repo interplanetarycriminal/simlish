@@ -52,7 +52,7 @@ Every tool also has a role. **Guidance** shapes decisions (skills, lists). **Exe
 | Texture generation | Dream Textures inside Blender | Complementary with Blender's material nodes, which assemble the full PBR set. GPL-3.0. |
 | Agent access to Blender | Blender MCP; Blender Skills as guidance on top | Complementary. Blender Skills can run headless or through Blender MCP. |
 | Generate-and-judge loop | Dream Loop | Potentially conflicting with a Blender-first pipeline: it routes image-to-3D to fal.ai (paid) and tells agents not to model in Blender. |
-| Node-based batch runs | ComfyUI-3D-Pack | Optional. Native for SF3D, TRELLIS v1, Hunyuan3D, TripoSG, InstantMesh and 3DGS nodes only. Its own install, because its installer can replace PyTorch. |
+| Node-based batch runs | ComfyUI with ComfyUI-3D-Pack, or kit/assetpipe | ComfyUI is the host; the pack adds 3D nodes (SF3D, TRELLIS v1, Hunyuan3D, TripoSG, InstantMesh, 3DGS). Give the pack its own install, because its installer can replace PyTorch. kit/assetpipe runs the kit's own chain with manifests. |
 | Real places from photos | Gaussian Splatting | A different representation, not an alternative mesh. Research-only license. |
 | Interactive delivery | Three.js with a validated GLB | Recommended. Tested here with a Blender-built skinned GLB. |
 | 3D craft recipes | One Meng To 3D skill | Optional. Load the single skill that matches the scene. |
@@ -63,6 +63,11 @@ Every tool also has a role. **Guidance** shapes decisions (skills, lists). **Exe
 | Need | Pick | Classification and reason |
 | --- | --- | --- |
 | Shot planning | Your shot list; Video Shotcraft when the film is made from real web pages | Optional. Video Shotcraft outputs MP4 plus an editable Remotion project. |
+| Topic or product in, finished film out | One of anything2explainer (Remotion explainers), OneTake (one-take motion films), Huashu Motion (launch films with locally composed music) or Lemo Opuscar (99 film styles) | Recommended alternatives. Each owns its own timeline. OneTake and Opuscar seek a page by time, like the time contract. |
+| Animation engine inside pages | GSAP | Complementary with HyperFrames, and with kit/framecap, which seeks GSAP timelines (tested). |
+| Motion graphics and compositing app | EffectCraft | Optional; alpha software. Exports ProRes 4444 with alpha without FFmpeg. |
+| Screen-recorded demos | OpenScreen | Optional. Records screen, camera and audio with auto-zoom; agents drive it through a CLI or MCP. |
+| Remotion skills for agents | Remotion's skills repository | Complementary with Remotion. |
 | Compose | HyperFrames, Remotion or Motion Canvas | Redundant for a single timeline. HyperFrames documents a Remotion port skill. |
 | Design workspace + HTML video | Open Design + HyperFrames | Complementary, documented natively upstream. |
 | Edit footage | Scarlet or Video Use | Potentially conflicting as co-editors. Both make HTML-based motion graphics: Video Use through HyperFrames or Remotion, Scarlet to transparent ProRes 4444. |

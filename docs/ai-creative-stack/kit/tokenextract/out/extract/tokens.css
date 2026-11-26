@@ -1,0 +1,40 @@
+/* draft, extracted — review before adopting; extract principles only from your own or permitted sites */
+:root {
+  --color-brand-1: #2363cf;
+  --color-brand-2: #198047;
+  --color-brand-3: #bf315c;
+  --color-neutral-1: #d0d9e7;
+  --color-neutral-2: #ffffff;
+  --color-neutral-3: #465773;
+  --color-neutral-4: #152137;
+  --color-neutral-5: #fbfcff;
+  --font-family-1: Verdana, sans-serif;
+  --font-family-2: Georgia, serif;
+  --font-size-1: 12px;
+  --font-size-2: 16px;
+  --font-size-3: 20px;
+  --font-size-4: 32px;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+  --font-line-height-1: 1.25;
+  --font-line-height-2: 1.5;
+  --typography-text-1: 400 16px/1.5 Verdana, sans-serif;
+  --typography-text-2: 700 20px/1.25 Georgia, serif;
+  --typography-text-3: 700 32px/1.25 Georgia, serif;
+  --typography-text-4: 700 12px/1.25 Georgia, serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --radius-1: 4px;
+  --radius-2: 8px;
+  --radius-3: 16px;
+  --shadow-1: 0px 1px 2px 0px rgb(21 33 55 / 0.12);
+  /* Breakpoints: custom properties cannot be used inside @media; values kept for reference. */
+  --breakpoint-1: 768px;
+  --duration-1: 200ms;
+  --easing-1: cubic-bezier(0, 0, 0.58, 1);
+  --transition-1: 200ms cubic-bezier(0, 0, 0.58, 1) 0ms;
+}

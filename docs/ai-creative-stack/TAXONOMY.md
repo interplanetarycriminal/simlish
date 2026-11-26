@@ -1,6 +1,6 @@
 # Taxonomy
 
-The [capability matrix](docs/diagrams/capability-matrix.svg) says what each reference does. This page sorts all 44 references by how they behave in a workflow, which predicts how they combine and where the gaps are.
+The [capability matrix](docs/diagrams/capability-matrix.svg) says what each reference does. This page sorts all 53 references by how they behave in a workflow, which predicts how they combine and where the gaps are.
 
 ## Four questions
 
@@ -55,6 +55,15 @@ The [capability matrix](docs/diagrams/capability-matrix.svg) says what each refe
 | [Claude Mem](docs/repositories/claude-mem.md) | Neither: remembers | — | — | — |
 | [Spec Kit](docs/repositories/spec-kit.md) | Narrows (specification) | — | An analyze step checks artifact consistency | — |
 | [Awesome Claude Skills](docs/repositories/awesome-claude-skills.md) | Makes (discovery) | — | — | — |
+| [Huashu Motion](docs/repositories/huashu-motion.md) | Makes | Time | Point-and-comment studio review | Own renderer, local Chrome |
+| [anything2explainer](docs/repositories/anything2explainer.md) | Makes | Time | — | Seekable, through Remotion |
+| [OneTake](docs/repositories/onetake.md) | Makes | Space and time | — | Seekable: `window.__seek(t)` |
+| [Lemo Opuscar](docs/repositories/lemo-opuscar.md) | Makes | Space and time | — | Seekable: `render(t)` pages |
+| [OpenScreen](docs/repositories/openscreen.md) | Makes | Time | — | Footage timeline |
+| [EffectCraft](docs/repositories/effectcraft.md) | Makes | Time | — | Compositor timeline |
+| [GSAP](docs/repositories/gsap.md) | Makes | Flat and time | — | Seekable timelines |
+| [ComfyUI](docs/repositories/comfyui.md) | Neither: orchestrates | Flat and space | Node previews | Per node |
+| [Remotion skills](docs/repositories/remotion-skills.md) | Narrows (procedures) | Time | — | Seekable, through Remotion |
 
 ## What the sort shows
 
@@ -69,5 +78,7 @@ The [capability matrix](docs/diagrams/capability-matrix.svg) says what each refe
 **The 3D additions make cheaply and check little.** The seven source-C tools and TRELLIS.2 all generate, and none judges its own geometry, UVs or deformation. That is why the catalogue adds `scripts/blender/validate_asset.py` and the geometry, UV, rigging and splat gates: the checking layer for AI-generated 3D did not exist in the collection.
 
 **Memory is a fourth kind of tool.** Graphify, Claude Mem and a decision log neither make nor narrow options; they decide what the next session knows. That makes them powerful and risky: they need the same authorization and privacy review as any external service, and two of them installed together compete for the same hooks.
+
+**The newest film tools converge on the time contract.** OneTake seeks `window.__seek(t)`, Opuscar renders `render(t)` pages, anything2explainer uses Remotion's frame clock and Huashu Motion drives GSAP in Chrome. Four independent projects arrived at the rule this catalogue's time contract states: a film is a page whose state is a function of time.
 
 **Meng To Skills was filed under the wrong shelf.** It was listed for creative direction only, yet its pinned README lists 30 Three.js rendering skills and 14 illustration styles with headless renderers. That makes it the largest source of 3D craft in the catalogue.

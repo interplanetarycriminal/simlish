@@ -1,0 +1,143 @@
+{
+  "tool": "designlint",
+  "pass": true,
+  "checks": [
+    {
+      "name": "bad: low contrast (Floor)",
+      "ok": true,
+      "detail": "Text contrast 1.92:1 is below 4.5:1 (normal text, #bbbbbb on #ffffff)"
+    },
+    {
+      "name": "bad: overflow at 390 only (Floor)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: img without alt (Floor)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: emoji heading (Finish)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: focus outline removed (Floor)",
+      "ok": true,
+      "detail": "3 focus finding(s)"
+    },
+    {
+      "name": "bad: 5 font families (Reflex)",
+      "ok": true,
+      "detail": "5 font families in use (more than 3): georgia, impact, arial, courier new, verdana"
+    },
+    {
+      "name": "bad: link without accessible name (Floor)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: gradient text (Finish)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: font size below 12px (Reflex)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: 16x16 touch target at 390 (Reflex)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: heading skip h1->h4 (Reflex)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: two h1 (Reflex)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: overlapping text (Reflex)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: clipped text (Reflex)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: no reduced-motion rule (Reflex)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: spacing off 4px grid (Finish)",
+      "ok": true,
+      "detail": "on-grid at 1440: 31.6%"
+    },
+    {
+      "name": "bad: too many colors (Finish)",
+      "ok": true,
+      "detail": "22 colors"
+    },
+    {
+      "name": "bad: exit code 1",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bad: one screenshot per width",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "clean: zero Floor findings",
+      "ok": true,
+      "detail": "{\"Floor\":0,\"Reflex\":0,\"Finish\":0}"
+    },
+    {
+      "name": "clean: zero Reflex findings",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "clean: exit code 0",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "clean: spacing 100% on grid",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "clean: focus visible on every tab stop",
+      "ok": true,
+      "detail": "3 tab stops"
+    }
+  ],
+  "bad": {
+    "exit": 1,
+    "summary": {
+      "Floor": 8,
+      "Reflex": 10,
+      "Finish": 4
+    }
+  },
+  "clean": {
+    "exit": 0,
+    "summary": {
+      "Floor": 0,
+      "Reflex": 0,
+      "Finish": 0
+    }
+  },
+  "outBytes": 215741
+}

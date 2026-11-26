@@ -21,13 +21,14 @@ docs/3d-pipeline/image-to-3d.md docs/3d-pipeline/retopology.md docs/3d-pipeline/
 docs/3d-pipeline/rigging-and-skinning.md docs/3d-pipeline/animation-and-physics.md docs/3d-pipeline/gaussian-splatting.md
 docs/3d-pipeline/comfyui-orchestration.md docs/3d-pipeline/asset-validation.md docs/3d-pipeline/export-contracts.md
 registry/repositories.json registry/repositories.txt registry/core-repositories.txt registry/supplementary-repositories.txt
-registry/compatibility.json registry/schema.json
+registry/compatibility.json registry/schema.json registry/user-added-repositories.txt
 prompts/activate-creative-agent.md prompts/creative-director.md prompts/frontend-design.md prompts/motion-design.md
 prompts/3d-technical-artist.md prompts/3d-asset-factory.md prompts/spatial-reconstruction.md prompts/video-production.md
 prompts/project-intelligence.md
 templates/creative-brief.md templates/design-system.md templates/toolchain-plan.md templates/asset-manifest.json
 templates/mesh-quality-report.md templates/rig-validation-report.md templates/shot-list.md templates/execution-report.md
-scripts/validate-registry.py scripts/check-repositories.py scripts/validate-documentation.py""".split()
+scripts/validate-registry.py scripts/check-repositories.py scripts/validate-documentation.py
+kit/README.md kit/run-tests.py""".split()
 
 WORKFLOWS = """premium-website application-interface interactive-3d illustration-and-animation cinematic-video full-creative-pipeline
 persistent-intelligence design-system-extraction 3d-asset-factory animation-ready-character spatial-reconstruction
@@ -156,6 +157,15 @@ def main():
                 fail(f"recorded fixture evidence {f.relative_to(ROOT)} shows a failed check")
     if evidence < 4:
         fail(f"expected fixture evidence for both fixtures, found {evidence} files")
+    kit_tools = sorted(p.parent for p in ROOT.glob("kit/*/README.md") if p.parent.name != "skills")
+    for tool in kit_tools:
+        res = tool / "out" / "result.json"
+        if not res.is_file():
+            fail(f"kit/{tool.name} has no recorded test result")
+        if json.loads(res.read_text(encoding="utf-8")).get("pass") is not True:
+            fail(f"kit/{tool.name}'s recorded test result is not a pass")
+        if not any((tool / n).is_file() for n in ("test.py", "test.mjs")):
+            fail(f"kit/{tool.name} has no test")
 
     scanned = 0
     for p in files:
@@ -172,7 +182,7 @@ def main():
                     fail(f"private machine path in {p.relative_to(ROOT)} (pattern {pat})")
 
     print(f"Validated {len(REQUIRED)} required files, {links} local links in {len(md)} Markdown files, "
-          f"{len(svgs)} diagrams ({auto} rendered from source plus the generated matrix), {len(WORKFLOWS)} workflows, {evidence} passing fixture records, "
+          f"{len(svgs)} diagrams ({auto} rendered from source plus the generated matrix), {len(WORKFLOWS)} workflows, {evidence} passing fixture records, {len(kit_tools)} passing kit tools, "
           f"and scanned {scanned} text files for secrets and private paths")
 
 

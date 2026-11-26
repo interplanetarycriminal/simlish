@@ -1,0 +1,34 @@
+{
+  "tool": "inflate3d",
+  "input": "fish.png",
+  "input_sha256": "9502536c26a2c0074206a6aec8ad7f955cd66680d69f9b7f43e534b27020d802",
+  "params": {
+    "height": 0.2,
+    "res": 96,
+    "thickness": 0.6,
+    "back": 1.0,
+    "depth": null,
+    "depth_scale": 0.5,
+    "smooth": 8,
+    "tolerance": 40.0
+  },
+  "vertices": 4018,
+  "triangles": 8032,
+  "watertight": true,
+  "bbox_m": [
+    0.33498,
+    0.2,
+    0.10282
+  ],
+  "grid": [
+    69,
+    96
+  ],
+  "step_px": 5.333,
+  "boundary_loops": 1,
+  "mask_pixels": 60050,
+  "image": [
+    512,
+    368
+  ]
+}

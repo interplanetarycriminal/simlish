@@ -1,6 +1,6 @@
 # Sources and provenance
 
-Where every reference came from, how sure that attribution is, and how each URL was checked. Attribution and verification are tracked separately: a repository can be fully verified while its source attribution stays provisional.
+Where all 53 references came from, how sure that attribution is, and how each URL was checked. Attribution and verification are tracked separately: a repository can be fully verified while its source attribution stays provisional.
 
 ![Collection provenance from three posts and a separate research list](docs/diagrams/collection-provenance.svg)
 
@@ -14,8 +14,9 @@ Where every reference came from, how sure that attribution is, and how each URL 
 | **First two collections** | **25** | 15 + 15 − 5 shared |
 | Source C | 7 | Confirmed from the user-supplied transcript |
 | **Post-associated** | **32** | |
+| Added by the user | 9 | Supplied directly on 2026-11-26, not from a post |
 | Supplementary candidates | 12 | Not attributable to any post |
-| **Working registry** | **44** | |
+| **Working registry** | **53** | |
 
 The validator recomputes these counts from [the registry](registry/repositories.json) and fails if they change without this page.
 
@@ -83,6 +84,22 @@ None of these duplicates a URL from sources A or B.
 | [ComfyUI-3D-Pack (Comfy3D)](docs/repositories/comfyui-3d-pack.md) | https://github.com/MrForExample/ComfyUI-3D-Pack | verified |
 | [Gaussian Splatting](docs/repositories/gaussian-splatting.md) | https://github.com/graphdeco-inria/gaussian-splatting | verified |
 
+## Added by the user (9, direct)
+
+Nine references supplied directly in the conversation on 2026-11-26, alongside the existing 44. They are attributed to the user, not to any post, and were verified the same way.
+
+| Reference | Original URL | Verification |
+| --- | --- | --- |
+| [huashu-motion](docs/repositories/huashu-motion.md) | https://github.com/alchaincyf/huashu-motion | verified |
+| [anything2explainer](docs/repositories/anything2explainer.md) | https://github.com/Vincentwei1021/anything2explainer | verified |
+| [OpenScreen](docs/repositories/openscreen.md) | https://github.com/getopenscreen/openscreen | verified |
+| [onetake](docs/repositories/onetake.md) | https://github.com/feitangyuan/onetake | verified |
+| [Lemo-Opuscar](docs/repositories/lemo-opuscar.md) | https://github.com/lemomo-ai/lemo-opuscar | verified |
+| [EffectCraft](docs/repositories/effectcraft.md) | https://github.com/storytold/effectcraft | verified |
+| [GSAP (GreenSock Animation Platform)](docs/repositories/gsap.md) | https://github.com/greensock/GSAP | verified |
+| [ComfyUI](docs/repositories/comfyui.md) | https://github.com/Comfy-Org/ComfyUI | verified |
+| [Remotion Agent Skills](docs/repositories/remotion-skills.md) | https://github.com/remotion-dev/skills | verified |
+
 ## Supplementary candidates (12, not from any post)
 
 Identified during related research. Kept as a separate collection: they are evaluated on their merits and never presented as part of the posts.
@@ -122,4 +139,4 @@ On 2026-11-26, for every reference:
 | https://github.com/ahujasid/mcp-for-blender | Resolves. Catalogue v1 noted the Python package is now published as `mcp-for-blender`. | Unchanged | Pinned README |
 | https://github.com/21st-dev/magic-mcp | Resolves. Upstream points new setups to the 21st MCP. | Unchanged | Pinned README |
 
-All other URLs resolved to themselves. 43 references are `verified` and 1 is `redirected`; none is unavailable.
+All other URLs resolved to themselves. 52 references are `verified` and 1 is `redirected`; none is unavailable.

@@ -10,6 +10,8 @@ flowchart TD
     %% rank: B 3
     %% rank: F 3
     %% rank: C 4
+    %% rank: X 2
+    %% rank: K 3
     D["One generator • SF3D, SAM 3D Objects or TRELLIS.2"]:::amber
     H["One memory • Graphify, Claude Mem or a decision log"]:::purple
     E["One rig owner • UniRig or Blender rigging"]:::amber
@@ -19,6 +21,8 @@ flowchart TD
     G["One editor • Scarlet or Video Use"]:::rose
     B["Three.js • interactive delivery"]:::blue
     F["One timeline • HyperFrames, Remotion or Motion Canvas"]:::teal
+    X["One explainer pipeline • anything2explainer, OneTake, Huashu, Opuscar"]:::teal
+    K["kit framecap • seeks GSAP, CSS and time-contract pages"]:::green
     C["FFmpeg • encode and probe"]:::rose
     D -.->|GLB, proposed| E
     E -.->|FBX, documented| A
@@ -26,6 +30,8 @@ flowchart TD
     A -->|GLB, tested| B
     J -.->|components| B
     F -.->|master, documented| C
+    X -.->|renders, documented| C
+    K -->|frames, tested| C
     B -->|frames, tested| C
     H -.->|context| I
     classDef slate fill:#edf2f7,stroke:#596b84,color:#142137

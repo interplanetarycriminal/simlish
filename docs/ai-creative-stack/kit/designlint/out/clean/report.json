@@ -1,0 +1,106 @@
+{
+  "tool": "designlint",
+  "version": "0.1.0",
+  "target": "out/fixtures/clean.html",
+  "url": "local file",
+  "chrome": "Chrome/158.0.8127.37",
+  "widths": [
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "summary": {
+    "Floor": 0,
+    "Reflex": 0,
+    "Finish": 0
+  },
+  "pass": true,
+  "focus": {
+    "focusables": 3,
+    "reachedByTab": 3
+  },
+  "metrics": {
+    "390": {
+      "width": 390,
+      "scrollWidth": 390,
+      "contrastChecked": 7,
+      "contrastUnknownBackground": 0,
+      "spacingValues": 16,
+      "spacingOnGridPct": 100,
+      "distinctColors": 6,
+      "topColors": [
+        "#17201e x2",
+        "#3c4a47 x2",
+        "#ffffff x2",
+        "#1d6a84 x2",
+        "#f2f4f1 x1",
+        "#0000ee x1"
+      ],
+      "fontFamilies": [
+        "system-ui x7"
+      ],
+      "motionElements": 2,
+      "reducedMotionRule": true,
+      "unreadableStylesheets": 0
+    },
+    "768": {
+      "width": 768,
+      "scrollWidth": 768,
+      "contrastChecked": 7,
+      "contrastUnknownBackground": 0,
+      "spacingValues": 16,
+      "spacingOnGridPct": 100,
+      "distinctColors": 6,
+      "topColors": [
+        "#17201e x2",
+        "#3c4a47 x2",
+        "#ffffff x2",
+        "#1d6a84 x2",
+        "#f2f4f1 x1",
+        "#0000ee x1"
+      ]
+    },
+    "1024": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "contrastChecked": 7,
+      "contrastUnknownBackground": 0,
+      "spacingValues": 16,
+      "spacingOnGridPct": 100,
+      "distinctColors": 6,
+      "topColors": [
+        "#17201e x2",
+        "#3c4a47 x2",
+        "#ffffff x2",
+        "#1d6a84 x2",
+        "#f2f4f1 x1",
+        "#0000ee x1"
+      ]
+    },
+    "1440": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "contrastChecked": 7,
+      "contrastUnknownBackground": 0,
+      "spacingValues": 16,
+      "spacingOnGridPct": 100,
+      "distinctColors": 6,
+      "topColors": [
+        "#17201e x2",
+        "#3c4a47 x2",
+        "#ffffff x2",
+        "#1d6a84 x2",
+        "#f2f4f1 x1",
+        "#0000ee x1"
+      ]
+    }
+  },
+  "findings": [],
+  "screenshots": [
+    "shot-390.png",
+    "shot-768.png",
+    "shot-1024.png",
+    "shot-1440.png"
+  ]
+}

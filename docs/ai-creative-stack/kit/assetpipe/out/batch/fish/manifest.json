@@ -1,0 +1,141 @@
+{
+  "asset_id": "fish",
+  "workflow": {
+    "name": "toy-factory",
+    "version": 1
+  },
+  "created": "2026-11-26T09:53:28+00:00",
+  "status": "accepted",
+  "reason": null,
+  "source_references": [
+    {
+      "path": "fish.png",
+      "sha256": "9502536c26a2c0074206a6aec8ad7f955cd66680d69f9b7f43e534b27020d802"
+    }
+  ],
+  "coordinate_system": {
+    "delivery": "glTF, right-handed, Y up",
+    "units": "meters"
+  },
+  "stages": [
+    {
+      "version": "v1-original",
+      "run": "inflate",
+      "consumes": null,
+      "params": {
+        "height": 0.2,
+        "res": 96,
+        "thickness": 0.6
+      },
+      "input": "fish.png",
+      "input_sha256": "9502536c26a2c0074206a6aec8ad7f955cd66680d69f9b7f43e534b27020d802",
+      "output": "fish\\fish.v1-original.glb",
+      "output_sha256": "86f1a92d42fc6dfc740cc040e95e934b60d312a615035e61ca4e0a3c9ce80461",
+      "seconds": 4.02,
+      "ok": true
+    },
+    {
+      "version": "v2-retopo",
+      "run": "remesh",
+      "consumes": "v1-original",
+      "params": {
+        "faces": 2400
+      },
+      "input": "fish.v1-original.glb",
+      "input_sha256": "86f1a92d42fc6dfc740cc040e95e934b60d312a615035e61ca4e0a3c9ce80461",
+      "output": "fish\\fish.v2-retopo.glb",
+      "output_sha256": "799bf4c4a094c1075e315c5bce59992ae6038f6a940fd89757b334147261ebc0",
+      "seconds": 10.85,
+      "ok": true
+    },
+    {
+      "version": "check-geometry",
+      "run": "validate",
+      "consumes": "v2-retopo",
+      "params": {},
+      "input": "fish.v2-retopo.glb",
+      "input_sha256": "799bf4c4a094c1075e315c5bce59992ae6038f6a940fd89757b334147261ebc0",
+      "output": "fish\\fish.validation.json",
+      "output_sha256": "9900d764120ecde691a0d908925ad8476f52ac9cdbe152395a0c7f6a7bf0fa18",
+      "seconds": 4.48,
+      "ok": true,
+      "floor": {
+        "has_geometry": true,
+        "no_non_manifold_edges": true,
+        "no_degenerate_faces": true,
+        "consistent_normals": true,
+        "no_loose_vertices": true,
+        "has_uvs": true,
+        "colour_spaces_valid": true,
+        "rig_weights_normalised": true
+      },
+      "reflex": {
+        "unit_scale": true,
+        "max_4_influences": true,
+        "watertight": true,
+        "no_ngons": true
+      }
+    },
+    {
+      "version": "v3-rigged",
+      "run": "autorig",
+      "consumes": "v2-retopo",
+      "params": {
+        "bones": 4,
+        "anim": "swim",
+        "frames": 48
+      },
+      "input": "fish.v2-retopo.glb",
+      "input_sha256": "799bf4c4a094c1075e315c5bce59992ae6038f6a940fd89757b334147261ebc0",
+      "output": "fish\\rig\\fish.v2-retopo_rigged.glb",
+      "output_sha256": "57a3e8f0368073acc57cc834d53a0c8ad36a153a8c02879a52b42e424baabbb4",
+      "seconds": 5.12,
+      "ok": true
+    },
+    {
+      "version": "check-rig",
+      "run": "validate",
+      "consumes": "v3-rigged",
+      "params": {},
+      "input": "fish.v2-retopo_rigged.glb",
+      "input_sha256": "57a3e8f0368073acc57cc834d53a0c8ad36a153a8c02879a52b42e424baabbb4",
+      "output": "fish\\fish.validation.json",
+      "output_sha256": "07633a4b2046f6569e70e098cbced301ded15367971eef8ff7b84b66141750d7",
+      "seconds": 3.01,
+      "ok": true,
+      "floor": {
+        "has_geometry": true,
+        "no_non_manifold_edges": true,
+        "no_degenerate_faces": true,
+        "consistent_normals": true,
+        "no_loose_vertices": true,
+        "has_uvs": true,
+        "colour_spaces_valid": true,
+        "rig_weights_normalised": true
+      },
+      "reflex": {
+        "unit_scale": true,
+        "max_4_influences": true,
+        "watertight": true,
+        "no_ngons": true
+      }
+    },
+    {
+      "version": "splat",
+      "run": "mesh2splat",
+      "consumes": "v2-retopo",
+      "params": {
+        "count": 20000
+      },
+      "input": "fish.v2-retopo.glb",
+      "input_sha256": "799bf4c4a094c1075e315c5bce59992ae6038f6a940fd89757b334147261ebc0",
+      "output": "fish\\fish.splat.ply",
+      "output_sha256": "415a7434fb608eec5097bab2d99d1272c762e5cfe9a3f78a8ca4e27e072e3a58",
+      "seconds": 2.7,
+      "ok": true
+    }
+  ],
+  "delivery": {
+    "version": "v3-rigged"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "tool": "assetpipe",
+  "summary": {
+    "workflow": "toy-factory",
+    "assets": 3,
+    "accepted": [
+      "fish",
+      "rocket"
+    ],
+    "rejected": {
+      "empty": "v1-original: No object found in the image."
+    }
+  },
+  "splat_step": {
+    "ok": true,
+    "error": null
+  },
+  "checks": {
+    "runs": true,
+    "two_accepted": true,
+    "empty_rejected_with_reason": true,
+    "fish_stages_versioned": true,
+    "fish_consumes_chain": true,
+    "fish_hashes_recorded": true,
+    "fish_rig_floor_pass": true,
+    "fish_delivery_is_rig": true,
+    "rocket_stages_versioned": true,
+    "rocket_consumes_chain": true,
+    "rocket_hashes_recorded": true,
+    "rocket_rig_floor_pass": true,
+    "rocket_delivery_is_rig": true,
+    "repeatable_v1-original": true,
+    "repeatable_v2-retopo": true
+  },
+  "pass": true
+}

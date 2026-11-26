@@ -1,0 +1,45 @@
+{
+  "tool": "framecap",
+  "input": "out/pages/css-box.html",
+  "url": "http://127.0.0.1:51969/css-box.html",
+  "chrome": "Chrome/158.0.8127.37",
+  "width": 640,
+  "height": 360,
+  "fps": 30,
+  "duration": 2,
+  "frames": 60,
+  "format": "mp4",
+  "alpha": false,
+  "audio": "out/sine-2s.wav",
+  "output": "out/css-box-audio.mp4",
+  "mode": "animations",
+  "animations": 1,
+  "settleCaptures": 60,
+  "captureSeconds": 9.332,
+  "pass": true,
+  "checks": {
+    "frames": true,
+    "size": true,
+    "fps": true,
+    "duration": true,
+    "audioStream": true,
+    "audioDuration": true
+  },
+  "probe": {
+    "codec": "h264",
+    "pix_fmt": "yuv420p",
+    "width": 640,
+    "height": 360,
+    "fps": "30/1",
+    "frames": 60,
+    "videoDuration": 2,
+    "containerDuration": 2,
+    "audio": {
+      "codec": "aac",
+      "duration": 2,
+      "sampleRate": 48000,
+      "channels": 1
+    }
+  },
+  "totalSeconds": 10.202
+}

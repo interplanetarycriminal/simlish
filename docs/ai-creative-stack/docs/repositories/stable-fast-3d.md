@@ -60,7 +60,7 @@ huggingface-cli login
 | Primary | Image-to-3D |
 | Supporting | Texturing, Retopology |
 
-Skip if you need high-detail or scene-level reconstruction; SF3D is a fast single-object feed-forward model. Consider [trellis-2](trellis-2.md), [sam-3d-objects](sam-3d-objects.md), [comfyui-3d-pack](comfyui-3d-pack.md). Complementary tools include [unirig](unirig.md), [meshanything-v2](meshanything-v2.md), [blender-mcp](blender-mcp.md), [three-js](three-js.md), [real-esrgan](real-esrgan.md), [blender-skills](blender-skills.md).
+Skip if you need high-detail or scene-level reconstruction; SF3D is a fast single-object feed-forward model. Consider [trellis-2](trellis-2.md), [sam-3d-objects](sam-3d-objects.md), [comfyui-3d-pack](comfyui-3d-pack.md). Complementary tools include [unirig](unirig.md), [meshanything-v2](meshanything-v2.md), [blender-mcp](blender-mcp.md), [three-js](three-js.md), [real-esrgan](real-esrgan.md), [blender-skills](blender-skills.md), [comfyui](comfyui.md).
 
 ComfyUI-3D-Pack documents a native Stable Fast 3D node. The GLB output is a proposed handoff to Blender and Three.js.
 

@@ -1,0 +1,38 @@
+{
+  "tool": "framecap",
+  "input": "out/pages/alpha.html",
+  "url": "http://127.0.0.1:61558/alpha.html",
+  "chrome": "Chrome/158.0.8127.37",
+  "width": 320,
+  "height": 240,
+  "fps": 12,
+  "duration": 1,
+  "frames": 12,
+  "format": "mov",
+  "alpha": true,
+  "audio": null,
+  "output": "out/alpha.mov",
+  "mode": "animations",
+  "animations": 1,
+  "settleCaptures": 12,
+  "captureSeconds": 3.479,
+  "pass": true,
+  "checks": {
+    "frames": true,
+    "size": true,
+    "fps": true,
+    "duration": true
+  },
+  "probe": {
+    "codec": "prores",
+    "pix_fmt": "yuva444p12le",
+    "width": 320,
+    "height": 240,
+    "fps": "12/1",
+    "frames": 12,
+    "videoDuration": 1,
+    "containerDuration": 1,
+    "audio": null
+  },
+  "totalSeconds": 3.696
+}

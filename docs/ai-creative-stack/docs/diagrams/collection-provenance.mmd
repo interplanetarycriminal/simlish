@@ -1,21 +1,23 @@
 %% render: auto
 %% title: Collection provenance
-%% desc: Where the 44 working references came from. A and B attribution is provisional; the supplementary group comes from no post.
+%% desc: Where the 53 working references came from. A and B attribution is provisional; the user's additions and the supplementary group come from no post.
 flowchart TD
     SA["Source A • 15 references, recovered from a mirror"]:::slate
     SB["Source B • 15 references, recovered from a mirror"]:::slate
     SC["Source C • 7 references, user-supplied transcript"]:::amber
+    SD["Added by the user • 9 references, 26 Nov 2026"]:::teal
     U["First two collections • 25 unique, 5 shared by A and B"]:::purple
     T["Post-associated references • 32 = 25 + 7"]:::purple
     subgraph SUP ["Separate discovery, not from any post"]
     S["Supplementary candidates • 12 from related research"]:::slate
     end
-    W["Working registry • 44 distinct references"]:::green
+    W["Working registry • 53 distinct references"]:::green
     SA -->|15, provisional| U
     SB -->|15, provisional| U
     U -->|25| T
     SC -->|7, confirmed| T
     T -->|32| W
+    SD -->|9, direct| W
     S -.->|12| W
     classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
     classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137

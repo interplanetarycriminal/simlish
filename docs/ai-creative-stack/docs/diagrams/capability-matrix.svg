@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1718" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1968" role="img" aria-labelledby="title desc">
 <title id="title">Capability matrix</title>
-<desc id="desc">44 references against 25 capabilities. Filled: primary. Ring: supporting. Square: tested by a fixture here. Dot: not applicable. Generated from the registry.</desc>
+<desc id="desc">53 references against 25 capabilities. Filled: primary. Ring: supporting. Square: tested by a fixture here. Dot: not applicable. Generated from the registry.</desc>
 <style>
 svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .grid{stroke:#e3e8f0;stroke-width:1} .band{fill:#f1f4f9} .na{fill:#b8c2d3}
 @media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .grid{stroke:#2a3850} .band{fill:#16223a} .na{fill:#52627c}}
 </style>
-<rect width="1040" height="1718" rx="22" class="bg"/>
+<rect width="1040" height="1968" rx="22" class="bg"/>
 <text x="36" y="48" font-size="29" font-weight="750">Capability matrix</text>
-<text x="37" y="75" font-size="15" font-weight="450" class="sub">44 references × 25 capabilities, from pinned documentation. No ratings: a mark says what a tool is for, not how good it is.</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">53 references × 25 capabilities, from pinned documentation. No ratings: a mark says what a tool is for, not how good it is.</text>
 <circle cx="43" cy="101" r="6.5" fill="#596b84"/><text x="55" y="106" font-size="13" class="sub">Primary</text>
 <circle cx="133.4" cy="101" r="5.5" fill="none" stroke="#596b84" stroke-width="2.2"/><text x="145.4" y="106" font-size="13" class="sub">Supporting</text>
 <rect x="239.4" y="95" width="12" height="12" rx="2" fill="#198047"/><text x="257.4" y="106" font-size="13" class="sub">Primary, tested here</text>
@@ -1190,5 +1190,240 @@ svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:
 <circle cx="925.0" cy="1617.0" r="1.8" class="na"/>
 <circle cx="955.0" cy="1617.0" r="1.8" class="na"/>
 <circle cx="985.0" cy="1617.0" r="1.8" class="na"/>
-<text x="37" y="1690" font-size="12.5" class="sub">Source: registry/repositories.json. Regenerate with python scripts/render-matrix.py.</text>
+<rect x="24" y="1632" width="992" height="26" rx="7" class="band"/><text x="36" y="1650" font-size="13" font-weight="700">I. Motion films, explainers and engines (added by the user)</text>
+<line x1="36" y1="1686" x2="1012" y2="1686" class="grid"/><text x="44" y="1679" font-size="13" font-weight="550">Huashu Motion</text>
+<circle cx="265.0" cy="1675.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="1675.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1675.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1675.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="895.0" cy="1675.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1675.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<line x1="36" y1="1710" x2="1012" y2="1710" class="grid"/><text x="44" y="1703" font-size="13" font-weight="550">anything2explainer</text>
+<circle cx="265.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1699.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1699.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1699.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="895.0" cy="1699.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1699.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<line x1="36" y1="1734" x2="1012" y2="1734" class="grid"/><text x="44" y="1727" font-size="13" font-weight="550">OpenScreen</text>
+<circle cx="265.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1723.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="895.0" cy="1723.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="925.0" cy="1723.0" r="6.5" fill="#bf315c"/>
+<circle cx="955.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1723.0" r="6.5" fill="#bf315c"/>
+<line x1="36" y1="1758" x2="1012" y2="1758" class="grid"/><text x="44" y="1751" font-size="13" font-weight="550">OneTake</text>
+<circle cx="265.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1747.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1747.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1747.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="895.0" cy="1747.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1747.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<line x1="36" y1="1782" x2="1012" y2="1782" class="grid"/><text x="44" y="1775" font-size="13" font-weight="550">Lemo Opuscar</text>
+<circle cx="265.0" cy="1771.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1771.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="565.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1771.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1771.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1771.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1771.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<line x1="36" y1="1806" x2="1012" y2="1806" class="grid"/><text x="44" y="1799" font-size="13" font-weight="550">EffectCraft</text>
+<circle cx="265.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1795.0" r="6.5" fill="#a05212"/>
+<circle cx="595.0" cy="1795.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1795.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1795.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1795.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<line x1="36" y1="1830" x2="1012" y2="1830" class="grid"/><text x="44" y="1823" font-size="13" font-weight="550">GSAP</text>
+<circle cx="265.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1819.0" r="1.8" class="na"/>
+<rect x="499.0" y="1813.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="535.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1819.0" r="1.8" class="na"/>
+<rect x="589.0" y="1813.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="625.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1819.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="925.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1819.0" r="1.8" class="na"/>
+<line x1="36" y1="1854" x2="1012" y2="1854" class="grid"/><text x="44" y="1847" font-size="13" font-weight="550">ComfyUI</text>
+<circle cx="265.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1843.0" r="1.8" class="na"/>
+<rect x="529.0" y="1837.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="565.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1843.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1843.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="715.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1843.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="865.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1843.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<rect x="979.0" y="1837.0" width="12" height="12" rx="2" fill="#198047"/>
+<line x1="36" y1="1878" x2="1012" y2="1878" class="grid"/><text x="44" y="1871" font-size="13" font-weight="550">Remotion skills</text>
+<circle cx="265.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1867.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1867.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1867.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1867.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<text x="37" y="1940" font-size="12.5" class="sub">Source: registry/repositories.json. Regenerate with python scripts/render-matrix.py.</text>
 </svg>

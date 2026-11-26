@@ -42,7 +42,7 @@ const size = box.getSize(new THREE.Vector3()), centre = box.getCenter(new THREE.
 camera.position.set(centre.x + 0.55, centre.y + 0.12, centre.z + 0.55);
 camera.lookAt(centre);
 
-const tip = gltf.scene.getObjectByName('tip');
+const tip = gltf.scene.getObjectByName(params.get('bone') || 'tip');
 // Seekable: the mixer is set to an absolute time, never advanced by a wall-clock delta.
 function seek(t, angle = 0) {
   mixer.setTime(t);

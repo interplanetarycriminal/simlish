@@ -1,0 +1,67 @@
+{
+ "root": "ai-creative-stack",
+ "nodes": 1071,
+ "edges": 2047,
+ "node_kinds": {
+  "asset": 7,
+  "file": 181,
+  "heading": 748,
+  "json_key": 66,
+  "module": 25,
+  "symbol": 44
+ },
+ "edge_types": {
+  "contains": 858,
+  "embeds": 41,
+  "imports": 68,
+  "links_to": 802,
+  "mentions": 278
+ },
+ "confidence": {
+  "EXTRACTED": 1769,
+  "INFERRED": 278
+ },
+ "broken_links": 0,
+ "most_referenced": [
+  [
+   "file:README.md",
+   45
+  ],
+  [
+   "file:scripts/blender/validate_asset.py",
+   36
+  ],
+  [
+   "file:DESIGN.md",
+   33
+  ],
+  [
+   "file:QUALITY_GATES.md",
+   25
+  ],
+  [
+   "file:REPOSITORIES.md",
+   23
+  ],
+  [
+   "file:SECURITY.md",
+   23
+  ],
+  [
+   "file:docs/repositories/comfyui-3d-pack.md",
+   21
+  ],
+  [
+   "file:docs/repositories/trellis-2.md",
+   18
+  ],
+  [
+   "file:INSTALLATION.md",
+   18
+  ],
+  [
+   "file:docs/repositories/three-js.md",
+   17
+  ]
+ ]
+}

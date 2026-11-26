@@ -1,0 +1,20 @@
+{
+  "tool": "remesh",
+  "input": "fish.v1-original.glb",
+  "target_faces": 2400,
+  "before": {
+    "vertices": 4018,
+    "faces": 8032,
+    "watertight": true
+  },
+  "after": {
+    "vertices": 1202,
+    "faces": 2400,
+    "watertight": true
+  },
+  "open_edges_in_input": 0,
+  "params": {
+    "keep_boundary": 1000.0,
+    "max_flip": 0.2
+  }
+}

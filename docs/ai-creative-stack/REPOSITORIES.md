@@ -85,3 +85,17 @@ One guide per reference, generated from [the registry](registry/repositories.jso
 | [TRELLIS.2](docs/repositories/trellis-2.md) | model and inference code | Image-to-3D, Texturing | MIT (code and TRELLIS.2-4B model) | Supplementary | not feasible here |
 | [React Bits](docs/repositories/react-bits.md) | library | Component generation, Animation | MIT + Commons Clause License Condition v1.0 (… | Supplementary | not run |
 | [Awesome Claude Skills](docs/repositories/awesome-claude-skills.md) | curated list | Discovery | No LICENSE file at the repository root (GitHu… | Supplementary | not run |
+
+## I. Motion films, explainers and engines
+
+| Reference | Type | Primary | Licence | Source | Smoke test |
+| --- | --- | --- | --- | --- | --- |
+| [Huashu Motion](docs/repositories/huashu-motion.md) | skill | Video composition, Animation, Creative direction | MIT (code and docs), with bundled GSAP under … | Added by the user | not run |
+| [anything2explainer](docs/repositories/anything2explainer.md) | skill | Video composition, Animation | PolyForm Noncommercial License 1.0.0 (toolkit… | Added by the user | not run |
+| [OpenScreen](docs/repositories/openscreen.md) | application | Video editing, Media processing | MIT | Added by the user | not run |
+| [OneTake](docs/repositories/onetake.md) | skill | Animation, Video composition | PolyForm Noncommercial License 1.0.0 | Added by the user | not run |
+| [Lemo Opuscar](docs/repositories/lemo-opuscar.md) | plugin | Video composition, Animation, Creative direction | Mixed: code MIT; all Markdown docs and image-… | Added by the user | not run |
+| [EffectCraft](docs/repositories/effectcraft.md) | application | Visual effects, Animation, Video composition | MIT OR Apache-2.0 (dual, at your option); Art… | Added by the user | not run |
+| [GSAP](docs/repositories/gsap.md) | library | Animation, Frontend implementation | GreenSock Standard 'no charge' license (https… | Added by the user | passed |
+| [ComfyUI](docs/repositories/comfyui.md) | application | Media processing, Illustration | GPL-3.0 | Added by the user | passed |
+| [Remotion skills](docs/repositories/remotion-skills.md) | skill collection | Video composition, Animation | No license stated in the pinned repo (no LICE… | Added by the user | not run |

@@ -17,7 +17,7 @@ export function findChrome(given = process.env.CHROME) {
   return hit;
 }
 
-const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.glb': 'model/gltf-binary', '.gltf': 'model/gltf+json', '.bin': 'application/octet-stream', '.png': 'image/png' };
+const TYPES = { '.svg': 'image/svg+xml', '.css': 'text/css', '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.glb': 'model/gltf-binary', '.gltf': 'model/gltf+json', '.bin': 'application/octet-stream', '.png': 'image/png' };
 
 export function serve(root) {
   const base = resolve(root);
@@ -31,11 +31,11 @@ export function serve(root) {
 }
 
 let launches = 0;
-export async function launch(chrome = findChrome(), { width = 1280, height = 720 } = {}) {
+export async function launch(chrome = findChrome(), { width = 1280, height = 720, args = [] } = {}) {
   const profile = join(tmpdir(), `fixture-chrome-${process.pid}-${++launches}`);
   const proc = spawn(chrome, ['--headless=new', '--remote-debugging-port=0', `--user-data-dir=${profile}`,
     '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--hide-scrollbars', '--mute-audio',
-    '--no-first-run', '--no-default-browser-check', `--window-size=${width},${height}`, 'about:blank'], { stdio: ['ignore', 'ignore', 'pipe'] });
+    '--no-first-run', '--no-default-browser-check', `--window-size=${width},${height}`, ...args, 'about:blank'], { stdio: ['ignore', 'ignore', 'pipe'] });
   const wsUrl = await new Promise((ok, fail) => {
     let buf = '';
     proc.stderr.on('data', (d) => { buf += d; const m = buf.match(/DevTools listening on (ws:\/\/\S+)/); if (m) ok(m[1]); });

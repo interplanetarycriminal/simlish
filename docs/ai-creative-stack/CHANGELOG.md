@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-11-26 (V3.2: 53 references)
+
+- **Nine references added by the user**, kept as their own source group (D) and category (I, motion films, explainers and engines): Huashu Motion, anything2explainer, OpenScreen, OneTake, Lemo Opuscar, EffectCraft, GSAP, ComfyUI and Remotion's skills. All resolved; each has a pinned guide with evidence.
+- **Smoke tests.** GSAP ran inside kit/framecap's new GSAP check. A running local ComfyUI answered its `/system_stats` API.
+- **framecap seeks GSAP.** It pauses `gsap.globalTimeline` and seeks it per frame, from the earliest tween start: within 0.054 px in its test.
+- **Diagrams remapped.** Provenance shows four sources and 53 in total. The architecture names GSAP, EffectCraft, OpenScreen and ComfyUI. The overlap map adds the explainer-pipeline choice and the tested GSAP-to-framecap link. The capability matrix has 53 rows.
+- **Licences no longer steer recommendations.** The README's licence section is replaced by security notes. Licence facts stay in the registry and SECURITY.md.
+- **Finding.** Four independent film tools (OneTake, Lemo Opuscar, anything2explainer, Huashu Motion) render a page whose state is a function of time: the catalogue's time contract.
+
+## 2026-11-26 (V3.1: the kit)
+
+- **Our own versions.** [`kit/`](kit/README.md) adds 14 original tools and 4 skills that do what the catalogue's key tools do, written for this catalogue rather than copied from upstream. Each has a self-building test, and `kit/run-tests.py` runs them all.
+  - 3D chain: inflate3d (image to watertight textured GLB), remesh (QEM to a face budget), autorig (centreline chain, own weights, swim clip), materialforge (tileable PBR), splatview (mesh to Gaussian PLY plus our own WebGL2 splat renderer) and assetpipe (batch workflows with versioned manifests).
+  - Design, motion and intelligence: designlint, tokenextract, framecap, silencecut, sketchy, projectgraph, decisionlog and specflow.
+- **Bugs found by looking, then fixed.**
+  - autorig first rooted the fish at its tail, because the fin had the most vertices; it now roots at the thicker end.
+  - assetpipe let an optional side step become the delivery.
+  - framecap captured frames from the wrong moment under load. Compositor-thread CSS animations ignore a JavaScript seek, so it now runs animations on the main thread and captures until settled.
+  - splatview's depth sort mixed float32 and float64 keys.
+- **Shared helper.** `fixtures/lib/cdp.mjs` accepts extra Chrome flags and serves SVG and CSS with correct types. The GLB viewer can track any bone with `?bone=`.
+
 ## 2026-11-26 (V3)
 
 - **44 references.** Added the seven repositories from source C (SAM 3D Objects, Stable Fast 3D, MeshAnything V2, UniRig, Dream Textures, ComfyUI-3D-Pack, Gaussian Splatting) and twelve supplementary candidates, kept as a separate collection. Attribution is tracked apart from verification; see [SOURCES.md](SOURCES.md).

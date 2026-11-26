@@ -40,7 +40,7 @@ npx shadcn@latest add @react-bits/SplitText-TS-TW
 | Primary | Component generation, Animation |
 | Supporting | Frontend implementation, Visual effects |
 
-Skip if you are building something to distribute as components themselves (a UI kit, template marketplace item, design-tool clone or port to another framework); the license forbids redistributing the components or tools. Consider [magic-ui](magic-ui.md), [magic-mcp](magic-mcp.md). Complementary tools include [awesome-design-md](awesome-design-md.md), [designlang](designlang.md), [three-js](three-js.md), [anatomy](anatomy.md).
+Skip if you are building something to distribute as components themselves (a UI kit, template marketplace item, design-tool clone or port to another framework); the license forbids redistributing the components or tools. Consider [magic-ui](magic-ui.md), [magic-mcp](magic-mcp.md), [gsap](gsap.md). Complementary tools include [awesome-design-md](awesome-design-md.md), [designlang](designlang.md), [three-js](three-js.md), [anatomy](anatomy.md).
 
 No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.
 

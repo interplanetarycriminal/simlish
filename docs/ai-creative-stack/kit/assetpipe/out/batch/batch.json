@@ -1,0 +1,11 @@
+{
+  "workflow": "toy-factory",
+  "assets": 3,
+  "accepted": [
+    "fish",
+    "rocket"
+  ],
+  "rejected": {
+    "empty": "v1-original: No object found in the image."
+  }
+}

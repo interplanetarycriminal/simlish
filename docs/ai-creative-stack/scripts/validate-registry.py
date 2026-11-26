@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED = {"total": 44, "post_associated": 32, "supplementary": 12, "A_only": 10, "B_only": 10, "A+B": 5, "C": 7}
+EXPECTED = {"total": 53, "post_associated": 32, "supplementary": 12, "user_added": 9, "A_only": 10, "B_only": 10, "A+B": 5, "C": 7}
 
 
 def require(condition, message):
@@ -87,14 +87,16 @@ def main():
             require(r["id"] in by[x]["overlapping_tools"], f"{r['id']} -> {x}: overlap link not mirrored")
 
     groups = [r["source_group"] for r in records]
-    counts = {"total": len(records), "post_associated": sum(g != "supplementary" for g in groups), "supplementary": groups.count("supplementary"),
+    counts = {"total": len(records), "post_associated": sum(g in ("A", "B", "A+B", "C") for g in groups), "supplementary": groups.count("supplementary"),
+              "user_added": groups.count("D"),
               "A_only": groups.count("A"), "B_only": groups.count("B"), "A+B": groups.count("A+B"), "C": groups.count("C")}
     require(counts == EXPECTED, f"source counts {counts} differ from {EXPECTED}")
     require(counts["A_only"] + counts["A+B"] == 15 and counts["B_only"] + counts["A+B"] == 15, "sources A and B must each hold 15")
 
     lists = {
         "registry/repositories.txt": [r["original_url"] for r in records],
-        "registry/core-repositories.txt": [r["original_url"] for r in records if r["source_group"] != "supplementary"],
+        "registry/core-repositories.txt": [r["original_url"] for r in records if r["source_group"] in ("A", "B", "A+B", "C")],
+        "registry/user-added-repositories.txt": [r["original_url"] for r in records if r["source_group"] == "D"],
         "registry/supplementary-repositories.txt": [r["original_url"] for r in records if r["source_group"] == "supplementary"],
     }
     for path, expected in lists.items():
@@ -119,7 +121,7 @@ def main():
     for r in records:
         smoke[r["smoke_test"]["status"]] = smoke.get(r["smoke_test"]["status"], 0) + 1
     print(f"Validated {len(records)} records ({mode} schema check): {counts['post_associated']} post-associated "
-          f"(A {counts['A_only']}, B {counts['B_only']}, shared {counts['A+B']}, C {counts['C']}) and {counts['supplementary']} supplementary; "
+          f"(A {counts['A_only']}, B {counts['B_only']}, shared {counts['A+B']}, C {counts['C']}), {counts['user_added']} added by the user and {counts['supplementary']} supplementary; "
           f"{sum(r['verification_status'] == 'verified' for r in records)} verified, {sum(r['verification_status'] == 'redirected' for r in records)} redirected; "
           f"smoke tests {smoke}; {len(compat['pairs'])} compatibility pairs; guides and index current")
 

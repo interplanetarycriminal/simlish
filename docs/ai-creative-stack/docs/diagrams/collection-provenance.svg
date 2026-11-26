@@ -1,38 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1660 632" role="img" aria-labelledby="title desc">
-<title id="title">Collection provenance</title><desc id="desc">Where the 44 working references came from. A and B attribution is provisional; the supplementary group comes from no post.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2036 632" role="img" aria-labelledby="title desc">
+<title id="title">Collection provenance</title><desc id="desc">Where the 53 working references came from. A and B attribution is provisional; the user&#x27;s additions and the supplementary group come from no post.</desc>
 <style>
 svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
 @media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
 </style>
 <defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
-<rect width="1660" height="632" rx="22" class="bg"/>
+<rect width="2036" height="632" rx="22" class="bg"/>
 <text x="36" y="48" font-size="29" font-weight="750">Collection provenance</text>
-<text x="37" y="75" font-size="15" font-weight="450" class="sub">Where the 44 working references came from. A and B attribution is provisional; the supplementary group comes from no post.</text>
-<rect x="1226" y="74" width="336" height="122" rx="18" class="line dash" style="stroke-width:1.5"/><text x="1240" y="94" font-size="12.5" font-weight="650" class="sub">Separate discovery, not from any post</text>
-<path d="M266 180 V212 H830 V242" class="line" marker-end="url(#end)"/>
-<path d="M642 180 V212 H830 V242" class="line" marker-end="url(#end)"/>
-<path d="M830 316 V378" class="line" marker-end="url(#end)"/>
-<path d="M1018 180 V348 H830 V378" class="line" marker-end="url(#end)"/>
-<path d="M830 452 V514" class="line" marker-end="url(#end)"/>
-<path d="M1394 180 V484 H830 V514" class="line dash" marker-end="url(#end)"/>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Where the 53 working references came from. A and B attribution is provisional; the user&#x27;s additions and the supplementary group come from no post.</text>
+<rect x="1602" y="74" width="336" height="122" rx="18" class="line dash" style="stroke-width:1.5"/><text x="1616" y="94" font-size="12.5" font-weight="650" class="sub">Separate discovery, not from any post</text>
+<path d="M266 180 V212 H1018 V242" class="line" marker-end="url(#end)"/>
+<path d="M642 180 V212 H1018 V242" class="line" marker-end="url(#end)"/>
+<path d="M1018 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M868 144 H828 V416 H866" class="line" marker-end="url(#end)"/>
+<path d="M1018 452 V514" class="line" marker-end="url(#end)"/>
+<path d="M1394 180 V484 H1018 V514" class="line" marker-end="url(#end)"/>
+<path d="M1770 180 V484 H1018 V514" class="line dash" marker-end="url(#end)"/>
 <rect x="272" y="190" width="118" height="20" rx="5" class="lab"/><text x="278" y="204" font-size="12.5" font-weight="560" class="sub">15, provisional</text>
 <rect x="648" y="190" width="118" height="20" rx="5" class="lab"/><text x="654" y="204" font-size="12.5" font-weight="560" class="sub">15, provisional</text>
-<rect x="836" y="339" width="26" height="20" rx="5" class="lab"/><text x="842" y="353" font-size="12.5" font-weight="560" class="sub">25</text>
-<rect x="911" y="326" width="97" height="20" rx="5" class="lab"/><text x="917" y="340" font-size="12.5" font-weight="560" class="sub">7, confirmed</text>
-<rect x="836" y="475" width="26" height="20" rx="5" class="lab"/><text x="842" y="489" font-size="12.5" font-weight="560" class="sub">32</text>
-<rect x="1358" y="462" width="26" height="20" rx="5" class="lab"/><text x="1364" y="476" font-size="12.5" font-weight="560" class="sub">12</text>
+<rect x="1024" y="339" width="26" height="20" rx="5" class="lab"/><text x="1030" y="353" font-size="12.5" font-weight="560" class="sub">25</text>
+<rect x="725" y="271" width="97" height="20" rx="5" class="lab"/><text x="731" y="285" font-size="12.5" font-weight="560" class="sub">7, confirmed</text>
+<rect x="1024" y="475" width="26" height="20" rx="5" class="lab"/><text x="1030" y="489" font-size="12.5" font-weight="560" class="sub">32</text>
+<rect x="1308" y="462" width="76" height="20" rx="5" class="lab"/><text x="1314" y="476" font-size="12.5" font-weight="560" class="sub">9, direct</text>
+<rect x="1734" y="462" width="26" height="20" rx="5" class="lab"/><text x="1740" y="476" font-size="12.5" font-weight="560" class="sub">12</text>
 <rect x="116" y="108" width="300" height="72" rx="13" class="panel"/><rect x="128" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
 <text x="144" y="140" font-size="16.5" font-weight="720">Source A</text><text x="144" y="160" font-size="13" font-weight="450" class="sub">15 references, recovered from a mirror</text>
 <rect x="492" y="108" width="300" height="72" rx="13" class="panel"/><rect x="504" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
 <text x="520" y="140" font-size="16.5" font-weight="720">Source B</text><text x="520" y="160" font-size="13" font-weight="450" class="sub">15 references, recovered from a mirror</text>
 <rect x="868" y="108" width="300" height="72" rx="13" class="panel"/><rect x="880" y="132" width="7" height="24" rx="3.5" fill="#a05212"/>
 <text x="896" y="140" font-size="16.5" font-weight="720">Source C</text><text x="896" y="160" font-size="13" font-weight="450" class="sub">7 references, user-supplied transcript</text>
-<rect x="1244" y="108" width="300" height="72" rx="13" class="panel"/><rect x="1256" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
-<text x="1272" y="140" font-size="16.5" font-weight="720">Supplementary candidates</text><text x="1272" y="160" font-size="13" font-weight="450" class="sub">12 from related research</text>
-<rect x="680" y="244" width="300" height="72" rx="13" class="panel"/><rect x="692" y="268" width="7" height="24" rx="3.5" fill="#733ed0"/>
-<text x="708" y="276" font-size="16.5" font-weight="720">First two collections</text><text x="708" y="296" font-size="13" font-weight="450" class="sub">25 unique, 5 shared by A and B</text>
-<rect x="680" y="380" width="300" height="72" rx="13" class="panel"/><rect x="692" y="404" width="7" height="24" rx="3.5" fill="#733ed0"/>
-<text x="708" y="412" font-size="16.5" font-weight="720">Post-associated references</text><text x="708" y="432" font-size="13" font-weight="450" class="sub">32 = 25 + 7</text>
-<rect x="680" y="516" width="300" height="72" rx="13" class="panel"/><rect x="692" y="540" width="7" height="24" rx="3.5" fill="#198047"/>
-<text x="708" y="548" font-size="16.5" font-weight="720">Working registry</text><text x="708" y="568" font-size="13" font-weight="450" class="sub">44 distinct references</text>
+<rect x="1244" y="108" width="300" height="72" rx="13" class="panel"/><rect x="1256" y="132" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="1272" y="140" font-size="16.5" font-weight="720">Added by the user</text><text x="1272" y="160" font-size="13" font-weight="450" class="sub">9 references, 26 Nov 2026</text>
+<rect x="1620" y="108" width="300" height="72" rx="13" class="panel"/><rect x="1632" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="1648" y="140" font-size="16.5" font-weight="720">Supplementary candidates</text><text x="1648" y="160" font-size="13" font-weight="450" class="sub">12 from related research</text>
+<rect x="868" y="244" width="300" height="72" rx="13" class="panel"/><rect x="880" y="268" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="896" y="276" font-size="16.5" font-weight="720">First two collections</text><text x="896" y="296" font-size="13" font-weight="450" class="sub">25 unique, 5 shared by A and B</text>
+<rect x="868" y="380" width="300" height="72" rx="13" class="panel"/><rect x="880" y="404" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="896" y="412" font-size="16.5" font-weight="720">Post-associated references</text><text x="896" y="432" font-size="13" font-weight="450" class="sub">32 = 25 + 7</text>
+<rect x="868" y="516" width="300" height="72" rx="13" class="panel"/><rect x="880" y="540" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="896" y="548" font-size="16.5" font-weight="720">Working registry</text><text x="896" y="568" font-size="13" font-weight="450" class="sub">53 distinct references</text>
 </svg>

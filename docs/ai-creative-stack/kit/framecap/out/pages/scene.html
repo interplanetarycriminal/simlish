@@ -1,0 +1,9 @@
+<!doctype html><html><head><style>html,body{margin:0;background:#000}</style></head><body>
+<canvas id="c" width="640" height="360"></canvas>
+<script>
+window.__ready = false;
+const ctx = document.getElementById('c').getContext('2d');
+// State is a pure function of t: a white bar at x = 100 + 300 t.
+window.__scene = { duration: 1, seek(t) { ctx.fillStyle = '#000'; ctx.fillRect(0, 0, 640, 360); ctx.fillStyle = '#fff'; ctx.fillRect(Math.round(100 + 300 * t) - 5, 0, 10, 360); }, digest() { return '' } };
+setTimeout(() => { window.__ready = true; }, 300); // pretend to load something
+</script></body></html>

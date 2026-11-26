@@ -52,7 +52,7 @@ pip install -r requirements.txt
 | Primary | Upscaling |
 | Supporting | — |
 
-Skip native-resolution media or footage where hallucinated details are unacceptable. Consider the existing project toolchain. Complementary tools include [ffmpeg](ffmpeg.md), [stable-fast-3d](stable-fast-3d.md), [dream-textures](dream-textures.md), [comfyui-3d-pack](comfyui-3d-pack.md), [trellis-2](trellis-2.md).
+Skip native-resolution media or footage where hallucinated details are unacceptable. Consider the existing project toolchain. Complementary tools include [ffmpeg](ffmpeg.md), [stable-fast-3d](stable-fast-3d.md), [dream-textures](dream-textures.md), [comfyui-3d-pack](comfyui-3d-pack.md), [trellis-2](trellis-2.md), [effectcraft](effectcraft.md), [comfyui](comfyui.md).
 
 No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.
 

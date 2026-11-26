@@ -1,0 +1,38 @@
+{
+  "tool": "framecap",
+  "input": "out/pages/css-box.html",
+  "url": "http://127.0.0.1:62144/css-box.html",
+  "chrome": "Chrome/158.0.8127.37",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "duration": 2,
+  "frames": 60,
+  "format": "mp4",
+  "alpha": false,
+  "audio": null,
+  "output": "out/css-box.mp4",
+  "mode": "animations",
+  "animations": 1,
+  "settleCaptures": 60,
+  "captureSeconds": 12.275,
+  "pass": true,
+  "checks": {
+    "frames": true,
+    "size": true,
+    "fps": true,
+    "duration": true
+  },
+  "probe": {
+    "codec": "h264",
+    "pix_fmt": "yuv420p",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "frames": 60,
+    "videoDuration": 2,
+    "containerDuration": 2,
+    "audio": null
+  },
+  "totalSeconds": 13.238
+}

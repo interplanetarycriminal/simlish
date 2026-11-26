@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-26T09:56:30+00:00",
+  "passed": 14,
+  "total": 14,
+  "results": {
+    "inflate3d": {
+      "pass": true,
+      "seconds": 40.3,
+      "recorded_pass": true,
+      "checks": "9/9"
+    },
+    "remesh": {
+      "pass": true,
+      "seconds": 38.8,
+      "recorded_pass": true,
+      "checks": "17/17"
+    },
+    "autorig": {
+      "pass": true,
+      "seconds": 29.3,
+      "recorded_pass": true,
+      "checks": "12/12"
+    },
+    "materialforge": {
+      "pass": true,
+      "seconds": 19.5,
+      "recorded_pass": true
+    },
+    "splatview": {
+      "pass": true,
+      "seconds": 24.1,
+      "recorded_pass": true,
+      "checks": "6/6"
+    },
+    "assetpipe": {
+      "pass": true,
+      "seconds": 143.8,
+      "recorded_pass": true,
+      "checks": "15/15"
+    },
+    "designlint": {
+      "pass": true,
+      "seconds": 3.9,
+      "recorded_pass": true,
+      "checks": "24/24"
+    },
+    "tokenextract": {
+      "pass": true,
+      "seconds": 2.9,
+      "recorded_pass": true,
+      "checks": "31/31"
+    },
+    "framecap": {
+      "pass": true,
+      "seconds": 42.6,
+      "recorded_pass": true,
+      "checks": "6/6"
+    },
+    "silencecut": {
+      "pass": true,
+      "seconds": 4.0,
+      "recorded_pass": true,
+      "checks": "6/6"
+    },
+    "sketchy": {
+      "pass": true,
+      "seconds": 2.0,
+      "recorded_pass": true,
+      "checks": "5/5"
+    },
+    "projectgraph": {
+      "pass": true,
+      "seconds": 5.4,
+      "recorded_pass": true,
+      "checks": "32/32"
+    },
+    "decisionlog": {
+      "pass": true,
+      "seconds": 4.0,
+      "recorded_pass": true,
+      "checks": "39/39"
+    },
+    "specflow": {
+      "pass": true,
+      "seconds": 3.6,
+      "recorded_pass": true,
+      "checks": "29/29"
+    }
+  }
+}

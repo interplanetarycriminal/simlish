@@ -62,7 +62,7 @@ Download the latest release from https://github.com/carson-katri/dream-textures/
 | Primary | Texturing, Illustration |
 | Supporting | Upscaling, 3D rendering, Visual effects |
 
-Skip when you need current-generation diffusion models (SDXL, FLUX) or recent Blender 5.x support; the pinned stack is diffusers 0.27.2 / torch 2.3.1 with bl_info targeting Blender 3.1+. Consider [comfyui-3d-pack](comfyui-3d-pack.md), [trellis-2](trellis-2.md). Complementary tools include [blender-mcp](blender-mcp.md), [blender-skills](blender-skills.md), [real-esrgan](real-esrgan.md).
+Skip when you need current-generation diffusion models (SDXL, FLUX) or recent Blender 5.x support; the pinned stack is diffusers 0.27.2 / torch 2.3.1 with bl_info targeting Blender 3.1+. Consider [comfyui-3d-pack](comfyui-3d-pack.md), [trellis-2](trellis-2.md), [comfyui](comfyui.md). Complementary tools include [blender-mcp](blender-mcp.md), [blender-skills](blender-skills.md), [real-esrgan](real-esrgan.md).
 
 Dream Textures runs inside Blender as an add-on, so its textures land directly in Blender materials.
 

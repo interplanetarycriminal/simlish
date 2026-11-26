@@ -21,7 +21,8 @@ CAPS = [
     ("Media processing", "MP", "#bf315c"),
 ]
 GROUPS = {"A": "Creative direction", "B": "Design and prototyping", "C": "Frontend and creative coding", "D": "Illustration and animation",
-          "E": "Core 3D", "F": "Video and post-production", "G": "AI-assisted 3D (source C)", "H": "Supplementary candidates"}
+          "E": "Core 3D", "F": "Video and post-production", "G": "AI-assisted 3D (source C)", "H": "Supplementary candidates",
+          "I": "Motion films, explainers and engines (added by the user)"}
 STYLE = """<style>
 svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .grid{stroke:#e3e8f0;stroke-width:1} .band{fill:#f1f4f9} .na{fill:#b8c2d3}
 @media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .grid{stroke:#2a3850} .band{fill:#16223a} .na{fill:#52627c}}

@@ -50,7 +50,7 @@ npx create-video@latest
 | Primary | Video composition |
 | Supporting | Animation |
 
-Skip when company license conditions are unresolved or HTML is the better authoring fit. Consider [hyperframes](hyperframes.md), [motion-canvas](motion-canvas.md), [video-shotcraft](video-shotcraft.md). Complementary tools include [ffmpeg](ffmpeg.md), [three-js](three-js.md), [video-use](video-use.md), [anatomy](anatomy.md).
+Skip when company license conditions are unresolved or HTML is the better authoring fit. Consider [hyperframes](hyperframes.md), [motion-canvas](motion-canvas.md), [video-shotcraft](video-shotcraft.md), [huashu-motion](huashu-motion.md), [onetake](onetake.md), [lemo-opuscar](lemo-opuscar.md), [effectcraft](effectcraft.md). Complementary tools include [ffmpeg](ffmpeg.md), [three-js](three-js.md), [video-use](video-use.md), [anatomy](anatomy.md), [anything2explainer](anything2explainer.md), [remotion-skills](remotion-skills.md).
 
 @remotion/three is published on npm (4.0.547 on 2026-11-26) for Three.js scenes in a composition. HyperFrames documents a Remotion port skill.
 

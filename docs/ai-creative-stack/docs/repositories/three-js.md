@@ -50,7 +50,7 @@ Use the three package named in the README. Resolve a version compatible with the
 | Primary | 3D rendering |
 | Supporting | Animation, Frontend implementation |
 
-Skip if a static poster or simple CSS effect meets the brief. Consider the existing project toolchain. Complementary tools include [blender-mcp](blender-mcp.md), [hyperframes](hyperframes.md), [remotion](remotion.md), [mengto-skills](mengto-skills.md), [sam-3d-objects](sam-3d-objects.md), [stable-fast-3d](stable-fast-3d.md), [unirig](unirig.md), [gaussian-splatting](gaussian-splatting.md), [anatomy](anatomy.md), [dream-loop](dream-loop.md), [trellis-2](trellis-2.md), [react-bits](react-bits.md).
+Skip if a static poster or simple CSS effect meets the brief. Consider the existing project toolchain. Complementary tools include [blender-mcp](blender-mcp.md), [hyperframes](hyperframes.md), [remotion](remotion.md), [mengto-skills](mengto-skills.md), [sam-3d-objects](sam-3d-objects.md), [stable-fast-3d](stable-fast-3d.md), [unirig](unirig.md), [gaussian-splatting](gaussian-splatting.md), [anatomy](anatomy.md), [dream-loop](dream-loop.md), [trellis-2](trellis-2.md), [react-bits](react-bits.md), [huashu-motion](huashu-motion.md), [onetake](onetake.md), [lemo-opuscar](lemo-opuscar.md), [gsap](gsap.md).
 
 Remotion's @remotion/three and HyperFrames' seekable compositions can drive a Three.js scene. The seekable scene fixture verifies the DevTools frame route.
 

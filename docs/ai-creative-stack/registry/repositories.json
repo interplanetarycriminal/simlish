@@ -1601,7 +1601,12 @@
   "overlapping_tools": [
    "remotion",
    "hyperframes",
-   "video-shotcraft"
+   "video-shotcraft",
+   "huashu-motion",
+   "anything2explainer",
+   "onetake",
+   "effectcraft",
+   "gsap"
   ],
   "integration_notes": "No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.",
   "conflicts": [
@@ -1702,7 +1707,11 @@
    "anatomy",
    "dream-loop",
    "trellis-2",
-   "react-bits"
+   "react-bits",
+   "huashu-motion",
+   "onetake",
+   "lemo-opuscar",
+   "gsap"
   ],
   "overlapping_tools": [],
   "integration_notes": "Remotion's @remotion/three and HyperFrames' seekable compositions can drive a Three.js scene. The seekable scene fixture verifies the DevTools frame route.",
@@ -1802,7 +1811,11 @@
    "dream-textures",
    "comfyui-3d-pack",
    "dream-loop",
-   "trellis-2"
+   "trellis-2",
+   "onetake",
+   "lemo-opuscar",
+   "effectcraft",
+   "comfyui"
   ],
   "overlapping_tools": [
    "blender-skills"
@@ -1902,13 +1915,19 @@
    "open-design",
    "ffmpeg",
    "three-js",
-   "video-use"
+   "video-use",
+   "gsap"
   ],
   "overlapping_tools": [
    "remotion",
    "motion-canvas",
    "scarlet",
-   "video-shotcraft"
+   "video-shotcraft",
+   "huashu-motion",
+   "anything2explainer",
+   "onetake",
+   "lemo-opuscar",
+   "effectcraft"
   ],
   "integration_notes": "Open Design documents a native HyperFrames workspace. FFmpeg is a documented local runtime dependency. The pinned README documents a /remotion-to-hyperframes port skill.",
   "conflicts": [
@@ -2003,12 +2022,18 @@
    "ffmpeg",
    "three-js",
    "video-use",
-   "anatomy"
+   "anatomy",
+   "anything2explainer",
+   "remotion-skills"
   ],
   "overlapping_tools": [
    "hyperframes",
    "motion-canvas",
-   "video-shotcraft"
+   "video-shotcraft",
+   "huashu-motion",
+   "onetake",
+   "lemo-opuscar",
+   "effectcraft"
   ],
   "integration_notes": "@remotion/three is published on npm (4.0.547 on 2026-11-26) for Three.js scenes in a composition. HyperFrames documents a Remotion port skill.",
   "conflicts": [
@@ -2313,7 +2338,9 @@
    "stable-fast-3d",
    "dream-textures",
    "comfyui-3d-pack",
-   "trellis-2"
+   "trellis-2",
+   "effectcraft",
+   "comfyui"
   ],
   "overlapping_tools": [],
   "integration_notes": "No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.",
@@ -2411,7 +2438,13 @@
    "video-use",
    "real-esrgan",
    "line-art-animation",
-   "video-shotcraft"
+   "video-shotcraft",
+   "huashu-motion",
+   "anything2explainer",
+   "openscreen",
+   "onetake",
+   "lemo-opuscar",
+   "remotion-skills"
   ],
   "overlapping_tools": [],
   "integration_notes": "No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.",
@@ -2642,7 +2675,8 @@
    "blender-mcp",
    "three-js",
    "real-esrgan",
-   "blender-skills"
+   "blender-skills",
+   "comfyui"
   ],
   "overlapping_tools": [
    "trellis-2",
@@ -3020,7 +3054,8 @@
   ],
   "overlapping_tools": [
    "comfyui-3d-pack",
-   "trellis-2"
+   "trellis-2",
+   "comfyui"
   ],
   "integration_notes": "Dream Textures runs inside Blender as an add-on, so its textures land directly in Blender materials.",
   "conflicts": [
@@ -3159,7 +3194,8 @@
    "unirig",
    "meshanything-v2",
    "real-esrgan",
-   "dream-loop"
+   "dream-loop",
+   "comfyui"
   ],
   "overlapping_tools": [
    "stable-fast-3d",
@@ -4615,7 +4651,8 @@
    "three-js",
    "real-esrgan",
    "dream-loop",
-   "blender-skills"
+   "blender-skills",
+   "comfyui"
   ],
   "overlapping_tools": [
    "stable-fast-3d",
@@ -4745,7 +4782,8 @@
   ],
   "overlapping_tools": [
    "magic-ui",
-   "magic-mcp"
+   "magic-mcp",
+   "gsap"
   ],
   "integration_notes": "No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.",
   "conflicts": [
@@ -4888,6 +4926,1117 @@
    "inputs": "\"Individual skills may have different licenses - please check each skill's folder\" (README.md)",
    "outputs": "Varies; e.g. \"Creates beautiful visual art in PNG and PDF documents\" for Canvas Design (README.md)",
    "vendored_anthropic_licence": "\"© 2025 Anthropic, PBC. All rights reserved.\" (document-skills/docx/LICENSE.txt)"
+  }
+ },
+ {
+  "id": "huashu-motion",
+  "name": "Huashu Motion",
+  "category": "I",
+  "source_group": "D",
+  "attribution_status": "Added directly by the user on 2026-11-26.",
+  "original_url": "https://github.com/alchaincyf/huashu-motion",
+  "verified_url": "https://github.com/alchaincyf/huashu-motion",
+  "verification_status": "verified",
+  "verification_date": "2026-11-26",
+  "inspected_commit": "f4f38bfe295a3f768753857be9236cc3277c7dad",
+  "maintenance": {
+   "default_branch": "main",
+   "archived": false,
+   "last_repository_push": "2026-11-23T06:08:00Z"
+  },
+  "tool_type": "skill",
+  "language": "JavaScript",
+  "primary_capabilities": [
+   "Video composition",
+   "Animation",
+   "Creative direction"
+  ],
+  "secondary_capabilities": [
+   "Shot planning",
+   "Media processing",
+   "Design critique"
+  ],
+  "intended_use": "Use for having a coding agent write, score and render a short product launch film or data explainer as a single HTML page, then revise it by clicking on frames in a local editor.",
+  "supported_platforms": [
+   "macOS"
+  ],
+  "supported_agents": [
+   "Claude Code",
+   "Codex",
+   "WorkBuddy",
+   "Grok Bot",
+   "Muse",
+   "Dots",
+   "Any Agent Skills-compatible agent"
+  ],
+  "execution": "local",
+  "runtime_requirements": "Node 22+; an installed Chrome, Chromium or Edge (used for preview, stills and render, nothing extra downloaded); FFmpeg. Optional: sampled instruments via 'om samples build' (~55 MB); Kokoro narration needs uv and Python 3.12 (~325 MB model); word timing needs whisper-cli (brew install whisper-cpp).",
+  "hardware": {
+   "gpu": "none",
+   "min_vram_gb": null,
+   "recommended_vram_gb": null,
+   "system_ram_gb": null,
+   "storage": "Optional downloads: ~55 MB instrument samples, ~325 MB Kokoro model, whisper.cpp models",
+   "cpu_fallback": "not applicable",
+   "training_vs_inference": null,
+   "notes": "Renders with several local Chrome instances in parallel (by CPU count, up to 8). Author reports a 30 s film in about 12-15 s on a 14-core Mac, about 1-1.5 min with motion blur. Tested on macOS only."
+  },
+  "model": null,
+  "installation": "npx skills add alchaincyf/huashu-motion",
+  "configuration": "The skill drives a bundled 'om' CLI (om new, om studio, om render, om doctor); 'om doctor' reports missing dependencies. Studio UI language follows the browser or --lang / OM_LANG.",
+  "inputs": [
+   "One-sentence brief or product URL",
+   "Real product assets via 'om grab' (web screenshots, logos, brand colors, fonts, local project screenshots and recordings)",
+   "CSV data (for data explainers)",
+   "Your own voice recording (e.g. .m4a)",
+   "Your own music track (e.g. .mp3) via 'om music add'",
+   "Click-to-comment edits in the browser editor"
+  ],
+  "outputs": [
+   "Film source as one index.html (GSAP, Canvas, Three.js, SVG)",
+   "MP4",
+   "MOV with transparency",
+   "WebM",
+   "GIF",
+   "Shareable HTML page with player and source",
+   "Share pack: GIF under 10 MB plus share.md post text",
+   "Transparent overlay packages for other editors"
+  ],
+  "dependencies": null,
+  "credentials_required": "None documented; the README says music is generated on the machine with no paid API, and narration uses macOS system voices or local Kokoro.",
+  "license": "MIT (code and docs), with bundled GSAP under the GSAP Standard 'no charge' License, fonts under SIL OFL 1.1, and an AI-generated default music library under a CC0-style dedication",
+  "model_license": null,
+  "commercial_use_notes": "MIT allows commercial use of the code and docs. The 'bean Huashu' cartoon character in runtime/clip/lib/toon.js is excluded and only licensed for this project's demos. Default music tracks may be used commercially but carry no warranty against Content ID matches, and the author asks that they not be registered with Content ID. Films of 4 s or more get a small 'Made with huashu-motion' end line by default; you can ask the agent to turn it off.",
+  "complementary_tools": [
+   "gsap",
+   "three-js",
+   "ffmpeg",
+   "openscreen"
+  ],
+  "overlapping_tools": [
+   "hyperframes",
+   "remotion",
+   "onetake",
+   "lemo-opuscar",
+   "anything2explainer",
+   "motion-canvas"
+  ],
+  "integration_notes": "Its own renderer driving local Chrome; uses GSAP, Canvas, three.js and SVG in one index.html.",
+  "conflicts": [
+   "Skip when the film needs real people or live-action footage generated for you; every frame is drawn in code and real footage must be your own.",
+   "Skip if you cannot run Node 22, a local Chrome and FFmpeg; the README states it is tested on macOS only."
+  ],
+  "security_notes": [
+   "Runs a local preview and editor in the browser; the README notes Codex's sandbox blocks the local preview and browser until you approve them.",
+   "First use of 'om voice' downloads Kokoro files from kokoro-onnx releases and whisper.cpp models from Hugging Face; 'om samples build' downloads samples from their original sources."
+  ],
+  "privacy_notes": [
+   "The skill records your stated preferences and editor comments as lessons; the README says these stay on your own computer.",
+   "'om grab' fetches your product's web pages to collect screenshots, logos and colors."
+  ],
+  "craft_notes": [
+   "Composer mode: the agent writes an ABC-notation score whose markers align with scenes, then plays it with sampled grand piano, strings and drums (synth fallback), plus 23 sound effects tied to animation landing lines.",
+   "Director rules come from 21 measured launch films and 142 dissected motion films, distilled into 20 motion languages and a rhythm sheet (hook within 3 s, a mid-film burst, a held beat before the loudest hit).",
+   "It cannot hear: the agent checks audio by score, energy curve and spectrogram, so a human must do the final listen; 'om qa --sheet' tiles 4 frames per second to spot static or slideshow-like stretches."
+  ],
+  "examples": {
+   "independent": "Ask the agent for a 30-second launch film from your product URL, pick one of three directions, then press C in om studio to fix one frame.",
+   "combined": "Proposed handoff: build a product object in three-js and drop it into a huashu-motion 'object-3d' template, then score and render the film with om render."
+  },
+  "smoke_test": {
+   "status": "not run",
+   "evidence": null
+  },
+  "documentation_sources": [
+   "https://github.com/alchaincyf/huashu-motion/blob/f4f38bfe295a3f768753857be9236cc3277c7dad/README.md",
+   "https://github.com/alchaincyf/huashu-motion/blob/f4f38bfe295a3f768753857be9236cc3277c7dad/README.en.md",
+   "https://github.com/alchaincyf/huashu-motion/blob/f4f38bfe295a3f768753857be9236cc3277c7dad/THIRD_PARTY.md",
+   "https://github.com/alchaincyf/huashu-motion/blob/f4f38bfe295a3f768753857be9236cc3277c7dad/package.json",
+   "https://github.com/alchaincyf/huashu-motion/blob/f4f38bfe295a3f768753857be9236cc3277c7dad/music/LICENSE.md"
+  ],
+  "evidence": {
+   "hardware": "'A 30-second film renders in about 12-15 s on my 14-core Mac' (README.en.md)",
+   "supported_platforms": "'Tested on macOS only so far.' (README.en.md)",
+   "installation": "'npx skills add alchaincyf/huashu-motion' (README.md)",
+   "license": "'huashu-motion's own code and docs are MIT. These bundled pieces keep their own licenses' (THIRD_PARTY.md)",
+   "model_license": "Not a model; Kokoro and whisper.cpp models 'keep their own licenses and are not redistributed here' (THIRD_PARTY.md)",
+   "inputs": "'om grab' collects 'web screenshots, logo, images, brand colours and fonts' (README.md table, translated)",
+   "outputs": "'MP4, MOV (transparent), WebM, GIF; or export a share page with player and source' (README.md, translated)",
+   "runtime_requirements": "'Node 22+.' and Chrome 'already installed on the machine' (README.en.md, THIRD_PARTY.md)",
+   "renderer": "'Its own render engine. Several Chrome instances at once' (README.en.md); GSAP 3.14.2 bundled in templates/blank/vendor (THIRD_PARTY.md)",
+   "music": "default library 'instrumental pieces generated by the repository author ... with AI music-generation tools' (music/LICENSE.md)"
+  }
+ },
+ {
+  "id": "anything2explainer",
+  "name": "anything2explainer",
+  "category": "I",
+  "source_group": "D",
+  "attribution_status": "Added directly by the user on 2026-11-26.",
+  "original_url": "https://github.com/Vincentwei1021/anything2explainer",
+  "verified_url": "https://github.com/Vincentwei1021/anything2explainer",
+  "verification_status": "verified",
+  "verification_date": "2026-11-26",
+  "inspected_commit": "ddf03a5f2b920526a7460a6d1a35fb94dfcbc15d",
+  "maintenance": {
+   "default_branch": "main",
+   "archived": false,
+   "last_repository_push": "2026-11-25T10:01:20Z"
+  },
+  "tool_type": "skill",
+  "language": "TypeScript",
+  "primary_capabilities": [
+   "Video composition",
+   "Animation"
+  ],
+  "secondary_capabilities": [
+   "Shot planning",
+   "Design critique",
+   "Media processing"
+  ],
+  "intended_use": "Use for turning a topic or article into a sourced, narrated 2-8 minute black-canvas motion-graphics explainer video drawn in Remotion by parallel coding agents.",
+  "supported_platforms": [
+   "macOS",
+   "Linux"
+  ],
+  "supported_agents": [
+   "Claude Code",
+   "Codex"
+  ],
+  "execution": "local",
+  "runtime_requirements": "Node >=18 (template pins remotion 4.0.507, @remotion/cli 4.0.507, react 19.2.8, TypeScript 5.9.3); ffmpeg; Python 3 venv with edge-tts==7.2.8, numpy, pillow, scipy; for English narration kokoro + soundfile + espeak-ng. Linux ARM needs system Chromium via REMOTION_BROWSER_EXECUTABLE.",
+  "hardware": {
+   "gpu": "none",
+   "min_vram_gb": null,
+   "recommended_vram_gb": null,
+   "system_ram_gb": null,
+   "storage": "About 2 GB per 2-5 min film, about 3 GB for 5-8 min; keep at least 5 GB free during parallel builds",
+   "cpu_fallback": "not applicable",
+   "training_vs_inference": null,
+   "notes": "Remotion renders through headless Chromium on the CPU. Developed on macOS; isolated script tests pass on Linux and a Raspberry Pi 5 (ARM64) is verified. Windows needs Git Bash, and a full Windows render is not verified."
+  },
+  "model": null,
+  "installation": "git clone https://github.com/Vincentwei1021/anything2explainer.git\nln -s \"$PWD/anything2explainer\" ~/.claude/skills/anything2explainer   # Claude Code\nln -s \"$PWD/anything2explainer\" ~/.codex/skills/anything2explainer    # Codex\npip install 'edge-tts==7.2.8' numpy pillow scipy\npip install kokoro soundfile && brew install espeak-ng",
+  "configuration": "src/config.ts sets lang ('zh' or 'en') and bg ('dots' or 'stars'); TTS engine is chosen with TTS_ENGINE (edge, kokoro, kokoro_onnx, piper) or by supplying your own audio and timeline.",
+  "inputs": [
+   "Topic sentence",
+   "Article or document to adapt",
+   "Chosen length and language (Chinese or English)",
+   "Optional finished narration audio (public/assets/<slug>/audio.wav) with hand-filled timeline"
+  ],
+  "outputs": [
+   "1280x720 30 fps H.264 MP4 with voiceover, subtitles, chapter cards, HUD and progress bar",
+   "Research doc with source URLs",
+   "Narration script and frame-accurate timeline",
+   "Storyboard",
+   "Per-shot Remotion TSX source",
+   "QC reports and delivery notes"
+  ],
+  "dependencies": null,
+  "credentials_required": "No API keys by default. The Chinese default voice (edge-tts) is an unauthenticated cloud call to a Microsoft endpoint; bring-your-own TTS such as Volcengine needs your own account.",
+  "license": "PolyForm Noncommercial License 1.0.0 (toolkit); bundled fonts SIL OFL 1.1",
+  "model_license": null,
+  "commercial_use_notes": "Noncommercial use of the toolkit is free; any commercial use of the toolkit needs prior authorization from the author. Videos you make belong to you. Remotion has its own company license terms (remotion.dev/license).",
+  "complementary_tools": [
+   "remotion",
+   "remotion-skills",
+   "ffmpeg"
+  ],
+  "overlapping_tools": [
+   "huashu-motion",
+   "lemo-opuscar",
+   "motion-canvas",
+   "hyperframes"
+  ],
+  "integration_notes": "Renders with Remotion 4.0.507.",
+  "conflicts": [
+   "Skip if you need vertical 9:16 video, a visual style other than its black-canvas look, live action or a talking presenter.",
+   "Skip for commercial use of the toolkit unless the author has authorized it."
+  ],
+  "security_notes": [
+   "Runs many build agents in parallel that bundle Remotion and execute shell scripts; past about 12 tmux panes it dispatches in waves.",
+   "edge-tts is pinned because it tracks a Microsoft endpoint that breaks across upgrades."
+  ],
+  "privacy_notes": [
+   "Chinese narration text is sent to Microsoft's edge-tts endpoint by default; English Kokoro runs locally.",
+   "The research stage browses the web and records source URLs for every on-screen fact."
+  ],
+  "craft_notes": [
+   "Fixed house style: black canvas with dot-field or star-field backdrop, white line art with purple accents, 44 px subtitles and a chapter progress bar; only the backdrop is switchable.",
+   "Nine stages with four human checkpoints (length/language, narration sign-off, voice, first 30 s); once narration is voiced, frame numbers are hard-coded so any word change re-times the film.",
+   "A 3-5 min film is 40-50 shots built by about 8 agents in about 2 h; every animation is a pure function of the frame with seeded randomness, so re-renders are identical."
+  ],
+  "examples": {
+   "independent": "Ask the agent to 'make me an explainer video about vector databases' at 3-5 minutes in English and approve the first 30-second preview.",
+   "combined": "Proposed handoff: install remotion-skills alongside it so build agents consult remotion-markup best practices while writing each shot component."
+  },
+  "smoke_test": {
+   "status": "not run",
+   "evidence": null
+  },
+  "documentation_sources": [
+   "https://github.com/Vincentwei1021/anything2explainer/blob/ddf03a5f2b920526a7460a6d1a35fb94dfcbc15d/README.md",
+   "https://github.com/Vincentwei1021/anything2explainer/blob/ddf03a5f2b920526a7460a6d1a35fb94dfcbc15d/LICENSE",
+   "https://github.com/Vincentwei1021/anything2explainer/blob/ddf03a5f2b920526a7460a6d1a35fb94dfcbc15d/SKILL.md",
+   "https://github.com/Vincentwei1021/anything2explainer/blob/ddf03a5f2b920526a7460a6d1a35fb94dfcbc15d/template/package.json"
+  ],
+  "evidence": {
+   "hardware": "'No. Remotion renders through headless Chromium on the CPU.' (README.md FAQ, GPU question)",
+   "installation": "'git clone https://github.com/Vincentwei1021/anything2explainer.git' then ln -s into ~/.claude/skills (README.md)",
+   "license": "'PolyForm Noncommercial License 1.0.0' and 'any commercial use of the toolkit requires prior authorization' (LICENSE)",
+   "model_license": "Not a model; uses kokoro-82m and edge-tts voices (README.md)",
+   "inputs": "'a topic (\"explain vector databases\"), or an article / document you want turned into a video' (README.md)",
+   "outputs": "'a 1280x720 H.264 MP4 with synchronized voiceover, word-boundary-aligned subtitles' (README.md)",
+   "renderer": "'remotion 4.0.507' pinned in template/package.json"
+  }
+ },
+ {
+  "id": "openscreen",
+  "name": "OpenScreen",
+  "category": "I",
+  "source_group": "D",
+  "attribution_status": "Added directly by the user on 2026-11-26.",
+  "original_url": "https://github.com/getopenscreen/openscreen",
+  "verified_url": "https://github.com/getopenscreen/openscreen",
+  "verification_status": "verified",
+  "verification_date": "2026-11-26",
+  "inspected_commit": "c174dc0669d070249bc24e2b6c96892bd48514b7",
+  "maintenance": {
+   "default_branch": "main",
+   "archived": false,
+   "last_repository_push": "2026-11-26T08:44:58Z"
+  },
+  "tool_type": "application",
+  "language": "TypeScript",
+  "primary_capabilities": [
+   "Video editing",
+   "Media processing"
+  ],
+  "secondary_capabilities": [
+   "Video composition",
+   "Shot planning"
+  ],
+  "intended_use": "Use for recording a screen or window and turning the take into a polished product demo with auto-zooms, cursor effects, captions and GPU export, by hand or from a coding agent through its CLI and MCP server.",
+  "supported_platforms": [
+   "Linux",
+   "Windows",
+   "macOS"
+  ],
+  "supported_agents": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "MCP clients"
+  ],
+  "execution": "local",
+  "runtime_requirements": "Electron desktop app. Windows 1903+ (build 18362); macOS 13 Ventura+ (ScreenCaptureKit); Linux X11, or Wayland with xdg-desktop-portal and PipeWire (PipeWire also for system audio). Building from source: Node 22.22.1 per package.json engines.",
+  "hardware": {
+   "gpu": "GPU-accelerated export (Metal on macOS, D3D11 on Windows, Vulkan on Linux) with automatic CPU fallback",
+   "min_vram_gb": null,
+   "recommended_vram_gb": null,
+   "system_ram_gb": 8,
+   "storage": null,
+   "cpu_fallback": "documented",
+   "training_vs_inference": null,
+   "notes": "8 GB RAM minimum, 16 GB recommended. Windows minimum Intel 8th Gen / AMD Ryzen 2000; recommended Windows 11 with Intel 12th Gen / Ryzen 4000. On ARM64 Windows use the ARM64 build; x64 under emulation records poorly."
+  },
+  "model": null,
+  "installation": "brew install --cask openscreen\nwinget install --source msstore OpenScreen\nnix run github:getopenscreen/openscreen\nnpx skills add getopenscreen/openscreen --skill openscreen-demo -y",
+  "configuration": "Grant Screen Recording and Accessibility on macOS; for agents, register the MCP server with 'claude mcp add openscreen -- \"<executable>\" mcp'. AI editing needs a provider key you add; nothing is enabled by default.",
+  "inputs": [
+   "Whole-screen or window capture",
+   "Microphone and system audio",
+   "Webcam (picture-in-picture)",
+   "Background images",
+   ".openscreen project JSON (editable by CLI)"
+  ],
+  "outputs": [
+   "MP4",
+   "GIF",
+   ".openscreen project file",
+   "Editable transcript and captions"
+  ],
+  "dependencies": null,
+  "credentials_required": "None for recording, editing or export. The optional AI editing assistant needs your own key for Claude, OpenAI, Gemini, Mistral, OpenRouter, MiniMax or an OpenAI-compatible endpoint.",
+  "license": "MIT",
+  "model_license": null,
+  "commercial_use_notes": "MIT; the README states it is 100% free for personal and commercial use with nothing behind a paywall.",
+  "complementary_tools": [
+   "onetake",
+   "huashu-motion",
+   "ffmpeg"
+  ],
+  "overlapping_tools": [],
+  "integration_notes": "Headless CLI, MCP server and skills let agents drive recording and export.",
+  "conflicts": [
+   "Skip when you need a fully synthetic, code-drawn film rather than a recording of a real screen.",
+   "Skip if you need a stable project format; the README warns the .openscreen format and CLI may change."
+  ],
+  "security_notes": [
+   "The standalone Windows .exe is not code-signed (SmartScreen warning); the Microsoft Store build is signed. Install only from the official Releases, Store or Homebrew cask.",
+   "Needs Screen Recording and Accessibility permissions on macOS; Wayland click capture needs read access to mouse devices via a udev rule or the input group.",
+   "The demo skill drafts an X post but publishes only once you say yes."
+  ],
+  "privacy_notes": [
+   "Captions are transcribed on-device with no upload and work offline.",
+   "When AI editing is enabled, edit requests go to the provider whose key you supply.",
+   "Recordings capture everything visible in the chosen screen or window."
+  ],
+  "craft_notes": [
+   "Auto-zoom follows the cursor, with cursor smoothing, click effects and post-recording path smoothing, in the Screen Studio style of polished demos.",
+   "Deleting a sentence in the transcript cuts it from the video; the chat assistant applies cuts, zooms, speed ramps and annotations to the timeline.",
+   "Headless CLI ('openscreen record', 'openscreen export') emits NDJSON with --json, so agents can record, edit the project JSON and render without windows."
+  ],
+  "examples": {
+   "independent": "Run 'openscreen record --duration 20 --project demo.openscreen --json' then 'openscreen export demo.openscreen -o demo.mp4 --json' to attach a feature demo to a PR.",
+   "combined": "Proposed handoff: record a real UI walkthrough in OpenScreen, then use it as reference footage for an onetake launch film that rebuilds the UI in HTML."
+  },
+  "smoke_test": {
+   "status": "not run",
+   "evidence": null
+  },
+  "documentation_sources": [
+   "https://github.com/getopenscreen/openscreen/blob/c174dc0669d070249bc24e2b6c96892bd48514b7/README.md",
+   "https://github.com/getopenscreen/openscreen/blob/c174dc0669d070249bc24e2b6c96892bd48514b7/package.json"
+  ],
+  "evidence": {
+   "hardware": "'RAM: 8 GB minimum, 16 GB recommended' (README.md)",
+   "gpu": "'rendered and encoded on the GPU (Metal on macOS, D3D11 on Windows, Vulkan on Linux) with an automatic CPU fallback' (README.md)",
+   "installation": "'brew install --cask openscreen' (README.md)",
+   "license": "'This project is licensed under the MIT License' (README.md)",
+   "model_license": "Not a model tool (README.md)",
+   "inputs": "'Record a specific window, or your whole screen.' and 'Record microphone and system audio.' (README.md)",
+   "outputs": "'Export to MP4 or GIF in multiple aspect ratios and resolutions' (README.md)"
+  }
+ },
+ {
+  "id": "onetake",
+  "name": "OneTake",
+  "category": "I",
+  "source_group": "D",
+  "attribution_status": "Added directly by the user on 2026-11-26.",
+  "original_url": "https://github.com/feitangyuan/onetake",
+  "verified_url": "https://github.com/feitangyuan/onetake",
+  "verification_status": "verified",
+  "verification_date": "2026-11-26",
+  "inspected_commit": "4e024be4c6c696b260f39a35aee6bd56d303b679",
+  "maintenance": {
+   "default_branch": "main",
+   "archived": false,
+   "last_repository_push": "2026-11-19T06:06:40Z"
+  },
+  "tool_type": "skill",
+  "language": "Python",
+  "primary_capabilities": [
+   "Animation",
+   "Video composition"
+  ],
+  "secondary_capabilities": [
+   "Shot planning",
+   "Design critique",
+   "Media processing"
+  ],
+  "intended_use": "Use for short product launch films, teasers and feature demos that play as one continuous camera move, with continuity checked by an automatic oracle before a human watches.",
+  "supported_platforms": null,
+  "supported_agents": [
+   "Claude Code",
+   "Codex",
+   "Other agents that read skills"
+  ],
+  "execution": "local",
+  "runtime_requirements": "python3 with playwright (chromium), numpy, scipy, Pillow, matplotlib, fonttools + brotli; opencv-python for reference analysis; ffmpeg / ffprobe; node for library tests. Narration: faster-whisper and Kokoro (kokoro-onnx, soundfile, misaki[ja], unidic-lite).",
+  "hardware": {
+   "gpu": "none required; WebGL compositions render with --gpu",
+   "min_vram_gb": null,
+   "recommended_vram_gb": null,
+   "system_ram_gb": null,
+   "storage": null,
+   "cpu_fallback": "documented",
+   "training_vs_inference": null,
+   "notes": "render.py runs parallel browser workers (default cores minus 2, max 8). WebGL comps use --gpu (Chromium on ANGLE/Metal); software SwiftShader costs about 4x. Drafts 1080p30, finals 4K60."
+  },
+  "model": null,
+  "installation": "git clone https://github.com/feitangyuan/onetake.git ~/.claude/skills/onetake",
+  "configuration": "Install as a skill folder; looks/looks.json provides six measured color-and-type looks, and render.py flags (--final, --gpu, --workers) select draft or 4K60 output.",
+  "inputs": [
+   "Product screenshots (UI rebuilt in HTML)",
+   "Real web pages driven by Playwright",
+   "Screen recordings",
+   "Reference video for numeric analysis",
+   "Narration script",
+   "Royalty-free music track",
+   "Blender-made GLB models for 3D films"
+  ],
+  "outputs": [
+   "Single HTML composition with window.__seek(t)",
+   "MP4 at 1920x1080 30 fps (draft) or 3840x2160 60 fps (final)",
+   "Synthesised sound-effect and score WAVs",
+   "Timed subtitles"
+  ],
+  "dependencies": null,
+  "credentials_required": "None documented; narration uses local Kokoro and faster-whisper.",
+  "license": "PolyForm Noncommercial License 1.0.0",
+  "model_license": null,
+  "commercial_use_notes": "Commercial use is not permitted under the free license. 'onetake Pro' (onetakemotion.com) sells a commercial license plus every film's source for US$79 one time. Case films' source code is not included in the repo.",
+  "complementary_tools": [
+   "three-js",
+   "blender-mcp",
+   "ffmpeg",
+   "openscreen"
+  ],
+  "overlapping_tools": [
+   "hyperframes",
+   "remotion",
+   "huashu-motion",
+   "lemo-opuscar",
+   "motion-canvas"
+  ],
+  "integration_notes": "Its own Playwright Chromium renderer on a window.__seek(t) page: the same seekable-page idea as the catalogue's time contract.",
+  "conflicts": [
+   "Skip if the user names HyperFrames or Remotion; the skill itself says to use what they name.",
+   "Skip for client or business work unless you buy the onetake Pro commercial license."
+  ],
+  "security_notes": [
+   "Drives real pages in Playwright Chromium with clicks and scrolling to record footage; point it only at pages you control or trust."
+  ],
+  "privacy_notes": [
+   "Recording real product pages can capture logged-in data shown on screen."
+  ],
+  "craft_notes": [
+   "Designs the boundary between beats: something on screen must survive and become the next beat; probe.py scores 'carry' per boundary (accepted films 0.75 and 0.83, a rejected slideshow 0.00).",
+   "About 38 measured moves in lib/motion.js, each a pure function of time; shot lengths must vary by at least 4x, and the oracle also fails uniform cadence, no stillness, clipped audio and fast moves without blur.",
+   "Real 180-degree shutter motion blur by averaging several captures in linear light; moves over 80 px/frame strobe without it."
+  ],
+  "examples": {
+   "independent": "Ask for 'a 15 s launch video for my app' from three screenshots, pick one of three concepts, and render a 1080p30 draft with render.py.",
+   "combined": "Documented in references/3d.md: model an object with blender-mcp, export GLB, and stage it in three-js inside the onetake composition."
+  },
+  "smoke_test": {
+   "status": "not run",
+   "evidence": null
+  },
+  "documentation_sources": [
+   "https://github.com/feitangyuan/onetake/blob/4e024be4c6c696b260f39a35aee6bd56d303b679/README.md",
+   "https://github.com/feitangyuan/onetake/blob/4e024be4c6c696b260f39a35aee6bd56d303b679/SKILL.md",
+   "https://github.com/feitangyuan/onetake/blob/4e024be4c6c696b260f39a35aee6bd56d303b679/LICENSE"
+  ],
+  "evidence": {
+   "hardware": "'A WebGL comp renders with --gpu (Chromium on ANGLE/Metal)' and 'SwiftShader costs ~4x' (SKILL.md)",
+   "installation": "'git clone https://github.com/feitangyuan/onetake.git ~/.claude/skills/onetake' (README.md)",
+   "license": "'Required Notice: Copyright (c) 2026 Patrick. onetake is free for noncommercial use only.' (LICENSE)",
+   "model_license": "Not a model tool (README.md)",
+   "inputs": "'the UI is rebuilt in HTML from screenshots instead of screen-recorded' (SKILL.md frontmatter)",
+   "outputs": "'1080p30 draft by default, --final 4K60' (SKILL.md, render.py row)",
+   "renderer": "'without HyperFrames or Remotion. A single HTML composition where every value is a pure function of time' (SKILL.md)"
+  }
+ },
+ {
+  "id": "lemo-opuscar",
+  "name": "Lemo Opuscar",
+  "category": "I",
+  "source_group": "D",
+  "attribution_status": "Added directly by the user on 2026-11-26.",
+  "original_url": "https://github.com/lemomo-ai/lemo-opuscar",
+  "verified_url": "https://github.com/lemomo-ai/lemo-opuscar",
+  "verification_status": "verified",
+  "verification_date": "2026-11-26",
+  "inspected_commit": "439b98af08b04400f8fd8a8dd19cd773c0c96532",
+  "maintenance": {
+   "default_branch": "main",
+   "archived": false,
+   "last_repository_push": "2026-11-26T09:48:06Z"
+  },
+  "tool_type": "plugin",
+  "language": "JavaScript",
+  "primary_capabilities": [
+   "Video composition",
+   "Animation",
+   "Creative direction"
+  ],
+  "secondary_capabilities": [
+   "Illustration",
+   "3D rendering",
+   "Media processing"
+  ],
+  "intended_use": "Use for having Claude make a narrated, scored short film entirely in code in one of 99 named visual styles, or for turning a library style into your own reusable style.",
+  "supported_platforms": [
+   "macOS",
+   "Linux",
+   "Windows"
+  ],
+  "supported_agents": [
+   "Claude Code",
+   "Other agents by copying plugin/skills/lemo-opuscar/ into their skills folder"
+  ],
+  "execution": "local",
+  "runtime_requirements": "Node 20+, ffmpeg 7+ (6.x rejected), Python 3.11+ or uv; npm deps playwright-core ^1.63.0 and three ^0.170.0. The agent installs the rest via setup.sh.",
+  "hardware": {
+   "gpu": "Not required for most styles; 3D and shader-heavy styles want a GPU (three.js r170 via headless WebGL2)",
+   "min_vram_gb": null,
+   "recommended_vram_gb": null,
+   "system_ram_gb": null,
+   "storage": "Core ~350 MB; voice pack ~0.55 GB plus a Whisper model (~145 MB English, ~480 MB Chinese); music pack ~140 MB; each sample library 70-400 MB",
+   "cpu_fallback": "not documented",
+   "training_vs_inference": null,
+   "notes": "Developed on macOS (Apple silicon); Linux 'should work'; Windows via Git Bash or WSL. A film takes an agent about 30-60 minutes."
+  },
+  "model": null,
+  "installation": "claude plugin marketplace add lemomo-ai/lemo-opuscar\nclaude plugin install lemo-opuscar@lemolab",
+  "configuration": "On first use it downloads guides, tools and style prompts to ~/lemo-opuscar; saved custom styles live in ~/lemo-my-styles/. Optional packs install with 'setup.sh deps voice music'.",
+  "inputs": [
+   "Story or topic plus a style name (English, Chinese or folder name)",
+   "Optional length and narrator choice",
+   "Your own photos, music, voice or other material",
+   "Public data such as laser-scan or satellite data"
+  ],
+  "outputs": [
+   "MP4, 1920x1080 at 24 fps by default (some styles 30 fps; other sizes on request)",
+   ".srt subtitles",
+   "Per-film source, audio stems and CREDITS",
+   "Saved custom style folder with STYLE.md and demo film"
+  ],
+  "dependencies": null,
+  "credentials_required": "None for most styles. Three styles (Manga Panels, Text Flash Cuts, Comic History Cartoon) need an image generator you bring, such as the Codex CLI signed in to an account that can generate images. Chinese TTS uses online edge-tts without a key.",
+  "license": "Mixed: code MIT; all Markdown docs and image-generation prompts CC BY-NC 4.0 plus an extra permission to use them for your own films; demo films and stills CC BY 4.0; third-party assets under their own licenses",
+  "model_license": null,
+  "commercial_use_notes": "Films you make are yours, commercial films included, with no credit required. Following and adapting the docs for commercial or client films is allowed, but selling the docs or putting them into a commercial product or service needs a paid license from LemoLab. Clawd (Anthropic's character), third-party interfaces and six TTS narration tracks are excluded from all licenses. Pre-2.0.0 versions keep their earlier license.",
+  "complementary_tools": [
+   "three-js",
+   "ffmpeg",
+   "blender-mcp"
+  ],
+  "overlapping_tools": [
+   "huashu-motion",
+   "onetake",
+   "anything2explainer",
+   "hyperframes",
+   "remotion"
+  ],
+  "integration_notes": "Its own render(t) pages captured by headless Chrome, with three.js and ffmpeg.",
+  "conflicts": [
+   "Skip if you are not using a Claude model; the README says other models may not reproduce the styles well.",
+   "Skip if your build machine only has ffmpeg 6.x (for example stock Ubuntu 24.04) and you cannot install ffmpeg 7+."
+  ],
+  "security_notes": [
+   "Installs from a third-party Claude Code plugin marketplace (lemolab); auto-update is off unless you enable it.",
+   "sampler.py downloads missing sample libraries automatically from npm, PyPI, GitHub Releases and Hugging Face unless LEMO_FETCH=0."
+  ],
+  "privacy_notes": [
+   "For the three image-generator styles, prompts are sent to whatever image service you supply.",
+   "Chinese narration text goes to Microsoft's edge-tts service; English Kokoro runs offline."
+  ],
+  "craft_notes": [
+   "Each style is a STYLE.md prompt plus a demo film; the agent reads DIRECTOR.md, TECHNIQUE.md and the style file, then renders a page exposing window.render(t) in headless Chrome frame by frame.",
+   "Scores are written as timed note events and played by sampler.py from free libraries (VSCO 2 CE, VCSL, FreePats, Karoryfer, Salamander); the mix is loudness-normalized to -14 LUFS with ffmpeg.",
+   "Capture speed comes from JPEG screenshots, one browser per worker and grain added in ffmpeg rather than in the page; tuned for Claude Fable, Opus and Sonnet at high effort."
+  ],
+  "examples": {
+   "independent": "Ask 'Make a 45-second film in the watercolor style about the coffee farm my family runs. Warm female narrator.'",
+   "combined": "Proposed handoff: model a hero object with blender-mcp, export it, and stage it in one of the 3D & Miniature styles that use three-js."
+  },
+  "smoke_test": {
+   "status": "not run",
+   "evidence": null
+  },
+  "documentation_sources": [
+   "https://github.com/lemomo-ai/lemo-opuscar/blob/439b98af08b04400f8fd8a8dd19cd773c0c96532/README.md",
+   "https://github.com/lemomo-ai/lemo-opuscar/blob/439b98af08b04400f8fd8a8dd19cd773c0c96532/LICENSE",
+   "https://github.com/lemomo-ai/lemo-opuscar/blob/439b98af08b04400f8fd8a8dd19cd773c0c96532/TECHNIQUE.md",
+   "https://github.com/lemomo-ai/lemo-opuscar/blob/439b98af08b04400f8fd8a8dd19cd773c0c96532/package.json"
+  ],
+  "evidence": {
+   "hardware": "'3D and shader-heavy styles want a GPU.' (TECHNIQUE.md)",
+   "installation": "'claude plugin marketplace add lemomo-ai/lemo-opuscar' then 'claude plugin install lemo-opuscar@lemolab' (README.md)",
+   "license": "'Docs: Creative Commons Attribution-NonCommercial 4.0' and 'Code: MIT License' (LICENSE)",
+   "model_license": "Not a model tool; image models are user-supplied (TECHNIQUE.md)",
+   "inputs": "'Add a length, a narrator, your own photos or music if you like' (README.md)",
+   "outputs": "'Default output 1920x1080 at 24 fps' (README.md)",
+   "renderer": "'web page with render(t) -> headless Chrome, frame by frame -> video.mp4' (TECHNIQUE.md)"
+  }
+ },
+ {
+  "id": "effectcraft",
+  "name": "EffectCraft",
+  "category": "I",
+  "source_group": "D",
+  "attribution_status": "Added directly by the user on 2026-11-26.",
+  "original_url": "https://github.com/storytold/effectcraft",
+  "verified_url": "https://github.com/storytold/effectcraft",
+  "verification_status": "verified",
+  "verification_date": "2026-11-26",
+  "inspected_commit": "ff41f29c6a6e60e7c09ba4298527b9c540c62c87",
+  "maintenance": {
+   "default_branch": "main",
+   "archived": false,
+   "last_repository_push": "2026-11-26T09:07:58Z"
+  },
+  "tool_type": "application",
+  "language": "Rust",
+  "primary_capabilities": [
+   "Visual effects",
+   "Animation",
+   "Video composition"
+  ],
+  "secondary_capabilities": [
+   "3D rendering",
+   "Media processing"
+  ],
+  "intended_use": "Use for After Effects-style layered motion graphics and compositing (keyframes, 308 effects, 3D cameras and lights, render queue) that an agent can also drive headless through a CLI or MCP server.",
+  "supported_platforms": [
+   "Linux",
+   "Windows",
+   "macOS"
+  ],
+  "supported_agents": [
+   "Claude Code",
+   "Other MCP clients"
+  ],
+  "execution": "local",
+  "runtime_requirements": "Prebuilt installers (universal macOS; Windows x64, x86, ARM64; Linux x86_64, aarch64, riscv64; FreeBSD; WebAssembly build). Building from source needs Rust 1.95+. No FFmpeg needed.",
+  "hardware": {
+   "gpu": "Optional wgpu GPU compositor (Metal, Vulkan, Direct3D 12, WebGPU); the CPU renderer is the reference",
+   "min_vram_gb": null,
+   "recommended_vram_gb": null,
+   "system_ram_gb": null,
+   "storage": "Optional model downloads: MobileSAM for Roto Brush (40 MB), MediaPipe Face Landmarker (3.8 MB)",
+   "cpu_fallback": "documented",
+   "training_vs_inference": null,
+   "notes": "Project setting chooses GPU acceleration (default) or Software Rendering; headless MCP uses the GPU compositor only with --gpu. macOS is the most tested platform."
+  },
+  "model": null,
+  "installation": "git clone https://github.com/storytold/effectcraft\ncd effectcraft\ncargo run --release -p effectcraft\ncargo run --release -p effectcraft-cli -- render --out intro.mp4",
+  "configuration": "Register the MCP server with 'claude mcp add effectcraft -- effectcraft-cli mcp' (headless) or add '--bridge 9877' to drive a running app started with 'effectcraft --control 9877'; the repo ships a ready .mcp.json.",
+  "inputs": [
+   "Footage and stills (PNG, JPEG, TIFF, OpenEXR incl. multi-layer, BMP, WebP sequences; MOV)",
+   "PSD, SVG and PDF documents",
+   "Lottie .json / .lottie",
+   "glTF/GLB and OBJ/MTL models",
+   ".ecproj projects (versioned JSON)",
+   ".aep/.aepx and timeline interchange (FCP7 XML, FCPXML, OTIO, EDL, AAF, OMF) per architecture docs"
+  ],
+  "outputs": [
+   "H.264 MP4",
+   "ProRes MOV (Proxy to 4444 XQ with alpha)",
+   "HEVC and AV1 MP4",
+   "WebM (VP9 with alpha, or AV1; Opus audio)",
+   "PNG, JPEG, TIFF, Targa and 32-bit EXR sequences",
+   "Animated GIF",
+   "WAV/AIFF",
+   "Lottie .json / .lottie",
+   ".ecproj"
+  ],
+  "dependencies": null,
+  "credentials_required": "None; the README says no telemetry and no network access unless you ask for it.",
+  "license": "MIT OR Apache-2.0 (dual, at your option); ArtCraft name and logos are trademarks under a separate brand license",
+  "model_license": null,
+  "commercial_use_notes": "MIT/Apache-2.0 permit commercial use. Forks must remove ArtCraft brand assets. The README says it is alpha and not yet recommended for production client work (about 45% of the way to full professional readiness).",
+  "complementary_tools": [
+   "blender-mcp",
+   "real-esrgan"
+  ],
+  "overlapping_tools": [
+   "motion-canvas",
+   "remotion",
+   "hyperframes"
+  ],
+  "integration_notes": "effectcraft-cli with JSON output and an MCP server over stdio.",
+  "conflicts": [
+   "Skip when the job is production client work needing proven fidelity; the README calls it alpha and not yet recommended for that.",
+   "Skip if you rely on After Effects SDK plug-ins; they are not supported."
+  ],
+  "security_notes": [
+   "The control channel ('--control 9877') accepts JSON lines that can run any command and click any widget; keep it local.",
+   "Windows installers and executables are code-signed; macOS builds are signed and notarized."
+  ],
+  "privacy_notes": [
+   "No telemetry and no network access unless you request it (for example the optional Roto Brush and face-tracking model downloads)."
+  ],
+  "craft_notes": [
+   "Mirrors After Effects conventions closely: property shortcuts (A, P, S, R, T...), Graph Editor, expressions with wiggle/loopOut/thisComp, puppet pins, 38 blend modes and nine layer styles.",
+   "All codecs are pure Rust (H.264, ProRes, HEVC, VP9, AV1, AAC, Opus); no FFmpeg inside, and the same render queue runs from the CLI.",
+   "Docs disagree on project formats: the README says proprietary project formats are not supported, while docs/architecture.md describes an 'aep' crate that imports and exports .aep with a report of what is not carried over."
+  ],
+  "examples": {
+   "independent": "Run 'effectcraft-cli set Main '#1' transform/position '[100,360]' --time 0 main.ecproj --save' then 'effectcraft-cli render --comp Main --out main.mp4'.",
+   "combined": "Proposed handoff: export a GLB from blender-mcp and import it into an EffectCraft Advanced 3D composition with cameras, lights and title layers."
+  },
+  "smoke_test": {
+   "status": "not run",
+   "evidence": null
+  },
+  "documentation_sources": [
+   "https://github.com/storytold/effectcraft/blob/ff41f29c6a6e60e7c09ba4298527b9c540c62c87/README.md",
+   "https://github.com/storytold/effectcraft/blob/ff41f29c6a6e60e7c09ba4298527b9c540c62c87/docs/agents.md",
+   "https://github.com/storytold/effectcraft/blob/ff41f29c6a6e60e7c09ba4298527b9c540c62c87/docs/architecture.md",
+   "https://github.com/storytold/effectcraft/blob/ff41f29c6a6e60e7c09ba4298527b9c540c62c87/docs/footage.md",
+   "https://github.com/storytold/effectcraft/blob/ff41f29c6a6e60e7c09ba4298527b9c540c62c87/crates/gpu/Cargo.toml",
+   "https://github.com/storytold/effectcraft/blob/ff41f29c6a6e60e7c09ba4298527b9c540c62c87/crates/aep/Cargo.toml"
+  ],
+  "evidence": {
+   "hardware": "'The GPU compositor and GPU effects on wgpu compute shaders (Metal, Vulkan, Direct3D 12, WebGPU), checked against the CPU renderer' (docs/architecture.md)",
+   "installation": "'cargo run --release -p effectcraft' (README.md)",
+   "license": "'dual-licensed under MIT or Apache-2.0, at your option' (README.md)",
+   "model_license": "Not a model tool; optional MobileSAM and MediaPipe downloads (README.md)",
+   "inputs": "'Stills of any format EffectCraft reads can form a sequence: PNG, JPEG, TIFF, OpenEXR, BMP and WebP' (docs/footage.md)",
+   "outputs": "'H.264 MP4 and ProRes MOV (Proxy to 4444 XQ with alpha) with audio, HEVC ... and AV1 MP4' (README.md)",
+   "agents": "'effectcraft-cli mcp speaks the Model Context Protocol over stdio, headless or bridged' (README.md)",
+   "aep_contradiction": "README: 'Proprietary project formats and After Effects SDK plug-ins are not supported'; aep crate: 'import into an EffectCraft project and export back to .aep'"
+  }
+ },
+ {
+  "id": "gsap",
+  "name": "GSAP",
+  "category": "I",
+  "source_group": "D",
+  "attribution_status": "Added directly by the user on 2026-11-26.",
+  "original_url": "https://github.com/greensock/GSAP",
+  "verified_url": "https://github.com/greensock/GSAP",
+  "verification_status": "verified",
+  "verification_date": "2026-11-26",
+  "inspected_commit": "5e6c35ff8eedea12d4f229129def635277d8b0f2",
+  "maintenance": {
+   "default_branch": "master",
+   "archived": false,
+   "last_repository_push": "2026-11-04T00:56:41Z"
+  },
+  "tool_type": "library",
+  "language": "JavaScript",
+  "primary_capabilities": [
+   "Animation",
+   "Frontend implementation"
+  ],
+  "secondary_capabilities": [
+   "Video composition"
+  ],
+  "intended_use": "Use for browser animation of CSS, SVG, canvas, WebGL or any JS object with sequenced, seekable timelines that frame-by-frame renderers can drive deterministically.",
+  "supported_platforms": null,
+  "supported_agents": [
+   "Generic coding agent via project files"
+  ],
+  "execution": "local",
+  "runtime_requirements": "Any major browser; zero dependencies. Pinned version 3.15.1; ES modules plus UMD files in /dist; @gsap/react provides useGSAP().",
+  "hardware": {
+   "gpu": "none",
+   "min_vram_gb": null,
+   "recommended_vram_gb": null,
+   "system_ram_gb": null,
+   "storage": null,
+   "cpu_fallback": "not applicable",
+   "training_vs_inference": null,
+   "notes": null
+  },
+  "model": null,
+  "installation": "npm install gsap\n<script src=\"https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js\"></script>",
+  "configuration": "Import the core and register plugins with gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin); all tools are also exported from 'gsap/all'.",
+  "inputs": [
+   "DOM elements and CSS properties",
+   "SVG",
+   "Canvas and WebGL objects",
+   "Generic JavaScript objects",
+   "Colors, strings and motion paths"
+  ],
+  "outputs": [
+   "Tweened property values over time",
+   "Seekable tweens and timelines"
+  ],
+  "dependencies": null,
+  "credentials_required": "None.",
+  "license": "GreenSock Standard 'no charge' license (https://gsap.com/standard-license); 'Copyright 2008-2026, GreenSock. All rights reserved.' No license file in the repo",
+  "model_license": null,
+  "commercial_use_notes": "The README says GSAP is 100% free, including all former Club plugins (SplitText, MorphSVG and others), even for commercial use, thanks to Webflow. It is a proprietary no-charge license, not an OSI open-source license; the full terms live only at gsap.com/standard-license, so any use-specific restrictions are not established from the pinned files.",
+  "complementary_tools": [
+   "hyperframes",
+   "three-js",
+   "huashu-motion"
+  ],
+  "overlapping_tools": [
+   "motion-canvas",
+   "react-bits"
+  ],
+  "integration_notes": "kit/framecap seeks GSAP pages by pausing gsap.globalTimeline (tested). HyperFrames lists GSAP as an animation runtime; huashu-motion vendors GSAP.",
+  "conflicts": [
+   "Skip if your project requires an OSI-approved open-source license for every dependency; GSAP's standard license is a custom no-charge license.",
+   "Skip for frame rendering pipelines that cannot hook the clock unless you unhook the ticker; GSAP otherwise advances on requestAnimationFrame."
+  ],
+  "security_notes": [
+   "Loading from a CDN adds a third-party script dependency; self-host or pin the version for reproducible renders."
+  ],
+  "privacy_notes": [
+   "Runs entirely in the browser; no network calls beyond loading the script."
+  ],
+  "craft_notes": [
+   "Every tween and timeline is seekable: seek(time), time(t), totalTime(t) and progress(p) move the playhead, which is what HTML-to-video renderers exploit.",
+   "For deterministic capture, remove the default clock with gsap.ticker.remove(gsap.updateRoot) and step gsap.updateRoot(t) yourself; gsap.globalTimeline is the root, and gsap.exportRoot() moves all running tweens into one controllable timeline.",
+   "Plugins in this repo include ScrollTrigger, ScrollSmoother, Flip, Draggable, Observer, MotionPathPlugin, MorphSVGPlugin, SplitText, DrawSVGPlugin, ScrambleTextPlugin, CustomEase, InertiaPlugin, Physics2D and PixiPlugin."
+  ],
+  "examples": {
+   "independent": "Build a GSAP timeline of a logo reveal with SplitText and MotionPathPlugin, then scrub it with timeline.progress() in the browser.",
+   "combined": "Documented by huashu-motion: its blank template vendors GSAP 3.14.2 and its own renderer drives the page frame by frame in Chrome; proposed: the same pattern with hyperframes."
+  },
+  "smoke_test": {
+   "status": "passed",
+   "evidence": "gsap 3.13.0 from jsDelivr in kit/framecap's gsapTimeline test: a seeked tween lands within 0.054 px of its expected position in all 24 frames."
+  },
+  "documentation_sources": [
+   "https://github.com/greensock/GSAP/blob/5e6c35ff8eedea12d4f229129def635277d8b0f2/README.md",
+   "https://github.com/greensock/GSAP/blob/5e6c35ff8eedea12d4f229129def635277d8b0f2/package.json",
+   "https://github.com/greensock/GSAP/blob/5e6c35ff8eedea12d4f229129def635277d8b0f2/src/gsap-core.js",
+   "https://github.com/greensock/GSAP/blob/5e6c35ff8eedea12d4f229129def635277d8b0f2/types/animation.d.ts",
+   "https://github.com/greensock/GSAP/blob/5e6c35ff8eedea12d4f229129def635277d8b0f2/types/gsap-core.d.ts"
+  ],
+  "evidence": {
+   "hardware": "'At its core, GSAP is a high-speed property manipulator' running in the browser; no hardware requirements stated (README.md)",
+   "installation": "'npm install gsap' (README.md)",
+   "license": "'license': \"Standard 'no charge' license: https://gsap.com/standard-license.\" (package.json); 'Subject to the terms at https://gsap.com/standard-license' (src/gsap-core.js)",
+   "model_license": "Not a model tool",
+   "commercial": "'the entire GSAP toolset is FREE, even for commercial use!' (README.md)",
+   "inputs": "'Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects' (README.md)",
+   "outputs": "'anim.seek(1); // moves the playhead to the 1 second mark' (types/animation.d.ts)",
+   "updateRoot": "'Manually update the root (global) timeline. Make sure to unhook GSAP's default ticker.' (types/gsap-core.d.ts)"
+  }
+ },
+ {
+  "id": "comfyui",
+  "name": "ComfyUI",
+  "category": "I",
+  "source_group": "D",
+  "attribution_status": "Added directly by the user on 2026-11-26.",
+  "original_url": "https://github.com/Comfy-Org/ComfyUI",
+  "verified_url": "https://github.com/Comfy-Org/ComfyUI",
+  "verification_status": "verified",
+  "verification_date": "2026-11-26",
+  "inspected_commit": "4a4b3409792d499cc36626d76a24fe425f40b5e7",
+  "maintenance": {
+   "default_branch": "master",
+   "archived": false,
+   "last_repository_push": "2026-11-26T09:11:37Z"
+  },
+  "tool_type": "application",
+  "language": "Python",
+  "primary_capabilities": [
+   "Media processing",
+   "Illustration"
+  ],
+  "secondary_capabilities": [
+   "Upscaling",
+   "Image-to-3D",
+   "Animation",
+   "Spatial reconstruction"
+  ],
+  "intended_use": "Use for running open image, video, audio and 3D generation models locally as node-graph workflows, and for driving those workflows from code over its HTTP API.",
+  "supported_platforms": [
+   "Windows",
+   "Linux",
+   "macOS"
+  ],
+  "supported_agents": [
+   "Generic coding agent via HTTP API (POST /prompt, GET /history, GET /view, WebSocket)",
+   "MCP clients via the separate Comfy MCP product"
+  ],
+  "execution": "local or hosted",
+  "runtime_requirements": "Python >=3.10 (pyproject); 3.13 very well supported, 3.14 works with some custom-node issues. torch 2.7 minimally supported; PyTorch cu130 or above required on NVIDIA 20 series and newer. ROCm 7.2 wheels on Linux; ROCm 10.0 with torch 2.13 and Python 3.13 on Windows AMD; Intel Arc via torch xpu; Apple Silicon via PyTorch nightly; Huawei Ascend, Cambricon MLU, Iluvatar Corex.",
+  "hardware": {
+   "gpu": "NVIDIA CUDA, AMD ROCm, Intel Arc (xpu), Apple Silicon (MPS) supported; also Ascend, Cambricon, Iluvatar",
+   "min_vram_gb": 4,
+   "recommended_vram_gb": null,
+   "system_ram_gb": 8,
+   "storage": "Model checkpoints are user-supplied (models/checkpoints, models/vae); size depends on models",
+   "cpu_fallback": "documented",
+   "training_vs_inference": "Inference",
+   "notes": "README claims the biggest open models run on as little as 4 GB VRAM + 8 GB RAM using asynchronous weight streaming. --cpu runs everything on the CPU (slow); GTX 10 series and older need the legacy cu126 portable build."
+  },
+  "model": null,
+  "installation": "git clone https://github.com/Comfy-Org/ComfyUI.git\ncd ComfyUI\npip install -r requirements.txt\npython main.py",
+  "configuration": "Install PyTorch for your GPU first; put checkpoints in models/checkpoints and VAEs in models/vae, or map other folders with extra_model_paths.yaml. Server listens on 127.0.0.1:8188 by default (--listen, --port, --tls-keyfile/--tls-certfile, --offline).",
+  "inputs": [
+   "Workflow graphs as JSON (UI or API format)",
+   "Text prompts",
+   "Images, video, audio and 3D files",
+   "Model weights (checkpoints, diffusion models, VAEs, text encoders, LoRAs, ControlNets, upscalers)",
+   "Media made by ComfyUI (dropped onto the canvas to recover its workflow)"
+  ],
+  "outputs": [
+   "Images (incl. 16-bit PNG, 32-bit EXR, 10-bit AVIF, HDR)",
+   "Video",
+   "Audio",
+   "3D models",
+   "Text",
+   "Workflow metadata embedded in outputs"
+  ],
+  "dependencies": null,
+  "credentials_required": "None for local use. Optional paid partner/API nodes (e.g. Nano Banana, Seedance) need a Comfy account; --offline or --disable-partner-nodes turns them off.",
+  "license": "GPL-3.0",
+  "model_license": "Not applicable to ComfyUI itself; each model you load keeps its own license",
+  "commercial_use_notes": "GPL-3.0 allows commercial use; distributing ComfyUI or modified versions requires releasing source under GPL-3.0. Output rights depend on the license of the model used. Comfy Enterprise offers separate commercial licensing.",
+  "complementary_tools": [
+   "comfyui-3d-pack",
+   "real-esrgan",
+   "trellis-2",
+   "stable-fast-3d",
+   "blender-mcp"
+  ],
+  "overlapping_tools": [
+   "dream-textures"
+  ],
+  "integration_notes": "ComfyUI hosts custom node packs such as ComfyUI-3D-Pack. Its HTTP API takes workflow JSON on POST /prompt.",
+  "conflicts": [
+   "Skip if you cannot accept GPL-3.0 obligations when redistributing a modified ComfyUI inside your product.",
+   "Skip on GPUs whose drivers cannot run PyTorch cu130 or newer, unless you use the legacy cu126 portable build."
+  ],
+  "security_notes": [
+   "Custom nodes are arbitrary Python code installed from third parties (often via ComfyUI-Manager); vet them before installing.",
+   "The server binds to 127.0.0.1 by default; --listen exposes it to the network, so add TLS and access control before doing that."
+  ],
+  "privacy_notes": [
+   "Core runs fully offline and downloads nothing unless asked; partner/API nodes send inputs to paid third-party services.",
+   "Outputs embed the full workflow and seeds in their metadata, which reveals your prompts when shared."
+  ],
+  "craft_notes": [
+   "The README recommends ComfyUI-native quantised formats (convrot int8, w6a8) over GGUF, claiming more than 2x speed, and removing extra launch flags because most hurt performance.",
+   "Partial graph re-execution and smart VRAM/RAM offloading let you change one node and re-run only what changed.",
+   "It is the host for custom node packs such as ComfyUI-3D-Pack; --disable-all-custom-nodes is the first troubleshooting step when a node breaks startup."
+  ],
+  "examples": {
+   "independent": "POST an API-format workflow JSON to http://127.0.0.1:8188/prompt, then poll /history/{prompt_id} and download the image from /view.",
+   "combined": "Install comfyui-3d-pack as custom nodes so an image generated in ComfyUI flows straight into an image-to-3D node in the same graph."
+  },
+  "smoke_test": {
+   "status": "passed",
+   "evidence": "Read-only query of a running local ComfyUI 0.42.5: GET /system_stats answered with Python 3.13, PyTorch 2.14.1+cu130 and one 24 GB CUDA GPU. No workflow was run."
+  },
+  "documentation_sources": [
+   "https://github.com/Comfy-Org/ComfyUI/blob/4a4b3409792d499cc36626d76a24fe425f40b5e7/README.md",
+   "https://github.com/Comfy-Org/ComfyUI/blob/4a4b3409792d499cc36626d76a24fe425f40b5e7/docs/installation.md",
+   "https://github.com/Comfy-Org/ComfyUI/blob/4a4b3409792d499cc36626d76a24fe425f40b5e7/pyproject.toml",
+   "https://github.com/Comfy-Org/ComfyUI/blob/4a4b3409792d499cc36626d76a24fe425f40b5e7/requirements.txt",
+   "https://github.com/Comfy-Org/ComfyUI/blob/4a4b3409792d499cc36626d76a24fe425f40b5e7/server.py",
+   "https://github.com/Comfy-Org/ComfyUI/blob/4a4b3409792d499cc36626d76a24fe425f40b5e7/comfy/cli_args.py",
+   "https://github.com/Comfy-Org/ComfyUI/blob/4a4b3409792d499cc36626d76a24fe425f40b5e7/LICENSE"
+  ],
+  "evidence": {
+   "hardware": "'Can run even the biggest open source models on as low as 4GB vram + 8GB ram' (README.md)",
+   "cpu_fallback": "'--cpu', 'To use the CPU for everything (slow).' (comfy/cli_args.py)",
+   "installation": "'pip install -r requirements.txt' then 'python main.py' (README.md)",
+   "runtime_requirements": "'torch 2.7 is minimally supported and cu130 or above is required on Nvidia 20 series and above' (README.md)",
+   "license": "'GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007' (LICENSE)",
+   "model_license": "No weights shipped; 'Put your checkpoints in models/checkpoints' (README.md)",
+   "inputs": "'Save and load workflows as JSON.' (README.md)",
+   "outputs": "'16 bit PNG images, 32 bit EXR, 10 bit AVIF are supported' (README.md)",
+   "api": "@routes.post(\"/prompt\") and @routes.get(\"/history\") in server.py; default port 8188 (comfy/cli_args.py)"
+  }
+ },
+ {
+  "id": "remotion-skills",
+  "name": "Remotion skills",
+  "category": "I",
+  "source_group": "D",
+  "attribution_status": "Added directly by the user on 2026-11-26.",
+  "original_url": "https://github.com/remotion-dev/skills",
+  "verified_url": "https://github.com/remotion-dev/skills",
+  "verification_status": "verified",
+  "verification_date": "2026-11-26",
+  "inspected_commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+  "maintenance": {
+   "default_branch": "main",
+   "archived": false,
+   "last_repository_push": "2026-11-24T17:19:19Z"
+  },
+  "tool_type": "skill collection",
+  "language": "TypeScript",
+  "primary_capabilities": [
+   "Video composition",
+   "Animation"
+  ],
+  "secondary_capabilities": [
+   "Frontend implementation",
+   "Media processing"
+  ],
+  "intended_use": "Use for giving a coding agent Remotion's official best practices for creating, previewing, rendering and upgrading React-based video projects.",
+  "supported_platforms": null,
+  "supported_agents": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Kimi Code",
+   "OpenCode"
+  ],
+  "execution": "local",
+  "runtime_requirements": "A Remotion 4 project (skills are versioned 4.0.547); Node version not stated in this repo.",
+  "hardware": {
+   "gpu": "none",
+   "min_vram_gb": null,
+   "recommended_vram_gb": null,
+   "system_ram_gb": null,
+   "storage": null,
+   "cpu_fallback": "not applicable",
+   "training_vs_inference": null,
+   "notes": "Instruction files only; rendering requirements come from Remotion itself."
+  },
+  "model": null,
+  "installation": "npx remotion skills add\nnpx skills add remotion-dev/skills\ngh skill install remotion-dev/skills\nnpx create-video@latest --skills",
+  "configuration": "Install into an agent's skills folder; /remotion-best-practices routes to the specific skill, and /remotion-upgrade updates installed skills with Remotion.",
+  "inputs": [
+   "Natural-language video requests",
+   "Existing Remotion project code",
+   "Element page or library URLs",
+   "Map data (GeoJSON, Mapbox, MapLibre, MapTiler, CesiumJS)"
+  ],
+  "outputs": [
+   "Remotion compositions and React markup written by the agent",
+   "Rendered video or still via /remotion-render",
+   "Editable OpenTimelineIO timeline export",
+   "Studio preview"
+  ],
+  "dependencies": null,
+  "credentials_required": "None for the skills. Map providers such as Mapbox or MapTiler, and Remotion Lambda, need their own accounts (not documented in this repo).",
+  "license": "No license stated in the pinned repo (no LICENSE file; package.json is private with no license field)",
+  "model_license": null,
+  "commercial_use_notes": "Not established for the skill files. The /remotion-license skill points to remotion.dev's license, FAQ and pricing pages; Remotion itself has separate terms for companies.",
+  "complementary_tools": [
+   "remotion",
+   "anything2explainer",
+   "ffmpeg"
+  ],
+  "overlapping_tools": [],
+  "integration_notes": "Agent skills for Remotion, generated from the Remotion monorepo's packages/skills folder.",
+  "conflicts": [
+   "Skip if your project is not built on Remotion; the skills only cover Remotion APIs and workflows.",
+   "Skip redistribution or modification of the skill files until the license is clarified; the pinned repo states none."
+  ],
+  "security_notes": [
+   "/remotion-docs fetches pages from remotion.dev as Markdown into the agent's context.",
+   "/remotion-elements installs third-party Element components from library URLs; review what they add."
+  ],
+  "privacy_notes": [
+   "No data collection described in the pinned files."
+  ],
+  "craft_notes": [
+   "Fourteen skills: remotion-best-practices (router), -create, -markup, -studio, -render, -maps, -elements, -captions, -saas, -interactivity, -docs, -license, -upgrade and -multimedia (Mediabunny).",
+   "The router tells the agent to preserve edits a user made outside the conversation and to load reference files per task rather than everything at once.",
+   "This repo is generated from the remotion-dev/remotion monorepo (packages/skills); each skill also ships agents/openai.yaml metadata."
+  ],
+  "examples": {
+   "independent": "Run '/remotion-create Make a promo video for a record store' and then '/remotion-render'.",
+   "combined": "Proposed handoff: pair it with anything2explainer so its build agents follow remotion-markup rules while writing per-shot components."
+  },
+  "smoke_test": {
+   "status": "not run",
+   "evidence": null
+  },
+  "documentation_sources": [
+   "https://github.com/remotion-dev/skills/blob/a3f4098a2afd0e13f6a6f8c8760e275f75457ea9/README.md",
+   "https://github.com/remotion-dev/skills/blob/a3f4098a2afd0e13f6a6f8c8760e275f75457ea9/package.json",
+   "https://github.com/remotion-dev/skills/blob/a3f4098a2afd0e13f6a6f8c8760e275f75457ea9/skills/remotion-best-practices/SKILL.md",
+   "https://github.com/remotion-dev/skills/blob/a3f4098a2afd0e13f6a6f8c8760e275f75457ea9/skills/remotion-license/SKILL.md"
+  ],
+  "evidence": {
+   "hardware": "No hardware stated; skills are Markdown guidance (README.md)",
+   "installation": "'npx remotion skills add' and 'npx skills add remotion-dev/skills' (README.md)",
+   "license": "Tree at pinned SHA has no LICENSE file; package.json has '\"private\": true' and no license field",
+   "model_license": "Not a model tool",
+   "inputs": "'Example prompt: /remotion-maps Animate a route from Los Angeles to New York' (README.md)",
+   "outputs": "'Render a video or still, or export an editable OpenTimelineIO timeline.' (README.md)",
+   "agents": "'useful for AI agents like Claude Code, Codex, Cursor, Kimi Code and OpenCode' (README.md)"
   }
  }
 ]

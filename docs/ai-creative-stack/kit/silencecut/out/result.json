@@ -1,0 +1,125 @@
+{
+  "tool": "silencecut",
+  "checks": {
+    "segments": {
+      "pass": true,
+      "found": 3,
+      "segments": [
+        [
+          0.9,
+          2.6
+        ],
+        [
+          3.9,
+          5.1
+        ],
+        [
+          6.4,
+          8.6
+        ]
+      ],
+      "silences": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          2.5,
+          4.0
+        ],
+        [
+          5.0,
+          6.5
+        ],
+        [
+          8.5,
+          10.0
+        ]
+      ]
+    },
+    "duration": {
+      "pass": true,
+      "expectedTonesPlusPads": 4.98,
+      "edlTotal": 5.1,
+      "allowedSlack": 0.22,
+      "videoDuration": 5.1,
+      "audioDuration": 5.1
+    },
+    "selfCheck": {
+      "pass": true,
+      "exitCode": 0,
+      "checks": {
+        "videoDuration": true,
+        "audioDuration": true,
+        "clickFree": true
+      }
+    },
+    "clickFree": {
+      "pass": true,
+      "joinSeconds": [
+        1.7,
+        2.9
+      ],
+      "peakStepAtJoins": [
+        4e-06,
+        3e-06
+      ],
+      "humNaturalStep": 0.000136,
+      "limit": 0.002
+    },
+    "avSync": {
+      "pass": true,
+      "videoRuns": [
+        [
+          3,
+          48
+        ],
+        [
+          54,
+          84
+        ],
+        [
+          90,
+          150
+        ]
+      ],
+      "audioRuns": [
+        [
+          3,
+          48
+        ],
+        [
+          54,
+          84
+        ],
+        [
+          90,
+          150
+        ]
+      ],
+      "worstEdgeFrames": 0,
+      "mismatchedFrames": 0,
+      "frames": 153
+    },
+    "controlClicks": {
+      "pass": true,
+      "exitCode": 1,
+      "boundaries": [
+        {
+          "t": 1.7,
+          "peakStep": 0.011011,
+          "contextStep": 0.000168,
+          "click": true
+        },
+        {
+          "t": 2.9,
+          "peakStep": 0.00169,
+          "contextStep": 0.000164,
+          "click": false
+        }
+      ]
+    }
+  },
+  "outBytes": 288041,
+  "pass": true
+}

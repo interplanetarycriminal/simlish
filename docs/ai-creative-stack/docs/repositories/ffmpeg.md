@@ -49,7 +49,7 @@ Use an approved packaged build or the compilation instructions linked from upstr
 | Primary | Media processing |
 | Supporting | Video editing |
 
-Skip re-encode when a compatible stream copy covers the request. Consider the existing project toolchain. Complementary tools include [hyperframes](hyperframes.md), [remotion](remotion.md), [motion-canvas](motion-canvas.md), [scarlet](scarlet.md), [video-use](video-use.md), [real-esrgan](real-esrgan.md), [line-art-animation](line-art-animation.md), [video-shotcraft](video-shotcraft.md).
+Skip re-encode when a compatible stream copy covers the request. Consider the existing project toolchain. Complementary tools include [hyperframes](hyperframes.md), [remotion](remotion.md), [motion-canvas](motion-canvas.md), [scarlet](scarlet.md), [video-use](video-use.md), [real-esrgan](real-esrgan.md), [line-art-animation](line-art-animation.md), [video-shotcraft](video-shotcraft.md), [huashu-motion](huashu-motion.md), [anything2explainer](anything2explainer.md), [openscreen](openscreen.md), [onetake](onetake.md), [lemo-opuscar](lemo-opuscar.md), [remotion-skills](remotion-skills.md).
 
 No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.
 
