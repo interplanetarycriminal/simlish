@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>splatview</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #121217; color: #ddd; font: 13px system-ui, sans-serif; overflow: hidden; }
+  canvas { display: block; width: 100vw; height: 100vh; touch-action: none; }
+  #hud { position: fixed; left: 8px; bottom: 8px; padding: 4px 8px; background: rgba(0,0,0,.45); border-radius: 4px; pointer-events: none; }
+  #hud.hidden { display: none; }
+  #err { position: fixed; inset: 0; display: none; place-items: center; color: #f88; white-space: pre-wrap; padding: 24px; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud"></div>
+<div id="err"></div>
+<script type="module">
+import { createViewer } from './splatview.mjs';
+
+const q = new URLSearchParams(location.search);
+const canvas = document.getElementById('c');
+const hud = document.getElementById('hud');
+if (q.get('hud') === '0') hud.classList.add('hidden');
+const hex = (q.get('bg') || '121217').replace('#', '');
+const bg = [0, 2, 4].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+document.body.style.background = '#' + hex;
+
+function fit() {
+  const dpr = q.get('dpr') ? Number(q.get('dpr')) : (window.devicePixelRatio || 1);
+  canvas.width = Math.round(canvas.clientWidth * dpr);
+  canvas.height = Math.round(canvas.clientHeight * dpr);
+}
+fit();
+
+let viewer;
+try {
+  viewer = createViewer(canvas, { background: bg, fovDeg: Number(q.get('fov') || 50) });
+} catch (e) { fail(e); }
+
+function fail(e) {
+  const el = document.getElementById('err');
+  el.style.display = 'grid';
+  el.textContent = String(e && e.message || e);
+  window.__error = el.textContent;
+  window.__ready = true;
+}
+
+let pending = false;
+function redraw() {
+  if (pending) return;
+  pending = true;
+  requestAnimationFrame(() => { pending = false; viewer.render(); showHud(); });
+}
+function showHud() {
+  const s = viewer.stats();
+  hud.textContent = `${s.count.toLocaleString()} splats  az ${s.view.az.toFixed(0)}  el ${s.view.el.toFixed(0)}  dist ${s.view.dist.toFixed(2)}  sort ${s.lastSortMs.toFixed(1)} ms`;
+}
+
+// orbit controls: drag = orbit, shift/right drag = pan, wheel = zoom
+let drag = null;
+canvas.addEventListener('contextmenu', (e) => e.preventDefault());
+canvas.addEventListener('pointerdown', (e) => { canvas.setPointerCapture(e.pointerId); drag = { x: e.clientX, y: e.clientY, pan: e.button === 2 || e.shiftKey }; });
+canvas.addEventListener('pointerup', () => { drag = null; });
+canvas.addEventListener('pointermove', (e) => {
+  if (!drag || !viewer.state.splats) return;
+  const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+  drag.x = e.clientX; drag.y = e.clientY;
+  const st = viewer.state;
+  if (drag.pan) {
+    const az = st.az * Math.PI / 180, el = st.el * Math.PI / 180;
+    const right = [Math.cos(az), 0, -Math.sin(az)];
+    const up = [-Math.sin(el) * Math.sin(az), Math.cos(el), -Math.sin(el) * Math.cos(az)];
+    const k = st.dist * 0.0015;
+    for (let i = 0; i < 3; i++) st.target[i] += (-dx * right[i] + dy * up[i]) * k;
+  } else {
+    st.az -= dx * 0.4;
+    st.el = Math.max(-89, Math.min(89, st.el + dy * 0.4));
+  }
+  redraw();
+});
+canvas.addEventListener('wheel', (e) => { e.preventDefault(); viewer.state.dist *= Math.exp(e.deltaY * 0.001); redraw(); }, { passive: false });
+window.addEventListener('resize', () => { fit(); redraw(); });
+window.addEventListener('dragover', (e) => e.preventDefault());
+window.addEventListener('drop', async (e) => {
+  e.preventDefault();
+  const f = e.dataTransfer.files[0];
+  if (f) { viewer.loadBuffer(await f.arrayBuffer(), f.name); showHud(); }
+});
+
+window.__viewer = viewer;
+window.__splat = {
+  setView: (az, el, dist) => viewer.setView(az, el, dist),
+  stats: () => viewer.stats(),
+  project: (x, y, z) => viewer.project(x, y, z),
+  pixelsBase64: () => {
+    const p = viewer.pixels();
+    let s = '';
+    for (let i = 0; i < p.data.length; i += 0x8000) s += String.fromCharCode.apply(null, p.data.subarray(i, i + 0x8000));
+    return { width: p.width, height: p.height, data: btoa(s) };
+  },
+};
+
+if (viewer) {
+  const file = q.get('file');
+  if (!file) {
+    hud.textContent = 'Add ?file=<path to .ply> or drop a .ply file here.';
+    window.__ready = true;
+  } else {
+    viewer.loadUrl(file).then(() => {
+      const az = q.get('az'), el = q.get('el'), dist = q.get('dist');
+      if (az !== null || el !== null || dist !== null) viewer.setView(Number(az ?? 30), Number(el ?? 20), dist !== null ? Number(dist) : undefined);
+      showHud();
+      window.__ready = true;
+    }).catch(fail);
+  }
+}
+</script>
+</body>
+</html>

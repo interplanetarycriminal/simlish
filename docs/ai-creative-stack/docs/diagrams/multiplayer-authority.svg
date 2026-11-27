@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 904" role="img" aria-labelledby="title desc">
+<title id="title">Multiplayer authority</title><desc id="desc">The server owns game state. Clients send intents; the server validates, applies and broadcasts.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="908" height="904" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Multiplayer authority</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">The server owns game state. Clients send intents; the server validates, applies and broadcasts.</text>
+<path d="M266 180 V212 H454 V242" class="line" marker-end="url(#end)"/>
+<path d="M642 180 V212 H454 V242" class="line" marker-end="url(#end)"/>
+<path d="M454 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V514" class="line" marker-end="url(#end)"/>
+<path d="M454 588 V650" class="line" marker-end="url(#end)"/>
+<path d="M454 724 V786" class="line" marker-end="url(#end)"/>
+<rect x="272" y="190" width="55" height="20" rx="5" class="lab"/><text x="278" y="204" font-size="12.5" font-weight="560" class="sub">intent</text>
+<rect x="577" y="190" width="55" height="20" rx="5" class="lab"/><text x="583" y="204" font-size="12.5" font-weight="560" class="sub">intent</text>
+<rect x="460" y="475" width="69" height="20" rx="5" class="lab"/><text x="466" y="489" font-size="12.5" font-weight="560" class="sub">accepted</text>
+<rect x="460" y="747" width="48" height="20" rx="5" class="lab"/><text x="466" y="761" font-size="12.5" font-weight="560" class="sub">state</text>
+<rect x="116" y="108" width="300" height="72" rx="13" class="panel"/><rect x="128" y="132" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="144" y="140" font-size="16.5" font-weight="720">Client A</text><text x="144" y="160" font-size="13" font-weight="450" class="sub">input intents</text>
+<rect x="492" y="108" width="300" height="72" rx="13" class="panel"/><rect x="504" y="132" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="520" y="140" font-size="16.5" font-weight="720">Client B</text><text x="520" y="160" font-size="13" font-weight="450" class="sub">input intents</text>
+<rect x="304" y="244" width="300" height="72" rx="13" class="panel"/><rect x="316" y="268" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="276" font-size="16.5" font-weight="720">Authoritative server</text><text x="332" y="296" font-size="13" font-weight="450" class="sub">Colyseus room or Nakama match</text>
+<rect x="304" y="380" width="300" height="72" rx="13" class="panel"/><rect x="316" y="404" width="7" height="24" rx="3.5" fill="#bf315c"/>
+<text x="332" y="412" font-size="16.5" font-weight="720">Validate</text><text x="332" y="432" font-size="13" font-weight="450" class="sub">rate limits, rules, authentication</text>
+<rect x="304" y="516" width="300" height="72" rx="13" class="panel"/><rect x="316" y="540" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="548" font-size="16.5" font-weight="720">Apply to server state</text><text x="332" y="568" font-size="13" font-weight="450" class="sub">fixed tick</text>
+<rect x="304" y="652" width="300" height="72" rx="13" class="panel"/><rect x="316" y="676" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="332" y="684" font-size="16.5" font-weight="720">Broadcast state</text><text x="332" y="704" font-size="13" font-weight="450" class="sub">schema sync</text>
+<rect x="304" y="788" width="300" height="72" rx="13" class="panel"/><rect x="316" y="812" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="820" font-size="16.5" font-weight="720">Tests</text><text x="332" y="840" font-size="13" font-weight="450" class="sub">two clients, invalid input, reconnect, latency</text>
+</svg>

@@ -1,0 +1,3 @@
+# game developer
+
+Write a game design document with vertical-slice acceptance criteria: platform, core loop, controls, one level and performance budgets. Pick one runtime and its own physics solver from [game development](../docs/game-development/README.md), and step physics on a fixed tick. Build the slice before content. Playtest it, test save and load and every narrative branch, and for online play keep state on the server and test invalid input and reconnects. Never deploy a public server or collect player data without authorization. Follow the [activation prompt](activate-creative-agent.md), select only the required tools and record the acceptance evidence against the Gameplay, Game content and Online play gates in [QUALITY_GATES.md](../QUALITY_GATES.md).

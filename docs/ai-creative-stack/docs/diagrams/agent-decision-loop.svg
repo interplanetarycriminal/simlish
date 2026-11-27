@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 1548" role="img" aria-labelledby="title desc">
+<title id="title">Autonomous agent decision loop</title><desc id="desc">From requirements to recorded decisions. Rendering and critique repeat until the acceptance criteria pass.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="908" height="1548" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Autonomous agent decision loop</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">From requirements to recorded decisions. Rendering and critique repeat until the acceptance criteria pass.</text>
+<path d="M454 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M454 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 434 V496" class="line" marker-end="url(#end)"/>
+<path d="M454 570 V632" class="line" marker-end="url(#end)"/>
+<path d="M454 706 V768" class="line" marker-end="url(#end)"/>
+<path d="M304 407 H264 V806 H302" class="line" marker-end="url(#end)"/>
+<path d="M454 842 V904" class="line" marker-end="url(#end)"/>
+<path d="M454 978 V1040" class="line" marker-end="url(#end)"/>
+<path d="M454 1114 V1176" class="line" marker-end="url(#end)"/>
+<path d="M454 1232 V1264 H266 V1294" class="line" marker-end="url(#end)"/>
+<path d="M416 1332 H828 V942 H606" class="line dash" marker-end="url(#end)"/>
+<path d="M454 1232 V1264 H642 V1294" class="line" marker-end="url(#end)"/>
+<path d="M642 1368 V1400 H454 V1430" class="line" marker-end="url(#end)"/>
+<rect x="460" y="457" width="26" height="20" rx="5" class="lab"/><text x="466" y="471" font-size="12.5" font-weight="560" class="sub">No</text>
+<rect x="225" y="598" width="33" height="20" rx="5" class="lab"/><text x="231" y="612" font-size="12.5" font-weight="560" class="sub">Yes</text>
+<rect x="272" y="1271" width="26" height="20" rx="5" class="lab"/><text x="278" y="1285" font-size="12.5" font-weight="560" class="sub">No</text>
+<rect x="420" y="1309" width="69" height="20" rx="5" class="lab"/><text x="426" y="1323" font-size="12.5" font-weight="560" class="sub">rerender</text>
+<rect x="648" y="1271" width="33" height="20" rx="5" class="lab"/><text x="654" y="1285" font-size="12.5" font-weight="560" class="sub">Yes</text>
+<rect x="304" y="108" width="300" height="72" rx="13" class="panel"/><rect x="316" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="332" y="140" font-size="16.5" font-weight="720">Analyze requirements</text><text x="332" y="160" font-size="13" font-weight="450" class="sub">brief, project instructions</text>
+<rect x="304" y="244" width="300" height="72" rx="13" class="panel"/><rect x="316" y="268" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="276" font-size="16.5" font-weight="720">Retrieve authorized project context</text><text x="332" y="296" font-size="13" font-weight="450" class="sub">only what the task needs</text>
+<rect x="304" y="380" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M320 398 L329 407 L320 416 L311 407Z" fill="#a05212"/>
+<text x="332" y="413" font-size="17" font-weight="720">Existing capabilities sufficient?</text>
+<rect x="304" y="498" width="300" height="72" rx="13" class="panel"/><rect x="316" y="522" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="530" font-size="16.5" font-weight="720">Select minimum sufficient tools</text><text x="332" y="550" font-size="13" font-weight="450" class="sub">one authority per asset</text>
+<rect x="304" y="634" width="300" height="72" rx="13" class="panel"/><rect x="316" y="658" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="332" y="666" font-size="16.5" font-weight="720">Verify dependencies and permissions</text><text x="332" y="686" font-size="13" font-weight="450" class="sub">pin, review, isolate</text>
+<rect x="304" y="770" width="300" height="72" rx="13" class="panel"/><rect x="316" y="794" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="332" y="802" font-size="16.5" font-weight="720">Implement</text><text x="332" y="822" font-size="13" font-weight="450" class="sub">explicit handoff contracts</text>
+<rect x="304" y="906" width="300" height="72" rx="13" class="panel"/><rect x="316" y="930" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="332" y="938" font-size="16.5" font-weight="720">Render and inspect</text><text x="332" y="958" font-size="13" font-weight="450" class="sub">the real artifact</text>
+<rect x="304" y="1042" width="300" height="72" rx="13" class="panel"/><rect x="316" y="1066" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="1074" font-size="16.5" font-weight="720">Critique</text><text x="332" y="1094" font-size="13" font-weight="450" class="sub">against the brief and gates</text>
+<rect x="304" y="1178" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M320 1196 L329 1205 L320 1214 L311 1205Z" fill="#a05212"/>
+<text x="332" y="1211" font-size="17" font-weight="720">Acceptance criteria passed?</text>
+<rect x="116" y="1296" width="300" height="72" rx="13" class="panel"/><rect x="128" y="1320" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="1328" font-size="16.5" font-weight="720">Refine and retest</text><text x="144" y="1348" font-size="13" font-weight="450" class="sub">fix the findings</text>
+<rect x="492" y="1296" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1320" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="520" y="1328" font-size="16.5" font-weight="720">Deliver artifacts</text><text x="520" y="1348" font-size="13" font-weight="450" class="sub">sources, renders, commands, versions</text>
+<rect x="304" y="1432" width="300" height="72" rx="13" class="panel"/><rect x="316" y="1456" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="1464" font-size="16.5" font-weight="720">Record approved decisions</text><text x="332" y="1484" font-size="13" font-weight="450" class="sub">decision log, DESIGN.md</text>
+</svg>

@@ -1,0 +1,72 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Execution ledger entry",
+ "description": "One JSON object per line: planned versus observed effect of one attempt.",
+ "type": "object",
+ "required": [
+  "ts",
+  "work_package_id",
+  "planned_effect",
+  "observed_effect",
+  "changed_paths",
+  "validation_result",
+  "deviation_reason",
+  "evidence_refs",
+  "status"
+ ],
+ "properties": {
+  "ts": {
+   "type": "string"
+  },
+  "work_package_id": {
+   "type": "string"
+  },
+  "attempt": {
+   "type": "integer"
+  },
+  "planned_effect": {
+   "type": "string"
+  },
+  "observed_effect": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "changed_paths": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "validation_result": {
+   "enum": [
+    "pass",
+    "fail",
+    "not run"
+   ]
+  },
+  "deviation_reason": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "evidence_refs": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "status": {
+   "enum": [
+    "running",
+    "retrying",
+    "done",
+    "failed",
+    "stopped",
+    "blocked"
+   ]
+  }
+ }
+}

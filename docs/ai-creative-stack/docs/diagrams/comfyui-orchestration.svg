@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 1312" role="img" aria-labelledby="title desc">
+<title id="title">ComfyUI orchestration</title><desc id="desc">Amber cards run as native ComfyUI-3D-Pack nodes. The rose card is outside ComfyUI and crosses as files through a reviewed adapter.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="908" height="1312" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">ComfyUI orchestration</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Amber cards run as native ComfyUI-3D-Pack nodes. The rose card is outside ComfyUI and crosses as files through a reviewed adapter.</text>
+<path d="M454 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M454 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V484 H266 V514" class="line" marker-end="url(#end)"/>
+<path d="M454 316 V484 H642 V514" class="line dash" marker-end="url(#end)"/>
+<path d="M266 588 V620 H454 V650" class="line" marker-end="url(#end)"/>
+<path d="M642 588 V756 H454 V786" class="line dash" marker-end="url(#end)"/>
+<path d="M454 724 V786" class="line" marker-end="url(#end)"/>
+<path d="M454 860 V922" class="line" marker-end="url(#end)"/>
+<path d="M454 996 V1058" class="line" marker-end="url(#end)"/>
+<path d="M454 1132 V1194" class="line" marker-end="url(#end)"/>
+<rect x="648" y="491" width="76" height="20" rx="5" class="lab"/><text x="654" y="505" font-size="12.5" font-weight="560" class="sub">files out</text>
+<rect x="492" y="734" width="140" height="20" rx="5" class="lab"/><text x="498" y="748" font-size="12.5" font-weight="560" class="sub">GLB, OBJ, FBX back</text>
+<rect x="460" y="1155" width="40" height="20" rx="5" class="lab"/><text x="466" y="1169" font-size="12.5" font-weight="560" class="sub">pass</text>
+<rect x="304" y="108" width="300" height="72" rx="13" class="panel"/><rect x="316" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="332" y="140" font-size="16.5" font-weight="720">Input assets</text><text x="332" y="160" font-size="13" font-weight="450" class="sub">images, masks, meshes</text>
+<rect x="304" y="244" width="300" height="72" rx="13" class="panel"/><rect x="316" y="268" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="276" font-size="16.5" font-weight="720">Model selection</text><text x="332" y="296" font-size="13" font-weight="450" class="sub">pinned checkpoint and hash</text>
+<rect x="304" y="380" width="300" height="72" rx="13" class="panel"/><rect x="316" y="404" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="412" font-size="16.5" font-weight="720">Native generation nodes</text><text x="332" y="432" font-size="13" font-weight="450" class="sub">SF3D, TRELLIS v1, Hunyuan3D, TripoSG</text>
+<rect x="116" y="516" width="300" height="72" rx="13" class="panel"/><rect x="128" y="540" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="548" font-size="16.5" font-weight="720">Native geometry and splat nodes</text><text x="144" y="568" font-size="13" font-weight="450" class="sub">mesh ops, 3DGS optimize</text>
+<rect x="492" y="516" width="300" height="72" rx="13" class="panel"/><rect x="504" y="540" width="7" height="24" rx="3.5" fill="#bf315c"/>
+<text x="520" y="548" font-size="16.5" font-weight="720">Reviewed external adapter</text><text x="520" y="568" font-size="13" font-weight="450" class="sub">SAM 3D, TRELLIS.2, UniRig, MeshAnything</text>
+<rect x="304" y="652" width="300" height="72" rx="13" class="panel"/><rect x="316" y="676" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="684" font-size="16.5" font-weight="720">Native texture baking</text><text x="332" y="704" font-size="13" font-weight="450" class="sub">UV and map output</text>
+<rect x="304" y="788" width="300" height="72" rx="13" class="panel"/><rect x="316" y="812" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="820" font-size="16.5" font-weight="720">Representation conversion</text><text x="332" y="840" font-size="13" font-weight="450" class="sub">mesh or splat PLY, recorded</text>
+<rect x="304" y="924" width="300" height="72" rx="13" class="panel"/><rect x="316" y="948" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="956" font-size="16.5" font-weight="720">Export</text><text x="332" y="976" font-size="13" font-weight="450" class="sub">GLB, OBJ, PLY</text>
+<rect x="304" y="1060" width="300" height="72" rx="13" class="panel"/><rect x="316" y="1084" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="1092" font-size="16.5" font-weight="720">Validation</text><text x="332" y="1112" font-size="13" font-weight="450" class="sub">validate_asset.py per output</text>
+<rect x="304" y="1196" width="300" height="72" rx="13" class="panel"/><rect x="316" y="1220" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="332" y="1228" font-size="16.5" font-weight="720">Reusable workflow JSON</text><text x="332" y="1248" font-size="13" font-weight="450" class="sub">versions, seeds, paths</text>
+</svg>

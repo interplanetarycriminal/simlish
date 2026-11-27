@@ -1,0 +1,162 @@
+{
+ "tool": "specflow",
+ "sample": {
+  "criteria": 6,
+  "tasks": 15,
+  "gates": [
+   "Geometry",
+   "Interactive 3D",
+   "Engineering",
+   "Delivery",
+   "Traceability"
+  ]
+ },
+ "checks": [
+  {
+   "check": "init writes constitution",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "specify creates specs/001-slug/spec.md",
+   "pass": true,
+   "detail": "001-upload-glb-model-preview-three"
+  },
+  {
+   "check": "three user stories",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "six Given/When/Then criteria",
+   "pass": true,
+   "detail": "['AC1.1', 'AC1.2', 'AC2.1', 'AC2.2', 'AC3.1', 'AC3.2']"
+  },
+  {
+   "check": "open questions marked",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "analyze fails while questions are open",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "plan refused while questions are open",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "tasks refused while questions are open",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "clarify lists open questions",
+   "pass": true,
+   "detail": "4 open questions"
+  },
+  {
+   "check": "clarify rejects an unknown question",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "clarify writes answers back",
+   "pass": true,
+   "detail": "answered 4; 0 open questions left"
+  },
+  {
+   "check": "plan has the five sections",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "plan picks Three.js from TOOL_SELECTION.md with a line citation",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "plan names quality gates",
+   "pass": true,
+   "detail": "['Geometry', 'Interactive 3D', 'Engineering', 'Delivery', 'Traceability']"
+  },
+  {
+   "check": "plan has no absolute paths",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "tasks numbered and all traced",
+   "pass": true,
+   "detail": "15 tasks"
+  },
+  {
+   "check": "every criterion has a task",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "analyze passes on the full flow",
+   "pass": true,
+   "detail": "analyze: OK (3 stories, 6 criteria, 15 tasks, all traced)"
+  },
+  {
+   "check": "analyze fails: task without a trace",
+   "pass": true,
+   "detail": "analyze: 1 gaps |   - tasks: T003 traces to no acceptance criterion"
+  },
+  {
+   "check": "analyze fails: criterion without a task",
+   "pass": true,
+   "detail": "analyze: 1 gaps |   - coverage: AC2.1 has no task"
+  },
+  {
+   "check": "analyze fails: trace to an unknown criterion",
+   "pass": true,
+   "detail": "analyze: 1 gaps |   - tasks: T004 traces to unknown criterion AC9.9"
+  },
+  {
+   "check": "analyze fails: new open question in spec",
+   "pass": true,
+   "detail": "analyze: 3 gaps |   - spec: 1 unresolved [NEEDS CLARIFICATION] markers |   - plan: stale (spec.md changed after the plan was written) |   - tasks: stale (spec.m"
+  },
+  {
+   "check": "analyze fails: plan without gates",
+   "pass": true,
+   "detail": "analyze: 2 gaps |   - plan: names no quality gates |   - tasks: stale (plan.md changed after tasks were written)"
+  },
+  {
+   "check": "restored files pass again",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "approve records the owner and analyze still passes",
+   "pass": true,
+   "detail": "analyze: OK (3 stories, 6 criteria, 15 tasks, all traced)"
+  },
+  {
+   "check": "second spec numbered 002",
+   "pass": true,
+   "detail": "002-generate-weekly-report-render-times"
+  },
+  {
+   "check": "unknown actor becomes a question",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "plan works without the catalogue",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "second flow passes analyze",
+   "pass": true,
+   "detail": "analyze: OK (2 stories, 4 criteria, 11 tasks, all traced)"
+  }
+ ],
+ "pass": true
+}

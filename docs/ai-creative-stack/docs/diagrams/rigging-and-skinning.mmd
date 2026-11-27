@@ -1,0 +1,29 @@
+%% render: auto
+%% title: Rigging and skinning
+%% desc: A predicted rig is a starting point. Test poses decide whether it ships.
+flowchart TD
+    A["Validated mesh • manifold, scaled, deformation topology"]:::amber
+    B["Skeleton prediction • UniRig, or hand-placed joints"]:::amber
+    C["Skinning weight prediction • UniRig, or automatic weights"]:::amber
+    D["Rig import into Blender • FBX"]:::amber
+    E["Joint and weight inspection • validate_asset.py report"]:::green
+    F["Test poses • bend every joint to its limit"]:::blue
+    G{"Deformation acceptable?"}:::slate
+    H["Refine rig and weights • weight paint, bone roll, loops"]:::amber
+    I["Animation-ready asset • FBX or GLB plus report"]:::green
+    A -->|OBJ, FBX, GLB| B
+    B --> C
+    C -->|FBX| D
+    D --> E
+    E --> F
+    F --> G
+    G -->|No| H
+    H -.->|retest| F
+    G -->|Yes| I
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

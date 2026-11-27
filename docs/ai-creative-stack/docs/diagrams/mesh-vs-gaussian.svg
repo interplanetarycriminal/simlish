@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1284 904" role="img" aria-labelledby="title desc">
+<title id="title">Polygon mesh versus Gaussian splat</title><desc id="desc">Two different representations. A Gaussian PLY is not a polygon mesh. Conversion is optional, lossy and must be verified.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="1284" height="904" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Polygon mesh versus Gaussian splat</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Two different representations. A Gaussian PLY is not a polygon mesh. Conversion is optional, lossy and must be verified.</text>
+<path d="M642 180 V212 H454 V242" class="line" marker-end="url(#end)"/>
+<path d="M642 180 V212 H830 V242" class="line" marker-end="url(#end)"/>
+<path d="M454 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M830 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V514" class="line" marker-end="url(#end)"/>
+<path d="M830 452 V514" class="line" marker-end="url(#end)"/>
+<path d="M454 588 V650" class="line" marker-end="url(#end)"/>
+<path d="M830 588 V650" class="line" marker-end="url(#end)"/>
+<path d="M454 724 V756 H266 V786" class="line" marker-end="url(#end)"/>
+<path d="M830 724 V756 H642 V786" class="line" marker-end="url(#end)"/>
+<path d="M830 724 V756 H1018 V786" class="line dash" marker-end="url(#end)"/>
+<rect x="460" y="339" width="69" height="20" rx="5" class="lab"/><text x="466" y="353" font-size="12.5" font-weight="560" class="sub">OBJ, GLB</text>
+<rect x="836" y="339" width="55" height="20" rx="5" class="lab"/><text x="842" y="353" font-size="12.5" font-weight="560" class="sub">images</text>
+<rect x="836" y="475" width="111" height="20" rx="5" class="lab"/><text x="842" y="489" font-size="12.5" font-weight="560" class="sub">poses + points</text>
+<rect x="272" y="763" width="69" height="20" rx="5" class="lab"/><text x="278" y="777" font-size="12.5" font-weight="560" class="sub">GLB, FBX</text>
+<rect x="648" y="763" width="76" height="20" rx="5" class="lab"/><text x="654" y="777" font-size="12.5" font-weight="560" class="sub">splat PLY</text>
+<rect x="1024" y="763" width="83" height="20" rx="5" class="lab"/><text x="1030" y="777" font-size="12.5" font-weight="560" class="sub">unverified</text>
+<rect x="492" y="108" width="300" height="72" rx="13" class="panel"/><rect x="504" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="520" y="140" font-size="16.5" font-weight="720">Visual reference</text><text x="520" y="160" font-size="13" font-weight="450" class="sub">authorized images or video</text>
+<rect x="304" y="244" width="300" height="72" rx="13" class="panel"/><rect x="316" y="268" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="276" font-size="16.5" font-weight="720">Object geometry reconstruction</text><text x="332" y="296" font-size="13" font-weight="450" class="sub">SAM 3D, SF3D, TRELLIS.2, modelling</text>
+<rect x="680" y="244" width="300" height="72" rx="13" class="panel"/><rect x="692" y="268" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="708" y="276" font-size="16.5" font-weight="720">Multi-view scene capture</text><text x="708" y="296" font-size="13" font-weight="450" class="sub">many overlapping photos</text>
+<rect x="304" y="380" width="300" height="72" rx="13" class="panel"/><rect x="316" y="404" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="412" font-size="16.5" font-weight="720">Polygon mesh</text><text x="332" y="432" font-size="13" font-weight="450" class="sub">vertices, faces, normals</text>
+<rect x="680" y="380" width="300" height="72" rx="13" class="panel"/><rect x="692" y="404" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="708" y="412" font-size="16.5" font-weight="720">Camera calibration</text><text x="708" y="432" font-size="13" font-weight="450" class="sub">COLMAP structure from motion</text>
+<rect x="304" y="516" width="300" height="72" rx="13" class="panel"/><rect x="316" y="540" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="548" font-size="16.5" font-weight="720">Topology and UVs</text><text x="332" y="568" font-size="13" font-weight="450" class="sub">retopology, unwrap</text>
+<rect x="680" y="516" width="300" height="72" rx="13" class="panel"/><rect x="692" y="540" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="708" y="548" font-size="16.5" font-weight="720">Gaussian Splatting optimization</text><text x="708" y="568" font-size="13" font-weight="450" class="sub">GPU training</text>
+<rect x="304" y="652" width="300" height="72" rx="13" class="panel"/><rect x="316" y="676" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="684" font-size="16.5" font-weight="720">Materials and optional rig</text><text x="332" y="704" font-size="13" font-weight="450" class="sub">PBR maps, skeleton</text>
+<rect x="680" y="652" width="300" height="72" rx="13" class="panel"/><rect x="692" y="676" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="708" y="684" font-size="16.5" font-weight="720">Gaussian scene</text><text x="708" y="704" font-size="13" font-weight="450" class="sub">PLY of Gaussian parameters</text>
+<rect x="116" y="788" width="300" height="72" rx="13" class="panel"/><rect x="128" y="812" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="144" y="820" font-size="16.5" font-weight="720">Mesh viewer or renderer</text><text x="144" y="840" font-size="13" font-weight="450" class="sub">Three.js, Blender</text>
+<rect x="492" y="788" width="300" height="72" rx="13" class="panel"/><rect x="504" y="812" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="520" y="820" font-size="16.5" font-weight="720">Compatible splat viewer</text><text x="520" y="840" font-size="13" font-weight="450" class="sub">not a mesh renderer</text>
+<rect x="868" y="788" width="300" height="72" rx="13" class="panel"/><rect x="880" y="812" width="7" height="24" rx="3.5" fill="#bf315c"/>
+<text x="896" y="820" font-size="16.5" font-weight="720">Optional verified mesh conversion</text><text x="896" y="840" font-size="13" font-weight="450" class="sub">lossy; result re-enters as a mesh</text>
+</svg>

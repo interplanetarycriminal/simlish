@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 745 768" role="img" aria-labelledby="title desc">
+<title id="title">Interactive 3D experience</title><desc id="desc">Each arrow names the artifact the next step receives.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="745" height="768" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Interactive 3D experience</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Each arrow names the artifact the next step receives.</text>
+<path d="M372 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M372 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M372 452 V514" class="line" marker-end="url(#end)"/>
+<path d="M372 588 V650" class="line" marker-end="url(#end)"/>
+<path d="M522 688 H558 V280 H524" class="line dash" marker-end="url(#end)"/>
+<rect x="378" y="203" width="55" height="20" rx="5" class="lab"/><text x="384" y="217" font-size="12.5" font-weight="560" class="sub">.blend</text>
+<rect x="378" y="339" width="225" height="20" rx="5" class="lab"/><text x="384" y="353" font-size="12.5" font-weight="560" class="sub">GLB: meters, named root, clips</text>
+<rect x="378" y="475" width="97" height="20" rx="5" class="lab"/><text x="384" y="489" font-size="12.5" font-weight="560" class="sub">loaded scene</text>
+<rect x="378" y="611" width="111" height="20" rx="5" class="lab"/><text x="384" y="625" font-size="12.5" font-weight="560" class="sub">build + poster</text>
+<rect x="526" y="665" width="90" height="20" rx="5" class="lab"/><text x="532" y="679" font-size="12.5" font-weight="560" class="sub">over budget</text>
+<rect x="222" y="108" width="300" height="72" rx="13" class="panel"/><rect x="234" y="132" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="250" y="140" font-size="16.5" font-weight="720">Author the scene</text><text x="250" y="160" font-size="13" font-weight="450" class="sub">editable Blender source</text>
+<rect x="222" y="244" width="300" height="72" rx="13" class="panel"/><rect x="234" y="268" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="250" y="276" font-size="16.5" font-weight="720">Optimize and export</text><text x="250" y="296" font-size="13" font-weight="450" class="sub">triangle and texture budget</text>
+<rect x="222" y="380" width="300" height="72" rx="13" class="panel"/><rect x="234" y="404" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="250" y="412" font-size="16.5" font-weight="720">Load GLB in browser</text><text x="250" y="432" font-size="13" font-weight="450" class="sub">GLTFLoader, decoders declared</text>
+<rect x="222" y="516" width="300" height="72" rx="13" class="panel"/><rect x="234" y="540" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="250" y="548" font-size="16.5" font-weight="720">Light and add controls</text><text x="250" y="568" font-size="13" font-weight="450" class="sub">controls outside the canvas</text>
+<rect x="222" y="652" width="300" height="72" rx="13" class="panel"/><rect x="234" y="676" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="250" y="684" font-size="16.5" font-weight="720">Measure on devices</text><text x="250" y="704" font-size="13" font-weight="450" class="sub">load time, frame time, fallback</text>
+</svg>

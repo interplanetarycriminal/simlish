@@ -1,0 +1,3 @@
+# Spatial reconstruction
+
+Reconstruct a real place or object from authorized photographs with Gaussian Splatting. Confirm consent for faces, private locations and owned objects first. Review capture coverage and exposure, calibrate cameras with COLMAP, train, then validate on held-out views for floaters, holes and view-dependent artifacts. Deliver a Gaussian PLY to a compatible splat viewer: it is not a polygon mesh, and converting it is lossy and must be recorded. The reference implementation's license is research-only. Follow the [spatial reconstruction workflow](../docs/workflows/spatial-reconstruction.md) and the [activation prompt](activate-creative-agent.md).

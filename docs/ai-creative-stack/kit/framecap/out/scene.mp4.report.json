@@ -1,0 +1,38 @@
+{
+  "tool": "framecap",
+  "input": "out/pages/scene.html",
+  "url": "http://127.0.0.1:51749/scene.html",
+  "chrome": "Chrome/158.0.8127.37",
+  "width": 640,
+  "height": 360,
+  "fps": 24,
+  "duration": 1,
+  "frames": 24,
+  "format": "mp4",
+  "alpha": false,
+  "audio": null,
+  "output": "out/scene.mp4",
+  "mode": "scene",
+  "animations": 0,
+  "settleCaptures": 24,
+  "captureSeconds": 4.266,
+  "pass": true,
+  "checks": {
+    "frames": true,
+    "size": true,
+    "fps": true,
+    "duration": true
+  },
+  "probe": {
+    "codec": "h264",
+    "pix_fmt": "yuv420p",
+    "width": 640,
+    "height": 360,
+    "fps": "24/1",
+    "frames": 24,
+    "videoDuration": 1,
+    "containerDuration": 1,
+    "audio": null
+  },
+  "totalSeconds": 4.493
+}

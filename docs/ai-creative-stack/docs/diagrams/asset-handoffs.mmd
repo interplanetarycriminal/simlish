@@ -1,0 +1,35 @@
+%% render: auto
+%% title: Asset handoffs
+%% desc: File-format boundaries between stages. Solid arrows were verified by a fixture here; dashed ones are documented upstream or proposed.
+flowchart TD
+    A["Image generation • PNG with alpha"]:::purple
+    B["Image-to-3D models • SAM 3D, SF3D, TRELLIS.2"]:::amber
+    G["Multi-view capture • photos"]:::teal
+    C["Mesh refinement • Blender"]:::amber
+    H["Gaussian Splatting • COLMAP in, splat PLY out"]:::teal
+    D["Texture authoring • Dream Textures in Blender"]:::amber
+    E["Rigging • UniRig"]:::amber
+    I["Gaussian viewers • splat PLY only"]:::teal
+    F["Blender animation • actions, physics caches"]:::amber
+    J["Three.js • GLTFLoader, seekable mixer"]:::blue
+    K["Video composition • HyperFrames, Remotion"]:::teal
+    L["Post-production • FFmpeg, ffprobe"]:::rose
+    A -.->|PNG| B
+    A -.->|frames| G
+    B -.->|GLB, PLY| C
+    G -.->|images| H
+    C -.->|mesh in .blend| D
+    H -.->|splat PLY| I
+    D -.->|OBJ, FBX, GLB| E
+    E -.->|FBX| F
+    F -->|GLB, verified| J
+    F -.->|EXR, PNG frames| K
+    J -->|PNG frames, verified| L
+    K -.->|MP4 or ProRes master| L
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

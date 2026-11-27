@@ -1,0 +1,162 @@
+{
+  "tool": "tokenextract",
+  "pass": true,
+  "checks": [
+    {
+      "name": "CIEDE2000 matches published test pair",
+      "ok": true,
+      "detail": "2.0425"
+    },
+    {
+      "name": "sRGB white converts to L*=100, a*=b*=0",
+      "ok": true,
+      "detail": "100.000,-0.000,0.000"
+    },
+    {
+      "name": "tool exits 0",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "exactly 3 brand colors after clustering",
+      "ok": true,
+      "detail": "#2363cf #198047 #bf315c"
+    },
+    {
+      "name": "brand color #2363cf recovered",
+      "ok": true,
+      "detail": "ΔE00 0.000"
+    },
+    {
+      "name": "brand color #bf315c recovered",
+      "ok": true,
+      "detail": "ΔE00 0.000"
+    },
+    {
+      "name": "brand color #198047 recovered",
+      "ok": true,
+      "detail": "ΔE00 0.000"
+    },
+    {
+      "name": "near-duplicate #2464cf merged into #2363cf",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "brand colors are frequency-ranked (blue first)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "neutrals recovered",
+      "ok": true,
+      "detail": "#d0d9e7 #ffffff #465773 #152137 #fbfcff"
+    },
+    {
+      "name": "exactly 2 font families: Georgia and Verdana",
+      "ok": true,
+      "detail": "Verdana, Georgia"
+    },
+    {
+      "name": "type sizes 12/16/20/32 recovered",
+      "ok": true,
+      "detail": "12,16,20,32"
+    },
+    {
+      "name": "weights 400 and 700",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "spacing scale is 4/8/12/16/24/32",
+      "ok": true,
+      "detail": "4,8,12,16,24,32"
+    },
+    {
+      "name": "spacing base unit detected as 4px",
+      "ok": true,
+      "detail": "Base unit 4px (100% of spacing values are multiples)"
+    },
+    {
+      "name": "radii are 4/8/16",
+      "ok": true,
+      "detail": "4,8,16"
+    },
+    {
+      "name": "shadow parsed into DTCG fields",
+      "ok": true,
+      "detail": "{\"color\":{\"colorSpace\":\"srgb\",\"components\":[0.0824,0.1294,0.2157],\"hex\":\"#152137\",\"alpha\":0.12},\"offsetX\":{\"value\":0,\"unit\":\"px\"},\"offsetY\":{\"value\":1,\"unit\":\"px\"},\"blur\":{\"value\":2,\"unit\":\"px\"},\"spread\":{\"value\":0,\"unit\":\"px\"},\"inset\":false}"
+    },
+    {
+      "name": "breakpoint 768px recovered",
+      "ok": true,
+      "detail": "768"
+    },
+    {
+      "name": "duration 200ms recovered",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "easing ease-out as cubic-bezier(0, 0, 0.58, 1)",
+      "ok": true,
+      "detail": "[[0,0,0.58,1]]"
+    },
+    {
+      "name": "transition composite on background-color",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "every token has $value and a $type (DTCG)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tokens.css has --color-brand-1: #2363cf;",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tokens.css has --space-1: 4px;",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tokens.css has --radius-3: 16px;",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tokens.css has --duration-1: 200ms;",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tokens.css has --easing-1: cubic-bezier(0, 0, 0.58, 1);",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tokens.css has --font-family-",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tokens.css has --breakpoint-1: 768px;",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "DESIGN.md sections match templates/design-system.md in order",
+      "ok": true,
+      "detail": "13 sections"
+    },
+    {
+      "name": "DESIGN.md is marked draft, extracted",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "outBytes": 21230
+}

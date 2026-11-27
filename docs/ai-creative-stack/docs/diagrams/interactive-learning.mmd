@@ -1,0 +1,26 @@
+%% render: auto
+%% title: Interactive 3D learning
+%% desc: One scene module serves the explorable and the film. The learner test closes the loop.
+flowchart TD
+    N0["Learner and one idea • LEARNING.md, misconception, beats"]:::purple
+    N1["Author assets • Blender, joint frames, budget"]:::amber
+    N2["Seekable scene module • state = f(t, seed, inputs)"]:::amber
+    N3["Explorable • predict pauses, #t= links"]:::blue
+    N4["Film • frame clock, captions, chapters"]:::teal
+    N5["Contract and learning checks • seek, repeat, pause to play"]:::green
+    N6["Learner test • prediction, explanation, sticking points"]:::rose
+    N0 -->|beat sheet| N1
+    N1 -->|GLB| N2
+    N2 -->|wall clock| N3
+    N2 -->|frame clock| N4
+    N3 -->|live digest| N5
+    N4 -->|MP4 + digests| N5
+    N5 -->|passing build| N6
+    N6 -.->|revise beats| N0
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

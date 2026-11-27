@@ -1,0 +1,202 @@
+{
+ "tool": "decisionlog",
+ "records": 11,
+ "checks": [
+  {
+   "check": "add D-0001",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "add D-0002",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "add D-0003",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "secret-looking text refused",
+   "pass": true,
+   "detail": "error: refused: field 'decision' looks like it contains a secret (OpenAI-style key). Remove it, or wrap it in <private>...</private> so it is never stored."
+  },
+  {
+   "check": "secret inside <private> accepted and dropped",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "entries start as proposed",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "private text never on disk",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "private placeholder kept",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "approve without --by refused",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "approve D-0001",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "approve D-0002",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "reject D-0003",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "cannot approve a rejected entry",
+   "pass": true,
+   "detail": "error: cannot approve D-0003: status is rejected"
+  },
+  {
+   "check": "cannot approve twice",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "superseding entry approved",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "append-only: status changes are new records",
+   "pass": true,
+   "detail": "9"
+  },
+  {
+   "check": "list --status approved",
+   "pass": true,
+   "detail": "3 entries"
+  },
+  {
+   "check": "search ranks the licence decision first",
+   "pass": true,
+   "detail": "D-0002  approved   4.64  Gaussian splats only for research scenes  | Do not ship the Inria trainer in a commercial produ"
+  },
+  {
+   "check": "search with status filter",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "export writes approved only",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "export names approver and evidence",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "export marks superseded",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "export has precedence sentence",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "verify passes on clean log",
+   "pass": true,
+   "detail": "OK 9 records, head 8fc50a4c6d30d1eccf127a176115260d168fbb13e5363fe002822c4e3a9fa0bc"
+  },
+  {
+   "check": "verify fails on edited content",
+   "pass": true,
+   "detail": "FAIL\n  record 2 (D-0002): content does not match content_hash"
+  },
+  {
+   "check": "append refused on a tampered log",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "verify fails on edited status record",
+   "pass": true,
+   "detail": "FAIL\n  record 7: hash mismatch (record was changed)"
+  },
+  {
+   "check": "verify fails on deleted record",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "restored log verifies",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "redact appends tombstone",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "redacted text hidden from list",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "redacted text hidden from search",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "compact removes redacted text from disk",
+   "pass": true,
+   "detail": "compacted D-0003; chain verifies; head 281706cd010bf7a6c39543b987751a32df4fb70af70fcd9df3fa3960282f4f9a"
+  },
+  {
+   "check": "checkpoint entry appended",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "verify passes after compact",
+   "pass": true,
+   "detail": "OK 11 records, head 281706cd010bf7a6c39543b987751a32df4fb70af70fcd9df3fa3960282f4f9a"
+  },
+  {
+   "check": "history untouched by compact",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "removing content without redaction is caught",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "export still works after compact",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "no network or auto-capture code",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "pass": true
+}

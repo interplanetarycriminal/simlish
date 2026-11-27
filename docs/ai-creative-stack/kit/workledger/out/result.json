@@ -1,0 +1,57 @@
+{
+  "tool": "workledger",
+  "checks": {
+    "plan_valid": true,
+    "overlapping_scopes_serialised": true,
+    "dependents_after_parents": true,
+    "cycle_detected": true,
+    "unverifiable_package_rejected": true,
+    "governed_catches_scope_deviation": true,
+    "baseline_misses_scope_deviation": true,
+    "governed_stops_repeated_failure_early": true,
+    "governed_blocks_dependent_of_failure": true,
+    "flaky_package_recovers_with_progress": true,
+    "chain_completes": true,
+    "fewer_attempts_than_baseline": true,
+    "decision_recorded_with_alternatives": true,
+    "single_alternative_refused": true,
+    "ledger_matches_contract": true,
+    "decisions_match_contract": true,
+    "packages_match_contract": true
+  },
+  "waves": [
+    [
+      "P1",
+      "P3",
+      "P4",
+      "P7"
+    ],
+    [
+      "P5"
+    ],
+    [
+      "P2",
+      "P6"
+    ]
+  ],
+  "baseline": {
+    "attempts": 16,
+    "command_seconds": 2.892,
+    "stopped_early": 0,
+    "scope_deviations": 0,
+    "blocked": 0,
+    "wall_seconds": 3.465,
+    "total_seconds": 3.465
+  },
+  "governed": {
+    "attempts": 8,
+    "command_seconds": 1.328,
+    "stopped_early": 1,
+    "scope_deviations": 1,
+    "blocked": 1,
+    "wall_seconds": 1.888,
+    "total_seconds": 1.888
+  },
+  "snapshot_ms": 6.25,
+  "pass": true
+}

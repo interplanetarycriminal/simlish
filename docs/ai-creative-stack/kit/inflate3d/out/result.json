@@ -1,0 +1,28 @@
+{
+  "tool": "inflate3d",
+  "checks": {
+    "runs": true,
+    "watertight": true,
+    "volume_positive": true,
+    "height_m": true,
+    "has_texture": true,
+    "uv_in_range": true,
+    "silhouette_iou>0.9": true,
+    "keys_flat_background": true,
+    "blender_floor_checks": true
+  },
+  "silhouette_iou": 0.9129,
+  "triangles": 8032,
+  "extents_m": [
+    0.335,
+    0.2,
+    0.1028
+  ],
+  "blender_reflex": {
+    "unit_scale": true,
+    "max_4_influences": true,
+    "watertight": true,
+    "no_ngons": true
+  },
+  "pass": true
+}

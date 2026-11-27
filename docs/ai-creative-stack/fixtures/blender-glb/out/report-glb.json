@@ -1,0 +1,102 @@
+{
+  "asset": "out/toy_limb.glb",
+  "blender": "5.2.2 LTS",
+  "ignored_helpers": [
+    "Icosphere"
+  ],
+  "meshes": [
+    {
+      "object": "toy_limb",
+      "vertices": 430,
+      "faces": 624,
+      "triangles": 624,
+      "ngons": 0,
+      "boundary_edges": 224,
+      "boundary_edges_welded": 0,
+      "non_manifold_edges": 0,
+      "inconsistent_normal_edges": 0,
+      "degenerate_faces": 0,
+      "zero_length_edges": 0,
+      "loose_vertices": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bbox_m": {
+        "min": [
+          -0.045,
+          -0.045,
+          0.0
+        ],
+        "max": [
+          0.045,
+          0.045,
+          0.3
+        ],
+        "size": [
+          0.09,
+          0.09,
+          0.3
+        ]
+      },
+      "uv": {
+        "layers": [
+          "UVMap"
+        ],
+        "outside_0_1": 0.0
+      },
+      "materials": [
+        {
+          "name": "toy_plastic",
+          "textures": []
+        }
+      ],
+      "colour_space_issues": []
+    }
+  ],
+  "rigs": [
+    {
+      "armature": "toy_rig",
+      "bones": 3,
+      "deform_bones": 3,
+      "roots": [
+        "root"
+      ],
+      "hierarchy": {
+        "root": null,
+        "mid": "root",
+        "tip": "mid"
+      },
+      "unweighted_vertices": 0,
+      "vertices_over_4_influences": 0,
+      "non_normalised_vertices": 0
+    }
+  ],
+  "animations": [
+    {
+      "name": "bend",
+      "frames": [
+        1,
+        48
+      ]
+    }
+  ],
+  "floor": {
+    "has_geometry": true,
+    "no_non_manifold_edges": true,
+    "no_degenerate_faces": true,
+    "consistent_normals": true,
+    "no_loose_vertices": true,
+    "has_uvs": true,
+    "colour_spaces_valid": true,
+    "rig_weights_normalised": true
+  },
+  "reflex": {
+    "unit_scale": true,
+    "max_4_influences": true,
+    "watertight": true,
+    "no_ngons": true
+  },
+  "pass": true
+}

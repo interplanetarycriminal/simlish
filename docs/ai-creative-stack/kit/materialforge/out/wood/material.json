@@ -1,0 +1,84 @@
+{
+  "generator": "materialforge",
+  "preset": "wood",
+  "size": 256,
+  "seed": 7,
+  "tileable": true,
+  "tile_size_m": 0.6,
+  "height_depth_m": 0.0015,
+  "notes": "Plain-sawn grain running along +X. Rings per tile: 14.",
+  "maps": {
+    "base_color": {
+      "file": "base_color.png",
+      "colorspace": "sRGB",
+      "bits": 8,
+      "channels": "RGB",
+      "gltf": "baseColorTexture"
+    },
+    "roughness": {
+      "file": "roughness.png",
+      "colorspace": "Non-Color",
+      "bits": 8,
+      "channels": "L",
+      "gltf": "metallicRoughnessTexture.g",
+      "mean": 0.6026
+    },
+    "metallic": {
+      "file": "metallic.png",
+      "colorspace": "Non-Color",
+      "bits": 8,
+      "channels": "L",
+      "gltf": "metallicRoughnessTexture.b",
+      "mean": 0.0
+    },
+    "normal": {
+      "file": "normal.png",
+      "colorspace": "Non-Color",
+      "bits": 8,
+      "channels": "RGB",
+      "convention": "OpenGL (+Y up), tangent space",
+      "gltf": "normalTexture",
+      "derived_from": "height.png with tile_size_m and height_depth_m"
+    },
+    "height": {
+      "file": "height.png",
+      "colorspace": "Non-Color",
+      "bits": 16,
+      "channels": "L",
+      "gltf": null,
+      "range_m": [
+        0.0,
+        0.0015
+      ]
+    },
+    "ao": {
+      "file": "ao.png",
+      "colorspace": "Non-Color",
+      "bits": 8,
+      "channels": "L",
+      "gltf": "occlusionTexture.r"
+    }
+  },
+  "principled_bsdf": {
+    "Base Color": "base_color.png",
+    "Metallic": 0.0,
+    "Roughness": "roughness.png",
+    "IOR": 1.5,
+    "Coat Weight": 0.0,
+    "Normal": "normal.png via a Normal Map node (Tangent Space, Strength 1.0)"
+  },
+  "displacement": {
+    "node": "Displacement",
+    "input": "height.png",
+    "Midlevel": 0.0,
+    "Scale": 0.0015,
+    "units": "metres, for a mesh at real scale"
+  },
+  "mapping": {
+    "Scale": [
+      1.666667,
+      1.666667
+    ],
+    "note": "texture repeats once per tile_size_m when UVs are in metres"
+  }
+}

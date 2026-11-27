@@ -1,0 +1,66 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Babylon GLB check</title>
+<style>html, body { margin: 0; background: #1b1f27; } canvas { display: block; width: 480px; height: 480px; }</style>
+<canvas id="c" width="480" height="480"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/babylonjs@9.38.0/babylon.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/babylonjs-loaders@9.38.0/babylonjs.loaders.min.js"></script>
+<script>
+// Load the Blender fixture's GLB with Babylon's glTF loader and report what Babylon sees.
+const file = new URLSearchParams(location.search).get('file');
+const engine = new BABYLON.Engine(document.getElementById('c'), true, { preserveDrawingBuffer: true });
+const scene = new BABYLON.Scene(engine);
+scene.clearColor = new BABYLON.Color4(0.106, 0.122, 0.153, 1);
+new BABYLON.HemisphericLight('sky', new BABYLON.Vector3(0.3, 1, 0.2), scene);
+const camera = new BABYLON.ArcRotateCamera('cam', Math.PI / 3, Math.PI / 2.6, 0.75, new BABYLON.Vector3(0, 0.15, 0), scene);
+camera.minZ = 0.01;
+
+function worldBox(mesh) {
+  mesh.computeWorldMatrix(true);
+  mesh.refreshBoundingInfo({ applySkeleton: true });
+  const b = mesh.getBoundingInfo().boundingBox;
+  return { min: b.minimumWorld.asArray(), max: b.maximumWorld.asArray() };
+}
+function tipOf(skeleton, mesh) {
+  skeleton.prepare(true);
+  const bone = skeleton.bones.find((b) => /tip/.test(b.name));
+  return bone.getAbsolutePosition(mesh).asArray();
+}
+
+(async () => {
+  try {
+    const result = await BABYLON.SceneLoader.ImportMeshAsync('', '', file, scene);
+    const skinned = result.meshes.filter((m) => m.skeleton && m.getTotalVertices() > 0);
+    const groups = scene.animationGroups;
+    groups.forEach((g) => { g.stop(); });
+    const bend = groups.find((g) => g.name === 'bend');
+    const mesh = skinned[0]; const skeleton = mesh?.skeleton;
+    // Rest pose: go to the first frame of the clip, then read the skinned bounds.
+    bend.start(false, 1, bend.from, bend.to); bend.goToFrame(bend.from); bend.pause(); scene.render();
+    const rest = worldBox(mesh); const tipRest = tipOf(skeleton, mesh);
+    bend.goToFrame(bend.from + (bend.to - bend.from) * 0.25); scene.render();
+    const tipBent = tipOf(skeleton, mesh);
+    // Leave the clip at the quarter pose for the screenshot, and wait for shaders before rendering.
+    bend.goToFrame(bend.from + (bend.to - bend.from) * 0.25);
+    await scene.whenReadyAsync();
+    engine.runRenderLoop(() => scene.render());
+    await new Promise((r) => setTimeout(r, 200));
+    window.__report = {
+      babylon: BABYLON.Engine.Version,
+      webgl: engine.webGLVersion,
+      meshes: result.meshes.length,
+      skinnedMeshes: skinned.length,
+      skeletons: scene.skeletons.length,
+      bones: skeleton ? skeleton.bones.map((b) => b.name) : [],
+      animationGroups: groups.map((g) => ({ name: g.name, from: g.from, to: g.to, targets: g.targetedAnimations.length })),
+      restBox: rest,
+      heightMeters: rest.max[1] - rest.min[1],
+      tipRest, tipBent,
+    };
+    window.__ready = true;
+  } catch (e) {
+    window.__report = { error: String(e && e.stack || e) };
+    window.__ready = true;
+  }
+})();
+</script>

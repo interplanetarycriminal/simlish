@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1284 2074" role="img" aria-labelledby="title desc">
+<title id="title">Complete 3D asset production</title><desc id="desc">Not every asset needs every stage. ComfyUI-3D-Pack can host only the stages inside its boundary.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="1284" height="2074" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Complete 3D asset production</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Not every asset needs every stage. ComfyUI-3D-Pack can host only the stages inside its boundary.</text>
+<rect x="98" y="328" width="336" height="122" rx="18" class="line dash" style="stroke-width:1.5"/><text x="112" y="348" font-size="12.5" font-weight="650" class="sub">ComfyUI-3D-Pack native</text>
+<path d="M642 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M642 298 V360" class="line" marker-end="url(#end)"/>
+<path d="M642 298 V330 H266 V360" class="line" marker-end="url(#end)"/>
+<path d="M642 298 V330 H1018 V360" class="line" marker-end="url(#end)"/>
+<path d="M642 434 V496" class="line" marker-end="url(#end)"/>
+<path d="M266 434 V466 H642 V496" class="line" marker-end="url(#end)"/>
+<path d="M1018 434 V466 H642 V496" class="line" marker-end="url(#end)"/>
+<path d="M642 570 V632" class="line" marker-end="url(#end)"/>
+<path d="M642 688 V750" class="line" marker-end="url(#end)"/>
+<path d="M492 661 H452 V924 H490" class="line" marker-end="url(#end)"/>
+<path d="M642 824 V886" class="line" marker-end="url(#end)"/>
+<path d="M642 960 V1022" class="line" marker-end="url(#end)"/>
+<path d="M642 1096 V1158" class="line" marker-end="url(#end)"/>
+<path d="M642 1214 V1276" class="line" marker-end="url(#end)"/>
+<path d="M492 1187 H452 V1450 H490" class="line" marker-end="url(#end)"/>
+<path d="M642 1350 V1412" class="line" marker-end="url(#end)"/>
+<path d="M642 1486 V1548" class="line" marker-end="url(#end)"/>
+<path d="M642 1622 V1684" class="line" marker-end="url(#end)"/>
+<path d="M642 1758 V1790 H266 V1820" class="line" marker-end="url(#end)"/>
+<path d="M642 1758 V1820" class="line" marker-end="url(#end)"/>
+<path d="M642 1758 V1790 H1018 V1820" class="line" marker-end="url(#end)"/>
+<path d="M266 1894 V1926 H454 V1956" class="line" marker-end="url(#end)"/>
+<path d="M1018 1894 V1926 H830 V1956" class="line" marker-end="url(#end)"/>
+<rect x="648" y="321" width="97" height="20" rx="5" class="lab"/><text x="654" y="335" font-size="12.5" font-weight="560" class="sub">photo object</text>
+<rect x="272" y="337" width="76" height="20" rx="5" class="lab"/><text x="278" y="351" font-size="12.5" font-weight="560" class="sub">fast prop</text>
+<rect x="1024" y="337" width="90" height="20" rx="5" class="lab"/><text x="1030" y="351" font-size="12.5" font-weight="560" class="sub">high detail</text>
+<rect x="648" y="457" width="33" height="20" rx="5" class="lab"/><text x="654" y="471" font-size="12.5" font-weight="560" class="sub">GLB</text>
+<rect x="272" y="444" width="33" height="20" rx="5" class="lab"/><text x="278" y="458" font-size="12.5" font-weight="560" class="sub">GLB</text>
+<rect x="975" y="444" width="33" height="20" rx="5" class="lab"/><text x="981" y="458" font-size="12.5" font-weight="560" class="sub">GLB</text>
+<rect x="648" y="711" width="33" height="20" rx="5" class="lab"/><text x="654" y="725" font-size="12.5" font-weight="560" class="sub">Yes</text>
+<rect x="420" y="784" width="26" height="20" rx="5" class="lab"/><text x="426" y="798" font-size="12.5" font-weight="560" class="sub">No</text>
+<rect x="648" y="847" width="33" height="20" rx="5" class="lab"/><text x="654" y="861" font-size="12.5" font-weight="560" class="sub">OBJ</text>
+<rect x="648" y="1237" width="33" height="20" rx="5" class="lab"/><text x="654" y="1251" font-size="12.5" font-weight="560" class="sub">Yes</text>
+<rect x="420" y="1310" width="26" height="20" rx="5" class="lab"/><text x="426" y="1324" font-size="12.5" font-weight="560" class="sub">No</text>
+<rect x="648" y="1373" width="33" height="20" rx="5" class="lab"/><text x="654" y="1387" font-size="12.5" font-weight="560" class="sub">FBX</text>
+<rect x="492" y="108" width="300" height="72" rx="13" class="panel"/><rect x="504" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="520" y="140" font-size="16.5" font-weight="720">Approved reference imagery</text><text x="520" y="160" font-size="13" font-weight="450" class="sub">authorized, masked if required</text>
+<rect x="492" y="244" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M508 262 L517 271 L508 280 L499 271Z" fill="#733ed0"/>
+<text x="520" y="277" font-size="17" font-weight="720">Select one generation approach</text>
+<rect x="116" y="362" width="300" height="72" rx="13" class="panel"/><rect x="128" y="386" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="394" font-size="16.5" font-weight="720">Stable Fast 3D</text><text x="144" y="414" font-size="13" font-weight="450" class="sub">fast UV-unwrapped GLB, about 6 GB</text>
+<rect x="492" y="362" width="300" height="72" rx="13" class="panel"/><rect x="504" y="386" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="394" font-size="16.5" font-weight="720">SAM 3D Objects</text><text x="520" y="414" font-size="13" font-weight="450" class="sub">real photo + mask, 32 GB</text>
+<rect x="868" y="362" width="300" height="72" rx="13" class="panel"/><rect x="880" y="386" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="896" y="394" font-size="16.5" font-weight="720">TRELLIS.2</text><text x="896" y="414" font-size="13" font-weight="450" class="sub">supplementary, PBR GLB, 24 GB</text>
+<rect x="492" y="498" width="300" height="72" rx="13" class="panel"/><rect x="504" y="522" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="520" y="530" font-size="16.5" font-weight="720">Geometry inspection</text><text x="520" y="550" font-size="13" font-weight="450" class="sub">validate_asset.py</text>
+<rect x="492" y="634" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M508 652 L517 661 L508 670 L499 661Z" fill="#596b84"/>
+<text x="520" y="667" font-size="17" font-weight="720">Retopology required?</text>
+<rect x="492" y="752" width="300" height="72" rx="13" class="panel"/><rect x="504" y="776" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="784" font-size="16.5" font-weight="720">MeshAnything V2 or Blender retopology</text><text x="520" y="804" font-size="13" font-weight="450" class="sub">at most 1,600 faces</text>
+<rect x="492" y="888" width="300" height="72" rx="13" class="panel"/><rect x="504" y="912" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="920" font-size="16.5" font-weight="720">UV and attribute validation</text><text x="520" y="940" font-size="13" font-weight="450" class="sub">rebuild after retopology</text>
+<rect x="492" y="1024" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1048" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="1056" font-size="16.5" font-weight="720">Dream Textures and Blender materials</text><text x="520" y="1076" font-size="13" font-weight="450" class="sub">PBR maps, color spaces</text>
+<rect x="492" y="1160" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M508 1178 L517 1187 L508 1196 L499 1187Z" fill="#596b84"/>
+<text x="520" y="1193" font-size="17" font-weight="720">Skeletal animation required?</text>
+<rect x="492" y="1278" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1302" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="1310" font-size="16.5" font-weight="720">UniRig skeleton and skinning</text><text x="520" y="1330" font-size="13" font-weight="450" class="sub">FBX</text>
+<rect x="492" y="1414" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1438" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="1446" font-size="16.5" font-weight="720">Blender refinement</text><text x="520" y="1466" font-size="13" font-weight="450" class="sub">weights, rest pose, scale</text>
+<rect x="492" y="1550" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1574" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="520" y="1582" font-size="16.5" font-weight="720">Animation or physics</text><text x="520" y="1602" font-size="13" font-weight="450" class="sub">only if the brief needs it</text>
+<rect x="492" y="1686" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1710" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="520" y="1718" font-size="16.5" font-weight="720">Asset quality gates</text><text x="520" y="1738" font-size="13" font-weight="450" class="sub">Floor, Reflex, Finish</text>
+<rect x="116" y="1822" width="300" height="72" rx="13" class="panel"/><rect x="128" y="1846" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="144" y="1854" font-size="16.5" font-weight="720">GLB / glTF</text><text x="144" y="1874" font-size="13" font-weight="450" class="sub">interactive</text>
+<rect x="492" y="1822" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1846" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="1854" font-size="16.5" font-weight="720">FBX / Blender source</text><text x="520" y="1874" font-size="13" font-weight="450" class="sub">editable</text>
+<rect x="868" y="1822" width="300" height="72" rx="13" class="panel"/><rect x="880" y="1846" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="896" y="1854" font-size="16.5" font-weight="720">Rendered frames</text><text x="896" y="1874" font-size="13" font-weight="450" class="sub">EXR or PNG</text>
+<rect x="304" y="1958" width="300" height="72" rx="13" class="panel"/><rect x="316" y="1982" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="332" y="1990" font-size="16.5" font-weight="720">Three.js</text><text x="332" y="2010" font-size="13" font-weight="450" class="sub">GLTFLoader</text>
+<rect x="680" y="1958" width="300" height="72" rx="13" class="panel"/><rect x="692" y="1982" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="708" y="1990" font-size="16.5" font-weight="720">Video composition</text><text x="708" y="2010" font-size="13" font-weight="450" class="sub">one timeline authority</text>
+</svg>

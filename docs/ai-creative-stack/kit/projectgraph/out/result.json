@@ -1,0 +1,188 @@
+{
+ "tool": "projectgraph",
+ "synthetic": {
+  "nodes": 32,
+  "edges": 31,
+  "broken": 2
+ },
+ "catalogue": {
+  "nodes": 1810,
+  "edges": 3656,
+  "broken": 0,
+  "edge_types": {
+   "contains": 1459,
+   "embeds": 71,
+   "imports": 112,
+   "links_to": 1553,
+   "mentions": 461
+  },
+  "gaussian_top3": [
+   "docs/3d-pipeline/gaussian-splatting.md#gaussian-splatting",
+   "file:docs/repositories/gaussian-splatting.md",
+   "file:docs/3d-pipeline/gaussian-splatting.md"
+  ]
+ },
+ "checks": [
+  {
+   "check": "synthetic build exits 0",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "ignored paths absent",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "README links to guide",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "anchor resolves to heading node",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "duplicate heading slug -1",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "same-file anchor",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "image embed to asset",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "fenced code ignored",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "broken links found exactly",
+   "pass": true,
+   "detail": "['docs/guide.md#nope', 'missing.md']"
+  },
+  {
+   "check": "binary file is asset, not parsed",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "python import stdlib",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "python import local sibling",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "python symbols",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "python syntax error recorded",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "js relative import",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "js builtin and npm imports",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "js commented and string imports ignored",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "js exported symbols exact",
+   "pass": true,
+   "detail": "['web/main.mjs::Viewer', 'web/main.mjs::publicHelper', 'web/main.mjs::startServer']"
+  },
+  {
+   "check": "json registry items",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "mention of file path (inferred)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "mention of symbol (inferred)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "broken command exits 1 and lists 2",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "synthetic query finds usage section",
+   "pass": true,
+   "detail": "['docs/guide.md#usage', 'file:docs/guide.md', 'data/registry.json$alpha']"
+  },
+  {
+   "check": "query respects budget",
+   "pass": true,
+   "detail": "267 chars"
+  },
+  {
+   "check": "catalogue build exits 0",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "README.md links to TOOL_SELECTION.md",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "validate-registry.py imports json",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "cdp.mjs exports findChrome",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "catalogue has zero broken links",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "broken command exits 0 on catalogue",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "gaussian query top 3",
+   "pass": true,
+   "detail": "['docs/3d-pipeline/gaussian-splatting.md#gaussian-splatting', 'file:docs/repositories/gaussian-splatting.md', 'file:docs/3d-pipeline/gaussian-splatting.md']"
+  },
+  {
+   "check": "text query within budget",
+   "pass": true,
+   "detail": "1486 chars"
+  }
+ ],
+ "pass": true
+}

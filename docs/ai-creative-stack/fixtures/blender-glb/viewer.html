@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>GLB handoff check</title>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/" } }</script>
+<style>html,body{margin:0;height:100%;background:#F2F4F1;font:14px system-ui,sans-serif;color:#17201E}canvas{display:block;width:100%;height:100%}#t{position:absolute;left:16px;top:12px}</style>
+</head>
+<body>
+<canvas id="c"></canvas><div id="t"></div>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const params = new URLSearchParams(location.search);
+const file = params.get('file') || 'out/toy_limb.glb';
+const canvas = document.getElementById('c');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(innerWidth, innerHeight, false);
+renderer.setClearColor(0xf2f4f1, 1);
+const scene = new THREE.Scene();
+scene.add(new THREE.HemisphereLight(0xffffff, 0xb8c2bc, 1.5));
+const key = new THREE.DirectionalLight(0xffffff, 2.4); key.position.set(1, 2, 2); scene.add(key);
+const camera = new THREE.PerspectiveCamera(30, innerWidth / innerHeight, 0.01, 10);
+
+const gltf = await new GLTFLoader().loadAsync(file);
+scene.add(gltf.scene);
+const mixer = new THREE.AnimationMixer(gltf.scene);
+gltf.animations.forEach((clip) => mixer.clipAction(clip).play());
+
+let meshes = 0, skinned = 0, bones = new Set(), tris = 0;
+gltf.scene.traverse((o) => {
+  if (o.isMesh) { meshes++; tris += (o.geometry.index ? o.geometry.index.count : o.geometry.attributes.position.count) / 3; }
+  if (o.isSkinnedMesh) { skinned++; o.skeleton.bones.forEach((b) => bones.add(b.name)); }
+});
+const box = new THREE.Box3().setFromObject(gltf.scene);
+const size = box.getSize(new THREE.Vector3()), centre = box.getCenter(new THREE.Vector3());
+camera.position.set(centre.x + 0.55, centre.y + 0.12, centre.z + 0.55);
+camera.lookAt(centre);
+
+const tip = gltf.scene.getObjectByName(params.get('bone') || 'tip');
+// Seekable: the mixer is set to an absolute time, never advanced by a wall-clock delta.
+function seek(t, angle = 0) {
+  mixer.setTime(t);
+  const r = 0.78;
+  camera.position.set(centre.x + r * Math.sin(angle), centre.y + 0.1, centre.z + r * Math.cos(angle));
+  camera.lookAt(centre);
+  gltf.scene.updateMatrixWorld(true);
+  renderer.render(scene, camera);
+  const p = tip ? tip.getWorldPosition(new THREE.Vector3()) : null;
+  document.getElementById('t').textContent = `${file} · t=${t.toFixed(2)} s`;
+  return p ? p.toArray().map((v) => Math.round(v * 1e5) / 1e5) : null;
+}
+
+window.__asset = {
+  stats: {
+    meshes, skinnedMeshes: skinned, bones: [...bones], triangles: Math.round(tris),
+    animations: gltf.animations.map((a) => ({ name: a.name, duration: Math.round(a.duration * 1000) / 1000, tracks: a.tracks.length })),
+    sizeMeters: size.toArray().map((v) => Math.round(v * 1e4) / 1e4),
+    upAxis: size.y > size.x && size.y > size.z ? 'Y' : 'not Y',
+  },
+  seek,
+};
+seek(0);
+window.__ready = true;
+</script>
+</body>
+</html>

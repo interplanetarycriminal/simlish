@@ -1,0 +1,2535 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 2564" role="img" aria-labelledby="title desc">
+<title id="title">Capability matrix</title>
+<desc id="desc">75 references against 32 capabilities. Filled: primary. Ring: supporting. Square: tested by a fixture here. Dot: not applicable. Generated from the registry.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .grid{stroke:#e3e8f0;stroke-width:1} .band{fill:#f1f4f9} .na{fill:#b8c2d3}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .grid{stroke:#2a3850} .band{fill:#16223a} .na{fill:#52627c}}
+</style>
+<rect width="1250" height="2564" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Capability matrix</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">75 references × 32 capabilities, from pinned documentation. No ratings: a mark says what a tool is for, not how good it is.</text>
+<circle cx="43" cy="101" r="6.5" fill="#596b84"/><text x="55" y="106" font-size="13" class="sub">Primary</text>
+<circle cx="133.4" cy="101" r="5.5" fill="none" stroke="#596b84" stroke-width="2.2"/><text x="145.4" y="106" font-size="13" class="sub">Supporting</text>
+<rect x="239.4" y="95" width="12" height="12" rx="2" fill="#198047"/><text x="257.4" y="106" font-size="13" class="sub">Primary, tested here</text>
+<circle cx="429.4" cy="101" r="1.8" class="na"/><text x="441.4" y="106" font-size="13" class="sub">Not applicable</text>
+<text x="564.2" y="106" font-size="13" class="sub">Unverified capabilities are not drawn: every mark has pinned evidence.</text>
+<text transform="translate(269,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#733ed0" style="fill:#733ed0">Creative direction</text>
+<text transform="translate(299,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#198047" style="fill:#198047">Design critique</text>
+<text transform="translate(329,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#733ed0" style="fill:#733ed0">Design-system extraction</text>
+<text transform="translate(359,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#733ed0" style="fill:#733ed0">Project intelligence</text>
+<text transform="translate(389,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#596b84" style="fill:#596b84">Specification</text>
+<text transform="translate(419,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#596b84" style="fill:#596b84">Discovery</text>
+<text transform="translate(449,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#2363cf" style="fill:#2363cf">Prototyping</text>
+<text transform="translate(479,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#2363cf" style="fill:#2363cf">Component generation</text>
+<text transform="translate(509,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#2363cf" style="fill:#2363cf">Frontend implementation</text>
+<text transform="translate(539,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">Illustration</text>
+<text transform="translate(569,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">Visual effects</text>
+<text transform="translate(599,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#087d73" style="fill:#087d73">Animation</text>
+<text transform="translate(629,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">3D authoring</text>
+<text transform="translate(659,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">3D rendering</text>
+<text transform="translate(689,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">Image-to-3D</text>
+<text transform="translate(719,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">Retopology</text>
+<text transform="translate(749,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">Texturing</text>
+<text transform="translate(779,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">Rigging</text>
+<text transform="translate(809,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">3D orchestration</text>
+<text transform="translate(839,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#087d73" style="fill:#087d73">Spatial reconstruction</text>
+<text transform="translate(869,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#087d73" style="fill:#087d73">Shot planning</text>
+<text transform="translate(899,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#087d73" style="fill:#087d73">Video composition</text>
+<text transform="translate(929,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#bf315c" style="fill:#bf315c">Video editing</text>
+<text transform="translate(959,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#bf315c" style="fill:#bf315c">Upscaling</text>
+<text transform="translate(989,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#bf315c" style="fill:#bf315c">Media processing</text>
+<text transform="translate(1019,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#2363cf" style="fill:#2363cf">Game engine</text>
+<text transform="translate(1049,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#2363cf" style="fill:#2363cf">Physics</text>
+<text transform="translate(1079,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">Level design</text>
+<text transform="translate(1109,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#a05212" style="fill:#a05212">Pixel art</text>
+<text transform="translate(1139,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#087d73" style="fill:#087d73">Game audio</text>
+<text transform="translate(1169,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#733ed0" style="fill:#733ed0">Narrative</text>
+<text transform="translate(1199,290) rotate(-58)" font-size="12.5" font-weight="600" fill="#198047" style="fill:#198047">Multiplayer</text>
+<rect x="24" y="304" width="1202" height="26" rx="7" class="band"/><text x="36" y="322" font-size="13" font-weight="700">A. Creative direction</text>
+<line x1="36" y1="358" x2="1222" y2="358" class="grid"/><text x="44" y="351" font-size="13" font-weight="550">Taste Skill</text>
+<circle cx="265.0" cy="347.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="347.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="347.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="347.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="347.0" r="1.8" class="na"/>
+<line x1="36" y1="382" x2="1222" y2="382" class="grid"/><text x="44" y="375" font-size="13" font-weight="550">Impeccable</text>
+<circle cx="265.0" cy="371.0" r="5.5" fill="none" stroke="#733ed0" stroke-width="2.2"/>
+<circle cx="295.0" cy="371.0" r="6.5" fill="#198047"/>
+<circle cx="325.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="371.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="371.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="371.0" r="1.8" class="na"/>
+<line x1="36" y1="406" x2="1222" y2="406" class="grid"/><text x="44" y="399" font-size="13" font-weight="550">Hallmark</text>
+<circle cx="265.0" cy="395.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="395.0" r="6.5" fill="#198047"/>
+<circle cx="325.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="395.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="395.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="395.0" r="1.8" class="na"/>
+<line x1="36" y1="430" x2="1222" y2="430" class="grid"/><text x="44" y="423" font-size="13" font-weight="550">Anthropic Frontend Design</text>
+<circle cx="265.0" cy="419.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="419.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="419.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="419.0" r="1.8" class="na"/>
+<line x1="36" y1="454" x2="1222" y2="454" class="grid"/><text x="44" y="447" font-size="13" font-weight="550">UI/UX Pro Max</text>
+<circle cx="265.0" cy="443.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="443.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="443.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="443.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="443.0" r="1.8" class="na"/>
+<line x1="36" y1="478" x2="1222" y2="478" class="grid"/><text x="44" y="471" font-size="13" font-weight="550">Meng To Skills</text>
+<circle cx="265.0" cy="467.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="467.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="467.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="565.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="467.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="467.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="467.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="467.0" r="1.8" class="na"/>
+<rect x="24" y="482" width="1202" height="26" rx="7" class="band"/><text x="36" y="500" font-size="13" font-weight="700">B. Design and prototyping</text>
+<line x1="36" y1="536" x2="1222" y2="536" class="grid"/><text x="44" y="529" font-size="13" font-weight="550">Stitch Skills</text>
+<circle cx="265.0" cy="525.0" r="5.5" fill="none" stroke="#733ed0" stroke-width="2.2"/>
+<circle cx="295.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="525.0" r="6.5" fill="#2363cf"/>
+<circle cx="475.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="525.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="525.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="525.0" r="1.8" class="na"/>
+<line x1="36" y1="560" x2="1222" y2="560" class="grid"/><text x="44" y="553" font-size="13" font-weight="550">Open Design</text>
+<circle cx="265.0" cy="549.0" r="5.5" fill="none" stroke="#733ed0" stroke-width="2.2"/>
+<circle cx="295.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="549.0" r="6.5" fill="#2363cf"/>
+<circle cx="475.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="549.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="925.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="549.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="549.0" r="1.8" class="na"/>
+<line x1="36" y1="584" x2="1222" y2="584" class="grid"/><text x="44" y="577" font-size="13" font-weight="550">Penpot</text>
+<circle cx="265.0" cy="573.0" r="5.5" fill="none" stroke="#733ed0" stroke-width="2.2"/>
+<circle cx="295.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="573.0" r="6.5" fill="#2363cf"/>
+<circle cx="475.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="573.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="573.0" r="1.8" class="na"/>
+<line x1="36" y1="608" x2="1222" y2="608" class="grid"/><text x="44" y="601" font-size="13" font-weight="550">Figma Context MCP</text>
+<circle cx="265.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="597.0" r="6.5" fill="#2363cf"/>
+<circle cx="475.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="597.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="597.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="597.0" r="1.8" class="na"/>
+<line x1="36" y1="632" x2="1222" y2="632" class="grid"/><text x="44" y="625" font-size="13" font-weight="550">Astryx</text>
+<circle cx="265.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="621.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="621.0" r="6.5" fill="#2363cf"/>
+<circle cx="535.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="621.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="621.0" r="1.8" class="na"/>
+<rect x="24" y="636" width="1202" height="26" rx="7" class="band"/><text x="36" y="654" font-size="13" font-weight="700">C. Frontend and creative coding</text>
+<line x1="36" y1="690" x2="1222" y2="690" class="grid"/><text x="44" y="683" font-size="13" font-weight="550">Magic MCP</text>
+<circle cx="265.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="679.0" r="6.5" fill="#2363cf"/>
+<circle cx="505.0" cy="679.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="679.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="679.0" r="1.8" class="na"/>
+<line x1="36" y1="714" x2="1222" y2="714" class="grid"/><text x="44" y="707" font-size="13" font-weight="550">Magic UI</text>
+<circle cx="265.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="703.0" r="6.5" fill="#2363cf"/>
+<circle cx="535.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="703.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="703.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="703.0" r="1.8" class="na"/>
+<line x1="36" y1="738" x2="1222" y2="738" class="grid"/><text x="44" y="731" font-size="13" font-weight="550">Sakuga VFX</text>
+<circle cx="265.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="727.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="727.0" r="6.5" fill="#a05212"/>
+<circle cx="595.0" cy="727.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="727.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="727.0" r="1.8" class="na"/>
+<line x1="36" y1="762" x2="1222" y2="762" class="grid"/><text x="44" y="755" font-size="13" font-weight="550">Rough.js</text>
+<circle cx="265.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="751.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<rect x="529.0" y="745.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="565.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="751.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="751.0" r="1.8" class="na"/>
+<rect x="24" y="766" width="1202" height="26" rx="7" class="band"/><text x="36" y="784" font-size="13" font-weight="700">D. Illustration and animation</text>
+<line x1="36" y1="820" x2="1222" y2="820" class="grid"/><text x="44" y="813" font-size="13" font-weight="550">Line Art Animation</text>
+<circle cx="265.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="809.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="809.0" r="6.5" fill="#a05212"/>
+<circle cx="565.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="809.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="809.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="809.0" r="1.8" class="na"/>
+<line x1="36" y1="844" x2="1222" y2="844" class="grid"/><text x="44" y="837" font-size="13" font-weight="550">Motion Canvas</text>
+<circle cx="265.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="833.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="565.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="833.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="833.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="833.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="833.0" r="1.8" class="na"/>
+<rect x="24" y="848" width="1202" height="26" rx="7" class="band"/><text x="36" y="866" font-size="13" font-weight="700">E. Core 3D</text>
+<line x1="36" y1="902" x2="1222" y2="902" class="grid"/><text x="44" y="895" font-size="13" font-weight="550">Three.js</text>
+<circle cx="265.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="891.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="891.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="891.0" r="1.8" class="na"/>
+<rect x="649.0" y="885.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="685.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="891.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="891.0" r="1.8" class="na"/>
+<line x1="36" y1="926" x2="1222" y2="926" class="grid"/><text x="44" y="919" font-size="13" font-weight="550">Blender MCP</text>
+<circle cx="265.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="915.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="915.0" r="6.5" fill="#a05212"/>
+<circle cx="655.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="915.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="915.0" r="1.8" class="na"/>
+<rect x="24" y="930" width="1202" height="26" rx="7" class="band"/><text x="36" y="948" font-size="13" font-weight="700">F. Video and post-production</text>
+<line x1="36" y1="984" x2="1222" y2="984" class="grid"/><text x="44" y="977" font-size="13" font-weight="550">HyperFrames</text>
+<circle cx="265.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="973.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="973.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="973.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="955.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="973.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="973.0" r="1.8" class="na"/>
+<line x1="36" y1="1008" x2="1222" y2="1008" class="grid"/><text x="44" y="1001" font-size="13" font-weight="550">Scarlet</text>
+<circle cx="265.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="997.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="997.0" r="6.5" fill="#bf315c"/>
+<circle cx="955.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="997.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="997.0" r="1.8" class="na"/>
+<line x1="36" y1="1032" x2="1222" y2="1032" class="grid"/><text x="44" y="1025" font-size="13" font-weight="550">Video Use</text>
+<circle cx="265.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1021.0" r="6.5" fill="#bf315c"/>
+<circle cx="955.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1021.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1021.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1021.0" r="1.8" class="na"/>
+<line x1="36" y1="1056" x2="1222" y2="1056" class="grid"/><text x="44" y="1049" font-size="13" font-weight="550">Real-ESRGAN</text>
+<circle cx="265.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1045.0" r="6.5" fill="#bf315c"/>
+<circle cx="985.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1045.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1045.0" r="1.8" class="na"/>
+<line x1="36" y1="1080" x2="1222" y2="1080" class="grid"/><text x="44" y="1073" font-size="13" font-weight="550">Remotion</text>
+<circle cx="265.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1069.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1069.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1069.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1069.0" r="1.8" class="na"/>
+<line x1="36" y1="1104" x2="1222" y2="1104" class="grid"/><text x="44" y="1097" font-size="13" font-weight="550">FFmpeg</text>
+<circle cx="265.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1093.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="955.0" cy="1093.0" r="1.8" class="na"/>
+<rect x="979.0" y="1087.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="1015.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1093.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1093.0" r="1.8" class="na"/>
+<rect x="24" y="1108" width="1202" height="26" rx="7" class="band"/><text x="36" y="1126" font-size="13" font-weight="700">G. AI-assisted 3D (source C)</text>
+<line x1="36" y1="1162" x2="1222" y2="1162" class="grid"/><text x="44" y="1155" font-size="13" font-weight="550">SAM 3D Objects</text>
+<circle cx="265.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1151.0" r="6.5" fill="#a05212"/>
+<circle cx="715.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1151.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="775.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1151.0" r="6.5" fill="#087d73"/>
+<circle cx="865.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1151.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1151.0" r="1.8" class="na"/>
+<line x1="36" y1="1186" x2="1222" y2="1186" class="grid"/><text x="44" y="1179" font-size="13" font-weight="550">Stable Fast 3D (SF3D)</text>
+<circle cx="265.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1175.0" r="6.5" fill="#a05212"/>
+<circle cx="715.0" cy="1175.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="745.0" cy="1175.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="775.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1175.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1175.0" r="1.8" class="na"/>
+<line x1="36" y1="1210" x2="1222" y2="1210" class="grid"/><text x="44" y="1203" font-size="13" font-weight="550">MeshAnything V2</text>
+<circle cx="265.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1199.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="655.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1199.0" r="6.5" fill="#a05212"/>
+<circle cx="745.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1199.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1199.0" r="1.8" class="na"/>
+<line x1="36" y1="1234" x2="1222" y2="1234" class="grid"/><text x="44" y="1227" font-size="13" font-weight="550">UniRig</text>
+<circle cx="265.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1223.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1223.0" r="6.5" fill="#a05212"/>
+<circle cx="805.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1223.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1223.0" r="1.8" class="na"/>
+<line x1="36" y1="1258" x2="1222" y2="1258" class="grid"/><text x="44" y="1251" font-size="13" font-weight="550">Dream Textures</text>
+<circle cx="265.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1247.0" r="6.5" fill="#a05212"/>
+<circle cx="565.0" cy="1247.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="595.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1247.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1247.0" r="6.5" fill="#a05212"/>
+<circle cx="775.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1247.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="985.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1247.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1247.0" r="1.8" class="na"/>
+<line x1="36" y1="1282" x2="1222" y2="1282" class="grid"/><text x="44" y="1275" font-size="13" font-weight="550">ComfyUI-3D-Pack (Comfy3D)</text>
+<circle cx="265.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1271.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1271.0" r="6.5" fill="#a05212"/>
+<circle cx="715.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1271.0" r="6.5" fill="#a05212"/>
+<circle cx="775.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1271.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="835.0" cy="1271.0" r="6.5" fill="#087d73"/>
+<circle cx="865.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1271.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1271.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1271.0" r="1.8" class="na"/>
+<line x1="36" y1="1306" x2="1222" y2="1306" class="grid"/><text x="44" y="1299" font-size="13" font-weight="550">Gaussian Splatting</text>
+<circle cx="265.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1295.0" r="6.5" fill="#a05212"/>
+<circle cx="685.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1295.0" r="6.5" fill="#087d73"/>
+<circle cx="865.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1295.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1295.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1295.0" r="1.8" class="na"/>
+<rect x="24" y="1310" width="1202" height="26" rx="7" class="band"/><text x="36" y="1328" font-size="13" font-weight="700">H. Supplementary candidates</text>
+<line x1="36" y1="1364" x2="1222" y2="1364" class="grid"/><text x="44" y="1357" font-size="13" font-weight="550">Graphify</text>
+<circle cx="265.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1353.0" r="6.5" fill="#733ed0"/>
+<circle cx="385.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1353.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1353.0" r="1.8" class="na"/>
+<line x1="36" y1="1388" x2="1222" y2="1388" class="grid"/><text x="44" y="1381" font-size="13" font-weight="550">Spec Kit</text>
+<circle cx="265.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1377.0" r="5.5" fill="none" stroke="#733ed0" stroke-width="2.2"/>
+<rect x="379.0" y="1371.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="415.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1377.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1377.0" r="1.8" class="na"/>
+<line x1="36" y1="1412" x2="1222" y2="1412" class="grid"/><text x="44" y="1405" font-size="13" font-weight="550">Claude Mem</text>
+<circle cx="265.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1401.0" r="6.5" fill="#733ed0"/>
+<circle cx="385.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1401.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1401.0" r="1.8" class="na"/>
+<line x1="36" y1="1436" x2="1222" y2="1436" class="grid"/><text x="44" y="1429" font-size="13" font-weight="550">Awesome DESIGN.md</text>
+<circle cx="265.0" cy="1425.0" r="5.5" fill="none" stroke="#733ed0" stroke-width="2.2"/>
+<circle cx="295.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1425.0" r="6.5" fill="#733ed0"/>
+<circle cx="355.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1425.0" r="5.5" fill="none" stroke="#596b84" stroke-width="2.2"/>
+<circle cx="445.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1425.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1425.0" r="1.8" class="na"/>
+<line x1="36" y1="1460" x2="1222" y2="1460" class="grid"/><text x="44" y="1453" font-size="13" font-weight="550">Designlang (design-extract)</text>
+<circle cx="265.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1449.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="1449.0" r="6.5" fill="#733ed0"/>
+<circle cx="355.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1449.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1449.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1449.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1449.0" r="1.8" class="na"/>
+<line x1="36" y1="1484" x2="1222" y2="1484" class="grid"/><text x="44" y="1477" font-size="13" font-weight="550">Anatomy</text>
+<circle cx="265.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1473.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="1473.0" r="6.5" fill="#a05212"/>
+<circle cx="565.0" cy="1473.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="595.0" cy="1473.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1473.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1473.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1473.0" r="1.8" class="na"/>
+<line x1="36" y1="1508" x2="1222" y2="1508" class="grid"/><text x="44" y="1501" font-size="13" font-weight="550">Video Shotcraft</text>
+<circle cx="265.0" cy="1497.0" r="5.5" fill="none" stroke="#733ed0" stroke-width="2.2"/>
+<circle cx="295.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1497.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1497.0" r="6.5" fill="#087d73"/>
+<circle cx="895.0" cy="1497.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1497.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="955.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1497.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1497.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1497.0" r="1.8" class="na"/>
+<line x1="36" y1="1532" x2="1222" y2="1532" class="grid"/><text x="44" y="1525" font-size="13" font-weight="550">Dream Loop</text>
+<circle cx="265.0" cy="1521.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="1521.0" r="6.5" fill="#198047"/>
+<circle cx="325.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1521.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1521.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="715.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1521.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="775.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1521.0" r="6.5" fill="#a05212"/>
+<circle cx="835.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1521.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1521.0" r="1.8" class="na"/>
+<line x1="36" y1="1556" x2="1222" y2="1556" class="grid"/><text x="44" y="1549" font-size="13" font-weight="550">Blender Skills</text>
+<circle cx="265.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1545.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="1545.0" r="6.5" fill="#a05212"/>
+<circle cx="655.0" cy="1545.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1545.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="745.0" cy="1545.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="775.0" cy="1545.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="805.0" cy="1545.0" r="6.5" fill="#a05212"/>
+<circle cx="835.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1545.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="955.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1545.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1545.0" r="1.8" class="na"/>
+<line x1="36" y1="1580" x2="1222" y2="1580" class="grid"/><text x="44" y="1573" font-size="13" font-weight="550">TRELLIS.2</text>
+<circle cx="265.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1569.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1569.0" r="6.5" fill="#a05212"/>
+<circle cx="715.0" cy="1569.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="745.0" cy="1569.0" r="6.5" fill="#a05212"/>
+<circle cx="775.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1569.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1569.0" r="1.8" class="na"/>
+<line x1="36" y1="1604" x2="1222" y2="1604" class="grid"/><text x="44" y="1597" font-size="13" font-weight="550">React Bits</text>
+<circle cx="265.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1593.0" r="6.5" fill="#2363cf"/>
+<circle cx="505.0" cy="1593.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1593.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="595.0" cy="1593.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1593.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1593.0" r="1.8" class="na"/>
+<line x1="36" y1="1628" x2="1222" y2="1628" class="grid"/><text x="44" y="1621" font-size="13" font-weight="550">Awesome Claude Skills</text>
+<circle cx="265.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1617.0" r="6.5" fill="#596b84"/>
+<circle cx="445.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1617.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1617.0" r="1.8" class="na"/>
+<rect x="24" y="1632" width="1202" height="26" rx="7" class="band"/><text x="36" y="1650" font-size="13" font-weight="700">I. Motion films, explainers and engines (source D)</text>
+<line x1="36" y1="1686" x2="1222" y2="1686" class="grid"/><text x="44" y="1679" font-size="13" font-weight="550">Huashu Motion</text>
+<circle cx="265.0" cy="1675.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="1675.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1675.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1675.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="895.0" cy="1675.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1675.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1675.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1675.0" r="1.8" class="na"/>
+<line x1="36" y1="1710" x2="1222" y2="1710" class="grid"/><text x="44" y="1703" font-size="13" font-weight="550">anything2explainer</text>
+<circle cx="265.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1699.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1699.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1699.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="895.0" cy="1699.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1699.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1699.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1699.0" r="1.8" class="na"/>
+<line x1="36" y1="1734" x2="1222" y2="1734" class="grid"/><text x="44" y="1727" font-size="13" font-weight="550">OpenScreen</text>
+<circle cx="265.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1723.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="895.0" cy="1723.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="925.0" cy="1723.0" r="6.5" fill="#bf315c"/>
+<circle cx="955.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1723.0" r="6.5" fill="#bf315c"/>
+<circle cx="1015.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1723.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1723.0" r="1.8" class="na"/>
+<line x1="36" y1="1758" x2="1222" y2="1758" class="grid"/><text x="44" y="1751" font-size="13" font-weight="550">OneTake</text>
+<circle cx="265.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1747.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1747.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1747.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="895.0" cy="1747.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1747.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1747.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1747.0" r="1.8" class="na"/>
+<line x1="36" y1="1782" x2="1222" y2="1782" class="grid"/><text x="44" y="1775" font-size="13" font-weight="550">Lemo Opuscar</text>
+<circle cx="265.0" cy="1771.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1771.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="565.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1771.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1771.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1771.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1771.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1771.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1771.0" r="1.8" class="na"/>
+<line x1="36" y1="1806" x2="1222" y2="1806" class="grid"/><text x="44" y="1799" font-size="13" font-weight="550">EffectCraft</text>
+<circle cx="265.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1795.0" r="6.5" fill="#a05212"/>
+<circle cx="595.0" cy="1795.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1795.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1795.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1795.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1795.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1795.0" r="1.8" class="na"/>
+<line x1="36" y1="1830" x2="1222" y2="1830" class="grid"/><text x="44" y="1823" font-size="13" font-weight="550">GSAP</text>
+<circle cx="265.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1819.0" r="1.8" class="na"/>
+<rect x="499.0" y="1813.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="535.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1819.0" r="1.8" class="na"/>
+<rect x="589.0" y="1813.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="625.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1819.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="925.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1819.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1819.0" r="1.8" class="na"/>
+<line x1="36" y1="1854" x2="1222" y2="1854" class="grid"/><text x="44" y="1847" font-size="13" font-weight="550">ComfyUI</text>
+<circle cx="265.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1843.0" r="1.8" class="na"/>
+<rect x="529.0" y="1837.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="565.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1843.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1843.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="715.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1843.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="865.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1843.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<rect x="979.0" y="1837.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="1015.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1843.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1843.0" r="1.8" class="na"/>
+<line x1="36" y1="1878" x2="1222" y2="1878" class="grid"/><text x="44" y="1871" font-size="13" font-weight="550">Remotion skills</text>
+<circle cx="265.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1867.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1867.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1867.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1867.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1867.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1867.0" r="1.8" class="na"/>
+<rect x="24" y="1882" width="1202" height="26" rx="7" class="band"/><text x="36" y="1900" font-size="13" font-weight="700">J. Game development (source E)</text>
+<line x1="36" y1="1936" x2="1222" y2="1936" class="grid"/><text x="44" y="1929" font-size="13" font-weight="550">Godot Engine</text>
+<circle cx="265.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1925.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1925.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1925.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1925.0" r="6.5" fill="#2363cf"/>
+<circle cx="1045.0" cy="1925.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="1075.0" cy="1925.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="1105.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1925.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="1165.0" cy="1925.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1925.0" r="1.8" class="na"/>
+<line x1="36" y1="1960" x2="1222" y2="1960" class="grid"/><text x="44" y="1953" font-size="13" font-weight="550">Godot MCP</text>
+<circle cx="265.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1949.0" r="5.5" fill="none" stroke="#733ed0" stroke-width="2.2"/>
+<circle cx="385.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1949.0" r="6.5" fill="#2363cf"/>
+<circle cx="475.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1949.0" r="6.5" fill="#2363cf"/>
+<circle cx="1045.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1949.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="1105.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="1949.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1949.0" r="1.8" class="na"/>
+<line x1="36" y1="1984" x2="1222" y2="1984" class="grid"/><text x="44" y="1977" font-size="13" font-weight="550">Phaser</text>
+<circle cx="265.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1973.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1973.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="595.0" cy="1973.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1973.0" r="1.8" class="na"/>
+<rect x="1009.0" y="1967.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="1045.0" cy="1973.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="1075.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1973.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="1165.0" cy="1973.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1973.0" r="1.8" class="na"/>
+<line x1="36" y1="2008" x2="1222" y2="2008" class="grid"/><text x="44" y="2001" font-size="13" font-weight="550">Bevy</text>
+<circle cx="265.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="1997.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="1997.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="1997.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="1997.0" r="6.5" fill="#2363cf"/>
+<circle cx="1045.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="1997.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="1165.0" cy="1997.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="1997.0" r="1.8" class="na"/>
+<line x1="36" y1="2032" x2="1222" y2="2032" class="grid"/><text x="44" y="2025" font-size="13" font-weight="550">Babylon.js</text>
+<circle cx="265.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2021.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="595.0" cy="2021.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="2021.0" r="1.8" class="na"/>
+<rect x="649.0" y="2015.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="685.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2021.0" r="1.8" class="na"/>
+<rect x="1009.0" y="2015.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="1045.0" cy="2021.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="1075.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2021.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2021.0" r="1.8" class="na"/>
+<line x1="36" y1="2056" x2="1222" y2="2056" class="grid"/><text x="44" y="2049" font-size="13" font-weight="550">Rapier</text>
+<circle cx="265.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2045.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<rect x="1039.0" y="2039.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="1075.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2045.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2045.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<line x1="36" y1="2080" x2="1222" y2="2080" class="grid"/><text x="44" y="2073" font-size="13" font-weight="550">Jolt Physics</text>
+<circle cx="265.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2069.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2069.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="1045.0" cy="2069.0" r="6.5" fill="#2363cf"/>
+<circle cx="1075.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2069.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2069.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<line x1="36" y1="2104" x2="1222" y2="2104" class="grid"/><text x="44" y="2097" font-size="13" font-weight="550">Matter.js</text>
+<circle cx="265.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2093.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2093.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2093.0" r="1.8" class="na"/>
+<rect x="1039.0" y="2087.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="1075.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2093.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2093.0" r="1.8" class="na"/>
+<line x1="36" y1="2128" x2="1222" y2="2128" class="grid"/><text x="44" y="2121" font-size="13" font-weight="550">Pixelorama</text>
+<circle cx="265.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2117.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="565.0" cy="2117.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="595.0" cy="2117.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2117.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="1105.0" cy="2117.0" r="6.5" fill="#a05212"/>
+<circle cx="1135.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2117.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2117.0" r="1.8" class="na"/>
+<line x1="36" y1="2152" x2="1222" y2="2152" class="grid"/><text x="44" y="2145" font-size="13" font-weight="550">Blockbench</text>
+<circle cx="265.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2141.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="2141.0" r="6.5" fill="#a05212"/>
+<circle cx="655.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2141.0" r="6.5" fill="#a05212"/>
+<circle cx="775.0" cy="2141.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="805.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2141.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="1135.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2141.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2141.0" r="1.8" class="na"/>
+<line x1="36" y1="2176" x2="1222" y2="2176" class="grid"/><text x="44" y="2169" font-size="13" font-weight="550">LDtk (Level Designer Toolkit)</text>
+<circle cx="265.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2165.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2165.0" r="6.5" fill="#a05212"/>
+<circle cx="1105.0" cy="2165.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="1135.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2165.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2165.0" r="1.8" class="na"/>
+<line x1="36" y1="2200" x2="1222" y2="2200" class="grid"/><text x="44" y="2193" font-size="13" font-weight="550">howler.js</text>
+<circle cx="265.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2189.0" r="5.5" fill="none" stroke="#bf315c" stroke-width="2.2"/>
+<circle cx="1015.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2189.0" r="6.5" fill="#087d73"/>
+<circle cx="1165.0" cy="2189.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2189.0" r="1.8" class="na"/>
+<line x1="36" y1="2224" x2="1222" y2="2224" class="grid"/><text x="44" y="2217" font-size="13" font-weight="550">jsfxr</text>
+<circle cx="265.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2213.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2213.0" r="1.8" class="na"/>
+<rect x="1129.0" y="2207.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="1165.0" cy="2213.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2213.0" r="1.8" class="na"/>
+<line x1="36" y1="2248" x2="1222" y2="2248" class="grid"/><text x="44" y="2241" font-size="13" font-weight="550">ink (inkle)</text>
+<circle cx="265.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2237.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2237.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2237.0" r="1.8" class="na"/>
+<rect x="1159.0" y="2231.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="1195.0" cy="2237.0" r="1.8" class="na"/>
+<line x1="36" y1="2272" x2="1222" y2="2272" class="grid"/><text x="44" y="2265" font-size="13" font-weight="550">Colyseus</text>
+<circle cx="265.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2261.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="1045.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2261.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2261.0" r="1.8" class="na"/>
+<rect x="1189.0" y="2255.0" width="12" height="12" rx="2" fill="#198047"/>
+<line x1="36" y1="2296" x2="1222" y2="2296" class="grid"/><text x="44" y="2289" font-size="13" font-weight="550">Nakama</text>
+<circle cx="265.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="625.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2285.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="1045.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2285.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2285.0" r="6.5" fill="#198047"/>
+<rect x="24" y="2300" width="1202" height="26" rx="7" class="band"/><text x="36" y="2318" font-size="13" font-weight="700">K. Expressive motion (source F)</text>
+<line x1="36" y1="2354" x2="1222" y2="2354" class="grid"/><text x="44" y="2347" font-size="13" font-weight="550">pixelfx</text>
+<circle cx="265.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2343.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2343.0" r="1.8" class="na"/>
+<rect x="559.0" y="2337.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="595.0" cy="2343.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2343.0" r="1.8" class="na"/>
+<rect x="1099.0" y="2337.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="1135.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2343.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2343.0" r="1.8" class="na"/>
+<line x1="36" y1="2378" x2="1222" y2="2378" class="grid"/><text x="44" y="2371" font-size="13" font-weight="550">motionmaxxing</text>
+<circle cx="265.0" cy="2367.0" r="6.5" fill="#733ed0"/>
+<circle cx="295.0" cy="2367.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="535.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2367.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="595.0" cy="2367.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2367.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2367.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="895.0" cy="2367.0" r="6.5" fill="#087d73"/>
+<circle cx="925.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2367.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2367.0" r="1.8" class="na"/>
+<line x1="36" y1="2402" x2="1222" y2="2402" class="grid"/><text x="44" y="2395" font-size="13" font-weight="550">reanimate</text>
+<circle cx="265.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2391.0" r="5.5" fill="none" stroke="#198047" stroke-width="2.2"/>
+<circle cx="325.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2391.0" r="6.5" fill="#2363cf"/>
+<circle cx="535.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2391.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="595.0" cy="2391.0" r="6.5" fill="#087d73"/>
+<circle cx="625.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2391.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2391.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2391.0" r="1.8" class="na"/>
+<line x1="36" y1="2426" x2="1222" y2="2426" class="grid"/><text x="44" y="2419" font-size="13" font-weight="550">Motion (formerly Framer Motion)</text>
+<circle cx="265.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2415.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="2415.0" r="1.8" class="na"/>
+<rect x="499.0" y="2409.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="535.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2415.0" r="1.8" class="na"/>
+<rect x="589.0" y="2409.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="625.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="685.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2415.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2415.0" r="1.8" class="na"/>
+<line x1="36" y1="2450" x2="1222" y2="2450" class="grid"/><text x="44" y="2443" font-size="13" font-weight="550">Theatre.js</text>
+<circle cx="265.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="475.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="505.0" cy="2439.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="535.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2439.0" r="1.8" class="na"/>
+<rect x="589.0" y="2433.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="625.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="655.0" cy="2439.0" r="5.5" fill="none" stroke="#a05212" stroke-width="2.2"/>
+<circle cx="685.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2439.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="925.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2439.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2439.0" r="1.8" class="na"/>
+<line x1="36" y1="2474" x2="1222" y2="2474" class="grid"/><text x="44" y="2467" font-size="13" font-weight="550">React Three Fiber (@react-three/fiber)</text>
+<circle cx="265.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="295.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="325.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="355.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="385.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="415.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="445.0" cy="2463.0" r="5.5" fill="none" stroke="#2363cf" stroke-width="2.2"/>
+<circle cx="475.0" cy="2463.0" r="1.8" class="na"/>
+<rect x="499.0" y="2457.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="535.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="565.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="595.0" cy="2463.0" r="5.5" fill="none" stroke="#087d73" stroke-width="2.2"/>
+<circle cx="625.0" cy="2463.0" r="1.8" class="na"/>
+<rect x="649.0" y="2457.0" width="12" height="12" rx="2" fill="#198047"/>
+<circle cx="685.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="715.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="745.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="775.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="805.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="835.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="865.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="895.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="925.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="955.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="985.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="1015.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="1045.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="1075.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="1105.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="1135.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="1165.0" cy="2463.0" r="1.8" class="na"/>
+<circle cx="1195.0" cy="2463.0" r="1.8" class="na"/>
+<text x="37" y="2536" font-size="12.5" class="sub">Source: registry/repositories.json. Regenerate with python scripts/render-matrix.py.</text>
+</svg>

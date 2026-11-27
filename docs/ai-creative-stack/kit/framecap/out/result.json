@@ -1,0 +1,131 @@
+{
+  "tool": "framecap",
+  "date": "2026-11-27T04:44:51.178Z",
+  "checks": {
+    "cssPosition": {
+      "pass": true,
+      "framecapChecks": {
+        "frames": true,
+        "size": true,
+        "fps": true,
+        "duration": true
+      },
+      "mode": "animations",
+      "animations": 1,
+      "frames": 60,
+      "worstErrorPx": 0.274,
+      "samples": [
+        {
+          "frame": 0,
+          "expected": 50,
+          "measured": 50
+        },
+        {
+          "frame": 10,
+          "expected": 246.67,
+          "measured": 246.69
+        },
+        {
+          "frame": 20,
+          "expected": 443.33,
+          "measured": 443.37
+        },
+        {
+          "frame": 30,
+          "expected": 640,
+          "measured": 640.01
+        },
+        {
+          "frame": 40,
+          "expected": 836.67,
+          "measured": 836.66
+        },
+        {
+          "frame": 50,
+          "expected": 1033.33,
+          "measured": 1033.39
+        },
+        {
+          "frame": 59,
+          "expected": 1210.33,
+          "measured": 1210.22
+        }
+      ],
+      "mp4Bytes": 9748,
+      "captureSeconds": 11.225
+    },
+    "alphaMov": {
+      "pass": true,
+      "framecapChecks": {
+        "frames": true,
+        "size": true,
+        "fps": true,
+        "duration": true
+      },
+      "codec": "prores",
+      "pix_fmt": "yuva444p12le",
+      "maxCornerAlpha": 0,
+      "centerAlphaFirst": 255,
+      "centerAlphaLast": 130,
+      "movBytes": 170553
+    },
+    "alphaPng": {
+      "pass": true,
+      "framecapChecks": {
+        "frames": true,
+        "size": true,
+        "alpha": true
+      },
+      "frames": 6,
+      "pngColorType": 6,
+      "maxCornerAlpha": 0,
+      "centerAlphaFirst": 255,
+      "centerAlphaLast": 209
+    },
+    "audioMux": {
+      "pass": true,
+      "framecapChecks": {
+        "frames": true,
+        "size": true,
+        "fps": true,
+        "duration": true,
+        "audioStream": true,
+        "audioDuration": true
+      },
+      "audio": {
+        "codec": "aac",
+        "duration": 2,
+        "sampleRate": 48000,
+        "channels": 1
+      },
+      "decodedSeconds": 2.005333333333333,
+      "rms": 0.0882
+    },
+    "timeContract": {
+      "pass": true,
+      "mode": "scene",
+      "frames": 24,
+      "worstErrorPx": 0.111,
+      "framecapChecks": {
+        "frames": true,
+        "size": true,
+        "fps": true,
+        "duration": true
+      }
+    },
+    "gsapTimeline": {
+      "pass": true,
+      "mode": "gsap",
+      "frames": 24,
+      "worstErrorPx": 0.054,
+      "framecapChecks": {
+        "frames": true,
+        "size": true,
+        "fps": true,
+        "duration": true
+      }
+    }
+  },
+  "outBytes": 241359,
+  "pass": true
+}

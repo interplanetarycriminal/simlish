@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 745 768" role="img" aria-labelledby="title desc">
+<title id="title">Premium marketing website</title><desc id="desc">Each arrow names the artifact the next step receives.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="745" height="768" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Premium marketing website</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Each arrow names the artifact the next step receives.</text>
+<path d="M372 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M372 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M372 452 V514" class="line" marker-end="url(#end)"/>
+<path d="M372 588 V650" class="line" marker-end="url(#end)"/>
+<path d="M522 552 H558 V280 H524" class="line dash" marker-end="url(#end)"/>
+<rect x="378" y="203" width="147" height="20" rx="5" class="lab"/><text x="384" y="217" font-size="12.5" font-weight="560" class="sub">copy order + tokens</text>
+<rect x="378" y="339" width="90" height="20" rx="5" class="lab"/><text x="384" y="353" font-size="12.5" font-weight="560" class="sub">route build</text>
+<rect x="378" y="475" width="90" height="20" rx="5" class="lab"/><text x="384" y="489" font-size="12.5" font-weight="560" class="sub">preview URL</text>
+<rect x="378" y="611" width="69" height="20" rx="5" class="lab"/><text x="384" y="625" font-size="12.5" font-weight="560" class="sub">fix list</text>
+<rect x="526" y="529" width="111" height="20" rx="5" class="lab"/><text x="532" y="543" font-size="12.5" font-weight="560" class="sub">fail: rerender</text>
+<rect x="222" y="108" width="300" height="72" rx="13" class="panel"/><rect x="234" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="250" y="140" font-size="16.5" font-weight="720">Brief and page hierarchy</text><text x="250" y="160" font-size="13" font-weight="450" class="sub">offer, hero, conversion event</text>
+<rect x="222" y="244" width="300" height="72" rx="13" class="panel"/><rect x="234" y="268" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="250" y="276" font-size="16.5" font-weight="720">Build responsive UI</text><text x="250" y="296" font-size="13" font-weight="450" class="sub">house routes and components</text>
+<rect x="222" y="380" width="300" height="72" rx="13" class="panel"/><rect x="234" y="404" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="250" y="412" font-size="16.5" font-weight="720">Add purposeful motion</text><text x="250" y="432" font-size="13" font-weight="450" class="sub">reveals information or answers input</text>
+<rect x="222" y="516" width="300" height="72" rx="13" class="panel"/><rect x="234" y="540" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="250" y="548" font-size="16.5" font-weight="720">Render and critique</text><text x="250" y="568" font-size="13" font-weight="450" class="sub">desktop and mobile screenshots</text>
+<rect x="222" y="652" width="300" height="72" rx="13" class="panel"/><rect x="234" y="676" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="250" y="684" font-size="16.5" font-weight="720">Pass launch checks</text><text x="250" y="704" font-size="13" font-weight="450" class="sub">keyboard, errors, slow network</text>
+</svg>

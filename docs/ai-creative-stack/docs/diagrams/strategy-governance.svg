@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1284 1340" role="img" aria-labelledby="title desc">
+<title id="title">Strategy layer: governance</title><desc id="desc">Small reversible tasks run directly; larger ones become bounded packages under deterministic limits. Gates decide the outcome.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="1284" height="1340" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Strategy layer: governance</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Small reversible tasks run directly; larger ones become bounded packages under deterministic limits. Gates decide the outcome.</text>
+<path d="M454 180 V212 H642 V242" class="line" marker-end="url(#end)"/>
+<path d="M642 298 V360" class="line" marker-end="url(#end)"/>
+<path d="M642 416 V448 H454 V478" class="line" marker-end="url(#end)"/>
+<path d="M642 416 V448 H830 V478" class="line" marker-end="url(#end)"/>
+<path d="M830 552 V584 H642 V614" class="line" marker-end="url(#end)"/>
+<path d="M642 688 V750" class="line" marker-end="url(#end)"/>
+<path d="M980 144 H1204 V788 H794" class="line dash" marker-end="url(#end)"/>
+<path d="M454 552 V856 H642 V886" class="line" marker-end="url(#end)"/>
+<path d="M642 824 V886" class="line" marker-end="url(#end)"/>
+<path d="M642 942 V1004" class="line" marker-end="url(#end)"/>
+<path d="M642 1060 V1092 H1018 V1122" class="line" marker-end="url(#end)"/>
+<path d="M1168 1151 H1222 V389 H794" class="line dash" marker-end="url(#end)"/>
+<path d="M642 1060 V1092 H266 V1122" class="line" marker-end="url(#end)"/>
+<path d="M642 1060 V1122" class="line" marker-end="url(#end)"/>
+<path d="M266 1178 V1210 H642 V1240" class="line" marker-end="url(#end)"/>
+<rect x="460" y="455" width="33" height="20" rx="5" class="lab"/><text x="466" y="469" font-size="12.5" font-weight="560" class="sub">Yes</text>
+<rect x="836" y="455" width="26" height="20" rx="5" class="lab"/><text x="842" y="469" font-size="12.5" font-weight="560" class="sub">No</text>
+<rect x="984" y="121" width="48" height="20" rx="5" class="lab"/><text x="990" y="135" font-size="12.5" font-weight="560" class="sub">stops</text>
+<rect x="1024" y="1099" width="118" height="20" rx="5" class="lab"/><text x="1030" y="1113" font-size="12.5" font-weight="560" class="sub">No, budget left</text>
+<rect x="1172" y="1128" width="48" height="20" rx="5" class="lab"/><text x="1178" y="1142" font-size="12.5" font-weight="560" class="sub">retry</text>
+<rect x="272" y="1099" width="33" height="20" rx="5" class="lab"/><text x="278" y="1113" font-size="12.5" font-weight="560" class="sub">Yes</text>
+<rect x="648" y="1083" width="62" height="20" rx="5" class="lab"/><text x="654" y="1097" font-size="12.5" font-weight="560" class="sub">blocked</text>
+<rect x="304" y="108" width="300" height="72" rx="13" class="panel"/><rect x="316" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="332" y="150" font-size="17" font-weight="720">Brief and constraints</text>
+<rect x="680" y="108" width="300" height="72" rx="13" class="panel"/><rect x="692" y="132" width="7" height="24" rx="3.5" fill="#bf315c"/>
+<text x="708" y="140" font-size="16.5" font-weight="720">Deterministic monitor</text><text x="708" y="160" font-size="13" font-weight="450" class="sub">repeated failure, no progress, scope change</text>
+<rect x="492" y="244" width="300" height="54" rx="13" class="panel"/><rect x="504" y="259" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="520" y="277" font-size="17" font-weight="720">Specification and acceptance tests</text>
+<rect x="492" y="362" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M508 380 L517 389 L508 398 L499 389Z" fill="#596b84"/>
+<text x="520" y="395" font-size="17" font-weight="720">Small, reversible task?</text>
+<rect x="304" y="480" width="300" height="72" rx="13" class="panel"/><rect x="316" y="504" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="332" y="522" font-size="17" font-weight="720">Direct execution</text>
+<rect x="680" y="480" width="300" height="72" rx="13" class="panel"/><rect x="692" y="504" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="708" y="512" font-size="16.5" font-weight="720">Bounded work packages</text><text x="708" y="532" font-size="13" font-weight="450" class="sub">id, scope, checks, budget</text>
+<rect x="492" y="616" width="300" height="72" rx="13" class="panel"/><rect x="504" y="640" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="520" y="648" font-size="16.5" font-weight="720">Assign owners and tools</text><text x="520" y="668" font-size="13" font-weight="450" class="sub">waves: parallel only if scopes do not overlap</text>
+<rect x="492" y="752" width="300" height="72" rx="13" class="panel"/><rect x="504" y="776" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="520" y="784" font-size="16.5" font-weight="720">Execute within limits</text><text x="520" y="804" font-size="13" font-weight="450" class="sub">time, retries, scope</text>
+<rect x="492" y="888" width="300" height="54" rx="13" class="panel"/><rect x="504" y="903" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="520" y="921" font-size="17" font-weight="720">Inspect actual artifacts</text>
+<rect x="492" y="1006" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M508 1024 L517 1033 L508 1042 L499 1033Z" fill="#198047"/>
+<text x="520" y="1039" font-size="17" font-weight="720">Acceptance gates passed?</text>
+<rect x="116" y="1124" width="300" height="54" rx="13" class="panel"/><rect x="128" y="1139" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="144" y="1157" font-size="17" font-weight="720">Deliver or publish with authorization</text>
+<rect x="492" y="1124" width="300" height="54" rx="13" class="panel"/><rect x="504" y="1139" width="7" height="24" rx="3.5" fill="#bf315c"/>
+<text x="520" y="1157" font-size="17" font-weight="720">Checkpoint and report the blocker</text>
+<rect x="868" y="1124" width="300" height="54" rx="13" class="panel"/><rect x="880" y="1139" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="896" y="1157" font-size="17" font-weight="720">Diagnose and refine</text>
+<rect x="492" y="1242" width="300" height="54" rx="13" class="panel"/><rect x="504" y="1257" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="520" y="1275" font-size="17" font-weight="720">Record approved evidence and decisions</text>
+</svg>

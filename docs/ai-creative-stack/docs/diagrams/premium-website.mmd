@@ -1,0 +1,21 @@
+%% render: auto
+%% title: Premium marketing website
+%% desc: Each arrow names the artifact the next step receives.
+flowchart TD
+    N0["Brief and page hierarchy • offer, hero, conversion event"]:::slate
+    N1["Build responsive UI • house routes and components"]:::blue
+    N2["Add purposeful motion • reveals information or answers input"]:::teal
+    N3["Render and critique • desktop and mobile screenshots"]:::green
+    N4["Pass launch checks • keyboard, errors, slow network"]:::green
+    N0 -->|copy order + tokens| N1
+    N1 -->|route build| N2
+    N2 -->|preview URL| N3
+    N3 -->|fix list| N4
+    N3 -.->|fail: rerender| N1
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

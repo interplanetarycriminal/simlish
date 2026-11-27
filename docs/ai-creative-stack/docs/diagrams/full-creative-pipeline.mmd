@@ -1,0 +1,21 @@
+%% render: auto
+%% title: Full creative ecosystem
+%% desc: One shared source feeds every deliverable. Arrows name what is reused.
+flowchart TD
+    N0["Set brand direction • tokens, type, imagery, motion rules"]:::purple
+    N1["Build site and app • same component review"]:::blue
+    N2["Create interactive 3D • one scene, live and rendered"]:::amber
+    N3["Reuse assets in video • approved clips and illustrations"]:::teal
+    N4["Review the release • side by side, versioned"]:::green
+    N0 -->|frozen tokens| N1
+    N0 -->|art direction| N2
+    N2 -->|rendered frames| N3
+    N1 -->|screen captures| N3
+    N3 -->|master + manifest| N4
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

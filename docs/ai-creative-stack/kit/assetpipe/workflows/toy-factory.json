@@ -1,0 +1,13 @@
+{
+ "name": "toy-factory",
+ "version": 1,
+ "description": "One image of a toy to a validated, rigged, animated GLB, plus a Gaussian splat version.",
+ "steps": [
+  {"id": "v1-original", "run": "inflate", "params": {"height": 0.2, "res": 96, "thickness": 0.6}},
+  {"id": "v2-retopo", "run": "remesh", "params": {"faces": 2400}},
+  {"id": "check-geometry", "run": "validate", "input": "v2-retopo"},
+  {"id": "v3-rigged", "run": "autorig", "input": "v2-retopo", "params": {"bones": 4, "anim": "swim", "frames": 48}},
+  {"id": "check-rig", "run": "validate", "input": "v3-rigged"},
+  {"id": "splat", "run": "mesh2splat", "input": "v2-retopo", "params": {"count": 20000}, "optional": true}
+ ]
+}

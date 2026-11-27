@@ -1,0 +1,60 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Phaser slice</title>
+<style>html, body { margin: 0; background: #10141c; } canvas { display: block; }</style>
+<script src="../node_modules/phaser/dist/phaser.min.js"></script>
+<script>
+// A tiny platformer slice. Physics starts paused. The test calls freeze() to stop the real-time loop,
+// then advances the game with game.step() and a fixed 1/60 s delta: one Arcade step per call.
+const DT = 1000 / 60;
+const RUN_SPEED = 160;
+let player; let coin; let keys; let score = 0; let scoreText; let clock = 0;
+
+class Slice extends Phaser.Scene {
+  constructor() { super('Slice'); }
+  create() {
+    this.physics.pause(); // no bodies move until freeze() hands control to the test
+    const g = this.add.graphics();
+    g.fillStyle(0x4cc9f0).fillRoundedRect(0, 0, 24, 32, 5).generateTexture('player', 24, 32).clear();
+    g.fillStyle(0x6a994e).fillRect(0, 0, 400, 20).generateTexture('platform', 400, 20).clear();
+    g.fillStyle(0xffd166).fillCircle(8, 8, 8).generateTexture('coin', 16, 16).destroy();
+
+    const platforms = this.physics.add.staticGroup();
+    platforms.create(300, 300, 'platform'); // top edge at y = 290
+    player = this.physics.add.sprite(150, 100, 'player');
+    coin = this.physics.add.image(330, 274, 'coin');
+    coin.body.setAllowGravity(false);
+    this.physics.add.collider(player, platforms);
+    this.physics.add.overlap(player, coin, () => { coin.disableBody(true, true); score += 1; scoreText.setText('score ' + score); });
+    keys = this.input.keyboard.createCursorKeys();
+    scoreText = this.add.text(12, 10, 'score 0', { fontFamily: 'monospace', fontSize: '18px', color: '#f1faee' });
+    window.__ready = true;
+  }
+  update() {
+    if (keys.right.isDown) player.setVelocityX(RUN_SPEED);
+    else if (keys.left.isDown) player.setVelocityX(-RUN_SPEED);
+    else player.setVelocityX(0);
+  }
+}
+
+window.__slice = {
+  phaser: Phaser.VERSION,
+  freeze() {
+    const game = window.__game; const world = game.scene.getScene('Slice').physics.world;
+    game.loop.sleep();
+    world._elapsed = 0; // private step accumulator; empty it so step 1 is a whole physics step
+    world.resume();
+    return { loopRunning: game.loop.running, physicsPaused: world.isPaused };
+  },
+  step(n) { for (let i = 0; i < n; i++) { clock += DT; window.__game.step(clock, DT); } return this.state(); },
+  state() {
+    return { x: player.x, y: player.y, vx: player.body.velocity.x, vy: player.body.velocity.y, onFloor: player.body.blocked.down, score, coinActive: coin.active, rightDown: keys.right.isDown, renderer: window.__game.renderer.type === Phaser.WEBGL ? 'webgl' : 'canvas' };
+  },
+};
+
+window.__game = new Phaser.Game({
+  type: Phaser.AUTO, width: 640, height: 360, backgroundColor: '#10141c', banner: false,
+  physics: { default: 'arcade', arcade: { gravity: { y: 600 }, fixedStep: true, fps: 60 } },
+  scene: Slice,
+});
+</script>

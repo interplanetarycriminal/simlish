@@ -1,0 +1,29 @@
+%% render: auto
+%% title: Animation-ready character production
+%% desc: Deformation drives every decision. Each arrow names the versioned asset the next step consumes.
+flowchart TD
+    A["Character reference • approved turnaround or images"]:::slate
+    B["Image-to-3D or manual modelling • raw geometry v1"]:::amber
+    C["Deformation-aware topology • loops at joints, Blender retopo"]:::amber
+    D["UVs and materials • unwrap, bake, PBR"]:::amber
+    E["UniRig • predicted skeleton and skin"]:::amber
+    F["Blender correction • joints, roll, weights"]:::amber
+    G["Test poses • limits, penetration, volume"]:::blue
+    H["Animation • keyframes or retargeted clips"]:::teal
+    I["Validated rig export • FBX and GLB plus reports"]:::green
+    A --> B
+    B -->|OBJ or GLB v1| C
+    C -->|retopo mesh v2| D
+    D -->|textured v3| E
+    E -->|FBX rig v4| F
+    F --> G
+    G -.->|fails| F
+    G -->|passes| H
+    H -->|animated v5| I
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

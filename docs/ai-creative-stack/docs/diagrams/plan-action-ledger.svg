@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 1104" role="img" aria-labelledby="title desc">
+<title id="title">Plan/action evidence ledger</title><desc id="desc">Observed effects come from file hashes and checks, not from the worker&#x27;s account. Out-of-scope changes stop the package.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="908" height="1104" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Plan/action evidence ledger</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Observed effects come from file hashes and checks, not from the worker&#x27;s account. Out-of-scope changes stop the package.</text>
+<path d="M454 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M454 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 434 V496" class="line" marker-end="url(#end)"/>
+<path d="M454 570 V632" class="line" marker-end="url(#end)"/>
+<path d="M454 688 V750" class="line" marker-end="url(#end)"/>
+<path d="M454 806 V838 H642 V868" class="line" marker-end="url(#end)"/>
+<path d="M454 806 V838 H266 V868" class="line" marker-end="url(#end)"/>
+<path d="M266 924 V986" class="line" marker-end="url(#end)"/>
+<path d="M266 924 V956 H642 V986" class="line" marker-end="url(#end)"/>
+<rect x="460" y="593" width="40" height="20" rx="5" class="lab"/><text x="466" y="607" font-size="12.5" font-weight="560" class="sub">diff</text>
+<rect x="648" y="845" width="26" height="20" rx="5" class="lab"/><text x="654" y="859" font-size="12.5" font-weight="560" class="sub">No</text>
+<rect x="272" y="845" width="33" height="20" rx="5" class="lab"/><text x="278" y="859" font-size="12.5" font-weight="560" class="sub">Yes</text>
+<rect x="272" y="947" width="33" height="20" rx="5" class="lab"/><text x="278" y="961" font-size="12.5" font-weight="560" class="sub">Yes</text>
+<rect x="648" y="963" width="26" height="20" rx="5" class="lab"/><text x="654" y="977" font-size="12.5" font-weight="560" class="sub">No</text>
+<rect x="304" y="108" width="300" height="72" rx="13" class="panel"/><rect x="316" y="132" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="140" font-size="16.5" font-weight="720">Work package</text><text x="332" y="160" font-size="13" font-weight="450" class="sub">planned effect, edit scope, checks</text>
+<rect x="304" y="244" width="300" height="72" rx="13" class="panel"/><rect x="316" y="268" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="332" y="276" font-size="16.5" font-weight="720">Hash the project</text><text x="332" y="296" font-size="13" font-weight="450" class="sub">before</text>
+<rect x="304" y="380" width="300" height="54" rx="13" class="panel"/><rect x="316" y="395" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="332" y="413" font-size="17" font-weight="720">Run the command</text>
+<rect x="304" y="498" width="300" height="72" rx="13" class="panel"/><rect x="316" y="522" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="332" y="530" font-size="16.5" font-weight="720">Hash the project</text><text x="332" y="550" font-size="13" font-weight="450" class="sub">after</text>
+<rect x="304" y="634" width="300" height="54" rx="13" class="panel"/><rect x="316" y="649" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="667" font-size="17" font-weight="720">Changed paths and acceptance checks</text>
+<rect x="304" y="752" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M320 770 L329 779 L320 788 L311 779Z" fill="#596b84"/>
+<text x="332" y="785" font-size="17" font-weight="720">Changes inside the edit scope?</text>
+<rect x="116" y="870" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M132 888 L141 897 L132 906 L123 897Z" fill="#596b84"/>
+<text x="144" y="903" font-size="17" font-weight="720">Checks pass?</text>
+<rect x="492" y="870" width="300" height="54" rx="13" class="panel"/><rect x="504" y="885" width="7" height="24" rx="3.5" fill="#bf315c"/>
+<text x="520" y="903" font-size="17" font-weight="720">Ledger: deviation, stop for review</text>
+<rect x="116" y="988" width="300" height="72" rx="13" class="panel"/><rect x="128" y="1012" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="144" y="1030" font-size="17" font-weight="720">Ledger: done</text>
+<rect x="492" y="988" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1012" width="7" height="24" rx="3.5" fill="#bf315c"/>
+<text x="520" y="1020" font-size="16.5" font-weight="720">Ledger: retry or stop</text><text x="520" y="1040" font-size="13" font-weight="450" class="sub">repeated failure, no progress</text>
+</svg>

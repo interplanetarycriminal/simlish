@@ -1,0 +1,7 @@
+<!doctype html><html><head><style>
+html, body { margin: 0; background: #000; overflow: hidden; }
+.bar { position: absolute; left: 0; top: 160px; width: 40px; height: 40px; background: #fff; }
+</style><script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script></head>
+<body><div class="bar"></div><script>
+gsap.fromTo('.bar', { x: 80 }, { x: 380, duration: 1, ease: 'none' });
+</script></body></html>

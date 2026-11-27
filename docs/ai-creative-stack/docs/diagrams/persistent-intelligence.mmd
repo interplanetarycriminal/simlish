@@ -1,0 +1,25 @@
+%% render: auto
+%% title: Persistent project intelligence
+%% desc: Three distinct inputs reach the agent. Only approved decisions flow back. Memory never overrides the current instruction.
+flowchart TD
+    A["Project knowledge • Graphify graph or plain docs"]:::purple
+    B["Approved session context • Claude Mem or decision log"]:::purple
+    C["Current specification • Spec Kit spec, plan, tasks"]:::slate
+    D["Execution agent • the current instruction wins"]:::blue
+    E["Validated result • gates passed"]:::green
+    F{"Decision approved by the owner?"}:::slate
+    G["Decision log entry • what, why, evidence, date"]:::purple
+    A -->|relevant excerpts| D
+    B -->|approved notes| D
+    C -->|tasks| D
+    D --> E
+    E --> F
+    F -->|Yes| G
+    G -.->|indexed| A
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

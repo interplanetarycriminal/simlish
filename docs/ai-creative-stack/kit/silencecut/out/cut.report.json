@@ -1,0 +1,35 @@
+{
+  "tool": "silencecut",
+  "input": "fixture.mp4",
+  "output": "cut.mp4",
+  "edl": "cut.edl.json",
+  "segments": 3,
+  "silences": 4,
+  "sourceDuration": 10.0,
+  "edlDuration": 5.1,
+  "toleranceSeconds": 0.033334333333333334,
+  "checks": {
+    "videoDuration": true,
+    "audioDuration": true,
+    "clickFree": true
+  },
+  "videoFrames": 153,
+  "videoDuration": 5.1,
+  "audioDuration": 5.1,
+  "decodedAudioSeconds": 5.12,
+  "boundaries": [
+    {
+      "t": 1.7,
+      "peakStep": 4e-06,
+      "contextStep": 0.000167,
+      "click": false
+    },
+    {
+      "t": 2.9,
+      "peakStep": 3e-06,
+      "contextStep": 0.000165,
+      "click": false
+    }
+  ],
+  "pass": true
+}

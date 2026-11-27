@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 1158" role="img" aria-labelledby="title desc">
+<title id="title">Rigging and skinning</title><desc id="desc">A predicted rig is a starting point. Test poses decide whether it ships.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="908" height="1158" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Rigging and skinning</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">A predicted rig is a starting point. Test poses decide whether it ships.</text>
+<path d="M454 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M454 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V514" class="line" marker-end="url(#end)"/>
+<path d="M454 588 V650" class="line" marker-end="url(#end)"/>
+<path d="M454 724 V786" class="line" marker-end="url(#end)"/>
+<path d="M454 860 V922" class="line" marker-end="url(#end)"/>
+<path d="M454 978 V1010 H266 V1040" class="line" marker-end="url(#end)"/>
+<path d="M416 1078 H828 V824 H606" class="line dash" marker-end="url(#end)"/>
+<path d="M454 978 V1010 H642 V1040" class="line" marker-end="url(#end)"/>
+<rect x="460" y="203" width="104" height="20" rx="5" class="lab"/><text x="466" y="217" font-size="12.5" font-weight="560" class="sub">OBJ, FBX, GLB</text>
+<rect x="460" y="475" width="33" height="20" rx="5" class="lab"/><text x="466" y="489" font-size="12.5" font-weight="560" class="sub">FBX</text>
+<rect x="272" y="1017" width="26" height="20" rx="5" class="lab"/><text x="278" y="1031" font-size="12.5" font-weight="560" class="sub">No</text>
+<rect x="420" y="1055" width="55" height="20" rx="5" class="lab"/><text x="426" y="1069" font-size="12.5" font-weight="560" class="sub">retest</text>
+<rect x="648" y="1017" width="33" height="20" rx="5" class="lab"/><text x="654" y="1031" font-size="12.5" font-weight="560" class="sub">Yes</text>
+<rect x="304" y="108" width="300" height="72" rx="13" class="panel"/><rect x="316" y="132" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="140" font-size="16.5" font-weight="720">Validated mesh</text><text x="332" y="160" font-size="13" font-weight="450" class="sub">manifold, scaled, deformation topology</text>
+<rect x="304" y="244" width="300" height="72" rx="13" class="panel"/><rect x="316" y="268" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="276" font-size="16.5" font-weight="720">Skeleton prediction</text><text x="332" y="296" font-size="13" font-weight="450" class="sub">UniRig, or hand-placed joints</text>
+<rect x="304" y="380" width="300" height="72" rx="13" class="panel"/><rect x="316" y="404" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="412" font-size="16.5" font-weight="720">Skinning weight prediction</text><text x="332" y="432" font-size="13" font-weight="450" class="sub">UniRig, or automatic weights</text>
+<rect x="304" y="516" width="300" height="72" rx="13" class="panel"/><rect x="316" y="540" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="548" font-size="16.5" font-weight="720">Rig import into Blender</text><text x="332" y="568" font-size="13" font-weight="450" class="sub">FBX</text>
+<rect x="304" y="652" width="300" height="72" rx="13" class="panel"/><rect x="316" y="676" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="684" font-size="16.5" font-weight="720">Joint and weight inspection</text><text x="332" y="704" font-size="13" font-weight="450" class="sub">validate_asset.py report</text>
+<rect x="304" y="788" width="300" height="72" rx="13" class="panel"/><rect x="316" y="812" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="332" y="820" font-size="16.5" font-weight="720">Test poses</text><text x="332" y="840" font-size="13" font-weight="450" class="sub">bend every joint to its limit</text>
+<rect x="304" y="924" width="300" height="54" rx="13" class="panel" style="stroke-dasharray:4 3"/><path d="M320 942 L329 951 L320 960 L311 951Z" fill="#596b84"/>
+<text x="332" y="957" font-size="17" font-weight="720">Deformation acceptable?</text>
+<rect x="116" y="1042" width="300" height="72" rx="13" class="panel"/><rect x="128" y="1066" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="1074" font-size="16.5" font-weight="720">Refine rig and weights</text><text x="144" y="1094" font-size="13" font-weight="450" class="sub">weight paint, bone roll, loops</text>
+<rect x="492" y="1042" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1066" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="520" y="1074" font-size="16.5" font-weight="720">Animation-ready asset</text><text x="520" y="1094" font-size="13" font-weight="450" class="sub">FBX or GLB plus report</text>
+</svg>

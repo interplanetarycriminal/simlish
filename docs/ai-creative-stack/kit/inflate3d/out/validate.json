@@ -1,0 +1,83 @@
+{
+  "asset": "D:\\Aitrepreneur\\ai-creative-stack\\kit\\inflate3d\\out\\toy_fish.glb",
+  "blender": "5.2.2 LTS",
+  "ignored_helpers": [],
+  "meshes": [
+    {
+      "object": "geometry_0",
+      "vertices": 4018,
+      "faces": 8032,
+      "triangles": 8032,
+      "ngons": 0,
+      "boundary_edges": 0,
+      "boundary_edges_welded": 0,
+      "non_manifold_edges": 0,
+      "inconsistent_normal_edges": 0,
+      "degenerate_faces": 0,
+      "zero_length_edges": 0,
+      "loose_vertices": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bbox_m": {
+        "min": [
+          -0.15321,
+          -0.05141,
+          0.0
+        ],
+        "max": [
+          0.18178,
+          0.05141,
+          0.2
+        ],
+        "size": [
+          0.33498,
+          0.10282,
+          0.2
+        ]
+      },
+      "uv": {
+        "layers": [
+          "UVMap"
+        ],
+        "outside_0_1": 0.0
+      },
+      "materials": [
+        {
+          "name": "inflated",
+          "textures": [
+            {
+              "image": "Image_0",
+              "colorspace": "sRGB",
+              "feeds": [
+                "Base Color"
+              ]
+            }
+          ]
+        }
+      ],
+      "colour_space_issues": []
+    }
+  ],
+  "rigs": [],
+  "animations": [],
+  "floor": {
+    "has_geometry": true,
+    "no_non_manifold_edges": true,
+    "no_degenerate_faces": true,
+    "consistent_normals": true,
+    "no_loose_vertices": true,
+    "has_uvs": true,
+    "colour_spaces_valid": true,
+    "rig_weights_normalised": true
+  },
+  "reflex": {
+    "unit_scale": true,
+    "max_4_influences": true,
+    "watertight": true,
+    "no_ngons": true
+  },
+  "pass": true
+}

@@ -1,0 +1,30 @@
+%% render: auto
+%% title: Plan/action evidence ledger
+%% desc: Observed effects come from file hashes and checks, not from the worker's account. Out-of-scope changes stop the package.
+flowchart TD
+    A["Work package • planned effect, edit scope, checks"]:::purple
+    B["Hash the project • before"]:::slate
+    C["Run the command"]:::blue
+    D["Hash the project • after"]:::slate
+    E["Changed paths and acceptance checks"]:::green
+    F{"Changes inside the edit scope?"}:::slate
+    G{"Checks pass?"}:::slate
+    H["Ledger: done"]:::green
+    I["Ledger: deviation, stop for review"]:::rose
+    J["Ledger: retry or stop • repeated failure, no progress"]:::rose
+    A --> B
+    B --> C
+    C --> D
+    D -->|diff| E
+    E --> F
+    F -->|No| I
+    F -->|Yes| G
+    G -->|Yes| H
+    G -->|No| J
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

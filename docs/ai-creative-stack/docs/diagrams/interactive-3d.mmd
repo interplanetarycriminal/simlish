@@ -1,0 +1,21 @@
+%% render: auto
+%% title: Interactive 3D experience
+%% desc: Each arrow names the artifact the next step receives.
+flowchart TD
+    N0["Author the scene • editable Blender source"]:::amber
+    N1["Optimize and export • triangle and texture budget"]:::amber
+    N2["Load GLB in browser • GLTFLoader, decoders declared"]:::amber
+    N3["Light and add controls • controls outside the canvas"]:::blue
+    N4["Measure on devices • load time, frame time, fallback"]:::green
+    N0 -->|.blend| N1
+    N1 -->|GLB: meters, named root, clips| N2
+    N2 -->|loaded scene| N3
+    N3 -->|build + poster| N4
+    N4 -.->|over budget| N1
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

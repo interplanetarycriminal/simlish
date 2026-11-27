@@ -1,0 +1,317 @@
+{
+  "date": "2026-11-27",
+  "node": "v24.14.0",
+  "platform": "win32-x64",
+  "checks": {
+    "phaser-slice": {
+      "pass": true,
+      "seconds": 1.61,
+      "details": {
+        "phaser": "4.2.1",
+        "chrome": "Chrome/158.0.8127.37",
+        "renderer": "webgl",
+        "steps": {
+          "fall": 90,
+          "run": 75,
+          "settle": 10,
+          "dtMs": 16.666666666666668
+        },
+        "start": {
+          "x": 150,
+          "y": 100,
+          "vx": 0,
+          "vy": 0,
+          "onFloor": false,
+          "score": 0,
+          "coinActive": true,
+          "rightDown": false,
+          "renderer": "webgl"
+        },
+        "landed": {
+          "x": 150,
+          "y": 274,
+          "vx": 0,
+          "vy": 0,
+          "onFloor": true,
+          "score": 0,
+          "coinActive": true,
+          "rightDown": false,
+          "renderer": "webgl"
+        },
+        "ran": {
+          "x": 347.33333333333337,
+          "y": 274,
+          "vx": 160,
+          "vy": 0,
+          "onFloor": true,
+          "score": 1,
+          "coinActive": false,
+          "rightDown": true,
+          "renderer": "webgl"
+        },
+        "stopped": {
+          "x": 350.00000000000006,
+          "y": 274,
+          "vx": 0,
+          "vy": 0,
+          "onFloor": true,
+          "score": 1,
+          "coinActive": false,
+          "rightDown": false,
+          "renderer": "webgl"
+        },
+        "expectedRunPx": 197.33333333333331,
+        "checks": {
+          "landsOnPlatform": true,
+          "movesRightWhileHeld": true,
+          "stopsOnRelease": true,
+          "coinIncrementsScore": true,
+          "sameResultOnReload": true
+        },
+        "screenshot": "out/phaser-slice.png"
+      }
+    },
+    "matter-determinism": {
+      "pass": true,
+      "seconds": 0.03,
+      "details": {
+        "matter": "0.20.0",
+        "steps": 300,
+        "dtMs": 16.666666666666668,
+        "bodies": 10,
+        "bitwiseEqual": true,
+        "atRest": true,
+        "maxSpeed": 5.918453841234555e-7,
+        "maxAngularSpeed": 8.343344422897386e-9,
+        "standing": true,
+        "topBox": {
+          "x": 400.03511440112237,
+          "y": 450.6503174269943
+        }
+      }
+    },
+    "rapier-determinism": {
+      "pass": true,
+      "seconds": 0.09,
+      "details": {
+        "rapier": "0.21.0",
+        "engineVersion": "0.21.0",
+        "steps": 300,
+        "dt": 0.016666666666666666,
+        "bodies": 8,
+        "bitwiseEqual": true,
+        "snapshotsEqual": true,
+        "snapshotSha256": "74ab05c62e88cb84",
+        "atRest": true,
+        "sleeping": 8,
+        "maxSpeed": 0,
+        "standing": true,
+        "topBox": {
+          "x": 7.404568957980473e-9,
+          "y": 2.2416577339172363
+        }
+      }
+    },
+    "ink-branches": {
+      "pass": true,
+      "seconds": 0.06,
+      "details": {
+        "inkjs": "2.4.0",
+        "compileErrors": 0,
+        "paths": [
+          {
+            "trail": "Climb the lighthouse stairs > Keep climbing",
+            "ending": "beacon",
+            "courage": 2,
+            "coins": 0
+          },
+          {
+            "trail": "Climb the lighthouse stairs > Go back down > Wait for the tide",
+            "ending": "home",
+            "courage": 1,
+            "coins": 0
+          },
+          {
+            "trail": "Search the rock pools > Trade a coin for the box",
+            "ending": "map",
+            "courage": 0,
+            "coins": 2
+          },
+          {
+            "trail": "Search the rock pools > Wait for the tide",
+            "ending": "home",
+            "courage": 0,
+            "coins": 3
+          }
+        ],
+        "endings": [
+          "beacon",
+          "home",
+          "map"
+        ],
+        "allReachable": true,
+        "everyPathEnds": true,
+        "variablesUpdate": true,
+        "conditionalChoiceHidden": true,
+        "saveRestore": true,
+        "choicesAfterLoad": [
+          "Trade a coin for the box",
+          "Wait for the tide"
+        ]
+      }
+    },
+    "jsfxr-sfx": {
+      "pass": true,
+      "seconds": 0.4,
+      "details": {
+        "jsfxr": "1.4.1",
+        "sounds": {
+          "jump": {
+            "preset": "jump",
+            "seed": 7,
+            "file": "out/jump.wav",
+            "format": "wav",
+            "codec": "pcm_s16le",
+            "sampleRate": 44100,
+            "channels": 1,
+            "duration": 0.312154,
+            "samples": 13766,
+            "rmsDbfs": -12.204186773211248,
+            "peak": 0.285369873046875,
+            "clippedSamples": 0,
+            "ok": true,
+            "reproducible": true
+          },
+          "coin": {
+            "preset": "pickupCoin",
+            "seed": 11,
+            "file": "out/coin.wav",
+            "format": "wav",
+            "codec": "pcm_s16le",
+            "sampleRate": 44100,
+            "channels": 1,
+            "duration": 0.273537,
+            "samples": 12063,
+            "rmsDbfs": -13.927982847854437,
+            "peak": 1,
+            "clippedSamples": 3,
+            "ok": true,
+            "reproducible": true
+          }
+        },
+        "distinct": true
+      }
+    },
+    "colyseus-room": {
+      "pass": true,
+      "seconds": 0.49,
+      "details": {
+        "colyseusCore": "0.18.30",
+        "colyseusSdk": "0.18.10",
+        "schema": "5.0.52",
+        "host": "127.0.0.1",
+        "port": 59061,
+        "boundAddress": "127.0.0.1",
+        "sameRoom": true,
+        "clientA": {
+          "tick": 6,
+          "players": {
+            "2S9rIvb7-": {
+              "x": 6,
+              "y": 0,
+              "rejected": 1
+            },
+            "BmEHh-kAM": {
+              "x": 12,
+              "y": 4,
+              "rejected": 0
+            }
+          }
+        },
+        "clientB": {
+          "tick": 6,
+          "players": {
+            "2S9rIvb7-": {
+              "x": 6,
+              "y": 0,
+              "rejected": 1
+            },
+            "BmEHh-kAM": {
+              "x": 12,
+              "y": 4,
+              "rejected": 0
+            }
+          }
+        },
+        "bothSeeSameState": true,
+        "authoritativeMath": true,
+        "teleportRejected": true,
+        "speedClamped": true,
+        "reconnect": {
+          "sameSession": true,
+          "positionKept": true,
+          "otherClientSaw": true
+        },
+        "shutdown": true
+      }
+    },
+    "babylon-glb": {
+      "pass": true,
+      "seconds": 1.71,
+      "details": {
+        "babylon": "9.38.0",
+        "webgl": 2,
+        "meshes": 2,
+        "skinnedMeshes": 1,
+        "skeletons": 1,
+        "bones": [
+          "root",
+          "mid",
+          "tip"
+        ],
+        "animationGroups": [
+          {
+            "name": "bend",
+            "from": 0,
+            "to": 120,
+            "targets": 9
+          }
+        ],
+        "restBox": {
+          "min": [
+            -0.04500000178813934,
+            0,
+            -0.04500000178813934
+          ],
+          "max": [
+            0.04500000178813934,
+            0.30000001192092896,
+            0.04500000178813934
+          ]
+        },
+        "heightMeters": 0.30000001192092896,
+        "tipRest": [
+          0,
+          0.20000000298023224,
+          0
+        ],
+        "tipBent": [
+          0,
+          0.18259868025779724,
+          0.056368954479694366
+        ],
+        "chrome": "Chrome/158.0.8127.37",
+        "tipMovedMeters": 0.05899377137990237,
+        "checks": {
+          "oneSkinnedMesh": true,
+          "threeBones": true,
+          "bendGroup": true,
+          "heightPoint3m": true,
+          "bendMovesTip": true
+        },
+        "screenshot": "out/babylon-glb.png"
+      }
+    }
+  },
+  "pass": true
+}

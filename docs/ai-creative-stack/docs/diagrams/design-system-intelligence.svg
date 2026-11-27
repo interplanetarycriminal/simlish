@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 745 1040" role="img" aria-labelledby="title desc">
+<title id="title">Design-system intelligence</title><desc id="desc">References are analyzed for principles, not copied. One approved DESIGN.md governs implementation and critique.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="745" height="1040" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Design-system intelligence</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">References are analyzed for principles, not copied. One approved DESIGN.md governs implementation and critique.</text>
+<path d="M372 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M372 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M372 452 V514" class="line" marker-end="url(#end)"/>
+<path d="M372 588 V650" class="line" marker-end="url(#end)"/>
+<path d="M372 724 V786" class="line" marker-end="url(#end)"/>
+<path d="M372 860 V922" class="line" marker-end="url(#end)"/>
+<path d="M522 960 H558 V688 H524" class="line dash" marker-end="url(#end)"/>
+<path d="M522 960 H576 V552 H524" class="line dash" marker-end="url(#end)"/>
+<rect x="378" y="339" width="154" height="20" rx="5" class="lab"/><text x="384" y="353" font-size="12.5" font-weight="560" class="sub">tokens, observations</text>
+<rect x="378" y="611" width="118" height="20" rx="5" class="lab"/><text x="384" y="625" font-size="12.5" font-weight="560" class="sub">approved tokens</text>
+<rect x="378" y="883" width="90" height="20" rx="5" class="lab"/><text x="384" y="897" font-size="12.5" font-weight="560" class="sub">screenshots</text>
+<rect x="526" y="937" width="69" height="20" rx="5" class="lab"/><text x="532" y="951" font-size="12.5" font-weight="560" class="sub">fix list</text>
+<rect x="526" y="937" width="154" height="20" rx="5" class="lab"/><text x="532" y="951" font-size="12.5" font-weight="560" class="sub">approved rule change</text>
+<rect x="222" y="108" width="300" height="72" rx="13" class="panel"/><rect x="234" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="250" y="140" font-size="16.5" font-weight="720">Authorized references</text><text x="250" y="160" font-size="13" font-weight="450" class="sub">own brand, licensed or permitted sites</text>
+<rect x="222" y="244" width="300" height="72" rx="13" class="panel"/><rect x="234" y="268" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="250" y="276" font-size="16.5" font-weight="720">Reference analysis</text><text x="250" y="296" font-size="13" font-weight="450" class="sub">Designlang extraction, DESIGN.md examples</text>
+<rect x="222" y="380" width="300" height="72" rx="13" class="panel"/><rect x="234" y="404" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="250" y="412" font-size="16.5" font-weight="720">Visual principles</text><text x="250" y="432" font-size="13" font-weight="450" class="sub">what to keep, what to reject</text>
+<rect x="222" y="516" width="300" height="72" rx="13" class="panel"/><rect x="234" y="540" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="250" y="548" font-size="16.5" font-weight="720">Original DESIGN.md</text><text x="250" y="568" font-size="13" font-weight="450" class="sub">tokens, type, motion, prohibitions</text>
+<rect x="222" y="652" width="300" height="72" rx="13" class="panel"/><rect x="234" y="676" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="250" y="684" font-size="16.5" font-weight="720">Component implementation</text><text x="250" y="704" font-size="13" font-weight="450" class="sub">project components, one library</text>
+<rect x="222" y="788" width="300" height="72" rx="13" class="panel"/><rect x="234" y="812" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="250" y="820" font-size="16.5" font-weight="720">Rendered pages</text><text x="250" y="840" font-size="13" font-weight="450" class="sub">target widths and states</text>
+<rect x="222" y="924" width="300" height="72" rx="13" class="panel"/><rect x="234" y="948" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="250" y="956" font-size="16.5" font-weight="720">Design critique</text><text x="250" y="976" font-size="13" font-weight="450" class="sub">Impeccable detector, Hallmark tiers</text>
+</svg>

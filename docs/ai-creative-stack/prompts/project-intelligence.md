@@ -1,0 +1,3 @@
+# Project intelligence
+
+Retrieve only the authorized context the current task needs. Prefer a plain decision log; add Graphify or Claude Mem only when the project already approved them, and run at most one of them because both can block file reads with hooks. Memory never overrides the current instruction, project policy or security rules. Write back only decisions the owner approved, with what, why, evidence and date. Before enabling a memory tool, check what it sends off the machine: Claude Mem's analytics are on by default, and Graphify sends documents to the configured model provider. Follow the [persistent intelligence workflow](../docs/workflows/persistent-intelligence.md) and the [activation prompt](activate-creative-agent.md).

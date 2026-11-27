@@ -1,0 +1,36 @@
+%% render: auto
+%% title: Autonomous agent decision loop
+%% desc: From requirements to recorded decisions. Rendering and critique repeat until the acceptance criteria pass.
+flowchart TD
+    A["Analyze requirements • brief, project instructions"]:::slate
+    B["Retrieve authorized project context • only what the task needs"]:::purple
+    C{"Existing capabilities sufficient?"}:::amber
+    D["Select minimum sufficient tools • one authority per asset"]:::purple
+    E["Verify dependencies and permissions • pin, review, isolate"]:::slate
+    F["Implement • explicit handoff contracts"]:::blue
+    G["Render and inspect • the real artifact"]:::blue
+    H["Critique • against the brief and gates"]:::green
+    I{"Acceptance criteria passed?"}:::amber
+    J["Refine and retest • fix the findings"]:::amber
+    K["Deliver artifacts • sources, renders, commands, versions"]:::green
+    L["Record approved decisions • decision log, DESIGN.md"]:::purple
+    A --> B
+    B --> C
+    C -->|No| D
+    D --> E
+    E --> F
+    C -->|Yes| F
+    F --> G
+    G --> H
+    H --> I
+    I -->|No| J
+    J -.->|rerender| G
+    I -->|Yes| K
+    K --> L
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

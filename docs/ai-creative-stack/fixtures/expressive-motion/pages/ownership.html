@@ -1,0 +1,62 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>ownership probe</title>
+<style>
+  body { margin: 0; background: #f4f1ea; }
+  .sq { position: absolute; left: 160px; width: 40px; height: 40px; }
+  #a { top: 40px; background: #6a4c93; }
+  #c { top: 120px; background: #b5179e; }
+  #live { top: 200px; background: #ff8800; }
+</style>
+<div class="sq" id="a"></div>
+<div class="sq" id="c"></div>
+<div class="sq" id="live"></div>
+<script type="module">
+  import { esm, readX, twoFrames, fetchedModules, VERSIONS } from './shared.js';
+  try {
+    const gsapMod = await import(esm('gsap'));
+    const gsap = gsapMod.gsap || gsapMod.default;
+    const { animate } = await import(esm('motion'));
+    const $ = (id) => document.getElementById(id);
+
+    // Disjoint ownership on #a: GSAP owns transform x, Motion owns opacity. Both linear over 1 s.
+    const gA = gsap.to($('a'), { x: 200, duration: 1, ease: 'none', paused: true });
+    const mA = animate($('a'), { opacity: [0, 1] }, { duration: 1, ease: 'linear' });
+    mA.pause();
+
+    // Deliberate conflict on #c: GSAP drives x to +200, Motion drives x to -100, same element.
+    const gC = gsap.to($('c'), { x: 200, duration: 1, ease: 'none', paused: true });
+    const mC = animate($('c'), { x: [0, -100] }, { duration: 1, ease: 'linear' });
+    mC.pause();
+
+    // One authoritative clock: every library is seeked from the same t.
+    window.__probe = {
+      async disjoint(t) {
+        gA.time(t); mA.time = t;
+        await twoFrames();
+        return { x: readX($('a')), opacity: Number(getComputedStyle($('a')).opacity) };
+      },
+      async conflict(t, order) {
+        if (order === 'gsap-then-motion') { gC.time(t); mC.time = t; } else { mC.time = t; gC.time(t); }
+        const sync = readX($('c'));
+        await twoFrames();
+        return { sync, settled: readX($('c')), gsapBelieves: Number(gsap.getProperty($('c'), 'x')), inline: $('c').style.transform };
+      },
+      // Live playback with both libraries on their own wall clocks: sample x every animation frame.
+      async live(frames) {
+        const el = $('live');
+        const g = gsap.to(el, { x: 200, duration: 1, ease: 'none' });
+        const m = animate(el, { x: [0, -100] }, { duration: 1, ease: 'linear' });
+        const samples = [];
+        for (let i = 0; i < frames; i++) {
+          await new Promise((r) => requestAnimationFrame(r));
+          samples.push(Math.round(readX(el) * 10) / 10);
+        }
+        g.kill(); m.stop();
+        return samples;
+      },
+      info: () => ({ versions: { gsap: gsap.version, motion: VERSIONS.motion }, modules: fetchedModules() }),
+    };
+    window.__ready = true;
+  } catch (e) { window.__error = String(e && e.stack || e); window.__ready = true; }
+</script>

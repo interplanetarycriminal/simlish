@@ -1,0 +1,489 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://github.com/interplanetarycriminal/simlish/docs/ai-creative-stack/registry/schema.json",
+ "title": "AI Creative Engineering Stack repository registry",
+ "description": "One entry per repository reference. Unknown values are null or 'Unverified', never guessed.",
+ "type": "array",
+ "minItems": 1,
+ "items": {
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+   "id",
+   "name",
+   "num",
+   "category",
+   "source_group",
+   "source_associations",
+   "attribution_status",
+   "original_url",
+   "verified_url",
+   "verification_status",
+   "verification_date",
+   "inspected_commit",
+   "maintenance",
+   "tool_type",
+   "language",
+   "primary_capabilities",
+   "secondary_capabilities",
+   "intended_use",
+   "supported_platforms",
+   "supported_agents",
+   "execution",
+   "runtime_requirements",
+   "hardware",
+   "model",
+   "installation",
+   "configuration",
+   "inputs",
+   "outputs",
+   "dependencies",
+   "credentials_required",
+   "license",
+   "model_license",
+   "commercial_use_notes",
+   "complementary_tools",
+   "overlapping_tools",
+   "integration_notes",
+   "conflicts",
+   "security_notes",
+   "privacy_notes",
+   "craft_notes",
+   "examples",
+   "smoke_test",
+   "documentation_sources",
+   "evidence"
+  ],
+  "properties": {
+   "id": {
+    "type": "string",
+    "pattern": "^[a-z0-9][a-z0-9-]*$"
+   },
+   "name": {
+    "type": "string",
+    "minLength": 1
+   },
+   "category": {
+    "enum": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "E",
+     "F",
+     "G",
+     "H",
+     "I",
+     "J",
+     "K"
+    ],
+    "description": "A creative direction, B design and prototyping, C frontend and creative coding, D illustration and animation, E core 3D, F video, G AI-assisted 3D (source C), H supplementary, I motion films, explainers and engines (source D), J game development (source E), K expressive motion (source F)"
+   },
+   "source_group": {
+    "enum": [
+     "A",
+     "B",
+     "A+B",
+     "C",
+     "D",
+     "E",
+     "F",
+     "supplementary"
+    ],
+    "description": "The collection that first introduced the reference."
+   },
+   "attribution_status": {
+    "type": "string",
+    "minLength": 1
+   },
+   "original_url": {
+    "type": "string",
+    "pattern": "^https://github\\.com/"
+   },
+   "verified_url": {
+    "type": "string",
+    "pattern": "^https://github\\.com/",
+    "description": "Canonical URL after resolving redirects or documented renames"
+   },
+   "verification_status": {
+    "enum": [
+     "verified",
+     "redirected",
+     "unavailable",
+     "unverified"
+    ]
+   },
+   "verification_date": {
+    "type": "string",
+    "format": "date"
+   },
+   "inspected_commit": {
+    "type": [
+     "string",
+     "null"
+    ],
+    "pattern": "^[a-f0-9]{40}$"
+   },
+   "maintenance": {
+    "type": "object",
+    "required": [
+     "default_branch",
+     "archived",
+     "last_repository_push"
+    ],
+    "properties": {
+     "default_branch": {
+      "type": "string"
+     },
+     "archived": {
+      "type": "boolean"
+     },
+     "last_repository_push": {
+      "type": "string"
+     }
+    }
+   },
+   "tool_type": {
+    "type": "string",
+    "minLength": 1
+   },
+   "language": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "primary_capabilities": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "uniqueItems": true
+   },
+   "secondary_capabilities": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "uniqueItems": true
+   },
+   "intended_use": {
+    "type": "string",
+    "pattern": "^Use "
+   },
+   "supported_platforms": {
+    "type": [
+     "array",
+     "null"
+    ],
+    "items": {
+     "type": "string"
+    }
+   },
+   "supported_agents": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "uniqueItems": true
+   },
+   "execution": {
+    "enum": [
+     "local",
+     "hosted",
+     "local or hosted"
+    ]
+   },
+   "runtime_requirements": {
+    "type": "string"
+   },
+   "hardware": {
+    "type": "object",
+    "required": [
+     "gpu",
+     "min_vram_gb",
+     "recommended_vram_gb",
+     "system_ram_gb",
+     "storage",
+     "cpu_fallback",
+     "training_vs_inference",
+     "notes"
+    ],
+    "properties": {
+     "gpu": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "min_vram_gb": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "recommended_vram_gb": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "system_ram_gb": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "storage": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "cpu_fallback": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "training_vs_inference": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "notes": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   },
+   "model": {
+    "type": [
+     "object",
+     "null"
+    ],
+    "properties": {
+     "weights_source": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "weights_size": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "weights_license": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "access": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   },
+   "installation": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "configuration": {
+    "type": "string"
+   },
+   "inputs": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "uniqueItems": true
+   },
+   "outputs": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "uniqueItems": true
+   },
+   "dependencies": {
+    "type": [
+     "array",
+     "null"
+    ],
+    "items": {
+     "type": "string"
+    }
+   },
+   "credentials_required": {
+    "type": "string"
+   },
+   "license": {
+    "type": "string",
+    "minLength": 1
+   },
+   "model_license": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "commercial_use_notes": {
+    "type": "string",
+    "minLength": 1
+   },
+   "complementary_tools": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "uniqueItems": true
+   },
+   "overlapping_tools": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "uniqueItems": true
+   },
+   "integration_notes": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "conflicts": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+     "type": "string"
+    },
+    "prefixItems": [
+     {
+      "type": "string",
+      "pattern": "^Skip "
+     }
+    ]
+   },
+   "security_notes": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "uniqueItems": true
+   },
+   "privacy_notes": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "uniqueItems": true
+   },
+   "craft_notes": {
+    "type": "array",
+    "minItems": 2,
+    "items": {
+     "type": "string",
+     "minLength": 20
+    }
+   },
+   "examples": {
+    "type": "object",
+    "required": [
+     "independent",
+     "combined"
+    ],
+    "properties": {
+     "independent": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "combined": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   },
+   "smoke_test": {
+    "type": "object",
+    "required": [
+     "status",
+     "evidence"
+    ],
+    "properties": {
+     "status": {
+      "enum": [
+       "passed",
+       "failed",
+       "not run",
+       "not feasible here"
+      ]
+     },
+     "evidence": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   },
+   "documentation_sources": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+     "type": "string",
+     "pattern": "^https://"
+    }
+   },
+   "evidence": {
+    "type": "object",
+    "additionalProperties": {
+     "type": "string"
+    }
+   },
+   "num": {
+    "type": "integer",
+    "minimum": 1,
+    "description": "Stable numeric ID from the V7 manual (01-75)."
+   },
+   "source_associations": {
+    "type": "array",
+    "items": {
+     "enum": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "supplementary"
+     ]
+    },
+    "uniqueItems": true,
+    "description": "Every collection that lists the reference, including repeats in later posts."
+   }
+  }
+ }
+}

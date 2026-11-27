@@ -1,0 +1,33 @@
+{
+  "tool": "framecap",
+  "input": "out/pages/alpha.html",
+  "url": "http://127.0.0.1:59436/alpha.html",
+  "chrome": "Chrome/158.0.8127.37",
+  "width": 320,
+  "height": 240,
+  "fps": 12,
+  "duration": 0.5,
+  "frames": 6,
+  "format": "png",
+  "alpha": true,
+  "audio": null,
+  "output": "out/alpha-png",
+  "mode": "animations",
+  "animations": 1,
+  "settleCaptures": 6,
+  "captureSeconds": 1.838,
+  "pass": true,
+  "checks": {
+    "frames": true,
+    "size": true,
+    "alpha": true
+  },
+  "probe": {
+    "kind": "png-sequence",
+    "frames": 6,
+    "width": 320,
+    "height": 240,
+    "colorType": 6
+  },
+  "totalSeconds": 1.84
+}

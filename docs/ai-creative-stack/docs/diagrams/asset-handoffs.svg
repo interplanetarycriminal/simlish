@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 1176" role="img" aria-labelledby="title desc">
+<title id="title">Asset handoffs</title><desc id="desc">File-format boundaries between stages. Solid arrows were verified by a fixture here; dashed ones are documented upstream or proposed.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="908" height="1176" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Asset handoffs</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">File-format boundaries between stages. Solid arrows were verified by a fixture here; dashed ones are documented upstream or proposed.</text>
+<path d="M454 180 V212 H266 V242" class="line dash" marker-end="url(#end)"/>
+<path d="M454 180 V212 H642 V242" class="line dash" marker-end="url(#end)"/>
+<path d="M266 316 V378" class="line dash" marker-end="url(#end)"/>
+<path d="M642 316 V378" class="line dash" marker-end="url(#end)"/>
+<path d="M266 452 V514" class="line dash" marker-end="url(#end)"/>
+<path d="M642 452 V514" class="line dash" marker-end="url(#end)"/>
+<path d="M266 588 V620 H454 V650" class="line dash" marker-end="url(#end)"/>
+<path d="M454 724 V786" class="line dash" marker-end="url(#end)"/>
+<path d="M454 860 V892 H266 V922" class="line" marker-end="url(#end)"/>
+<path d="M454 860 V892 H642 V922" class="line dash" marker-end="url(#end)"/>
+<path d="M266 996 V1028 H454 V1058" class="line" marker-end="url(#end)"/>
+<path d="M642 996 V1028 H454 V1058" class="line dash" marker-end="url(#end)"/>
+<rect x="272" y="219" width="33" height="20" rx="5" class="lab"/><text x="278" y="233" font-size="12.5" font-weight="560" class="sub">PNG</text>
+<rect x="648" y="219" width="55" height="20" rx="5" class="lab"/><text x="654" y="233" font-size="12.5" font-weight="560" class="sub">frames</text>
+<rect x="272" y="339" width="69" height="20" rx="5" class="lab"/><text x="278" y="353" font-size="12.5" font-weight="560" class="sub">GLB, PLY</text>
+<rect x="648" y="339" width="55" height="20" rx="5" class="lab"/><text x="654" y="353" font-size="12.5" font-weight="560" class="sub">images</text>
+<rect x="272" y="475" width="111" height="20" rx="5" class="lab"/><text x="278" y="489" font-size="12.5" font-weight="560" class="sub">mesh in .blend</text>
+<rect x="648" y="475" width="76" height="20" rx="5" class="lab"/><text x="654" y="489" font-size="12.5" font-weight="560" class="sub">splat PLY</text>
+<rect x="460" y="627" width="104" height="20" rx="5" class="lab"/><text x="466" y="641" font-size="12.5" font-weight="560" class="sub">OBJ, FBX, GLB</text>
+<rect x="460" y="747" width="33" height="20" rx="5" class="lab"/><text x="466" y="761" font-size="12.5" font-weight="560" class="sub">FBX</text>
+<rect x="272" y="899" width="104" height="20" rx="5" class="lab"/><text x="278" y="913" font-size="12.5" font-weight="560" class="sub">GLB, verified</text>
+<rect x="648" y="899" width="118" height="20" rx="5" class="lab"/><text x="654" y="913" font-size="12.5" font-weight="560" class="sub">EXR, PNG frames</text>
+<rect x="272" y="1006" width="154" height="20" rx="5" class="lab"/><text x="278" y="1020" font-size="12.5" font-weight="560" class="sub">PNG frames, verified</text>
+<rect x="478" y="1006" width="154" height="20" rx="5" class="lab"/><text x="484" y="1020" font-size="12.5" font-weight="560" class="sub">MP4 or ProRes master</text>
+<rect x="304" y="108" width="300" height="72" rx="13" class="panel"/><rect x="316" y="132" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="140" font-size="16.5" font-weight="720">Image generation</text><text x="332" y="160" font-size="13" font-weight="450" class="sub">PNG with alpha</text>
+<rect x="116" y="244" width="300" height="72" rx="13" class="panel"/><rect x="128" y="268" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="276" font-size="16.5" font-weight="720">Image-to-3D models</text><text x="144" y="296" font-size="13" font-weight="450" class="sub">SAM 3D, SF3D, TRELLIS.2</text>
+<rect x="492" y="244" width="300" height="72" rx="13" class="panel"/><rect x="504" y="268" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="520" y="276" font-size="16.5" font-weight="720">Multi-view capture</text><text x="520" y="296" font-size="13" font-weight="450" class="sub">photos</text>
+<rect x="116" y="380" width="300" height="72" rx="13" class="panel"/><rect x="128" y="404" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="412" font-size="16.5" font-weight="720">Mesh refinement</text><text x="144" y="432" font-size="13" font-weight="450" class="sub">Blender</text>
+<rect x="492" y="380" width="300" height="72" rx="13" class="panel"/><rect x="504" y="404" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="520" y="412" font-size="16.5" font-weight="720">Gaussian Splatting</text><text x="520" y="432" font-size="13" font-weight="450" class="sub">COLMAP in, splat PLY out</text>
+<rect x="116" y="516" width="300" height="72" rx="13" class="panel"/><rect x="128" y="540" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="548" font-size="16.5" font-weight="720">Texture authoring</text><text x="144" y="568" font-size="13" font-weight="450" class="sub">Dream Textures in Blender</text>
+<rect x="492" y="516" width="300" height="72" rx="13" class="panel"/><rect x="504" y="540" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="520" y="548" font-size="16.5" font-weight="720">Gaussian viewers</text><text x="520" y="568" font-size="13" font-weight="450" class="sub">splat PLY only</text>
+<rect x="304" y="652" width="300" height="72" rx="13" class="panel"/><rect x="316" y="676" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="684" font-size="16.5" font-weight="720">Rigging</text><text x="332" y="704" font-size="13" font-weight="450" class="sub">UniRig</text>
+<rect x="304" y="788" width="300" height="72" rx="13" class="panel"/><rect x="316" y="812" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="332" y="820" font-size="16.5" font-weight="720">Blender animation</text><text x="332" y="840" font-size="13" font-weight="450" class="sub">actions, physics caches</text>
+<rect x="116" y="924" width="300" height="72" rx="13" class="panel"/><rect x="128" y="948" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="144" y="956" font-size="16.5" font-weight="720">Three.js</text><text x="144" y="976" font-size="13" font-weight="450" class="sub">GLTFLoader, seekable mixer</text>
+<rect x="492" y="924" width="300" height="72" rx="13" class="panel"/><rect x="504" y="948" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="520" y="956" font-size="16.5" font-weight="720">Video composition</text><text x="520" y="976" font-size="13" font-weight="450" class="sub">HyperFrames, Remotion</text>
+<rect x="304" y="1060" width="300" height="72" rx="13" class="panel"/><rect x="316" y="1084" width="7" height="24" rx="3.5" fill="#bf315c"/>
+<text x="332" y="1092" font-size="16.5" font-weight="720">Post-production</text><text x="332" y="1112" font-size="13" font-weight="450" class="sub">FFmpeg, ffprobe</text>
+</svg>

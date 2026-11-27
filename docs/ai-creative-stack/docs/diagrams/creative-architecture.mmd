@@ -1,0 +1,43 @@
+%% render: auto
+%% title: Master creative engineering architecture
+%% desc: Layers activate only when the brief needs them. Cards name optional tools; kit/ has our own versions of most.
+flowchart TD
+    A["User intent and acceptance criteria • brief, constraints"]
+    B["Specification and strategy • Spec Kit, specflow, workledger"]
+    C["Creative direction and DESIGN.md • Taste · Frontend Design · Meng To"]
+    E["Design and frontend • Penpot · Magic UI · Motion · R3F"]
+    G["3D, illustration, capture • SAM 3D · SF3D · UniRig · Splats"]
+    F["Cinematic production • HyperFrames · Remotion · GSAP · Theatre"]
+    H["Game development • Godot · Phaser · Bevy · Babylon.js"]
+    Q["Gameplay QA and online security • physics, Colyseus, Nakama"]
+    K["Quality gates and delivery • designlint, validate_asset, ffprobe"]
+    L["Versioned source and decisions • manifests, ledger"]
+    A --> B
+    B -->|work packages| C
+    C --> E
+    C -->|art direction| G
+    C -->|shot plan| F
+    C -->|game design| H
+    G -.->|GLB| E
+    G -.->|renders| F
+    G -.->|GLB, sprites| H
+    H -.->|captures| F
+    H --> Q
+    E -->|build| K
+    F -->|master| K
+    Q -->|playable build| K
+    K -->|approved| L
+    L -.->|next brief| B
+    class A slate
+    class B,C,L purple
+    class E,H blue
+    class G amber
+    class F teal
+    class Q,K green
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

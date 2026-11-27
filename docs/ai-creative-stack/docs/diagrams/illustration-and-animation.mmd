@@ -1,0 +1,21 @@
+%% render: auto
+%% title: Illustration and animated storytelling
+%% desc: Each arrow names the artifact the next step receives.
+flowchart TD
+    N0["Approve the style • one sample figure, silhouette, line"]:::purple
+    N1["Create SVG assets • stable viewBox, paths, names"]:::amber
+    N2["Sequence motion • storyboard timing, one compositor"]:::teal
+    N3["Inspect the rhythm • frame sheets at delivery size"]:::green
+    N4["Deliver fallback • static or reduced-motion version"]:::green
+    N0 -->|approved sample| N1
+    N1 -->|SVG or alpha frames| N2
+    N2 -->|test segment| N3
+    N3 -->|approved sequence| N4
+    N3 -.->|off-model or off-beat| N1
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

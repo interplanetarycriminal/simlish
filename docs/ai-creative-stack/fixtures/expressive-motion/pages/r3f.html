@@ -1,0 +1,80 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>r3f frameloop probe</title>
+<style>
+  body { margin: 0; background: #20242a; }
+  #stage { width: 320px; height: 320px; }
+</style>
+<div id="stage"></div>
+<script type="module">
+  import { esm, R3F_DEPS, fetchedModules, VERSIONS } from './shared.js';
+  try {
+    const React = await import(esm('react'));
+    const { createRoot } = await import(esm('react-dom', '/client', ['react', 'scheduler']));
+    const THREE = await import(esm('three'));
+    const { GLTFLoader } = await import(esm('three', '/examples/jsm/loaders/GLTFLoader.js'));
+    const fiber = await import(esm('@react-three/fiber', '', R3F_DEPS));
+    const { Canvas, useLoader, useThree, advance } = fiber;
+    const h = React.createElement;
+    const FILE = new URLSearchParams(location.search).get('file') || '../../blender-glb/out/toy_limb.glb';
+
+    async function sha256(bytes) {
+      const d = await crypto.subtle.digest('SHA-256', bytes);
+      return [...new Uint8Array(d)].map((b) => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    function Limb() {
+      const gltf = useLoader(GLTFLoader, FILE);
+      const { gl, camera, scene } = useThree();
+      React.useEffect(() => {
+        camera.lookAt(0, 0.14, 0);
+        camera.updateProjectionMatrix();
+        const mixer = new THREE.AnimationMixer(gltf.scene);
+        const clip = gltf.animations.find((a) => a.name === 'bend');
+        if (clip) mixer.clipAction(clip).play();
+        const bones = []; let skinned = 0;
+        gltf.scene.traverse((o) => { if (o.isBone) bones.push(o.name); if (o.isSkinnedMesh) skinned++; });
+        const glc = gl.getContext();
+        const { width, height } = gl.domElement;
+        const pixels = new Uint8Array(width * height * 4);
+        window.__scene = {
+          stats: {
+            bones, skinnedMeshes: skinned,
+            clips: gltf.animations.map((a) => ({ name: a.name, duration: a.duration, tracks: a.tracks.length })),
+            canvas: [width, height],
+          },
+          // Seek: the mixer is set to story time t, then exactly one frame is rendered with advance().
+          async seek(t) {
+            mixer.setTime(t);
+            advance(t); // seconds: frameloop "never" copies this into state.clock.elapsedTime
+            glc.readPixels(0, 0, width, height, glc.RGBA, glc.UNSIGNED_BYTE, pixels);
+            // Pixels that differ from the corner (background) pixel: a coarse "the mesh is on screen" measure.
+            let nonBg = 0;
+            for (let i = 0; i < pixels.length; i += 4) if (Math.abs(pixels[i] - pixels[0]) + Math.abs(pixels[i + 1] - pixels[1]) + Math.abs(pixels[i + 2] - pixels[2]) > 24) nonBg++;
+            return { hash: await sha256(pixels), nonBackgroundPixels: nonBg, frame: gl.info.render.frame };
+          },
+          frameCount: () => gl.info.render.frame,
+          png: () => gl.domElement.toDataURL('image/png'),
+          info: () => ({ versions: { react: React.version, three: THREE.REVISION, '@react-three/fiber': VERSIONS['@react-three/fiber'] }, modules: fetchedModules() }),
+        };
+        window.__ready = true;
+      }, [gltf]);
+      return h('primitive', { object: gltf.scene });
+    }
+
+    function App() {
+      return h(Canvas, {
+        frameloop: 'never',
+        dpr: 1,
+        gl: { preserveDrawingBuffer: true, antialias: false },
+        camera: { position: [0.42, 0.24, 0.62], fov: 32, near: 0.01, far: 10 },
+        onCreated: ({ scene }) => { scene.background = new THREE.Color(32 / 255, 36 / 255, 42 / 255); },
+      },
+        h('ambientLight', { intensity: 0.6 }),
+        h('directionalLight', { position: [1, 2, 1.5], intensity: 2.2 }),
+        h(React.Suspense, { fallback: null }, h(Limb)),
+      );
+    }
+    createRoot(document.getElementById('stage')).render(h(App));
+  } catch (e) { window.__error = String(e && e.stack || e); window.__ready = true; }
+</script>

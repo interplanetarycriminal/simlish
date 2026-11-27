@@ -1,0 +1,34 @@
+%% render: auto
+%% title: Polygon mesh versus Gaussian splat
+%% desc: Two different representations. A Gaussian PLY is not a polygon mesh. Conversion is optional, lossy and must be verified.
+flowchart TD
+    A["Visual reference • authorized images or video"]:::slate
+    B["Object geometry reconstruction • SAM 3D, SF3D, TRELLIS.2, modelling"]:::amber
+    C["Multi-view scene capture • many overlapping photos"]:::teal
+    D["Polygon mesh • vertices, faces, normals"]:::amber
+    H["Camera calibration • COLMAP structure from motion"]:::teal
+    E["Topology and UVs • retopology, unwrap"]:::amber
+    I["Gaussian Splatting optimization • GPU training"]:::teal
+    F["Materials and optional rig • PBR maps, skeleton"]:::amber
+    J["Gaussian scene • PLY of Gaussian parameters"]:::teal
+    G["Mesh viewer or renderer • Three.js, Blender"]:::green
+    K["Compatible splat viewer • not a mesh renderer"]:::green
+    L["Optional verified mesh conversion • lossy; result re-enters as a mesh"]:::rose
+    A --> B
+    A --> C
+    B -->|OBJ, GLB| D
+    C -->|images| H
+    D --> E
+    H -->|poses + points| I
+    E --> F
+    I --> J
+    F -->|GLB, FBX| G
+    J -->|splat PLY| K
+    J -.->|unverified| L
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

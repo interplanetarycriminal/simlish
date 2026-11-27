@@ -1,0 +1,96 @@
+{
+  "tool": "sketchy",
+  "date": "2026-11-27T04:45:29.758Z",
+  "checks": {
+    "determinism": {
+      "pass": true,
+      "sameSeedIdentical": true,
+      "otherSeedDiffers": true,
+      "bytes": 51165
+    },
+    "fillInside": {
+      "pass": true,
+      "shapes": [
+        {
+          "shape": 1,
+          "kind": "rectangle",
+          "style": "hachure",
+          "lines": 38,
+          "samples": 1254,
+          "outside": 0
+        },
+        {
+          "shape": 2,
+          "kind": "ellipse",
+          "style": "zigzag",
+          "lines": 261,
+          "samples": 8613,
+          "outside": 0
+        },
+        {
+          "shape": 3,
+          "kind": "polygon",
+          "style": "hachure",
+          "lines": 34,
+          "samples": 1122,
+          "outside": 0
+        },
+        {
+          "shape": 4,
+          "kind": "polygon",
+          "style": "zigzag",
+          "lines": 396,
+          "samples": 13068,
+          "outside": 0
+        },
+        {
+          "shape": 5,
+          "kind": "path",
+          "style": "hachure",
+          "lines": 36,
+          "samples": 1188,
+          "outside": 0
+        },
+        {
+          "shape": 6,
+          "kind": "path",
+          "style": "hachure",
+          "lines": 21,
+          "samples": 693,
+          "outside": 0
+        }
+      ]
+    },
+    "strokeBounds": {
+      "pass": true,
+      "strokes": 32,
+      "worstEndpointRatio": 0.91,
+      "worstCurveRatio": 0.282,
+      "rectangleChunks": 8,
+      "rectangleEndpointRatios": [
+        0.691,
+        0.832,
+        0.655,
+        0.696,
+        0.43,
+        0.475,
+        0.24,
+        0.401
+      ],
+      "roughnessZeroExact": true
+    },
+    "pathParser": {
+      "pass": true,
+      "commands": "MLLLCZ"
+    },
+    "rasterize": {
+      "pass": true,
+      "chrome": "Chrome/158.0.8127.37",
+      "inkFraction": 0.0925,
+      "pinkPixels": 3260,
+      "bluePixels": 1423,
+      "pngBytes": 47724
+    }
+  },
+  "pass": true
+}

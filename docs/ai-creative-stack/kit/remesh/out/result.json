@@ -1,0 +1,42 @@
+{
+  "tool": "remesh",
+  "source_faces": 8032,
+  "runs": {
+    "1600": {
+      "seconds": 6.66,
+      "faces": 1600,
+      "watertight": true,
+      "mean_error_of_diag": 0.00044,
+      "max_error_of_diag": 0.00417,
+      "volume_ratio": 0.9941
+    },
+    "800": {
+      "seconds": 8.56,
+      "faces": 800,
+      "watertight": true,
+      "mean_error_of_diag": 0.00084,
+      "max_error_of_diag": 0.00476,
+      "volume_ratio": 0.9882
+    }
+  },
+  "checks": {
+    "1600_runs": true,
+    "1600_within_budget": true,
+    "1600_close_to_budget": true,
+    "1600_watertight": true,
+    "1600_mean_error<1%": true,
+    "1600_max_error<5%": true,
+    "1600_volume_kept": true,
+    "1600_uvs_kept": true,
+    "800_runs": true,
+    "800_within_budget": true,
+    "800_close_to_budget": true,
+    "800_watertight": true,
+    "800_mean_error<1%": true,
+    "800_max_error<5%": true,
+    "800_volume_kept": true,
+    "800_uvs_kept": true,
+    "1600_blender_floor_checks": true
+  },
+  "pass": true
+}

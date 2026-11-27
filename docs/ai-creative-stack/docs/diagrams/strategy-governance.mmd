@@ -1,0 +1,40 @@
+%% render: auto
+%% title: Strategy layer: governance
+%% desc: Small reversible tasks run directly; larger ones become bounded packages under deterministic limits. Gates decide the outcome.
+flowchart TD
+    A["Brief and constraints"]:::slate
+    B["Specification and acceptance tests"]:::slate
+    C{"Small, reversible task?"}:::slate
+    D["Direct execution"]:::blue
+    E["Bounded work packages • id, scope, checks, budget"]:::purple
+    F["Assign owners and tools • waves: parallel only if scopes do not overlap"]:::purple
+    G["Execute within limits • time, retries, scope"]:::blue
+    W["Deterministic monitor • repeated failure, no progress, scope change"]:::rose
+    H["Inspect actual artifacts"]:::green
+    I{"Acceptance gates passed?"}:::green
+    K["Deliver or publish with authorization"]:::green
+    X["Checkpoint and report the blocker"]:::rose
+    J["Diagnose and refine"]:::blue
+    M["Record approved evidence and decisions"]:::purple
+    A --> B
+    B --> C
+    C -->|Yes| D
+    C -->|No| E
+    E --> F
+    F --> G
+    W -.->|stops| G
+    D --> H
+    G --> H
+    H --> I
+    I -->|No, budget left| J
+    J -.->|retry| C
+    I -->|Yes| K
+    I -->|blocked| X
+    K --> M
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137
