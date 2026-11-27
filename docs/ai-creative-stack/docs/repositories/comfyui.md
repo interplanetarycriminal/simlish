@@ -2,14 +2,14 @@
 
 Use for running open image, video, audio and 3D generation models locally as node-graph workflows, and for driving those workflows from code over its HTTP API.
 
-> Motion films, explainers and engines · Added by the user · smoke test: **passed**
+> #40 · Motion films, explainers and engines · Source D (cinema) · smoke test: **passed**
 
 ## Evidence and maintenance
 
 - [Canonical reference](https://github.com/Comfy-Org/ComfyUI)
 - Verified 2026-11-26 against default branch `master` at [`4a4b3409792d`](https://github.com/Comfy-Org/ComfyUI/commit/4a4b3409792d499cc36626d76a24fe425f40b5e7).
 - GitHub reports archive state **false** and a repository push at `2026-11-26T09:11:37Z`. Push activity is a maintenance signal, not a quality rating.
-- Attribution: Added directly by the user on 2026-11-26.
+- Attribution: Listed in the cinematic post (source D, transcript supplied by the user on 2026-11-26); first added to this catalogue on 2026-11-26.
 
 - [README.md](https://github.com/Comfy-Org/ComfyUI/blob/4a4b3409792d499cc36626d76a24fe425f40b5e7/README.md)
 - [installation.md](https://github.com/Comfy-Org/ComfyUI/blob/4a4b3409792d499cc36626d76a24fe425f40b5e7/docs/installation.md)

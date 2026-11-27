@@ -2,7 +2,7 @@
 
 Use when a reference A/B test confirms a valuable restoration improvement.
 
-> Video composition and post-production · Source B · smoke test: **not run**
+> #22 · Video composition and post-production · Source B · smoke test: **not run**
 
 ## Evidence and maintenance
 

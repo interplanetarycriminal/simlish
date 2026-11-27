@@ -1,61 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1284 1312" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 1176" role="img" aria-labelledby="title desc">
 <title id="title">Master creative engineering architecture</title><desc id="desc">Layers activate only when the brief needs them. Cards name optional tools; kit/ has our own versions of most.</desc>
 <style>
 svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
 @media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
 </style>
 <defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
-<rect width="1284" height="1312" rx="22" class="bg"/>
+<rect width="908" height="1176" rx="22" class="bg"/>
 <text x="36" y="48" font-size="29" font-weight="750">Master creative engineering architecture</text>
 <text x="37" y="75" font-size="15" font-weight="450" class="sub">Layers activate only when the brief needs them. Cards name optional tools; kit/ has our own versions of most.</text>
-<path d="M642 180 V242" class="line" marker-end="url(#end)"/>
-<path d="M642 316 V378" class="line" marker-end="url(#end)"/>
-<path d="M642 452 V514" class="line" marker-end="url(#end)"/>
-<path d="M642 588 V620 H266 V650" class="line" marker-end="url(#end)"/>
-<path d="M642 588 V650" class="line" marker-end="url(#end)"/>
-<path d="M642 588 V620 H1018 V650" class="line" marker-end="url(#end)"/>
-<path d="M266 724 V756 H454 V786" class="line" marker-end="url(#end)"/>
+<path d="M454 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M454 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V484 H266 V514" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V484 H642 V514" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V620 H266 V650" class="line" marker-end="url(#end)"/>
+<path d="M454 452 V620 H642 V650" class="line" marker-end="url(#end)"/>
+<path d="M492 552 H418" class="line dash" marker-end="url(#end)"/>
+<path d="M642 588 V620 H266 V650" class="line dash" marker-end="url(#end)"/>
+<path d="M642 588 V650" class="line dash" marker-end="url(#end)"/>
+<path d="M492 688 H418" class="line dash" marker-end="url(#end)"/>
 <path d="M642 724 V756 H454 V786" class="line" marker-end="url(#end)"/>
-<path d="M642 724 V756 H830 V786" class="line" marker-end="url(#end)"/>
-<path d="M1018 724 V756 H830 V786" class="line" marker-end="url(#end)"/>
-<path d="M454 860 V1028 H642 V1058" class="line" marker-end="url(#end)"/>
-<path d="M830 860 V892 H642 V922" class="line" marker-end="url(#end)"/>
-<path d="M642 996 V1058" class="line" marker-end="url(#end)"/>
-<path d="M642 1132 V1194" class="line" marker-end="url(#end)"/>
-<path d="M792 1232 H1204 V280 H794" class="line dash" marker-end="url(#end)"/>
-<rect x="648" y="339" width="140" height="20" rx="5" class="lab"/><text x="654" y="353" font-size="12.5" font-weight="560" class="sub">authorized context</text>
-<rect x="648" y="611" width="104" height="20" rx="5" class="lab"/><text x="654" y="625" font-size="12.5" font-weight="560" class="sub">art direction</text>
-<rect x="272" y="734" width="140" height="20" rx="5" class="lab"/><text x="278" y="748" font-size="12.5" font-weight="560" class="sub">tokens + prototype</text>
-<rect x="599" y="734" width="33" height="20" rx="5" class="lab"/><text x="605" y="748" font-size="12.5" font-weight="560" class="sub">GLB</text>
-<rect x="648" y="734" width="62" height="20" rx="5" class="lab"/><text x="654" y="748" font-size="12.5" font-weight="560" class="sub">renders</text>
-<rect x="904" y="734" width="104" height="20" rx="5" class="lab"/><text x="910" y="748" font-size="12.5" font-weight="560" class="sub">splat renders</text>
-<rect x="460" y="1006" width="48" height="20" rx="5" class="lab"/><text x="466" y="1020" font-size="12.5" font-weight="560" class="sub">build</text>
-<rect x="648" y="899" width="55" height="20" rx="5" class="lab"/><text x="654" y="913" font-size="12.5" font-weight="560" class="sub">master</text>
-<rect x="648" y="1019" width="62" height="20" rx="5" class="lab"/><text x="654" y="1033" font-size="12.5" font-weight="560" class="sub">encodes</text>
-<rect x="648" y="1155" width="69" height="20" rx="5" class="lab"/><text x="654" y="1169" font-size="12.5" font-weight="560" class="sub">approved</text>
-<rect x="796" y="1209" width="83" height="20" rx="5" class="lab"/><text x="802" y="1223" font-size="12.5" font-weight="560" class="sub">next brief</text>
-<rect x="492" y="108" width="300" height="72" rx="13" class="panel"/><rect x="504" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
-<text x="520" y="140" font-size="16.5" font-weight="720">User intent and requirements</text><text x="520" y="160" font-size="13" font-weight="450" class="sub">brief, audience, acceptance criteria</text>
-<rect x="492" y="244" width="300" height="72" rx="13" class="panel"/><rect x="504" y="268" width="7" height="24" rx="3.5" fill="#733ed0"/>
-<text x="520" y="276" font-size="16.5" font-weight="720">Optional project intelligence</text><text x="520" y="296" font-size="13" font-weight="450" class="sub">Graphify · Claude Mem · decision log</text>
-<rect x="492" y="380" width="300" height="72" rx="13" class="panel"/><rect x="504" y="404" width="7" height="24" rx="3.5" fill="#596b84"/>
-<text x="520" y="412" font-size="16.5" font-weight="720">Approved specification</text><text x="520" y="432" font-size="13" font-weight="450" class="sub">Spec Kit or the project&#x27;s own spec</text>
-<rect x="492" y="516" width="300" height="72" rx="13" class="panel"/><rect x="504" y="540" width="7" height="24" rx="3.5" fill="#733ed0"/>
-<text x="520" y="548" font-size="16.5" font-weight="720">Creative direction and DESIGN.md</text><text x="520" y="568" font-size="13" font-weight="450" class="sub">Taste · Frontend Design · Meng To</text>
-<rect x="116" y="652" width="300" height="72" rx="13" class="panel"/><rect x="128" y="676" width="7" height="24" rx="3.5" fill="#2363cf"/>
-<text x="144" y="684" font-size="16.5" font-weight="720">Design and prototyping</text><text x="144" y="704" font-size="13" font-weight="450" class="sub">Penpot · Stitch · Open Design · Figma</text>
-<rect x="492" y="652" width="300" height="72" rx="13" class="panel"/><rect x="504" y="676" width="7" height="24" rx="3.5" fill="#a05212"/>
-<text x="520" y="684" font-size="16.5" font-weight="720">AI-assisted 3D assets</text><text x="520" y="704" font-size="13" font-weight="450" class="sub">SAM 3D · SF3D · TRELLIS.2 · UniRig · ComfyUI</text>
-<rect x="868" y="652" width="300" height="72" rx="13" class="panel"/><rect x="880" y="676" width="7" height="24" rx="3.5" fill="#087d73"/>
-<text x="896" y="684" font-size="16.5" font-weight="720">Spatial reconstruction</text><text x="896" y="704" font-size="13" font-weight="450" class="sub">Gaussian Splatting</text>
-<rect x="304" y="788" width="300" height="72" rx="13" class="panel"/><rect x="316" y="812" width="7" height="24" rx="3.5" fill="#2363cf"/>
-<text x="332" y="820" font-size="16.5" font-weight="720">Frontend and interactive UI</text><text x="332" y="840" font-size="13" font-weight="450" class="sub">Magic UI · React Bits · Astryx · Three.js</text>
-<rect x="680" y="788" width="300" height="72" rx="13" class="panel"/><rect x="692" y="812" width="7" height="24" rx="3.5" fill="#087d73"/>
-<text x="708" y="820" font-size="16.5" font-weight="720">Animation and composition</text><text x="708" y="840" font-size="13" font-weight="450" class="sub">HyperFrames · Remotion · GSAP · EffectCraft</text>
-<rect x="492" y="924" width="300" height="72" rx="13" class="panel"/><rect x="504" y="948" width="7" height="24" rx="3.5" fill="#bf315c"/>
-<text x="520" y="956" font-size="16.5" font-weight="720">Post-production</text><text x="520" y="976" font-size="13" font-weight="450" class="sub">Scarlet · Video Use · OpenScreen · FFmpeg</text>
-<rect x="492" y="1060" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1084" width="7" height="24" rx="3.5" fill="#198047"/>
-<text x="520" y="1092" font-size="16.5" font-weight="720">Quality assurance and delivery</text><text x="520" y="1112" font-size="13" font-weight="450" class="sub">Impeccable · Hallmark · gates</text>
-<rect x="492" y="1196" width="300" height="72" rx="13" class="panel"/><rect x="504" y="1220" width="7" height="24" rx="3.5" fill="#733ed0"/>
-<text x="520" y="1228" font-size="16.5" font-weight="720">Reusable assets and decisions</text><text x="520" y="1248" font-size="13" font-weight="450" class="sub">manifest, DESIGN.md, decision log</text>
+<path d="M266 588 V892 H454 V922" class="line" marker-end="url(#end)"/>
+<path d="M266 724 V892 H454 V922" class="line" marker-end="url(#end)"/>
+<path d="M454 860 V922" class="line" marker-end="url(#end)"/>
+<path d="M454 996 V1058" class="line" marker-end="url(#end)"/>
+<path d="M604 1096 H828 V280 H606" class="line dash" marker-end="url(#end)"/>
+<rect x="460" y="339" width="104" height="20" rx="5" class="lab"/><text x="466" y="353" font-size="12.5" font-weight="560" class="sub">work packages</text>
+<rect x="648" y="491" width="104" height="20" rx="5" class="lab"/><text x="654" y="505" font-size="12.5" font-weight="560" class="sub">art direction</text>
+<rect x="368" y="598" width="76" height="20" rx="5" class="lab"/><text x="374" y="612" font-size="12.5" font-weight="560" class="sub">shot plan</text>
+<rect x="460" y="598" width="90" height="20" rx="5" class="lab"/><text x="466" y="612" font-size="12.5" font-weight="560" class="sub">game design</text>
+<rect x="418" y="528" width="33" height="20" rx="5" class="lab"/><text x="424" y="542" font-size="12.5" font-weight="560" class="sub">GLB</text>
+<rect x="570" y="598" width="62" height="20" rx="5" class="lab"/><text x="576" y="612" font-size="12.5" font-weight="560" class="sub">renders</text>
+<rect x="648" y="611" width="97" height="20" rx="5" class="lab"/><text x="654" y="625" font-size="12.5" font-weight="560" class="sub">GLB, sprites</text>
+<rect x="418" y="664" width="69" height="20" rx="5" class="lab"/><text x="424" y="678" font-size="12.5" font-weight="560" class="sub">captures</text>
+<rect x="272" y="870" width="48" height="20" rx="5" class="lab"/><text x="278" y="884" font-size="12.5" font-weight="560" class="sub">build</text>
+<rect x="272" y="870" width="55" height="20" rx="5" class="lab"/><text x="278" y="884" font-size="12.5" font-weight="560" class="sub">master</text>
+<rect x="460" y="883" width="111" height="20" rx="5" class="lab"/><text x="466" y="897" font-size="12.5" font-weight="560" class="sub">playable build</text>
+<rect x="460" y="1019" width="69" height="20" rx="5" class="lab"/><text x="466" y="1033" font-size="12.5" font-weight="560" class="sub">approved</text>
+<rect x="608" y="1073" width="83" height="20" rx="5" class="lab"/><text x="614" y="1087" font-size="12.5" font-weight="560" class="sub">next brief</text>
+<rect x="304" y="108" width="300" height="72" rx="13" class="panel"/><rect x="316" y="132" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="332" y="140" font-size="16.5" font-weight="720">User intent and acceptance criteria</text><text x="332" y="160" font-size="13" font-weight="450" class="sub">brief, constraints</text>
+<rect x="304" y="244" width="300" height="72" rx="13" class="panel"/><rect x="316" y="268" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="276" font-size="16.5" font-weight="720">Specification and strategy</text><text x="332" y="296" font-size="13" font-weight="450" class="sub">Spec Kit, specflow, workledger</text>
+<rect x="304" y="380" width="300" height="72" rx="13" class="panel"/><rect x="316" y="404" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="412" font-size="16.5" font-weight="720">Creative direction and DESIGN.md</text><text x="332" y="432" font-size="13" font-weight="450" class="sub">Taste · Frontend Design · Meng To</text>
+<rect x="116" y="516" width="300" height="72" rx="13" class="panel"/><rect x="128" y="540" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="144" y="548" font-size="16.5" font-weight="720">Design and frontend</text><text x="144" y="568" font-size="13" font-weight="450" class="sub">Penpot · Magic UI · Motion · R3F</text>
+<rect x="492" y="516" width="300" height="72" rx="13" class="panel"/><rect x="504" y="540" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="548" font-size="16.5" font-weight="720">3D, illustration, capture</text><text x="520" y="568" font-size="13" font-weight="450" class="sub">SAM 3D · SF3D · UniRig · Splats</text>
+<rect x="116" y="652" width="300" height="72" rx="13" class="panel"/><rect x="128" y="676" width="7" height="24" rx="3.5" fill="#087d73"/>
+<text x="144" y="684" font-size="16.5" font-weight="720">Cinematic production</text><text x="144" y="704" font-size="13" font-weight="450" class="sub">HyperFrames · Remotion · GSAP · Theatre</text>
+<rect x="492" y="652" width="300" height="72" rx="13" class="panel"/><rect x="504" y="676" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="520" y="684" font-size="16.5" font-weight="720">Game development</text><text x="520" y="704" font-size="13" font-weight="450" class="sub">Godot · Phaser · Bevy · Babylon.js</text>
+<rect x="304" y="788" width="300" height="72" rx="13" class="panel"/><rect x="316" y="812" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="820" font-size="16.5" font-weight="720">Gameplay QA and online security</text><text x="332" y="840" font-size="13" font-weight="450" class="sub">physics, Colyseus, Nakama</text>
+<rect x="304" y="924" width="300" height="72" rx="13" class="panel"/><rect x="316" y="948" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="956" font-size="16.5" font-weight="720">Quality gates and delivery</text><text x="332" y="976" font-size="13" font-weight="450" class="sub">designlint, validate_asset, ffprobe</text>
+<rect x="304" y="1060" width="300" height="72" rx="13" class="panel"/><rect x="316" y="1084" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="332" y="1092" font-size="16.5" font-weight="720">Versioned source and decisions</text><text x="332" y="1112" font-size="13" font-weight="450" class="sub">manifests, ledger</text>
 </svg>

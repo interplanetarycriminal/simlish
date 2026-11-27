@@ -1,0 +1,3 @@
+# expressive motion
+
+Choose one representation per asset (ink and sketch, pixel raster or 3D) and keep stroke, palette, proportions and timing consistent with the approved style. Name one owner for every animated property and one clock per scene before writing code; two libraries on one property fail silently. Render the motion, seek to representative frames and compare them with playback, then critique the result and fix the owner, not the symptom. Honor reduced motion. Use [expressive motion](../docs/expressive-motion/README.md), follow the [activation prompt](activate-creative-agent.md), select only the required tools and record the acceptance evidence.

@@ -2,7 +2,7 @@
 
 Use when you need a focused design brief and expressive typography.
 
-> Creative direction and design intelligence · Source A · smoke test: **not run**
+> #04 · Creative direction and design intelligence · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 

@@ -1,24 +1,34 @@
 %% render: auto
 %% title: Collection provenance
-%% desc: Where the 53 working references came from. A and B attribution is provisional; the user's additions and the supplementary group come from no post.
+%% desc: Six posts and one research list give 75 references. A and B are provisional; the strategy article added none.
 flowchart TD
-    SA["Source A • 15 references, recovered from a mirror"]:::slate
-    SB["Source B • 15 references, recovered from a mirror"]:::slate
-    SC["Source C • 7 references, user-supplied transcript"]:::amber
-    SD["Added by the user • 9 references, 26 Nov 2026"]:::teal
-    U["First two collections • 25 unique, 5 shared by A and B"]:::purple
-    T["Post-associated references • 32 = 25 + 7"]:::purple
-    subgraph SUP ["Separate discovery, not from any post"]
-    S["Supplementary candidates • 12 from related research"]:::slate
+    %% rank: SE 1
+    %% rank: SF 1
+    %% rank: S 2
+    %% rank: P 2
+    SA["Source A • 15, mirror"]:::slate
+    SB["Source B • 15, mirror"]:::slate
+    SC["Source C: 3D • 7, transcript"]:::amber
+    SD["Source D: cinema • 18 listed, 9 new"]:::teal
+    SE["Source E: games • 16, transcript"]:::blue
+    SF["Source F: motion • 12 listed, 6 new"]:::teal
+    U["First two collections • 25 unique, 5 shared"]:::purple
+    T["Collection-associated • 63 = 25 + 7 + 9 + 16 + 6"]:::purple
+    subgraph SUP ["Not from any post"]
+    S["Supplementary candidates • 12"]:::slate
+    P["Strategy article • source content pending, 0 added"]:::rose
     end
-    W["Working registry • 53 distinct references"]:::green
-    SA -->|15, provisional| U
-    SB -->|15, provisional| U
+    W["Working registry • 75 distinct references"]:::green
+    SA -->|15| U
+    SB -->|15| U
     U -->|25| T
-    SC -->|7, confirmed| T
-    T -->|32| W
-    SD -->|9, direct| W
+    SC -->|7| T
+    SD -->|9| T
+    SE -->|16| T
+    SF -->|6| T
+    T -->|63| W
     S -.->|12| W
+    P -.->|0| W
     classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
     classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
     classDef blue fill:#e7effe,stroke:#2363cf,color:#142137

@@ -2,7 +2,7 @@
 
 Use for training a radiance-field scene of 3D Gaussians from posed photos (COLMAP) and viewing it in real time.
 
-> AI-assisted 3D asset production · Source C · smoke test: **not feasible here**
+> #32 · AI-assisted 3D asset production · Source C (3D) · smoke test: **not feasible here**
 
 ## Evidence and maintenance
 

@@ -1,0 +1,30 @@
+%% render: auto
+%% title: Game asset imports
+%% desc: Editor originals stay separate from runtime imports. Each arrow names the format that crosses.
+flowchart TD
+    A["Pixelorama • sprites and tiles"]:::amber
+    B["pixelfx • effects"]:::amber
+    C["LDtk • levels and entities"]:::amber
+    D["Blockbench • low-poly models"]:::amber
+    E["Blender and the 3D asset factory"]:::amber
+    F["Sprite atlas • PNG + frame JSON"]:::slate
+    G["Level data • LDtk JSON + tilesets"]:::slate
+    H["Models • glTF or GLB + textures"]:::slate
+    I["Engine importer or reviewed adapter"]:::blue
+    J["In-engine checks • pivots, filtering, scale, collisions"]:::green
+    A -->|PNG sheets| F
+    B -->|PNG + JSON| F
+    C -->|JSON| G
+    D -->|glTF| H
+    E -->|GLB| H
+    F --> I
+    G --> I
+    H --> I
+    I --> J
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

@@ -2,14 +2,14 @@
 
 Use for turning a topic or article into a sourced, narrated 2-8 minute black-canvas motion-graphics explainer video drawn in Remotion by parallel coding agents.
 
-> Motion films, explainers and engines · Added by the user · smoke test: **not run**
+> #34 · Motion films, explainers and engines · Source D (cinema) · smoke test: **not run**
 
 ## Evidence and maintenance
 
 - [Canonical reference](https://github.com/Vincentwei1021/anything2explainer)
 - Verified 2026-11-26 against default branch `main` at [`ddf03a5f2b92`](https://github.com/Vincentwei1021/anything2explainer/commit/ddf03a5f2b920526a7460a6d1a35fb94dfcbc15d).
 - GitHub reports archive state **false** and a repository push at `2026-11-25T10:01:20Z`. Push activity is a maintenance signal, not a quality rating.
-- Attribution: Added directly by the user on 2026-11-26.
+- Attribution: Listed in the cinematic post (source D, transcript supplied by the user on 2026-11-26); first added to this catalogue on 2026-11-26.
 
 - [README.md](https://github.com/Vincentwei1021/anything2explainer/blob/ddf03a5f2b920526a7460a6d1a35fb94dfcbc15d/README.md)
 - [LICENSE](https://github.com/Vincentwei1021/anything2explainer/blob/ddf03a5f2b920526a7460a6d1a35fb94dfcbc15d/LICENSE)

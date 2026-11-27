@@ -18,11 +18,12 @@ CAPS = [
     ("3D authoring", "3A", "#a05212"), ("3D rendering", "3R", "#a05212"), ("Image-to-3D", "I3", "#a05212"), ("Retopology", "RT", "#a05212"),
     ("Texturing", "TX", "#a05212"), ("Rigging", "RG", "#a05212"), ("3D orchestration", "3O", "#a05212"), ("Spatial reconstruction", "SR", "#087d73"),
     ("Shot planning", "SH", "#087d73"), ("Video composition", "VC", "#087d73"), ("Video editing", "VE", "#bf315c"), ("Upscaling", "UP", "#bf315c"),
-    ("Media processing", "MP", "#bf315c"),
+    ("Media processing", "MP", "#bf315c"), ("Game engine", "GE", "#2363cf"), ("Physics", "PH", "#2363cf"), ("Level design", "LV", "#a05212"),
+    ("Pixel art", "PX", "#a05212"), ("Game audio", "AU", "#087d73"), ("Narrative", "NA", "#733ed0"), ("Multiplayer", "MU", "#198047"),
 ]
 GROUPS = {"A": "Creative direction", "B": "Design and prototyping", "C": "Frontend and creative coding", "D": "Illustration and animation",
           "E": "Core 3D", "F": "Video and post-production", "G": "AI-assisted 3D (source C)", "H": "Supplementary candidates",
-          "I": "Motion films, explainers and engines (added by the user)"}
+          "I": "Motion films, explainers and engines (source D)", "J": "Game development (source E)", "K": "Expressive motion (source F)"}
 STYLE = """<style>
 svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .grid{stroke:#e3e8f0;stroke-width:1} .band{fill:#f1f4f9} .na{fill:#b8c2d3}
 @media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .grid{stroke:#2a3850} .band{fill:#16223a} .na{fill:#52627c}}

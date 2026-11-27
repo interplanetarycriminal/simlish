@@ -1,7 +1,7 @@
 {
   "tool": "framecap",
   "input": "out/pages/scene.html",
-  "url": "http://127.0.0.1:60194/scene.html",
+  "url": "http://127.0.0.1:51749/scene.html",
   "chrome": "Chrome/158.0.8127.37",
   "width": 640,
   "height": 360,
@@ -15,7 +15,7 @@
   "mode": "scene",
   "animations": 0,
   "settleCaptures": 24,
-  "captureSeconds": 5.218,
+  "captureSeconds": 4.266,
   "pass": true,
   "checks": {
     "frames": true,
@@ -34,5 +34,5 @@
     "containerDuration": 1,
     "audio": null
   },
-  "totalSeconds": 5.593
+  "totalSeconds": 4.493
 }

@@ -58,6 +58,38 @@ Every tool also has a role. **Guidance** shapes decisions (skills, lists). **Exe
 | 3D craft recipes | One Meng To 3D skill | Optional. Load the single skill that matches the scene. |
 | One scene, live and as film | Three.js to the [time contract](docs/contracts/time-contract.md) | Recommended for explainers and learning. Tested by the [seekable scene fixture](fixtures/seekable-scene/README.md). |
 
+## Game development
+
+![Pick one primary runtime, then build a playable vertical slice](docs/diagrams/game-engine-selection.svg)
+
+| Need | Pick | Classification and reason |
+| --- | --- | --- |
+| Game runtime | Godot (editor-driven 2D and 3D, native exports), Phaser (browser-first 2D), Bevy (Rust ECS), Babylon.js (browser 3D with a game toolkit) | Recommended alternatives. One runtime per game. Phaser and Babylon.js are tested here; Godot and Bevy are documented only. |
+| Browser 3D without a game toolkit | Three.js, or React Three Fiber in a React project | Recommended alternative to Babylon.js. React Three Fiber renders Three.js; it is not a second engine. |
+| Agent access to Godot | Godot MCP | Optional. Runs projects with full script execution and reads console output; it cannot see the running scene tree. |
+| Physics | The engine's own solver: Godot Physics or Jolt (built in since 4.4, the default for new projects since 4.6), Phaser Arcade or its bundled Matter.js, bevy_rapier, Babylon.js Havok | One solver per world. Rapier, Jolt and Matter.js are alternatives, never co-owners. Matter.js and Rapier repeat bitwise on one machine (tested); none is promised to match across platforms. |
+| Sprites and tiles | Pixelorama; pixelfx for effects | Complementary. Pixelorama's JSON is its own project format; pixelfx writes Aseprite-style atlases (tested). |
+| Blocky low-poly models | Blockbench; Blender for anything else | Complementary. Export glTF or GLB and validate in the engine. GPL-3.0 editor; exported models are yours. |
+| Levels | LDtk | Optional. Its JSON is documented with a schema, but the pinned repo names no Godot or Phaser loader: review a community loader or write an adapter. |
+| Sound effects | jsfxr, then engine audio or Howler.js | Complementary. jsfxr WAVs tested; Howler.js documented (audio unlocks on the first user gesture). |
+| Branching story | Ink with one runtime (inkjs on the web) | Optional. Compile, branch coverage and save/load tested. No Godot integration in the pinned files. |
+| Online play | Colyseus (authoritative rooms in Node.js) or Nakama (accounts, storage, matchmaking, leaderboards, chat) | Recommended alternatives per responsibility. A Colyseus room is tested on loopback; Nakama is documented and sends telemetry by default. |
+
+## Expressive motion
+
+![One motion owner per property, one clock per scene](docs/diagrams/motion-ownership.svg)
+
+| Need | Pick | Classification and reason |
+| --- | --- | --- |
+| UI motion in React | Motion | Recommended. Gestures, springs, layout animation; seekable (tested). Reduced motion is opt-in. |
+| Coded timelines | GSAP | Recommended. Seekable through framecap (tested). |
+| Keyframes edited by a person | Theatre.js | Optional. Core seeks exactly (tested); the public repo has been frozen since August 2024 and the studio is AGPL-3.0. |
+| Two libraries on one element | Disjoint properties only | Potentially conflicting. When GSAP and Motion both animate `x`, the last writer wins silently and GSAP's state goes stale (tested). |
+| Theatre.js with React Three Fiber | Drive R3F from Theatre's core sequence | Potentially conflicting. `@theatre/r3f` needs R3F 8 (React 18); current R3F is 9 (React 19). |
+| A kinetic type piece or motion critique | motionmaxxing | Optional. Builds on GSAP and vendors Three.js; keep whichever compositor already owns the timeline. Voice and music services need approval. |
+| Rebuild motion from a reference | reanimate | Optional. Authorized references and original assets only; compare within a tolerance. Needs Bun on macOS or Linux. |
+| Pixel-art hits and spells | pixelfx | Recommended alternative to Sakuga VFX, which suits web interaction bursts instead. |
+
 ## Motion and video
 
 | Need | Pick | Classification and reason |
@@ -81,5 +113,15 @@ Every tool also has a role. **Guidance** shapes decisions (skills, lists). **Exe
 | Judge pages | Impeccable or Hallmark against `DESIGN.md` | Recommended alternatives per pass. |
 | Judge 3D or motion | The [quality gates](QUALITY_GATES.md), `scripts/blender/validate_asset.py`, Blender MCP `look`, a Meng To scorecard | Partial. These judge the picture and the geometry. |
 | Judge understanding | The Learning gate with a real learner | No tool in the catalogue does this. |
+| Judge a game | A playtest against the vertical-slice criteria, plus the Games gate | No tool in the catalogue does this. |
 
-Cloud and credential dependencies: Stitch, 21st MCP, the Figma API, Video Use transcription (ElevenLabs), Dream Loop (fal.ai), HyperFrames Studio Pro and cloud rendering, and the gated weights of SAM 3D Objects, Stable Fast 3D and TRELLIS.2's dependencies (Hugging Face). Everything else has a documented local path.
+## Strategy and governance
+
+| Need | Pick | Classification and reason |
+| --- | --- | --- |
+| A short, direct task | Do it | Recommended. Governance costs more than it saves on small work. |
+| Several packages, agents or hours | The [strategy layer](docs/strategy/README.md) with kit/workledger | Optional. Tested against direct execution on the same 7 work packages: half the attempts, a scope deviation caught, a blocked dependent skipped. |
+| A consequential choice | `workledger decide` with at least two alternatives | Recommended. Refuses a decision with one option. |
+
+
+Cloud and credential dependencies: Stitch, 21st MCP, motionmaxxing's optional ElevenLabs voice and music, Nakama's default telemetry and any hosted game server, the Figma API, Video Use transcription (ElevenLabs), Dream Loop (fal.ai), HyperFrames Studio Pro and cloud rendering, and the gated weights of SAM 3D Objects, Stable Fast 3D and TRELLIS.2's dependencies (Hugging Face). Everything else has a documented local path.

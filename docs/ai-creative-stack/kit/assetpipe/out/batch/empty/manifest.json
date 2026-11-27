@@ -4,7 +4,7 @@
     "name": "toy-factory",
     "version": 1
   },
-  "created": "2026-11-26T09:54:15+00:00",
+  "created": "2026-11-27T04:44:14+00:00",
   "status": "rejected",
   "reason": "v1-original: No object found in the image.",
   "source_references": [
@@ -31,7 +31,7 @@
       "input_sha256": "aebc86755d7beb8b01bcd992ab44e1133afcb473511b7832eb82228be275473f",
       "output": null,
       "output_sha256": null,
-      "seconds": 2.87,
+      "seconds": 1.67,
       "ok": false,
       "error": "No object found in the image.\n"
     }

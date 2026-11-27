@@ -2,14 +2,14 @@
 
 Use for recording a screen or window and turning the take into a polished product demo with auto-zooms, cursor effects, captions and GPU export, by hand or from a coding agent through its CLI and MCP server.
 
-> Motion films, explainers and engines · Added by the user · smoke test: **not run**
+> #35 · Motion films, explainers and engines · Source D (cinema) · smoke test: **not run**
 
 ## Evidence and maintenance
 
 - [Canonical reference](https://github.com/getopenscreen/openscreen)
 - Verified 2026-11-26 against default branch `main` at [`c174dc0669d0`](https://github.com/getopenscreen/openscreen/commit/c174dc0669d070249bc24e2b6c96892bd48514b7).
 - GitHub reports archive state **false** and a repository push at `2026-11-26T08:44:58Z`. Push activity is a maintenance signal, not a quality rating.
-- Attribution: Added directly by the user on 2026-11-26.
+- Attribution: Listed in the cinematic post (source D, transcript supplied by the user on 2026-11-26); first added to this catalogue on 2026-11-26.
 
 - [README.md](https://github.com/getopenscreen/openscreen/blob/c174dc0669d070249bc24e2b6c96892bd48514b7/README.md)
 - [package.json](https://github.com/getopenscreen/openscreen/blob/c174dc0669d070249bc24e2b6c96892bd48514b7/package.json)

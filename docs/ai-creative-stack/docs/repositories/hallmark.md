@@ -2,7 +2,7 @@
 
 Use its design skill or its Floor checks against a defined brief.
 
-> Creative direction and design intelligence · Sources A and B · smoke test: **not run**
+> #03 · Creative direction and design intelligence · Sources A and B, also listed in Source F (expressive motion) · smoke test: **not run**
 
 ## Evidence and maintenance
 

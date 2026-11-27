@@ -1,0 +1,124 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Work packages",
+ "description": "Bounded, independently verifiable units of work (V7 strategy layer). Extra runtime keys such as 'command' are allowed.",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "packages"
+ ],
+ "properties": {
+  "schema_version": {
+   "type": "string"
+  },
+  "packages": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "parent_id",
+     "goal",
+     "owner",
+     "input_refs",
+     "output_paths",
+     "depends_on",
+     "edit_scope",
+     "acceptance_checks",
+     "budget",
+     "retry_limit",
+     "status",
+     "evidence_refs"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "parent_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "goal": {
+      "type": "string",
+      "minLength": 1
+     },
+     "owner": {
+      "type": "string"
+     },
+     "input_refs": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "output_paths": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "depends_on": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "edit_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "type": "string"
+      }
+     },
+     "acceptance_checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "type": "string"
+      }
+     },
+     "budget": {
+      "type": "object",
+      "properties": {
+       "seconds": {
+        "type": "number"
+       },
+       "tool_calls": {
+        "type": "integer"
+       },
+       "cost": {
+        "type": [
+         "number",
+         "null"
+        ]
+       }
+      }
+     },
+     "retry_limit": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "status": {
+      "enum": [
+       "planned",
+       "running",
+       "done",
+       "failed",
+       "blocked",
+       "stopped",
+       "scope_deviation"
+      ]
+     },
+     "evidence_refs": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  }
+ }
+}

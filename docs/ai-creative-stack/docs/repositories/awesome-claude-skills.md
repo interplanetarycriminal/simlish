@@ -2,7 +2,7 @@
 
 Use for discovering candidate Claude skills and plugins by category, as a starting point for reviewing each skill before installing it.
 
-> Supplementary research candidates · Supplementary · smoke test: **not run**
+> #69 · Supplementary research candidates · Supplementary · smoke test: **not run**
 
 ## Evidence and maintenance
 

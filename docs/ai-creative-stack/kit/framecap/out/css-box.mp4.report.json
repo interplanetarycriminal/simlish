@@ -1,7 +1,7 @@
 {
   "tool": "framecap",
   "input": "out/pages/css-box.html",
-  "url": "http://127.0.0.1:62144/css-box.html",
+  "url": "http://127.0.0.1:49656/css-box.html",
   "chrome": "Chrome/158.0.8127.37",
   "width": 1280,
   "height": 720,
@@ -15,7 +15,7 @@
   "mode": "animations",
   "animations": 1,
   "settleCaptures": 60,
-  "captureSeconds": 12.275,
+  "captureSeconds": 11.225,
   "pass": true,
   "checks": {
     "frames": true,
@@ -34,5 +34,5 @@
     "containerDuration": 2,
     "audio": null
   },
-  "totalSeconds": 13.238
+  "totalSeconds": 11.764
 }

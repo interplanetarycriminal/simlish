@@ -3,7 +3,7 @@
   "source_faces": 8032,
   "runs": {
     "1600": {
-      "seconds": 13.2,
+      "seconds": 6.66,
       "faces": 1600,
       "watertight": true,
       "mean_error_of_diag": 0.00044,
@@ -11,7 +11,7 @@
       "volume_ratio": 0.9941
     },
     "800": {
-      "seconds": 15.33,
+      "seconds": 8.56,
       "faces": 800,
       "watertight": true,
       "mean_error_of_diag": 0.00084,

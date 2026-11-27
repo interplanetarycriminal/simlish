@@ -2,14 +2,14 @@
 
 Use for short product launch films, teasers and feature demos that play as one continuous camera move, with continuity checked by an automatic oracle before a human watches.
 
-> Motion films, explainers and engines · Added by the user · smoke test: **not run**
+> #36 · Motion films, explainers and engines · Source D (cinema) · smoke test: **not run**
 
 ## Evidence and maintenance
 
 - [Canonical reference](https://github.com/feitangyuan/onetake)
 - Verified 2026-11-26 against default branch `main` at [`4e024be4c6c6`](https://github.com/feitangyuan/onetake/commit/4e024be4c6c696b260f39a35aee6bd56d303b679).
 - GitHub reports archive state **false** and a repository push at `2026-11-19T06:06:40Z`. Push activity is a maintenance signal, not a quality rating.
-- Attribution: Added directly by the user on 2026-11-26.
+- Attribution: Listed in the cinematic post (source D, transcript supplied by the user on 2026-11-26); first added to this catalogue on 2026-11-26.
 
 - [README.md](https://github.com/feitangyuan/onetake/blob/4e024be4c6c696b260f39a35aee6bd56d303b679/README.md)
 - [SKILL.md](https://github.com/feitangyuan/onetake/blob/4e024be4c6c696b260f39a35aee6bd56d303b679/SKILL.md)

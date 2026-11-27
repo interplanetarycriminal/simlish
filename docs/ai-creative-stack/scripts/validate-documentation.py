@@ -21,7 +21,15 @@ docs/3d-pipeline/image-to-3d.md docs/3d-pipeline/retopology.md docs/3d-pipeline/
 docs/3d-pipeline/rigging-and-skinning.md docs/3d-pipeline/animation-and-physics.md docs/3d-pipeline/gaussian-splatting.md
 docs/3d-pipeline/comfyui-orchestration.md docs/3d-pipeline/asset-validation.md docs/3d-pipeline/export-contracts.md
 registry/repositories.json registry/repositories.txt registry/core-repositories.txt registry/supplementary-repositories.txt
-registry/compatibility.json registry/schema.json registry/user-added-repositories.txt
+registry/compatibility.json registry/schema.json
+registry/contracts/work-packages.schema.json registry/contracts/execution-ledger.schema.json registry/contracts/decision-log.schema.json
+docs/strategy/README.md templates/strategy-evaluation.md AI_CREATIVE_STACK_V7_DRAFT.md
+docs/game-development/README.md docs/game-development/engines-and-physics.md docs/game-development/assets-and-levels.md
+docs/game-development/audio-and-narrative.md docs/game-development/multiplayer.md docs/game-development/artifact-contracts.md
+docs/expressive-motion/README.md docs/expressive-motion/ownership.md docs/expressive-motion/pixel-effects.md
+docs/expressive-motion/reference-comparison.md docs/expressive-motion/react-3d.md docs/cinematic-pipeline/README.md
+fixtures/game-dev/README.md fixtures/expressive-motion/README.md kit/workledger/README.md
+prompts/game-developer.md prompts/expressive-motion.md
 prompts/activate-creative-agent.md prompts/creative-director.md prompts/frontend-design.md prompts/motion-design.md
 prompts/3d-technical-artist.md prompts/3d-asset-factory.md prompts/spatial-reconstruction.md prompts/video-production.md
 prompts/project-intelligence.md
@@ -32,14 +40,18 @@ kit/README.md kit/run-tests.py""".split()
 
 WORKFLOWS = """premium-website application-interface interactive-3d illustration-and-animation cinematic-video full-creative-pipeline
 persistent-intelligence design-system-extraction 3d-asset-factory animation-ready-character spatial-reconstruction
-comfyui-asset-processing surreal-cinematic-3d interactive-learning""".split()
+comfyui-asset-processing surreal-cinematic-3d interactive-learning web-2d-game standalone-game multiplayer-arena
+expressive-motion-production interactive-react-3d""".split()
 
 DIAGRAMS = """collection-provenance creative-architecture 3d-asset-production mesh-vs-gaussian rigging-and-skinning
 comfyui-orchestration agent-decision-loop design-system-intelligence persistent-intelligence cinematic-video
-asset-handoffs capability-matrix hardware-execution compatibility-overlap""".split()
+asset-handoffs capability-matrix hardware-execution compatibility-overlap game-engine-selection physics-routing
+game-asset-imports narrative-audio multiplayer-authority expressive-motion-selector motion-ownership pixel-atlas-import
+reference-comparison react-3d-architecture cinema-ownership strategy-governance plan-action-ledger decision-review""".split()
 
 EMBEDS = {
-    "README.md": ["collection-provenance", "creative-architecture", "3d-asset-production", "mesh-vs-gaussian", "capability-matrix", "compatibility-overlap"],
+    "README.md": ["collection-provenance", "creative-architecture", "3d-asset-production", "mesh-vs-gaussian", "capability-matrix", "compatibility-overlap",
+                  "game-engine-selection", "expressive-motion-selector", "strategy-governance"],
     "AI_CREATIVE_STACK_VISUAL.md": ["agent-decision-loop", "creative-architecture", "3d-asset-production", "mesh-vs-gaussian", "asset-handoffs"],
 }
 
@@ -155,8 +167,11 @@ def main():
             evidence += 1
             if data["pass"] is not True:
                 fail(f"recorded fixture evidence {f.relative_to(ROOT)} shows a failed check")
-    if evidence < 4:
-        fail(f"expected fixture evidence for both fixtures, found {evidence} files")
+    if evidence < 6:
+        fail(f"expected passing evidence from every fixture, found {evidence} files")
+    for fx in ("game-dev", "expressive-motion"):
+        if not (ROOT / f"fixtures/{fx}/out/result.json").is_file():
+            fail(f"fixtures/{fx} has no recorded result")
     kit_tools = sorted(p.parent for p in ROOT.glob("kit/*/README.md") if p.parent.name != "skills")
     for tool in kit_tools:
         res = tool / "out" / "result.json"

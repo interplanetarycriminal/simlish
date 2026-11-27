@@ -2,7 +2,7 @@
 
 Use for HTML-authored motion and video composition.
 
-> Video composition and post-production · Sources A and B · smoke test: **not run**
+> #15 · Video composition and post-production · Sources A and B · smoke test: **not run**
 
 ## Evidence and maintenance
 
@@ -50,7 +50,7 @@ npx hyperframes init my-video
 | Primary | Video composition |
 | Supporting | Animation, Video editing |
 
-Skip if project already has a satisfactory React or Motion Canvas timeline. Consider [remotion](remotion.md), [motion-canvas](motion-canvas.md), [scarlet](scarlet.md), [video-shotcraft](video-shotcraft.md), [huashu-motion](huashu-motion.md), [anything2explainer](anything2explainer.md), [onetake](onetake.md), [lemo-opuscar](lemo-opuscar.md), [effectcraft](effectcraft.md). Complementary tools include [open-design](open-design.md), [ffmpeg](ffmpeg.md), [three-js](three-js.md), [video-use](video-use.md), [gsap](gsap.md).
+Skip if project already has a satisfactory React or Motion Canvas timeline. Consider [remotion](remotion.md), [motion-canvas](motion-canvas.md), [scarlet](scarlet.md), [video-shotcraft](video-shotcraft.md), [huashu-motion](huashu-motion.md), [anything2explainer](anything2explainer.md), [onetake](onetake.md), [lemo-opuscar](lemo-opuscar.md), [effectcraft](effectcraft.md). Complementary tools include [open-design](open-design.md), [ffmpeg](ffmpeg.md), [three-js](three-js.md), [video-use](video-use.md), [gsap](gsap.md), [motionmaxxing](motionmaxxing.md).
 
 Open Design documents a native HyperFrames workspace. FFmpeg is a documented local runtime dependency. The pinned README documents a /remotion-to-hyperframes port skill.
 

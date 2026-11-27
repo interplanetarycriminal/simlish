@@ -1,0 +1,37 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>motion seek probe</title>
+<style>
+  body { margin: 0; background: #f4f1ea; }
+  .dot { position: absolute; left: 20px; width: 40px; height: 40px; border-radius: 50%; }
+  #ease { top: 40px; background: #2a6f97; }
+  #spring { top: 120px; background: #c0603a; }
+</style>
+<div class="dot" id="ease"></div>
+<div class="dot" id="spring"></div>
+<script type="module">
+  import { esm, readX, twoFrames, fetchedModules, VERSIONS } from './shared.js';
+  try {
+    const { animate } = await import(esm('motion'));
+    const els = { ease: document.getElementById('ease'), spring: document.getElementById('spring') };
+    // One ease animation (a CSS-style ease-in-out curve) and one physical spring, both from x = 0 to x = 200 px.
+    const controls = {
+      ease: animate(els.ease, { x: [0, 200] }, { duration: 1, ease: [0.42, 0, 0.58, 1] }),
+      spring: animate(els.spring, { x: [0, 200] }, { type: 'spring', stiffness: 180, damping: 9, mass: 1 }),
+    };
+    for (const c of Object.values(controls)) { c.pause(); c.time = 0; }
+    await twoFrames();
+    window.__probe = {
+      // Seek one animation to story time t (seconds). Returns the value read right after the
+      // assignment and the value after two animation frames.
+      async seek(which, t) {
+        controls[which].time = t;
+        const sync = readX(els[which]);
+        await twoFrames();
+        return { sync, settled: readX(els[which]) };
+      },
+      info: () => ({ version: VERSIONS.motion, easeDuration: controls.ease.duration, springDuration: controls.spring.duration, modules: fetchedModules() }),
+    };
+    window.__ready = true;
+  } catch (e) { window.__error = String(e && e.stack || e); window.__ready = true; }
+</script>

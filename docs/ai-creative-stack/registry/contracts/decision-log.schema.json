@@ -1,0 +1,62 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Decision log entry",
+ "description": "One JSON object per line: a consequential decision with its alternatives.",
+ "type": "object",
+ "required": [
+  "id",
+  "timestamp",
+  "constraints",
+  "alternatives",
+  "chosen_option",
+  "concise_rationale",
+  "evidence_refs",
+  "uncertainty",
+  "review_trigger",
+  "approval_status"
+ ],
+ "properties": {
+  "id": {
+   "type": "string"
+  },
+  "timestamp": {
+   "type": "string"
+  },
+  "constraints": {
+   "type": "string"
+  },
+  "alternatives": {
+   "type": "array",
+   "minItems": 2,
+   "items": {
+    "type": "string"
+   }
+  },
+  "chosen_option": {
+   "type": "string"
+  },
+  "concise_rationale": {
+   "type": "string"
+  },
+  "evidence_refs": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "uncertainty": {
+   "type": "string"
+  },
+  "review_trigger": {
+   "type": "string"
+  },
+  "approval_status": {
+   "enum": [
+    "proposed",
+    "approved",
+    "rejected",
+    "superseded"
+   ]
+  }
+ }
+}

@@ -4,7 +4,7 @@
     "name": "toy-factory",
     "version": 1
   },
-  "created": "2026-11-26T09:54:12+00:00",
+  "created": "2026-11-27T04:44:12+00:00",
   "status": "accepted",
   "reason": null,
   "source_references": [
@@ -31,7 +31,7 @@
       "input_sha256": "b6541510243cf210402f3cd083fca9155b09241a10c102d7832a77bc4c545d2b",
       "output": "rocket\\rocket.v1-original.glb",
       "output_sha256": "9c8275e797d015803cced9d4cfc2ca7cbf454a4d71fdbf5018a7dc3edd067572",
-      "seconds": 3.2,
+      "seconds": 2.14,
       "ok": true
     },
     {
@@ -45,7 +45,7 @@
       "input_sha256": "9c8275e797d015803cced9d4cfc2ca7cbf454a4d71fdbf5018a7dc3edd067572",
       "output": "rocket\\rocket.v2-retopo.glb",
       "output_sha256": "7ecfbba4e4385c213bb252353001dfaa8befaff06e9213b0b165f8d2b509e69c",
-      "seconds": 13.24,
+      "seconds": 4.41,
       "ok": true
     },
     {
@@ -57,7 +57,7 @@
       "input_sha256": "7ecfbba4e4385c213bb252353001dfaa8befaff06e9213b0b165f8d2b509e69c",
       "output": "rocket\\rocket.validation.json",
       "output_sha256": "400290fe3f048be8e17ea534c92bb28331aba1ae1e400dcbf87564cbaf313005",
-      "seconds": 8.01,
+      "seconds": 2.25,
       "ok": true,
       "floor": {
         "has_geometry": true,
@@ -89,7 +89,7 @@
       "input_sha256": "7ecfbba4e4385c213bb252353001dfaa8befaff06e9213b0b165f8d2b509e69c",
       "output": "rocket\\rig\\rocket.v2-retopo_rigged.glb",
       "output_sha256": "7856566e096dc702ff0ebdb093c1163a766cef3af2c3033cd9a502a2452c51e0",
-      "seconds": 8.23,
+      "seconds": 2.51,
       "ok": true
     },
     {
@@ -101,7 +101,7 @@
       "input_sha256": "7856566e096dc702ff0ebdb093c1163a766cef3af2c3033cd9a502a2452c51e0",
       "output": "rocket\\rocket.validation.json",
       "output_sha256": "53d2bc8431bac1d124e734c6bc4d8dd6f613969251075ac281e93993380c1b5c",
-      "seconds": 3.29,
+      "seconds": 2.17,
       "ok": true,
       "floor": {
         "has_geometry": true,
@@ -131,7 +131,7 @@
       "input_sha256": "7ecfbba4e4385c213bb252353001dfaa8befaff06e9213b0b165f8d2b509e69c",
       "output": "rocket\\rocket.splat.ply",
       "output_sha256": "f7a0147e17477ced8dce7a777946873a6b26d9a42f4cd6c8d771b3b77c6bb631",
-      "seconds": 7.81,
+      "seconds": 1.83,
       "ok": true
     }
   ],

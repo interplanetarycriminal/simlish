@@ -20,8 +20,11 @@ CATEGORIES = {
     "G": "AI-assisted 3D asset production",
     "H": "Supplementary research candidates",
     "I": "Motion films, explainers and engines",
+    "J": "Game development",
+    "K": "Expressive motion",
 }
-SOURCE = {"A": "Source A", "B": "Source B", "A+B": "Sources A and B", "C": "Source C", "D": "Added by the user", "supplementary": "Supplementary"}
+SOURCE = {"A": "Source A", "B": "Source B", "A+B": "Sources A and B", "C": "Source C (3D)", "D": "Source D (cinema)", "E": "Source E (games)",
+          "F": "Source F (expressive motion)", "supplementary": "Supplementary"}
 
 
 def link(i):
@@ -49,8 +52,10 @@ def fmt(v, empty="Not documented"):
 def guide(e):
     m = e["maintenance"]
     base = e["verified_url"].split("/tree/")[0]
+    also = [SOURCE[s] for s in e.get("source_associations", []) if s != e["source_group"] and not (e["source_group"] == "A+B" and s in ("A", "B"))]
     lines = [f"# {e['name']}", "", e["intended_use"], "",
-             f"> {CATEGORIES[e['category']]} · {SOURCE[e['source_group']]} · smoke test: **{e['smoke_test']['status']}**", "",
+             f"> #{e['num']:02d} · {CATEGORIES[e['category']]} · {SOURCE[e['source_group']]}" + (f", also listed in {', '.join(also)}" if also else "")
+             + f" · smoke test: **{e['smoke_test']['status']}**", "",
              "## Evidence and maintenance", ""]
     lines += [f"- [Canonical reference]({e['verified_url']})"]
     if e["original_url"].rstrip("/").lower() != e["verified_url"].rstrip("/").lower():
@@ -129,10 +134,10 @@ def index(records):
              "The [taxonomy](TAXONOMY.md) sorts the same references by how they behave in a workflow, and [SOURCES.md](SOURCES.md) records where each came from.", ""]
     for k, title in CATEGORIES.items():
         group = [e for e in records if e["category"] == k]
-        lines += [f"## {k}. {title}", "", "| Reference | Type | Primary | Licence | Source | Smoke test |", "| --- | --- | --- | --- | --- | --- |"]
+        lines += [f"## {k}. {title}", "", "| # | Reference | Type | Primary | Licence | Source | Smoke test |", "| --- | --- | --- | --- | --- | --- | --- |"]
         for e in group:
             lic = e["license"] if len(e["license"]) < 48 else e["license"][:45] + "…"
-            lines += [f"| [{e['name']}](docs/repositories/{e['id']}.md) | {e['tool_type']} | {', '.join(e['primary_capabilities'])} | {lic} | {SOURCE[e['source_group']]} | {e['smoke_test']['status']} |"]
+            lines += [f"| {e['num']:02d} | [{e['name']}](docs/repositories/{e['id']}.md) | {e['tool_type']} | {', '.join(e['primary_capabilities'])} | {lic} | {SOURCE[e['source_group']]} | {e['smoke_test']['status']} |"]
         lines += [""]
     return "\n".join(lines)
 
@@ -142,6 +147,9 @@ def main():
     records = json.loads((ROOT / "registry/repositories.json").read_text(encoding="utf-8"))
     targets = {ROOT / f"docs/repositories/{e['id']}.md": guide(e) for e in records}
     targets[ROOT / "REPOSITORIES.md"] = index(records)
+    for name, keep in (("repositories", lambda e: True), ("core-repositories", lambda e: e["source_group"] != "supplementary"),
+                       ("supplementary-repositories", lambda e: e["source_group"] == "supplementary")):
+        targets[ROOT / f"registry/{name}.txt"] = "".join(e["original_url"] + "\n" for e in records if keep(e))
     stale = []
     for path, text in targets.items():
         if check:

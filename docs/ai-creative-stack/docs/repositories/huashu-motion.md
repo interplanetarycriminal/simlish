@@ -2,14 +2,14 @@
 
 Use for having a coding agent write, score and render a short product launch film or data explainer as a single HTML page, then revise it by clicking on frames in a local editor.
 
-> Motion films, explainers and engines · Added by the user · smoke test: **not run**
+> #33 · Motion films, explainers and engines · Source D (cinema) · smoke test: **not run**
 
 ## Evidence and maintenance
 
 - [Canonical reference](https://github.com/alchaincyf/huashu-motion)
 - Verified 2026-11-26 against default branch `main` at [`f4f38bfe295a`](https://github.com/alchaincyf/huashu-motion/commit/f4f38bfe295a3f768753857be9236cc3277c7dad).
 - GitHub reports archive state **false** and a repository push at `2026-11-23T06:08:00Z`. Push activity is a maintenance signal, not a quality rating.
-- Attribution: Added directly by the user on 2026-11-26.
+- Attribution: Listed in the cinematic post (source D, transcript supplied by the user on 2026-11-26); first added to this catalogue on 2026-11-26.
 
 - [README.md](https://github.com/alchaincyf/huashu-motion/blob/f4f38bfe295a3f768753857be9236cc3277c7dad/README.md)
 - [README.en.md](https://github.com/alchaincyf/huashu-motion/blob/f4f38bfe295a3f768753857be9236cc3277c7dad/README.en.md)
@@ -42,7 +42,7 @@ npx skills add alchaincyf/huashu-motion
 | Primary | Video composition, Animation, Creative direction |
 | Supporting | Shot planning, Media processing, Design critique |
 
-Skip when the film needs real people or live-action footage generated for you; every frame is drawn in code and real footage must be your own. Consider [hyperframes](hyperframes.md), [remotion](remotion.md), [onetake](onetake.md), [lemo-opuscar](lemo-opuscar.md), [anything2explainer](anything2explainer.md), [motion-canvas](motion-canvas.md). Complementary tools include [gsap](gsap.md), [three-js](three-js.md), [ffmpeg](ffmpeg.md), [openscreen](openscreen.md).
+Skip when the film needs real people or live-action footage generated for you; every frame is drawn in code and real footage must be your own. Consider [hyperframes](hyperframes.md), [remotion](remotion.md), [onetake](onetake.md), [lemo-opuscar](lemo-opuscar.md), [anything2explainer](anything2explainer.md), [motion-canvas](motion-canvas.md), [motionmaxxing](motionmaxxing.md). Complementary tools include [gsap](gsap.md), [three-js](three-js.md), [ffmpeg](ffmpeg.md), [openscreen](openscreen.md).
 
 Its own renderer driving local Chrome; uses GSAP, Canvas, three.js and SVG in one index.html.
 

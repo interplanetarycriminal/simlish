@@ -2,7 +2,7 @@
 
 Use for running image-to-3D, multi-view diffusion, 3D Gaussian splatting and mesh texture-baking pipelines as ComfyUI node graphs.
 
-> AI-assisted 3D asset production · Source C · smoke test: **not feasible here**
+> #31 · AI-assisted 3D asset production · Source C (3D) · smoke test: **not feasible here**
 
 ## Evidence and maintenance
 

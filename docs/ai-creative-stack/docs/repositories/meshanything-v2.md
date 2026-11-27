@@ -2,7 +2,7 @@
 
 Use for converting a dense scanned or generated mesh (or point cloud with normals) into a low-poly, artist-style triangle mesh.
 
-> AI-assisted 3D asset production · Source C · smoke test: **not feasible here**
+> #28 · AI-assisted 3D asset production · Source C (3D) · smoke test: **not feasible here**
 
 ## Evidence and maintenance
 

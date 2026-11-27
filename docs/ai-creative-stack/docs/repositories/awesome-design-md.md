@@ -2,7 +2,7 @@
 
 Use for studying how real product sites structure their visual language, by giving an agent a ready-made DESIGN.md (tokens, type, components, rules) as a style reference.
 
-> Supplementary research candidates · Supplementary · smoke test: **not run**
+> #61 · Supplementary research candidates · Supplementary · smoke test: **not run**
 
 ## Evidence and maintenance
 

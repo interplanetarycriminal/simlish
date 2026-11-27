@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 732" role="img" aria-labelledby="title desc">
+<title id="title">Pixel art to gameplay</title><desc id="desc">Sprites and effects share a palette and a timing table. Visual hits never decide damage.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="908" height="732" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Pixel art to gameplay</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Sprites and effects share a palette and a timing table. Visual hits never decide damage.</text>
+<path d="M266 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M266 180 V212 H642 V242" class="line" marker-end="url(#end)"/>
+<path d="M266 316 V348 H454 V378" class="line" marker-end="url(#end)"/>
+<path d="M642 316 V348 H454 V378" class="line" marker-end="url(#end)"/>
+<path d="M454 434 V496" class="line" marker-end="url(#end)"/>
+<path d="M792 144 H828 V525 H606" class="line" marker-end="url(#end)"/>
+<path d="M454 552 V614" class="line" marker-end="url(#end)"/>
+<rect x="272" y="326" width="83" height="20" rx="5" class="lab"/><text x="278" y="340" font-size="12.5" font-weight="560" class="sub">PNG + JSON</text>
+<rect x="549" y="326" width="83" height="20" rx="5" class="lab"/><text x="555" y="340" font-size="12.5" font-weight="560" class="sub">PNG + JSON</text>
+<rect x="116" y="108" width="300" height="72" rx="13" class="panel"/><rect x="128" y="132" width="7" height="24" rx="3.5" fill="#733ed0"/>
+<text x="144" y="150" font-size="17" font-weight="720">Approved palette and action brief</text>
+<rect x="492" y="108" width="300" height="72" rx="13" class="panel"/><rect x="504" y="132" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="520" y="140" font-size="16.5" font-weight="720">Gameplay events and hit timing</text><text x="520" y="160" font-size="13" font-weight="450" class="sub">authoritative</text>
+<rect x="116" y="244" width="300" height="72" rx="13" class="panel"/><rect x="128" y="268" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="276" font-size="16.5" font-weight="720">Pixelorama</text><text x="144" y="296" font-size="13" font-weight="450" class="sub">character sprites</text>
+<rect x="492" y="244" width="300" height="72" rx="13" class="panel"/><rect x="504" y="268" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="276" font-size="16.5" font-weight="720">pixelfx</text><text x="520" y="296" font-size="13" font-weight="450" class="sub">effect and timing</text>
+<rect x="304" y="380" width="300" height="54" rx="13" class="panel"/><rect x="316" y="395" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="332" y="413" font-size="17" font-weight="720">PNG atlas and frame metadata</text>
+<rect x="304" y="498" width="300" height="54" rx="13" class="panel"/><rect x="316" y="513" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="332" y="531" font-size="17" font-weight="720">Phaser or a Godot importer</text>
+<rect x="304" y="616" width="300" height="72" rx="13" class="panel"/><rect x="316" y="640" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="332" y="648" font-size="16.5" font-weight="720">Playtest</text><text x="332" y="668" font-size="13" font-weight="450" class="sub">pivots, nearest filtering, frame timing</text>
+</svg>

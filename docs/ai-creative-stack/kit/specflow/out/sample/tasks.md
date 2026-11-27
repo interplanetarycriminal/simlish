@@ -1,7 +1,7 @@
 # Tasks: Upload a GLB model, preview it in a Three.js viewer, and export a validated copy with a manifest
 
 - Spec: spec.md (digest 8e691b8e5e86)
-- Plan: plan.md (digest 321f746c7a1a)
+- Plan: plan.md (digest 22c33cfa8c08)
 - Created: 2026-11-26
 
 Each task names the acceptance criteria it serves. Write the check before the code.

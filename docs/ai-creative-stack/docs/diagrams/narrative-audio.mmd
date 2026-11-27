@@ -1,0 +1,23 @@
+%% render: auto
+%% title: Narrative and audio
+%% desc: One authoritative story runtime and one audio owner per runtime.
+flowchart TD
+    A["Ink source • story, variables"]:::purple
+    B["Compile • inklecate or inkjs"]:::slate
+    C["Story runtime in the game • one authority"]:::blue
+    D["jsfxr • procedural sound effects"]:::amber
+    E["Engine-native audio or Howler.js"]:::blue
+    F["Branch, save and resume tests"]:::green
+    G["Audio checks • unlock, volume, formats"]:::green
+    A --> B
+    B -->|compiled JSON| C
+    C --> F
+    D -->|WAV| E
+    E --> G
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

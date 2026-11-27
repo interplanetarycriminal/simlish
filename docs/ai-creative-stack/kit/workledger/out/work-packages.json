@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "packages": [
+    {
+      "id": "P1",
+      "parent_id": "G1",
+      "goal": "Write design tokens",
+      "owner": "agent",
+      "input_refs": [],
+      "output_paths": [
+        "design/tokens.json"
+      ],
+      "depends_on": [],
+      "edit_scope": [
+        "design/*"
+      ],
+      "acceptance_checks": [
+        "\"C:\\Python314\\python.exe\" -c \"import pathlib,sys; sys.exit(0 if pathlib.Path('design/tokens.json').exists() else 1)\""
+      ],
+      "budget": {
+        "seconds": 20
+      },
+      "retry_limit": 4,
+      "status": "planned",
+      "evidence_refs": [],
+      "command": "\"C:\\Python314\\python.exe\" tasks/p1.py"
+    },
+    {
+      "id": "P2",
+      "parent_id": "G1",
+      "goal": "Style the button from tokens",
+      "owner": "agent",
+      "input_refs": [],
+      "output_paths": [
+        "ui/button.css"
+      ],
+      "depends_on": [
+        "P1"
+      ],
+      "edit_scope": [
+        "ui/*"
+      ],
+      "acceptance_checks": [
+        "\"C:\\Python314\\python.exe\" -c \"import pathlib,sys; sys.exit(0 if pathlib.Path('ui/button.css').exists() else 1)\""
+      ],
+      "budget": {
+        "seconds": 20
+      },
+      "retry_limit": 4,
+      "status": "planned",
+      "evidence_refs": [],
+      "command": "\"C:\\Python314\\python.exe\" tasks/p2.py"
+    },
+    {
+      "id": "P3",
+      "parent_id": "G1",
+      "goal": "Export the model",
+      "owner": "agent",
+      "input_refs": [],
+      "output_paths": [
+        "assets/model.txt"
+      ],
+      "depends_on": [],
+      "edit_scope": [
+        "assets/*"
+      ],
+      "acceptance_checks": [
+        "\"C:\\Python314\\python.exe\" -c \"import pathlib,sys; sys.exit(0 if pathlib.Path('assets/model.txt').exists() else 1)\""
+      ],
+      "budget": {
+        "seconds": 20
+      },
+      "retry_limit": 4,
+      "status": "planned",
+      "evidence_refs": [],
+      "command": "\"C:\\Python314\\python.exe\" tasks/p3.py"
+    },
+    {
+      "id": "P4",
+      "parent_id": "G1",
+      "goal": "Render the master video",
+      "owner": "agent",
+      "input_refs": [],
+      "output_paths": [
+        "video/master.mp4"
+      ],
+      "depends_on": [],
+      "edit_scope": [
+        "video/*"
+      ],
+      "acceptance_checks": [
+        "\"C:\\Python314\\python.exe\" -c \"import pathlib,sys; sys.exit(0 if pathlib.Path('video/master.mp4').exists() else 1)\""
+      ],
+      "budget": {
+        "seconds": 20
+      },
+      "retry_limit": 4,
+      "status": "planned",
+      "evidence_refs": [],
+      "command": "\"C:\\Python314\\python.exe\" tasks/p4.py"
+    },
+    {
+      "id": "P5",
+      "parent_id": "G1",
+      "goal": "Generate sound effects",
+      "owner": "agent",
+      "input_refs": [],
+      "output_paths": [
+        "assets/sfx.txt"
+      ],
+      "depends_on": [],
+      "edit_scope": [
+        "assets/*"
+      ],
+      "acceptance_checks": [
+        "\"C:\\Python314\\python.exe\" -c \"import pathlib,sys; sys.exit(0 if pathlib.Path('assets/sfx.txt').exists() else 1)\""
+      ],
+      "budget": {
+        "seconds": 20
+      },
+      "retry_limit": 4,
+      "status": "planned",
+      "evidence_refs": [],
+      "command": "\"C:\\Python314\\python.exe\" tasks/p5.py"
+    },
+    {
+      "id": "P6",
+      "parent_id": "G1",
+      "goal": "Package the video",
+      "owner": "agent",
+      "input_refs": [],
+      "output_paths": [],
+      "depends_on": [
+        "P4"
+      ],
+      "edit_scope": [
+        "video/*"
+      ],
+      "acceptance_checks": [
+        "\"C:\\Python314\\python.exe\" -c \"import pathlib,sys; sys.exit(0 if pathlib.Path('video/master.mp4').exists() else 1)\""
+      ],
+      "budget": {
+        "seconds": 20
+      },
+      "retry_limit": 4,
+      "status": "planned",
+      "evidence_refs": [],
+      "command": "\"C:\\Python314\\python.exe\" tasks/p6.py"
+    },
+    {
+      "id": "P7",
+      "parent_id": "G1",
+      "goal": "Warm the cache (flaky first time)",
+      "owner": "agent",
+      "input_refs": [],
+      "output_paths": [],
+      "depends_on": [],
+      "edit_scope": [
+        "cache/*"
+      ],
+      "acceptance_checks": [
+        "\"C:\\Python314\\python.exe\" -c \"import pathlib,sys; sys.exit(0 if pathlib.Path('cache/count.txt').exists() else 1)\""
+      ],
+      "budget": {
+        "seconds": 20
+      },
+      "retry_limit": 2,
+      "status": "planned",
+      "evidence_refs": [],
+      "command": "\"C:\\Python314\\python.exe\" tasks/p7.py"
+    }
+  ]
+}

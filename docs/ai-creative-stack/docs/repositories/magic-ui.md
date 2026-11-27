@@ -2,7 +2,7 @@
 
 Use for a small number of reusable interactive components.
 
-> Frontend components and creative coding · Source A · smoke test: **not run**
+> #08 · Frontend components and creative coding · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 
@@ -40,7 +40,7 @@ Choose a component from the linked Magic UI docs and follow its copy or registry
 | Primary | Frontend implementation |
 | Supporting | Animation |
 
-Skip when adopting components would force a separate token or motion system. Consider [astryx](astryx.md), [magic-mcp](magic-mcp.md), [sakuga-vfx](sakuga-vfx.md), [react-bits](react-bits.md). Complementary tools include [impeccable](impeccable.md), [hallmark](hallmark.md), [anthropic-frontend](anthropic-frontend.md), [stitch-skills](stitch-skills.md), [figma-context](figma-context.md).
+Skip when adopting components would force a separate token or motion system. Consider [astryx](astryx.md), [magic-mcp](magic-mcp.md), [sakuga-vfx](sakuga-vfx.md), [react-bits](react-bits.md). Complementary tools include [impeccable](impeccable.md), [hallmark](hallmark.md), [anthropic-frontend](anthropic-frontend.md), [stitch-skills](stitch-skills.md), [figma-context](figma-context.md), [motion](motion.md).
 
 No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.
 

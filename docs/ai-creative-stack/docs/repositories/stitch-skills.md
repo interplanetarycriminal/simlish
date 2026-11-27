@@ -2,7 +2,7 @@
 
 Use for prompt-to-prototype in an approved Google Stitch workflow.
 
-> Design and prototyping · Source A · smoke test: **not run**
+> #06 · Design and prototyping · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 

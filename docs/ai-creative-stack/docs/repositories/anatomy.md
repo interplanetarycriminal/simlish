@@ -2,7 +2,7 @@
 
 Use for explaining a technical idea with an interactive isometric figure of an invented machine whose working embodies the concept, delivered as SVG, SVG plus WebGL, or beta 3D.
 
-> Supplementary research candidates · Supplementary · smoke test: **not run**
+> #63 · Supplementary research candidates · Supplementary · smoke test: **not run**
 
 ## Evidence and maintenance
 

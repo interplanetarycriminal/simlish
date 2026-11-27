@@ -16,12 +16,14 @@ Never install the whole catalogue. Install one tool when the [toolchain plan](te
 
 ## What needs nothing installed
 
-The catalogue's own scripts use only the Python standard library (`jsonschema` is used when present). The fixtures need only Node 22+, Chrome or Chromium, FFmpeg and, for the 3D fixture, Blender.
+The catalogue's own scripts use only the Python standard library (`jsonschema` is used when present). The fixtures need only Node 22+, Chrome or Chromium, FFmpeg and, for the 3D fixture, Blender. The game-development fixture installs its pinned npm packages with `npm ci --ignore-scripts --legacy-peer-deps`; the expressive-motion fixture loads pinned modules from esm.sh and installs nothing.
 
 ```sh
 python scripts/validate-registry.py
 python scripts/validate-documentation.py
 node fixtures/seekable-scene/render.mjs
+(cd fixtures/game-dev && npm ci --ignore-scripts --legacy-peer-deps && node run.mjs)
+(cd fixtures/expressive-motion && node run.mjs)
 ```
 
 No setup script in this catalogue installs any of the catalogued tools.

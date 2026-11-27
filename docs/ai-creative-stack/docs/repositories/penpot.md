@@ -2,7 +2,7 @@
 
 Use for explicit design ownership and collaborative prototyping.
 
-> Design and prototyping · Source A · smoke test: **not run**
+> #10 · Design and prototyping · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 

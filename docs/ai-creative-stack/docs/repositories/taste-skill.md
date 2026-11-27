@@ -2,7 +2,7 @@
 
 Use for reference-led art direction with browser review.
 
-> Creative direction and design intelligence · Source A · smoke test: **not run**
+> #01 · Creative direction and design intelligence · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 

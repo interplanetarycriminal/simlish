@@ -4,7 +4,7 @@
     "name": "toy-factory",
     "version": 1
   },
-  "created": "2026-11-26T09:53:28+00:00",
+  "created": "2026-11-27T04:43:57+00:00",
   "status": "accepted",
   "reason": null,
   "source_references": [
@@ -31,7 +31,7 @@
       "input_sha256": "9502536c26a2c0074206a6aec8ad7f955cd66680d69f9b7f43e534b27020d802",
       "output": "fish\\fish.v1-original.glb",
       "output_sha256": "86f1a92d42fc6dfc740cc040e95e934b60d312a615035e61ca4e0a3c9ce80461",
-      "seconds": 4.02,
+      "seconds": 1.99,
       "ok": true
     },
     {
@@ -45,7 +45,7 @@
       "input_sha256": "86f1a92d42fc6dfc740cc040e95e934b60d312a615035e61ca4e0a3c9ce80461",
       "output": "fish\\fish.v2-retopo.glb",
       "output_sha256": "799bf4c4a094c1075e315c5bce59992ae6038f6a940fd89757b334147261ebc0",
-      "seconds": 10.85,
+      "seconds": 5.05,
       "ok": true
     },
     {
@@ -57,7 +57,7 @@
       "input_sha256": "799bf4c4a094c1075e315c5bce59992ae6038f6a940fd89757b334147261ebc0",
       "output": "fish\\fish.validation.json",
       "output_sha256": "9900d764120ecde691a0d908925ad8476f52ac9cdbe152395a0c7f6a7bf0fa18",
-      "seconds": 4.48,
+      "seconds": 2.29,
       "ok": true,
       "floor": {
         "has_geometry": true,
@@ -89,7 +89,7 @@
       "input_sha256": "799bf4c4a094c1075e315c5bce59992ae6038f6a940fd89757b334147261ebc0",
       "output": "fish\\rig\\fish.v2-retopo_rigged.glb",
       "output_sha256": "57a3e8f0368073acc57cc834d53a0c8ad36a153a8c02879a52b42e424baabbb4",
-      "seconds": 5.12,
+      "seconds": 2.68,
       "ok": true
     },
     {
@@ -101,7 +101,7 @@
       "input_sha256": "57a3e8f0368073acc57cc834d53a0c8ad36a153a8c02879a52b42e424baabbb4",
       "output": "fish\\fish.validation.json",
       "output_sha256": "07633a4b2046f6569e70e098cbced301ded15367971eef8ff7b84b66141750d7",
-      "seconds": 3.01,
+      "seconds": 2.29,
       "ok": true,
       "floor": {
         "has_geometry": true,
@@ -131,7 +131,7 @@
       "input_sha256": "799bf4c4a094c1075e315c5bce59992ae6038f6a940fd89757b334147261ebc0",
       "output": "fish\\fish.splat.ply",
       "output_sha256": "415a7434fb608eec5097bab2d99d1272c762e5cfe9a3f78a8ca4e27e072e3a58",
-      "seconds": 2.7,
+      "seconds": 1.81,
       "ok": true
     }
   ],

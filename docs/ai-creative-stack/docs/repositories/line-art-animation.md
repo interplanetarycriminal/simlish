@@ -2,7 +2,7 @@
 
 Use for animated line figures and scene treatments.
 
-> Illustration and animation · Source B · smoke test: **not run**
+> #16 · Illustration and animation · Source B, also listed in Source F (expressive motion) · smoke test: **not run**
 
 ## Evidence and maintenance
 

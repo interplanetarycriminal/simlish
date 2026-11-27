@@ -4,11 +4,11 @@ Agents use the [operating manual](AI_CREATIVE_STACK_VISUAL.md). This page is for
 
 ## The source of truth
 
-[registry/repositories.json](registry/repositories.json) holds every fact about every tool, validated by [registry/schema.json](registry/schema.json). The 44 guides, [REPOSITORIES.md](REPOSITORIES.md) and the capability matrix are generated from it. Never edit a generated file by hand.
+[registry/repositories.json](registry/repositories.json) holds every fact about every tool, validated by [registry/schema.json](registry/schema.json). The 75 guides, [REPOSITORIES.md](REPOSITORIES.md), the URL lists in `registry/*.txt` and the capability matrix are generated from it. Never edit a generated file by hand.
 
 | Generated file | Generator |
 | --- | --- |
-| `docs/repositories/*.md`, `REPOSITORIES.md` | `scripts/build-guides.py` |
+| `docs/repositories/*.md`, `REPOSITORIES.md`, `registry/*.txt` | `scripts/build-guides.py` |
 | `docs/diagrams/capability-matrix.svg` and `.mmd` | `scripts/render-matrix.py` |
 | Every other `docs/diagrams/*.svg` | `scripts/render-diagrams.py`, from the `.mmd` beside it |
 

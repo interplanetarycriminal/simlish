@@ -120,7 +120,7 @@
   {
    "check": "verify passes on clean log",
    "pass": true,
-   "detail": "OK 9 records, head 600ccc9cf67c65e78117415c49bdf2e98ac228569549fc20ab03ba379f2fdce3"
+   "detail": "OK 9 records, head 8fc50a4c6d30d1eccf127a176115260d168fbb13e5363fe002822c4e3a9fa0bc"
   },
   {
    "check": "verify fails on edited content",
@@ -165,7 +165,7 @@
   {
    "check": "compact removes redacted text from disk",
    "pass": true,
-   "detail": "compacted D-0003; chain verifies; head a0f09dcd381786cea935d019d284a99f067db022f06c56089da09476e284fa36"
+   "detail": "compacted D-0003; chain verifies; head 281706cd010bf7a6c39543b987751a32df4fb70af70fcd9df3fa3960282f4f9a"
   },
   {
    "check": "checkpoint entry appended",
@@ -175,7 +175,7 @@
   {
    "check": "verify passes after compact",
    "pass": true,
-   "detail": "OK 11 records, head a0f09dcd381786cea935d019d284a99f067db022f06c56089da09476e284fa36"
+   "detail": "OK 11 records, head 281706cd010bf7a6c39543b987751a32df4fb70af70fcd9df3fa3960282f4f9a"
   },
   {
    "check": "history untouched by compact",

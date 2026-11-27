@@ -1,6 +1,6 @@
 # Taxonomy
 
-The [capability matrix](docs/diagrams/capability-matrix.svg) says what each reference does. This page sorts all 53 references by how they behave in a workflow, which predicts how they combine and where the gaps are.
+The [capability matrix](docs/diagrams/capability-matrix.svg) says what each reference does. This page sorts all 75 references by how they behave in a workflow, which predicts how they combine and where the gaps are.
 
 ## Four questions
 
@@ -64,6 +64,28 @@ The [capability matrix](docs/diagrams/capability-matrix.svg) says what each refe
 | [GSAP](docs/repositories/gsap.md) | Makes | Flat and time | — | Seekable timelines |
 | [ComfyUI](docs/repositories/comfyui.md) | Neither: orchestrates | Flat and space | Node previews | Per node |
 | [Remotion skills](docs/repositories/remotion-skills.md) | Narrows (procedures) | Time | — | Seekable, through Remotion |
+| [Godot Engine](docs/repositories/godot.md) | Makes | Space and time | Editor play mode, debugger | Fixed physics ticks, frame loop |
+| [Godot MCP](docs/repositories/godot-mcp.md) | Neither: operates Godot | — | Reads the game's console output | — |
+| [Phaser](docs/repositories/phaser.md) | Makes | Flat and time | — | Fixed physics step (stepped by hand in the fixture) |
+| [Bevy](docs/repositories/bevy.md) | Makes | Space and time | — | ECS schedule, fixed timestep available |
+| [Babylon.js](docs/repositories/babylonjs.md) | Makes | Space and time | Inspector | Render loop; animation groups seekable |
+| [Rapier](docs/repositories/rapier.md) | Neither: simulates | Space and time | — | Stepped; bitwise repeatable on one machine (tested) |
+| [Jolt Physics](docs/repositories/jolt-physics.md) | Neither: simulates | Space and time | — | Stepped; same-binary determinism |
+| [Matter.js](docs/repositories/matter-js.md) | Neither: simulates | Flat and time | — | Stepped; bitwise repeatable on one machine (tested) |
+| [Pixelorama](docs/repositories/pixelorama.md) | Makes | Flat and time | Onion skin, preview | Frame-stepped |
+| [Blockbench](docs/repositories/blockbench.md) | Makes | Space | — | Keyframe timeline |
+| [LDtk](docs/repositories/ldtk.md) | Narrows (level authority) | Flat | Level rule previews | — |
+| [howler.js](docs/repositories/howler.md) | Neither: plays | Time | — | Audio clock |
+| [jsfxr](docs/repositories/jsfxr.md) | Makes | Time | — | Sample-stepped; repeatable with a seed (tested) |
+| [ink](docs/repositories/ink.md) | Narrows (story authority) | — | Compiler errors and warnings | Turn-based |
+| [Colyseus](docs/repositories/colyseus.md) | Narrows (server authority) | — | — | Server tick |
+| [Nakama](docs/repositories/nakama.md) | Narrows (server authority), remembers | — | — | Match loop tick |
+| [pixelfx](docs/repositories/pixelfx.md) | Makes | Flat and time | Renders sheets to check | Stepped `update(1/fps)` |
+| [motionmaxxing](docs/repositories/motionmaxxing.md) | Makes and narrows (critique) | Flat, space and time | Render checks and review scripts | GSAP timeline |
+| [reanimate](docs/repositories/reanimate.md) | Narrows (matches a reference) | Flat and time | Recaptures and compares with the reference | Captured frames |
+| [Motion](docs/repositories/motion.md) | Makes | Flat and time | — | Seekable `animate()` controls (tested) |
+| [Theatre.js](docs/repositories/theatre.md) | Makes | Flat, space and time | Studio panel | Seekable `sequence.position` (tested) |
+| [React Three Fiber](docs/repositories/react-three-fiber.md) | Makes | Space | — | `frameloop` always, demand or never; `advance()` steps (tested) |
 
 ## What the sort shows
 
@@ -82,3 +104,9 @@ The [capability matrix](docs/diagrams/capability-matrix.svg) says what each refe
 **The newest film tools converge on the time contract.** OneTake seeks `window.__seek(t)`, Opuscar renders `render(t)` pages, anything2explainer uses Remotion's frame clock and Huashu Motion drives GSAP in Chrome. Four independent projects arrived at the rule this catalogue's time contract states: a film is a page whose state is a function of time.
 
 **Meng To Skills was filed under the wrong shelf.** It was listed for creative direction only, yet its pinned README lists 30 Three.js rendering skills and 14 illustration styles with headless renderers. That makes it the largest source of 3D craft in the catalogue.
+
+**Games bring their own clocks, and the clocks must not mix.** Every game runtime and physics library here steps on a fixed tick, while the motion libraries seek by time and the compositors count frames. The fixtures show both halves work on their own terms: Matter.js and Rapier repeat bitwise when stepped, and Motion, Theatre.js and React Three Fiber land on the same pixels when seeked. They also show the failure in between: two animation libraries writing one property gave the last writer's value with no error. The rule is one owner per property and per clock, and a recorded replay rather than shared live state when a game feeds a film.
+
+**Authority moves to the server for online play.** Colyseus, Nakama, LDtk and Ink are all narrowing tools: they own the rules for state, levels or story. That is why each needs exactly one owner in a project, and why the multiplayer gate asks for rejected and clamped input rather than trust in the client.
+
+**Expressive motion needs a critic that watches.** motionmaxxing and reanimate are the first references that judge motion by rendering and comparing it, rather than by reading code. They complete the pattern the earlier design critics started: rules for flat pages, recaptured frames for time.

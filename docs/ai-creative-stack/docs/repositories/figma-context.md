@@ -2,7 +2,7 @@
 
 Use when an existing Figma frame is the source of truth.
 
-> Design and prototyping · Source A · smoke test: **not run**
+> #11 · Design and prototyping · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 

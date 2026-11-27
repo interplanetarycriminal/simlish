@@ -1,0 +1,25 @@
+%% render: auto
+%% title: Reference comparison loop
+%% desc: Capture an authorized reference, rebuild with original assets, recapture under the same conditions, compare within tolerance.
+flowchart TD
+    A["Authorized motion reference"]:::slate
+    B["Capture • viewport, scale, frame rate, state"]:::teal
+    C["Original implementation • Motion or GSAP"]:::blue
+    D["Recapture • same conditions"]:::teal
+    E["Compare • event timings, trajectories"]:::green
+    F{"Within tolerance?"}:::slate
+    G["Record the comparison and ship"]:::green
+    A --> B
+    B -->|timings| C
+    C --> D
+    D --> E
+    E --> F
+    F -->|Yes| G
+    F -.->|No: refine| C
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

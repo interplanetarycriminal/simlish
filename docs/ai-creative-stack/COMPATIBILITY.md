@@ -6,7 +6,9 @@ A tool's type decides how it is integrated and what counts as evidence. A skill,
 | --- | --- | --- | --- |
 | Agent skill | Taste Skill, Impeccable, Blender Skills, Anatomy, Dream Loop | Upstream documents the host and discovery location | Load one skill and confirm its scope and the files it touches. |
 | MCP server | Blender MCP, Figma Context MCP, 21st MCP, Designlang | Host, transport, auth and permission scope are documented | Configure it in a scoped test project and perform one approved read. |
-| Library or framework | Three.js, Rough.js, Remotion, HyperFrames | Runtime and peer dependencies match | Build a fixture with the project's package manager and render it. |
+| Library or framework | Three.js, Rough.js, Remotion, HyperFrames, Motion, React Three Fiber, Phaser, Babylon.js, Matter.js, Rapier | Runtime and peer dependencies match | Build a fixture with the project's package manager and render it. |
+| Game engine or editor | Godot, Bevy, Pixelorama, Blockbench, LDtk | Engine or editor version, export targets and importer versions match | Import one asset or level and play it in a disposable project. |
+| Game server | Colyseus, Nakama | Server, schema and client SDK versions match | Run a room on loopback with two clients, invalid input and a reconnect. |
 | Model and inference code | SAM 3D Objects, Stable Fast 3D, TRELLIS.2, MeshAnything V2, UniRig | GPU, VRAM, CUDA, PyTorch and weights access match | Run one authorized image in an isolated environment and validate the output. |
 | Blender add-on | Dream Textures, Blender MCP's add-on | Blender version matches | Open a disposable copy and export one asset. |
 | ComfyUI node pack | ComfyUI-3D-Pack | ComfyUI, Python, PyTorch and CUDA builds match; each model's node exists | Run one pinned workflow JSON in a dedicated install. |
@@ -20,6 +22,18 @@ A tool's type decides how it is integrated and what counts as evidence. A skill,
 | --- | --- | --- |
 | Blender → GLB → Three.js (skin, clip, scale, up axis, seek) | Tested | [fixtures/blender-glb](fixtures/blender-glb/README.md) |
 | Three.js scene → DevTools frames → FFmpeg | Tested | [fixtures/seekable-scene](fixtures/seekable-scene/README.md) |
+| Blender GLB → Babylon.js 9.38 (skin, bones, animation group, scale) | Tested | [fixtures/game-dev](fixtures/game-dev/README.md) |
+| Blender GLB → React Three Fiber 9.8 with frameloop never (seeked pixels identical) | Tested | [fixtures/expressive-motion](fixtures/expressive-motion/README.md) |
+| GSAP and Motion on one element (disjoint properties work; shared property fails silently) | Tested | [fixtures/expressive-motion](fixtures/expressive-motion/README.md) |
+| pixelfx → transparent PNG sheet + Aseprite-style JSON | Tested | [fixtures/expressive-motion](fixtures/expressive-motion/README.md) |
+| Ink → compiled JSON → inkjs (branches, save and load) | Tested | [fixtures/game-dev](fixtures/game-dev/README.md) |
+| jsfxr → WAV | Tested | [fixtures/game-dev](fixtures/game-dev/README.md) |
+| Colyseus server ↔ @colyseus/sdk 0.18 clients on loopback | Tested | [fixtures/game-dev](fixtures/game-dev/README.md) |
+| Phaser → bundled Matter.js | Documented | [Phaser guide](docs/repositories/phaser.md) |
+| Godot → built-in Jolt | Documented | [Jolt guide](docs/repositories/jolt-physics.md) |
+| Bevy → bevy_rapier (version-matched) | Documented | [Rapier guide](docs/repositories/rapier.md) |
+| Theatre.js → React Three Fiber through @theatre/r3f | Documented conflict: needs R3F 8 | [Theatre.js guide](docs/repositories/theatre.md) |
+| LDtk JSON → Godot or Phaser | Proposed: no loader named upstream | [Assets and levels](docs/game-development/assets-and-levels.md) |
 | Open Design → HyperFrames | Documented | [Open Design guide](docs/repositories/open-design.md) |
 | Video Use → HyperFrames or Remotion overlays | Documented | [Video Use guide](docs/repositories/video-use.md) |
 | Remotion → HyperFrames port | Documented | [HyperFrames guide](docs/repositories/hyperframes.md) |

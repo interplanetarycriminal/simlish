@@ -1,0 +1,27 @@
+%% render: auto
+%% title: Decision review
+%% desc: At least two alternatives, one chosen against the constraints, rejected ones kept with reasons. Unrun alternatives stay hypotheses.
+flowchart TD
+    A["Consequential decision • constraints"]:::slate
+    B["Viable alternatives • including keeping the current one"]:::purple
+    C["Selected against constraints"]:::purple
+    D["Rejected options • with reasons"]:::purple
+    E["Observed outcome • measured"]:::green
+    F["Optional comparable experiment • same inputs, same metrics"]:::teal
+    G["Evidence-based review • at the review trigger"]:::green
+    H["Approved decision record • decision-log.jsonl"]:::green
+    A --> B
+    B --> C
+    B -.-> D
+    C --> E
+    D -.->|if cheap| F
+    E --> G
+    F -.-> G
+    G --> H
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

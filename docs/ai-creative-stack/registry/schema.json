@@ -11,8 +11,10 @@
   "required": [
    "id",
    "name",
+   "num",
    "category",
    "source_group",
+   "source_associations",
    "attribution_status",
    "original_url",
    "verified_url",
@@ -71,9 +73,11 @@
      "F",
      "G",
      "H",
-     "I"
+     "I",
+     "J",
+     "K"
     ],
-    "description": "A creative direction, B design and prototyping, C frontend and creative coding, D illustration and animation, E core 3D, F video, G AI-assisted 3D (source C), H supplementary, I motion films, explainers and engines (user additions)"
+    "description": "A creative direction, B design and prototyping, C frontend and creative coding, D illustration and animation, E core 3D, F video, G AI-assisted 3D (source C), H supplementary, I motion films, explainers and engines (source D), J game development (source E), K expressive motion (source F)"
    },
    "source_group": {
     "enum": [
@@ -82,8 +86,11 @@
      "A+B",
      "C",
      "D",
+     "E",
+     "F",
      "supplementary"
-    ]
+    ],
+    "description": "The collection that first introduced the reference."
    },
    "attribution_status": {
     "type": "string",
@@ -455,6 +462,27 @@
     "additionalProperties": {
      "type": "string"
     }
+   },
+   "num": {
+    "type": "integer",
+    "minimum": 1,
+    "description": "Stable numeric ID from the V7 manual (01-75)."
+   },
+   "source_associations": {
+    "type": "array",
+    "items": {
+     "enum": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "supplementary"
+     ]
+    },
+    "uniqueItems": true,
+    "description": "Every collection that lists the reference, including repeats in later posts."
    }
   }
  }

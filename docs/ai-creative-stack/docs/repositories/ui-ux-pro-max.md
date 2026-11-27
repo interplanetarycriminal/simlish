@@ -2,7 +2,7 @@
 
 Use when requirements need structured design-system exploration.
 
-> Creative direction and design intelligence · Source A · smoke test: **not run**
+> #05 · Creative direction and design intelligence · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 

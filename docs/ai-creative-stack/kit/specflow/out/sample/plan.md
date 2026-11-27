@@ -27,6 +27,8 @@ Constitution articles that apply: I. Smallest coherent toolchain; II. Test-first
 ## Tools from the catalogue
 
 - 3D assets and spatial capture / Interactive delivery: Three.js with a validated GLB. Recommended. (TOOL_SELECTION.md line 57)
+- Game development / Blocky low-poly models: Blockbench; Blender for anything else. Complementary. (TOOL_SELECTION.md line 72)
+- Game development / Browser 3D without a game toolkit: Three.js, or React Three Fiber in a React project. Recommended alternative to Babylon.js. (TOOL_SELECTION.md line 68)
 - Existing stack first: add a listed tool only when the spec shows a gap it closes.
 
 ## Risks
@@ -42,5 +44,5 @@ Constitution articles that apply: I. Smallest coherent toolchain; II. Test-first
 - [ ] Gate: Geometry (Floor): validate_asset.py Floor checks pass: geometry present, no non-manifold edges, no degenerate faces, consistent normals, no loose vertices. Transforms applied; units in meters. (QUALITY_GATES.md line 29)
 - [ ] Gate: Interactive 3D (Floor): Scene loads on target hardware with a poster or static fallback. Controls work outside the canvas. Asset scale and materials match the source. (QUALITY_GATES.md line 26)
 - [ ] Gate: Engineering (Floor): Clean rebuild from the lockfile. No console errors on the primary path. Error and empty states exist. (QUALITY_GATES.md line 24)
-- [ ] Gate: Delivery (Floor): Every declared artifact opens and matches its format. Rights recorded for fonts, images, audio, weights and code. (QUALITY_GATES.md line 35)
+- [ ] Gate: Delivery (Floor): Every declared artifact opens and matches its format. Rights recorded for fonts, images, audio, weights and code. (QUALITY_GATES.md line 40)
 - [ ] Gate: Traceability: `specflow analyze` passes (every criterion has a task, every task traces to a criterion).

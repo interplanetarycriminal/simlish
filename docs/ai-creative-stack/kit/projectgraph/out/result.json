@@ -6,15 +6,15 @@
   "broken": 2
  },
  "catalogue": {
-  "nodes": 1071,
-  "edges": 2047,
+  "nodes": 1810,
+  "edges": 3656,
   "broken": 0,
   "edge_types": {
-   "contains": 858,
-   "embeds": 41,
-   "imports": 68,
-   "links_to": 802,
-   "mentions": 278
+   "contains": 1459,
+   "embeds": 71,
+   "imports": 112,
+   "links_to": 1553,
+   "mentions": 461
   },
   "gaussian_top3": [
    "docs/3d-pipeline/gaussian-splatting.md#gaussian-splatting",

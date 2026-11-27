@@ -2,14 +2,14 @@
 
 Use for giving a coding agent Remotion's official best practices for creating, previewing, rendering and upgrading React-based video projects.
 
-> Motion films, explainers and engines · Added by the user · smoke test: **not run**
+> #41 · Motion films, explainers and engines · Source D (cinema) · smoke test: **not run**
 
 ## Evidence and maintenance
 
 - [Canonical reference](https://github.com/remotion-dev/skills)
 - Verified 2026-11-26 against default branch `main` at [`a3f4098a2afd`](https://github.com/remotion-dev/skills/commit/a3f4098a2afd0e13f6a6f8c8760e275f75457ea9).
 - GitHub reports archive state **false** and a repository push at `2026-11-24T17:19:19Z`. Push activity is a maintenance signal, not a quality rating.
-- Attribution: Added directly by the user on 2026-11-26.
+- Attribution: Listed in the cinematic post (source D, transcript supplied by the user on 2026-11-26); first added to this catalogue on 2026-11-26.
 
 - [README.md](https://github.com/remotion-dev/skills/blob/a3f4098a2afd0e13f6a6f8c8760e275f75457ea9/README.md)
 - [package.json](https://github.com/remotion-dev/skills/blob/a3f4098a2afd0e13f6a6f8c8760e275f75457ea9/package.json)
@@ -44,7 +44,7 @@ npx create-video@latest --skills
 | Primary | Video composition, Animation |
 | Supporting | Frontend implementation, Media processing |
 
-Skip if your project is not built on Remotion; the skills only cover Remotion APIs and workflows. Consider the existing project toolchain. Complementary tools include [remotion](remotion.md), [anything2explainer](anything2explainer.md), [ffmpeg](ffmpeg.md).
+Skip if your project is not built on Remotion; the skills only cover Remotion APIs and workflows. Consider [motionmaxxing](motionmaxxing.md). Complementary tools include [remotion](remotion.md), [anything2explainer](anything2explainer.md), [ffmpeg](ffmpeg.md).
 
 Agent skills for Remotion, generated from the Remotion monorepo's packages/skills folder.
 

@@ -2,7 +2,7 @@
 
 Use for generating Stable Diffusion images, seamless tiling textures and depth-guided projected textures directly inside Blender.
 
-> AI-assisted 3D asset production · Source C · smoke test: **not feasible here**
+> #30 · AI-assisted 3D asset production · Source C (3D) · smoke test: **not feasible here**
 
 ## Evidence and maintenance
 

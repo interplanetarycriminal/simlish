@@ -2,7 +2,7 @@
 
 Use for reading a live website's design system (tokens, type, spacing, motion, components, voice) into DTCG, Tailwind, shadcn, Figma and DESIGN.md files, and for checking your own UI for drift against a brand.
 
-> Supplementary research candidates · Supplementary · smoke test: **not run**
+> #62 · Supplementary research candidates · Supplementary · smoke test: **not run**
 
 ## Evidence and maintenance
 

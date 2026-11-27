@@ -2,14 +2,14 @@
 
 Use for having Claude make a narrated, scored short film entirely in code in one of 99 named visual styles, or for turning a library style into your own reusable style.
 
-> Motion films, explainers and engines · Added by the user · smoke test: **not run**
+> #37 · Motion films, explainers and engines · Source D (cinema) · smoke test: **not run**
 
 ## Evidence and maintenance
 
 - [Canonical reference](https://github.com/lemomo-ai/lemo-opuscar)
 - Verified 2026-11-26 against default branch `main` at [`439b98af08b0`](https://github.com/lemomo-ai/lemo-opuscar/commit/439b98af08b04400f8fd8a8dd19cd773c0c96532).
 - GitHub reports archive state **false** and a repository push at `2026-11-26T09:48:06Z`. Push activity is a maintenance signal, not a quality rating.
-- Attribution: Added directly by the user on 2026-11-26.
+- Attribution: Listed in the cinematic post (source D, transcript supplied by the user on 2026-11-26); first added to this catalogue on 2026-11-26.
 
 - [README.md](https://github.com/lemomo-ai/lemo-opuscar/blob/439b98af08b04400f8fd8a8dd19cd773c0c96532/README.md)
 - [LICENSE](https://github.com/lemomo-ai/lemo-opuscar/blob/439b98af08b04400f8fd8a8dd19cd773c0c96532/LICENSE)

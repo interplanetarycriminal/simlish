@@ -8,7 +8,8 @@ Most of this catalogue runs on any laptop. A few models need a large NVIDIA GPU,
 
 | Tier | What runs there | Typical needs |
 | --- | --- | --- |
-| **Light** | Skills, curated lists, Spec Kit, Graphify, Claude Mem, design tools, Rough.js, Three.js, Remotion, HyperFrames, FFmpeg | Node 22+ or Python 3.11+, a browser. No GPU. |
+| **Light** | Skills, curated lists, Spec Kit, Graphify, Claude Mem, design tools, Rough.js, Three.js, React Three Fiber, Motion, GSAP, Theatre.js, pixelfx, Phaser, Babylon.js, Matter.js, Rapier (WASM), howler.js, jsfxr, inkjs, Colyseus, Remotion, HyperFrames, FFmpeg | Node 22+ or Python 3.11+, a browser. No GPU. |
+| **Desktop editors and engines** | Godot, Bevy builds, Pixelorama, Blockbench, LDtk, inklecate (.NET 6+), Nakama (with CockroachDB or Postgres) | A desktop OS; a GPU helps editors and 3D games. Upstream states no GPU or RAM figures for these, except Nakama's instance sizes. |
 | **Blender** | Authoring, validation, Cycles or EEVEE renders, Blender MCP, Blender Skills, Dream Textures | Blender (5.2 for Blender Skills; Dream Textures 3.1+). GPU helps renders and Dream Textures. |
 | **Model inference** | Stable Fast 3D, MeshAnything V2, UniRig, TRELLIS.2, SAM 3D Objects, ComfyUI-3D-Pack, Real-ESRGAN | NVIDIA CUDA GPU, from 6 GB to 32 GB VRAM. Mostly Linux. |
 | **Reconstruction training** | Gaussian Splatting | 24 GB VRAM for paper-quality training. Viewing needs far less. |
@@ -51,4 +52,4 @@ Rented GPUs are an option when local VRAM is short. Send only data the brief all
 
 ## What this catalogue ran
 
-Light and Blender tiers only: Chrome 158 headless with SwiftShader WebGL, Node 24, FFmpeg 7.1, Python 3.14, Blender 5.2.2, uv. See [smoke tests](docs/examples/smoke-tests.md). Every model-inference and training row above is documented, not tested.
+Light and Blender tiers only: Chrome 158 headless with SwiftShader WebGL, Node 24, FFmpeg 7.1, Python 3.14, Blender 5.2.2, uv. The game-development and expressive-motion fixtures run on software WebGL in under a minute each. No desktop editor or engine in the new tier was run. See [smoke tests](docs/examples/smoke-tests.md). Every model-inference and training row above is documented, not tested.

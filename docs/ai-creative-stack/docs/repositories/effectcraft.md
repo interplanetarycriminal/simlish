@@ -2,14 +2,14 @@
 
 Use for After Effects-style layered motion graphics and compositing (keyframes, 308 effects, 3D cameras and lights, render queue) that an agent can also drive headless through a CLI or MCP server.
 
-> Motion films, explainers and engines · Added by the user · smoke test: **not run**
+> #38 · Motion films, explainers and engines · Source D (cinema) · smoke test: **not run**
 
 ## Evidence and maintenance
 
 - [Canonical reference](https://github.com/storytold/effectcraft)
 - Verified 2026-11-26 against default branch `main` at [`ff41f29c6a6e`](https://github.com/storytold/effectcraft/commit/ff41f29c6a6e60e7c09ba4298527b9c540c62c87).
 - GitHub reports archive state **false** and a repository push at `2026-11-26T09:07:58Z`. Push activity is a maintenance signal, not a quality rating.
-- Attribution: Added directly by the user on 2026-11-26.
+- Attribution: Listed in the cinematic post (source D, transcript supplied by the user on 2026-11-26); first added to this catalogue on 2026-11-26.
 
 - [README.md](https://github.com/storytold/effectcraft/blob/ff41f29c6a6e60e7c09ba4298527b9c540c62c87/README.md)
 - [agents.md](https://github.com/storytold/effectcraft/blob/ff41f29c6a6e60e7c09ba4298527b9c540c62c87/docs/agents.md)

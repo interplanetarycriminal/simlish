@@ -15,7 +15,7 @@ from pathlib import Path
 
 KIT = Path(__file__).resolve().parent
 ORDER = ["inflate3d", "remesh", "autorig", "materialforge", "splatview", "assetpipe", "designlint", "tokenextract",
-         "framecap", "silencecut", "sketchy", "projectgraph", "decisionlog", "specflow"]
+         "framecap", "silencecut", "sketchy", "projectgraph", "decisionlog", "specflow", "workledger"]
 
 
 def main():

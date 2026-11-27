@@ -2,7 +2,7 @@
 
 Use for controlled sketch textures and diagram marks.
 
-> Frontend components and creative coding · Source B · smoke test: **passed**
+> #18 · Frontend components and creative coding · Source B, also listed in Source F (expressive motion) · smoke test: **passed**
 
 ## Evidence and maintenance
 
@@ -40,7 +40,7 @@ npm install --save roughjs
 | Primary | Illustration |
 | Supporting | Frontend implementation |
 
-Skip when precise corporate icon outlines are required. Consider [line-art-animation](line-art-animation.md). Complementary tools include [motion-canvas](motion-canvas.md), [sakuga-vfx](sakuga-vfx.md).
+Skip when precise corporate icon outlines are required. Consider [line-art-animation](line-art-animation.md). Complementary tools include [motion-canvas](motion-canvas.md), [sakuga-vfx](sakuga-vfx.md), [matter-js](matter-js.md).
 
 No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.
 

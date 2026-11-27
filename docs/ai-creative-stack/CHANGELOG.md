@@ -1,12 +1,30 @@
 # Changelog
 
+## 2026-11-27 (V7: 75 references, games, expressive motion, strategy)
+
+- **22 references added** from two user-supplied transcripts: 16 for game development (source E: Godot, Godot MCP, Phaser, Bevy, Babylon.js, Rapier, Jolt Physics, Matter.js, Pixelorama, Blockbench, LDtk, howler.js, jsfxr, ink, Colyseus, Nakama) and 6 for expressive motion (source F: pixelfx, motionmaxxing, reanimate, Motion, Theatre.js, React Three Fiber). Each is pinned to a commit with a generated guide. The six references source F repeats (Line Art Animation, Sakuga VFX, Rough.js, GSAP, Blender MCP, Hallmark) keep their records and gain F in a new `source_associations` field.
+- **Stable numbers.** Every record carries the V7 manual's number (01–75); guides and the index show it.
+- **Source D reattributed.** The nine "added by the user" references are now the cinematic post's nine new entries (18 listed). The post's repeats are not identified, so none is recorded.
+- **Two new fixtures, both passing.**
+  - [Game development](fixtures/game-dev/README.md), 7 of 7: a Phaser slice stepped by hand, Matter.js and Rapier repeating bitwise on one machine, Ink branches with save and load, jsfxr WAVs, a Colyseus room on loopback with rejected and clamped input and a reconnect, and Babylon.js loading the Blender GLB.
+  - [Expressive motion](fixtures/expressive-motion/README.md), 5 of 5: Motion, Theatre.js and React Three Fiber seeked frame by frame, GSAP and Motion on one element, and a pixelfx sprite sheet.
+  - 17 references now have a passing smoke test (was 6).
+- **Finding: two owners of one property fail silently.** With GSAP and Motion both animating `x`, the last writer won at every frame with no error, and GSAP's own state went stale. This is now the tested basis of the one-owner rule.
+- **Other findings.** Motion's DOM write lands one frame after a seek, and its reduced-motion support is opt-in. `@theatre/r3f` needs React Three Fiber 8 while current R3F is 9. Theatre.js's public repo has been frozen since August 2024 and its studio is AGPL-3.0. Phaser applies held input one step late. Nakama sends telemetry by default.
+- **Corrections to the V7 draft.** reanimate's GitHub repository resolves (MIT), so the site-only confirmation is no longer needed. Godot's Jolt claims are confirmed, with the nuance that the setting's DEFAULT still maps to GodotPhysics3D for older projects; the pinned commit is 4.8 rc.
+- **New guide areas.** [Game development](docs/game-development/README.md), [expressive motion](docs/expressive-motion/README.md) and the [cinematic pipeline](docs/cinematic-pipeline/README.md); five new workflows (19 in all).
+- **Strategy layer.** [docs/strategy/](docs/strategy/README.md) proposes spec first, bounded delegation, independent monitoring, an evidence ledger, alternatives and memory hygiene. JSON Schema contracts for work packages, the execution ledger and the decision log are in `registry/contracts/`. kit/workledger (the 15th kit tool) runs work packages in waves with a monitor and a ledger; on 7 synthetic packages it used half the attempts of direct execution, caught an out-of-scope write and skipped a blocked dependent. The article that prompted the layer could not be retrieved, so nothing is attributed to it and it adds no repository.
+- **Diagrams.** 14 new or redrawn: provenance (six sources, 75), master architecture (games and strategy), strategy governance, plan and action ledger, decision review, game-engine selection, physics routing, game asset imports, narrative and audio, multiplayer authority, expressive-motion selector, property and clock ownership, pixel atlas import, reference comparison, React 3D architecture and cinema ownership. The capability matrix has 75 rows and 32 capabilities.
+- **Validators.** The registry validator checks the new counts, unbroken numbering, source associations and the six F repeats, and accepts one release-tag source. The URL lists are generated. The documentation validator requires the new contracts, docs areas and fixture results.
+- **The V7 draft is kept** as [AI_CREATIVE_STACK_V7_DRAFT.md](AI_CREATIVE_STACK_V7_DRAFT.md). Where it and the registry differ, the registry is correct.
+
 ## 2026-11-26 (V3.2: 53 references)
 
-- **Nine references added by the user**, kept as their own source group (D) and category (I, motion films, explainers and engines): Huashu Motion, anything2explainer, OpenScreen, OneTake, Lemo Opuscar, EffectCraft, GSAP, ComfyUI and Remotion's skills. All resolved; each has a pinned guide with evidence.
+- **Nine references added by the user** (reattributed in V7 to the cinematic post), kept as their own source group (D) and category (I, motion films, explainers and engines): Huashu Motion, anything2explainer, OpenScreen, OneTake, Lemo Opuscar, EffectCraft, GSAP, ComfyUI and Remotion's skills. All resolved; each has a pinned guide with evidence.
 - **Smoke tests.** GSAP ran inside kit/framecap's new GSAP check. A running local ComfyUI answered its `/system_stats` API.
 - **framecap seeks GSAP.** It pauses `gsap.globalTimeline` and seeks it per frame, from the earliest tween start: within 0.054 px in its test.
 - **Diagrams remapped.** Provenance shows four sources and 53 in total. The architecture names GSAP, EffectCraft, OpenScreen and ComfyUI. The overlap map adds the explainer-pipeline choice and the tested GSAP-to-framecap link. The capability matrix has 53 rows.
-- **Licences no longer steer recommendations.** The README's licence section is replaced by security notes. Licence facts stay in the registry and SECURITY.md.
+- **Licenses no longer steer recommendations.** The README's license section is replaced by security notes. License facts stay in the registry and SECURITY.md.
 - **Finding.** Four independent film tools (OneTake, Lemo Opuscar, anything2explainer, Huashu Motion) render a page whose state is a function of time: the catalogue's time contract.
 
 ## 2026-11-26 (V3.1: the kit)

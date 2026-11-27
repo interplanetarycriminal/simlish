@@ -2,7 +2,7 @@
 
 Use for turning masked objects in a real, cluttered photo into textured 3D objects with pose and scene layout.
 
-> AI-assisted 3D asset production · Source C · smoke test: **not feasible here**
+> #26 · AI-assisted 3D asset production · Source C (3D) · smoke test: **not feasible here**
 
 ## Evidence and maintenance
 

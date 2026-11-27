@@ -2,40 +2,38 @@
 %% title: Master creative engineering architecture
 %% desc: Layers activate only when the brief needs them. Cards name optional tools; kit/ has our own versions of most.
 flowchart TD
-    A["User intent and requirements • brief, audience, acceptance criteria"]
-    B["Optional project intelligence • Graphify · Claude Mem · decision log"]
-    C["Approved specification • Spec Kit or the project's own spec"]
-    D["Creative direction and DESIGN.md • Taste · Frontend Design · Meng To"]
-    E["Design and prototyping • Penpot · Stitch · Open Design · Figma"]
-    G["AI-assisted 3D assets • SAM 3D · SF3D · TRELLIS.2 · UniRig · ComfyUI"]
-    H["Spatial reconstruction • Gaussian Splatting"]
-    F["Frontend and interactive UI • Magic UI · React Bits · Astryx · Three.js"]
-    I["Animation and composition • HyperFrames · Remotion · GSAP · EffectCraft"]
-    J["Post-production • Scarlet · Video Use · OpenScreen · FFmpeg"]
-    K["Quality assurance and delivery • Impeccable · Hallmark · gates"]
-    L["Reusable assets and decisions • manifest, DESIGN.md, decision log"]
+    A["User intent and acceptance criteria • brief, constraints"]
+    B["Specification and strategy • Spec Kit, specflow, workledger"]
+    C["Creative direction and DESIGN.md • Taste · Frontend Design · Meng To"]
+    E["Design and frontend • Penpot · Magic UI · Motion · R3F"]
+    G["3D, illustration, capture • SAM 3D · SF3D · UniRig · Splats"]
+    F["Cinematic production • HyperFrames · Remotion · GSAP · Theatre"]
+    H["Game development • Godot · Phaser · Bevy · Babylon.js"]
+    Q["Gameplay QA and online security • physics, Colyseus, Nakama"]
+    K["Quality gates and delivery • designlint, validate_asset, ffprobe"]
+    L["Versioned source and decisions • manifests, ledger"]
     A --> B
-    B -->|authorized context| C
-    C --> D
-    D --> E
-    D -->|art direction| G
-    D --> H
-    E -->|tokens + prototype| F
-    G -->|GLB| F
-    G -->|renders| I
-    H -->|splat renders| I
-    F -->|build| K
-    I -->|master| J
-    J -->|encodes| K
+    B -->|work packages| C
+    C --> E
+    C -->|art direction| G
+    C -->|shot plan| F
+    C -->|game design| H
+    G -.->|GLB| E
+    G -.->|renders| F
+    G -.->|GLB, sprites| H
+    H -.->|captures| F
+    H --> Q
+    E -->|build| K
+    F -->|master| K
+    Q -->|playable build| K
     K -->|approved| L
     L -.->|next brief| B
-    class A,C slate
-    class B,D,L purple
-    class E,F blue
+    class A slate
+    class B,C,L purple
+    class E,H blue
     class G amber
-    class H,I teal
-    class J rose
-    class K green
+    class F teal
+    class Q,K green
     classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
     classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
     classDef blue fill:#e7effe,stroke:#2363cf,color:#142137

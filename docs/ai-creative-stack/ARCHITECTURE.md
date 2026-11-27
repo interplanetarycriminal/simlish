@@ -2,14 +2,14 @@
 
 ![Master architecture: layers activate only when the brief needs them, with the optional tools for each layer](docs/diagrams/creative-architecture.svg)
 
-The brief, an approved specification, creative direction, quality review and delivery constrain every workflow. Design, frontend, 3D, spatial capture, motion and post-production layers switch on only when a deliverable needs them. Versioned artifacts connect them, and approved decisions flow back for the next brief.
+The brief, an approved specification, creative direction, quality review and delivery constrain every workflow. Design, frontend, 3D, spatial capture, motion, cinematic, game and post-production layers switch on only when a deliverable needs them. A strategy layer governs long or delegated work. Versioned artifacts connect them, and approved decisions flow back for the next brief.
 
 [Architecture source](docs/diagrams/creative-architecture.mmd)
 
 ## Authority
 
 - **One design authority.** `DESIGN.md` owns typography, color, spacing, composition, illustration, materials, lighting and motion. Generated prototypes, components, textures and timelines are proposals until reviewed against it. See [DESIGN.md](DESIGN.md) for an example and the [template](templates/design-system.md).
-- **One owner per artifact.** One generator per 3D asset, one rig owner, one timeline, one editor, one memory store. [Tool selection](TOOL_SELECTION.md) lists the alternatives to choose between.
+- **One owner per artifact.** One generator per 3D asset, one rig owner, one timeline, one editor, one memory store, one game runtime, one physics solver per world, one owner per animated property, one server authority per game responsibility. [Tool selection](TOOL_SELECTION.md) lists the alternatives to choose between.
 - **The current instruction wins.** Project knowledge and memory inform the agent; they never override the user, project policy or security rules.
 
 ## Representations

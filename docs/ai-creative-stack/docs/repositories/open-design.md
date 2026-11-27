@@ -2,7 +2,7 @@
 
 Use for local-first design with an approved agent or provider.
 
-> Design and prototyping · Source A · smoke test: **not run**
+> #09 · Design and prototyping · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 

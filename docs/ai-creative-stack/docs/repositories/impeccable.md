@@ -2,7 +2,7 @@
 
 Use for design critique or deterministic checks.
 
-> Creative direction and design intelligence · Sources A and B · smoke test: **not run**
+> #02 · Creative direction and design intelligence · Sources A and B · smoke test: **not run**
 
 ## Evidence and maintenance
 

@@ -1,4 +1,4 @@
-[1] heading docs/3d-pipeline/gaussian-splatting.md#gaussian-splatting  score=15.875  (docs/3d-pipeline/gaussian-splatting.md:1)
+[1] heading docs/3d-pipeline/gaussian-splatting.md#gaussian-splatting  score=18.799  (docs/3d-pipeline/gaussian-splatting.md:1)
     > Gaussian Splatting optimises millions of small, colored, semi-transparent 3D Gaussians so that rendered views match a set of posed photos. The result renders re
     <- contains file:docs/3d-pipeline/gaussian-splatting.md
     -> contains docs/3d-pipeline/gaussian-splatting.md#choose-it-when
@@ -6,7 +6,7 @@
     -> contains docs/3d-pipeline/gaussian-splatting.md#camera-poses-with-colmap
     -> contains docs/3d-pipeline/gaussian-splatting.md#training-hardware-versus-viewing-hardware
     -> contains docs/3d-pipeline/gaussian-splatting.md#validation-list
-[2] file file:docs/repositories/gaussian-splatting.md  score=14.974  (docs/repositories/gaussian-splatting.md:1)
+[2] file file:docs/repositories/gaussian-splatting.md  score=17.672  (docs/repositories/gaussian-splatting.md:1)
     > - [LICENSE.md](https://github.com/graphdeco-inria/gaussian-splatting/blob/54c035f7834b564019656c3e3fcc3646292f727d/LICENSE.md)
     <- links_to file:HARDWARE.md
     <- links_to file:REPOSITORIES.md
@@ -14,7 +14,7 @@
     <- links_to file:TAXONOMY.md
     <- links_to file:docs/3d-pipeline/gaussian-splatting.md
     <- links_to file:docs/repositories/blender-skills.md
-[3] file file:docs/3d-pipeline/gaussian-splatting.md  score=14.78  (docs/3d-pipeline/gaussian-splatting.md:1)
+[3] file file:docs/3d-pipeline/gaussian-splatting.md  score=17.539  (docs/3d-pipeline/gaussian-splatting.md:1)
     > Gaussian Splatting optimises millions of small, colored, semi-transparent 3D Gaussians so that rendered views match a set of posed photos. The result renders re
     <- links_to file:COMPATIBILITY.md
     <- links_to file:README.md
@@ -22,9 +22,9 @@
     -> links_to file:docs/repositories/gaussian-splatting.md
     -> embeds file:docs/diagrams/mesh-vs-gaussian.svg
     -> links_to file:templates/asset-manifest.json
-[4] heading docs/3d-pipeline/gaussian-splatting.md#license  score=14.639  (docs/3d-pipeline/gaussian-splatting.md:65)
+[4] heading docs/3d-pipeline/gaussian-splatting.md#license  score=17.152  (docs/3d-pipeline/gaussian-splatting.md:65)
     > The Gaussian-Splatting License allows **research and evaluation use only, non-commercially**, without the right to sublicense. Commercial use needs prior consen
     <- contains docs/3d-pipeline/gaussian-splatting.md#gaussian-splatting
-[5] file file:docs/workflows/spatial-reconstruction.md  score=14.273  (docs/workflows/spatial-reconstruction.md:1)
+[5] file file:docs/workflows/spatial-reconstruction.md  score=16.809  (docs/workflows/spatial-reconstruction.md:1)
     > Apply the [quality gates](../../QUALITY_GATES.md): **Gaussian reconstruction** (coverage, converged poses, opens in the target viewer; no large floaters or hole
     [truncated]

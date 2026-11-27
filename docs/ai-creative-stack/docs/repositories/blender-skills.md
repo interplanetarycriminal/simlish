@@ -2,7 +2,7 @@
 
 Use for giving a coding agent tested Blender 5.x bpy workflows for modeling, UVs, PBR, baking, rigging, animation, export, rendering and asset QA.
 
-> Supplementary research candidates · Supplementary · smoke test: **not run**
+> #66 · Supplementary research candidates · Supplementary · smoke test: **not run**
 
 ## Evidence and maintenance
 
@@ -50,7 +50,7 @@ git clone https://github.com/EL4CTEO/blender-skills
 | Primary | 3D authoring, 3D orchestration |
 | Supporting | Retopology, Texturing, Rigging, Animation, 3D rendering, Video editing |
 
-Skip if you are on Blender 4.x or older; the skills target the 5.2+ API and document 5.x breaking changes. Consider [blender-mcp](blender-mcp.md). Complementary tools include [dream-textures](dream-textures.md), [comfyui-3d-pack](comfyui-3d-pack.md), [unirig](unirig.md), [meshanything-v2](meshanything-v2.md), [stable-fast-3d](stable-fast-3d.md), [trellis-2](trellis-2.md), [gaussian-splatting](gaussian-splatting.md).
+Skip if you are on Blender 4.x or older; the skills target the 5.2+ API and document 5.x breaking changes. Consider [blender-mcp](blender-mcp.md), [blockbench](blockbench.md). Complementary tools include [dream-textures](dream-textures.md), [comfyui-3d-pack](comfyui-3d-pack.md), [unirig](unirig.md), [meshanything-v2](meshanything-v2.md), [stable-fast-3d](stable-fast-3d.md), [trellis-2](trellis-2.md), [gaussian-splatting](gaussian-splatting.md).
 
 The skills drive Blender headless or through an optional Blender MCP server.
 

@@ -325,6 +325,202 @@
    "role": "orchestration",
    "evidence": "documented",
    "note": "EffectCraft is an app-style compositor; HyperFrames and Remotion are code-first. One timeline authority."
+  },
+  {
+   "tools": [
+    "godot",
+    "phaser",
+    "bevy",
+    "babylonjs"
+   ],
+   "classification": "recommended alternative",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "One runtime per game. Godot for editor-driven 2D/3D games and native exports, Phaser for small web-first 2D, Bevy for Rust/ECS teams, Babylon.js for full 3D games in the browser."
+  },
+  {
+   "tools": [
+    "babylonjs",
+    "three-js"
+   ],
+   "classification": "recommended alternative",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "Both render glTF in the browser. Three.js (with React Three Fiber) for bespoke scenes, Babylon.js when the brief needs a game engine's physics, audio, input and inspector."
+  },
+  {
+   "tools": [
+    "godot",
+    "jolt-physics"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "Godot 4.4 added Jolt as a 3D engine option and projects created from 4.6 default to it. Use the built-in module; a standalone Jolt build is only for custom C++ engines."
+  },
+  {
+   "tools": [
+    "rapier",
+    "jolt-physics",
+    "matter-js"
+   ],
+   "classification": "recommended alternative",
+   "role": "execution",
+   "evidence": "tested",
+   "note": "One physics solver per world. Rapier for Rust/Bevy or WASM, Jolt for C++ and Godot 3D, Matter.js for 2D browser games. fixtures/game-dev steps Matter.js and Rapier at a fixed 1/60 s and checks repeat runs match."
+  },
+  {
+   "tools": [
+    "phaser",
+    "matter-js"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "Phaser bundles a modified Matter.js 0.20. Use the bundled copy; adding a second Matter.js package gives two engines that disagree."
+  },
+  {
+   "tools": [
+    "bevy",
+    "rapier"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "bevy_rapier lives in the Rapier repository and must match the Bevy version (0.37 targets Bevy 0.20 at the pinned commits)."
+  },
+  {
+   "tools": [
+    "godot",
+    "godot-mcp"
+   ],
+   "classification": "complementary",
+   "role": "orchestration",
+   "evidence": "documented",
+   "note": "Godot MCP launches the editor, runs projects with full script execution and reads console output. It cannot see the running scene tree; check gameplay yourself."
+  },
+  {
+   "tools": [
+    "colyseus",
+    "nakama"
+   ],
+   "classification": "recommended alternative",
+   "role": "orchestration",
+   "evidence": "tested",
+   "note": "Colyseus for room-based authoritative state in Node.js; Nakama for a full backend (accounts, storage, matchmaking, leaderboards, chat). fixtures/game-dev runs a Colyseus room on loopback; Nakama was not run."
+  },
+  {
+   "tools": [
+    "pixelorama",
+    "blockbench",
+    "blender"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "Pixelorama for sprites and tiles, Blockbench for blocky low-poly models, Blender for everything else. Export PNG sheets or glTF and validate them in the engine."
+  },
+  {
+   "tools": [
+    "ldtk",
+    "godot",
+    "phaser"
+   ],
+   "classification": "optional",
+   "role": "execution",
+   "evidence": "proposed",
+   "note": "LDtk exports JSON levels; each engine needs a loader or adapter. Validate layers, collisions and entities after import."
+  },
+  {
+   "tools": [
+    "howler",
+    "jsfxr"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "jsfxr generates short retro effects as WAV; Howler.js plays them in the browser behind a user gesture. jsfxr's WAV output is tested in fixtures/game-dev; Howler.js playback was not run."
+  },
+  {
+   "tools": [
+    "ink",
+    "phaser"
+   ],
+   "classification": "optional",
+   "role": "guidance",
+   "evidence": "documented",
+   "note": "Ink compiles branching stories to JSON; inkjs runs them in a web game. The pinned ink README lists no Godot integration. fixtures/game-dev tests inkjs compile, branches and save/load on their own, not inside Phaser."
+  },
+  {
+   "tools": [
+    "theatre",
+    "react-three-fiber"
+   ],
+   "classification": "potentially conflicting",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "@theatre/r3f requires @react-three/fiber ^8 (React 18), but R3F at the pinned commit is v9 (React 19). Drive R3F from Theatre's core sequence yourself, or pin R3F 8."
+  },
+  {
+   "tools": [
+    "gsap",
+    "motion"
+   ],
+   "classification": "potentially conflicting",
+   "role": "execution",
+   "evidence": "tested",
+   "note": "Both write the same CSS properties. Give each property one owner; fixtures/expressive-motion shows a deliberate conflict where the last writer wins."
+  },
+  {
+   "tools": [
+    "gsap",
+    "motion",
+    "theatre"
+   ],
+   "classification": "recommended alternative",
+   "role": "execution",
+   "evidence": "tested",
+   "note": "One clock per scene. GSAP for timelines, Motion for React UI and gestures, Theatre.js for keyframes edited in a studio panel. All three seek in fixtures/expressive-motion."
+  },
+  {
+   "tools": [
+    "react-three-fiber",
+    "three-js"
+   ],
+   "classification": "complementary",
+   "role": "execution",
+   "evidence": "tested",
+   "note": "React Three Fiber is a React renderer for Three.js, not a second engine. Match React, Three.js and R3F versions; use frameloop=\"demand\" or \"never\" for seekable renders."
+  },
+  {
+   "tools": [
+    "motionmaxxing",
+    "gsap"
+   ],
+   "classification": "complementary",
+   "role": "guidance",
+   "evidence": "documented",
+   "note": "motionmaxxing's runtime builds on GSAP and vendors Three.js. Keep whichever compositor already owns the timeline."
+  },
+  {
+   "tools": [
+    "reanimate",
+    "impeccable"
+   ],
+   "classification": "complementary",
+   "role": "guidance",
+   "evidence": "documented",
+   "note": "reanimate compares a recapture against an authorized motion reference; a design critic reviews the result. Do not promise exact replication."
+  },
+  {
+   "tools": [
+    "pixelfx",
+    "sakuga-vfx"
+   ],
+   "classification": "recommended alternative",
+   "role": "execution",
+   "evidence": "documented",
+   "note": "Both add punchy effects. pixelfx for pixel-art games and sprite sheets, Sakuga VFX for anime-style web interaction bursts."
   }
  ]
 }

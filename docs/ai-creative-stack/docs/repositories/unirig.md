@@ -2,7 +2,7 @@
 
 Use for automatically adding a skeleton and per-vertex skinning weights to humans, animals and objects.
 
-> AI-assisted 3D asset production · Source C · smoke test: **not feasible here**
+> #29 · AI-assisted 3D asset production · Source C (3D) · smoke test: **not feasible here**
 
 ## Evidence and maintenance
 

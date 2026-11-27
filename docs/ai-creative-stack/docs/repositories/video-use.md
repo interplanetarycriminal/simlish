@@ -2,7 +2,7 @@
 
 Use for agent-driven shell editing with approved transcription access.
 
-> Video composition and post-production · Source B · smoke test: **not run**
+> #21 · Video composition and post-production · Source B · smoke test: **not run**
 
 ## Evidence and maintenance
 

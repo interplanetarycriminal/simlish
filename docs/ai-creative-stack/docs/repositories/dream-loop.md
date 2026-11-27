@@ -2,7 +2,7 @@
 
 Use for driving an agent to build a game, app or 3D scene until a live screenshot matches an AI-generated target image, judged by a separate critic subagent.
 
-> Supplementary research candidates · Supplementary · smoke test: **not run**
+> #65 · Supplementary research candidates · Supplementary · smoke test: **not run**
 
 ## Evidence and maintenance
 

@@ -2,7 +2,7 @@
 
 Use for authorized agent-assisted edits in a scoped Blender project.
 
-> Core 3D authoring and rendering · Sources A and B · smoke test: **not run**
+> #14 · Core 3D authoring and rendering · Sources A and B, also listed in Source F (expressive motion) · smoke test: **not run**
 
 ## Evidence and maintenance
 
@@ -50,7 +50,7 @@ codex mcp add blender -- uvx mcp-for-blender
 | Primary | 3D authoring |
 | Supporting | Animation |
 
-Skip when no local Blender runtime or arbitrary script execution cannot be approved. Consider [blender-skills](blender-skills.md). Complementary tools include [three-js](three-js.md), [sam-3d-objects](sam-3d-objects.md), [stable-fast-3d](stable-fast-3d.md), [meshanything-v2](meshanything-v2.md), [unirig](unirig.md), [dream-textures](dream-textures.md), [comfyui-3d-pack](comfyui-3d-pack.md), [dream-loop](dream-loop.md), [trellis-2](trellis-2.md), [onetake](onetake.md), [lemo-opuscar](lemo-opuscar.md), [effectcraft](effectcraft.md), [comfyui](comfyui.md).
+Skip when no local Blender runtime or arbitrary script execution cannot be approved. Consider [blender-skills](blender-skills.md), [blockbench](blockbench.md). Complementary tools include [three-js](three-js.md), [sam-3d-objects](sam-3d-objects.md), [stable-fast-3d](stable-fast-3d.md), [meshanything-v2](meshanything-v2.md), [unirig](unirig.md), [dream-textures](dream-textures.md), [comfyui-3d-pack](comfyui-3d-pack.md), [dream-loop](dream-loop.md), [trellis-2](trellis-2.md), [onetake](onetake.md), [lemo-opuscar](lemo-opuscar.md), [effectcraft](effectcraft.md), [comfyui](comfyui.md), [godot](godot.md), [godot-mcp](godot-mcp.md), [bevy](bevy.md), [babylonjs](babylonjs.md).
 
 No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.
 

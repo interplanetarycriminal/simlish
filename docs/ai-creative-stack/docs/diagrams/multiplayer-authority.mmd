@@ -1,0 +1,24 @@
+%% render: auto
+%% title: Multiplayer authority
+%% desc: The server owns game state. Clients send intents; the server validates, applies and broadcasts.
+flowchart TD
+    A["Client A • input intents"]:::blue
+    B["Client B • input intents"]:::blue
+    C["Authoritative server • Colyseus room or Nakama match"]:::purple
+    D["Validate • rate limits, rules, authentication"]:::rose
+    E["Apply to server state • fixed tick"]:::purple
+    F["Broadcast state • schema sync"]:::teal
+    G["Tests • two clients, invalid input, reconnect, latency"]:::green
+    A -->|intent| C
+    B -->|intent| C
+    C --> D
+    D -->|accepted| E
+    E --> F
+    F -->|state| G
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

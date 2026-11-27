@@ -2,7 +2,7 @@
 
 Use for high-fidelity single-image to PBR-textured GLB generation, and for PBR texturing of an existing mesh from a reference image.
 
-> Supplementary research candidates · Supplementary · smoke test: **not feasible here**
+> #67 · Supplementary research candidates · Supplementary · smoke test: **not feasible here**
 
 ## Evidence and maintenance
 
@@ -61,7 +61,7 @@ cd TRELLIS.2
 | Primary | Image-to-3D, Texturing |
 | Supporting | Retopology, 3D rendering |
 
-Skip when you have under 24 GB of VRAM or no Linux box; TRELLIS.2 is only tested on Linux with A100/H100. Consider [stable-fast-3d](stable-fast-3d.md), [sam-3d-objects](sam-3d-objects.md), [dream-textures](dream-textures.md), [comfyui-3d-pack](comfyui-3d-pack.md). Complementary tools include [unirig](unirig.md), [meshanything-v2](meshanything-v2.md), [blender-mcp](blender-mcp.md), [three-js](three-js.md), [real-esrgan](real-esrgan.md), [dream-loop](dream-loop.md), [blender-skills](blender-skills.md), [comfyui](comfyui.md).
+Skip when you have under 24 GB of VRAM or no Linux box; TRELLIS.2 is only tested on Linux with A100/H100. Consider [stable-fast-3d](stable-fast-3d.md), [sam-3d-objects](sam-3d-objects.md), [dream-textures](dream-textures.md), [comfyui-3d-pack](comfyui-3d-pack.md). Complementary tools include [unirig](unirig.md), [meshanything-v2](meshanything-v2.md), [blender-mcp](blender-mcp.md), [three-js](three-js.md), [real-esrgan](real-esrgan.md), [dream-loop](dream-loop.md), [blender-skills](blender-skills.md), [comfyui](comfyui.md), [babylonjs](babylonjs.md).
 
 The default pipeline downloads DINOv3 and RMBG-2.0, which have their own licenses and need a Hugging Face login. ComfyUI-3D-Pack supports TRELLIS v1, not TRELLIS.2.
 

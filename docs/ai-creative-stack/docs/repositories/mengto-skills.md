@@ -2,7 +2,7 @@
 
 Use one relevant skill for a specific capture or creative task.
 
-> Creative direction and design intelligence · Source B · smoke test: **not run**
+> #23 · Creative direction and design intelligence · Source B · smoke test: **not run**
 
 ## Evidence and maintenance
 

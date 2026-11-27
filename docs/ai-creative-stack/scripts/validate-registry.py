@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED = {"total": 53, "post_associated": 32, "supplementary": 12, "user_added": 9, "A_only": 10, "B_only": 10, "A+B": 5, "C": 7}
+EXPECTED = {"total": 75, "post_associated": 63, "supplementary": 12, "A_only": 10, "B_only": 10, "A+B": 5, "C": 7, "D": 9, "E": 16, "F": 6}
 
 
 def require(condition, message):
@@ -66,7 +66,10 @@ def main():
             sha = r["inspected_commit"] or ""
             require(re.fullmatch(r"[a-f0-9]{40}", sha), f"{slug}: invalid SHA")
             pinned = [s for s in r["documentation_sources"] if github(s)]
-            require(pinned and all(sha in s for s in pinned), f"{slug}: GitHub evidence not pinned to the inspected commit")
+            # Every GitHub source is pinned to the inspected commit, except a source read at a named release tag (e.g. 4.4-stable).
+            tagged = re.compile(r"/(?:blob|tree)/v?\d+(?:\.\d+)+(?:-[a-z]+)?/")
+            require(pinned and all(sha in s or tagged.search(s) for s in pinned) and any(sha in s for s in pinned),
+                    f"{slug}: GitHub evidence not pinned to the inspected commit or a release tag")
         if r["verification_status"] == "redirected":
             require(any("404" in s or "renamed" in s or "canonical" in s for s in r["security_notes"]), f"{slug}: redirect without recorded evidence")
         for key in ("complementary_tools", "overlapping_tools"):
@@ -87,16 +90,22 @@ def main():
             require(r["id"] in by[x]["overlapping_tools"], f"{r['id']} -> {x}: overlap link not mirrored")
 
     groups = [r["source_group"] for r in records]
-    counts = {"total": len(records), "post_associated": sum(g in ("A", "B", "A+B", "C") for g in groups), "supplementary": groups.count("supplementary"),
-              "user_added": groups.count("D"),
+    counts = {"total": len(records), "post_associated": sum(g != "supplementary" for g in groups), "supplementary": groups.count("supplementary"),
+              "D": groups.count("D"), "E": groups.count("E"), "F": groups.count("F"),
               "A_only": groups.count("A"), "B_only": groups.count("B"), "A+B": groups.count("A+B"), "C": groups.count("C")}
     require(counts == EXPECTED, f"source counts {counts} differ from {EXPECTED}")
+    nums = sorted(r["num"] for r in records)
+    require(nums == list(range(1, len(records) + 1)), "numeric IDs must run 1..N without gaps or repeats")
+    for r in records:
+        first = {"A+B": ["A", "B"]}.get(r["source_group"], [r["source_group"]])
+        require(all(g in r["source_associations"] for g in first), f"{r['id']}: source_associations must include its source group")
+    repeats = sorted(r["id"] for r in records if "F" in r["source_associations"] and r["source_group"] != "F")
+    require(len(repeats) == 6, f"source F repeats six existing references, found {repeats}")
     require(counts["A_only"] + counts["A+B"] == 15 and counts["B_only"] + counts["A+B"] == 15, "sources A and B must each hold 15")
 
     lists = {
         "registry/repositories.txt": [r["original_url"] for r in records],
-        "registry/core-repositories.txt": [r["original_url"] for r in records if r["source_group"] in ("A", "B", "A+B", "C")],
-        "registry/user-added-repositories.txt": [r["original_url"] for r in records if r["source_group"] == "D"],
+        "registry/core-repositories.txt": [r["original_url"] for r in records if r["source_group"] != "supplementary"],
         "registry/supplementary-repositories.txt": [r["original_url"] for r in records if r["source_group"] == "supplementary"],
     }
     for path, expected in lists.items():
@@ -121,7 +130,7 @@ def main():
     for r in records:
         smoke[r["smoke_test"]["status"]] = smoke.get(r["smoke_test"]["status"], 0) + 1
     print(f"Validated {len(records)} records ({mode} schema check): {counts['post_associated']} post-associated "
-          f"(A {counts['A_only']}, B {counts['B_only']}, shared {counts['A+B']}, C {counts['C']}), {counts['user_added']} added by the user and {counts['supplementary']} supplementary; "
+          f"(A {counts['A_only']}, B {counts['B_only']}, shared {counts['A+B']}, C {counts['C']}, D {counts['D']}, E {counts['E']}, F {counts['F']}) and {counts['supplementary']} supplementary; "
           f"{sum(r['verification_status'] == 'verified' for r in records)} verified, {sum(r['verification_status'] == 'redirected' for r in records)} redirected; "
           f"smoke tests {smoke}; {len(compat['pairs'])} compatibility pairs; guides and index current")
 

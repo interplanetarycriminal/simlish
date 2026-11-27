@@ -2,7 +2,7 @@
 
 Use for giving a coding agent persistent memory: hooks record each session's tool activity, an observer model compresses it into observations, and later sessions start with a compact index of them.
 
-> Supplementary research candidates · Supplementary · smoke test: **not run**
+> #60 · Supplementary research candidates · Supplementary · smoke test: **not run**
 
 ## Evidence and maintenance
 

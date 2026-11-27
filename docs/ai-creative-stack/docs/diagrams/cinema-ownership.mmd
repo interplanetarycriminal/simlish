@@ -1,0 +1,31 @@
+%% render: auto
+%% title: Shot and clock ownership
+%% desc: Many sources feed one composition engine; that engine's frame clock is the only clock for the render.
+flowchart TD
+    A["Shot list • timing, framing, audio cues"]:::purple
+    B["OpenScreen captures"]:::teal
+    C["Generated imagery and 3D renders"]:::amber
+    D["OneTake choreography, GSAP motion"]:::teal
+    E["One composition engine • HyperFrames, Remotion or Motion Canvas"]:::teal
+    F["Frame clock • sampled per frame"]:::slate
+    G["Optional EffectCraft, editor, grade"]:::rose
+    H["Frame, audio and caption QA"]:::green
+    I["FFmpeg and ffprobe • masters"]:::green
+    A --> B
+    A --> C
+    A --> D
+    B -->|footage| E
+    C -->|frames| E
+    D -->|seekable pages| E
+    F --> E
+    E -.->|master| G
+    E --> H
+    G -.-> H
+    H --> I
+    classDef slate fill:#edf2f7,stroke:#596b84,color:#142137
+    classDef purple fill:#f0e8fc,stroke:#733ed0,color:#142137
+    classDef blue fill:#e7effe,stroke:#2363cf,color:#142137
+    classDef amber fill:#fff0da,stroke:#a05212,color:#142137
+    classDef teal fill:#dff6f0,stroke:#087d73,color:#142137
+    classDef rose fill:#fee8ed,stroke:#bf315c,color:#142137
+    classDef green fill:#e1f4e7,stroke:#198047,color:#142137

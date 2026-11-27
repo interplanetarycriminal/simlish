@@ -2,7 +2,7 @@
 
 Use when a coherent React design system with StyleX fits.
 
-> Design and prototyping · Source A · smoke test: **not run**
+> #12 · Design and prototyping · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 

@@ -2,7 +2,7 @@
 
 Use when procedural motion and timeline signals are central.
 
-> Illustration and animation · Source B · smoke test: **not run**
+> #19 · Illustration and animation · Source B · smoke test: **not run**
 
 ## Evidence and maintenance
 
@@ -50,7 +50,7 @@ npm install
 | Primary | Animation, Video composition |
 | Supporting | Illustration |
 
-Skip for native React composition or a simple clip trim. Consider [remotion](remotion.md), [hyperframes](hyperframes.md), [video-shotcraft](video-shotcraft.md), [huashu-motion](huashu-motion.md), [anything2explainer](anything2explainer.md), [onetake](onetake.md), [effectcraft](effectcraft.md), [gsap](gsap.md). Complementary tools include [ffmpeg](ffmpeg.md), [rough-js](rough-js.md), [line-art-animation](line-art-animation.md).
+Skip for native React composition or a simple clip trim. Consider [remotion](remotion.md), [hyperframes](hyperframes.md), [video-shotcraft](video-shotcraft.md), [huashu-motion](huashu-motion.md), [anything2explainer](anything2explainer.md), [onetake](onetake.md), [effectcraft](effectcraft.md), [gsap](gsap.md), [motionmaxxing](motionmaxxing.md). Complementary tools include [ffmpeg](ffmpeg.md), [rough-js](rough-js.md), [line-art-animation](line-art-animation.md).
 
 No native integration with catalogue peers is asserted. Examples using another tool are proposed handoffs.
 

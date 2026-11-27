@@ -2,14 +2,14 @@
 
 Use for browser animation of CSS, SVG, canvas, WebGL or any JS object with sequenced, seekable timelines that frame-by-frame renderers can drive deterministically.
 
-> Motion films, explainers and engines · Added by the user · smoke test: **passed**
+> #39 · Motion films, explainers and engines · Source D (cinema), also listed in Source F (expressive motion) · smoke test: **passed**
 
 ## Evidence and maintenance
 
 - [Canonical reference](https://github.com/greensock/GSAP)
 - Verified 2026-11-26 against default branch `master` at [`5e6c35ff8eed`](https://github.com/greensock/GSAP/commit/5e6c35ff8eedea12d4f229129def635277d8b0f2).
 - GitHub reports archive state **false** and a repository push at `2026-11-04T00:56:41Z`. Push activity is a maintenance signal, not a quality rating.
-- Attribution: Added directly by the user on 2026-11-26.
+- Attribution: Listed in the cinematic post (source D, transcript supplied by the user on 2026-11-26); first added to this catalogue on 2026-11-26.
 
 - [README.md](https://github.com/greensock/GSAP/blob/5e6c35ff8eedea12d4f229129def635277d8b0f2/README.md)
 - [package.json](https://github.com/greensock/GSAP/blob/5e6c35ff8eedea12d4f229129def635277d8b0f2/package.json)
@@ -43,7 +43,7 @@ npm install gsap
 | Primary | Animation, Frontend implementation |
 | Supporting | Video composition |
 
-Skip if your project requires an OSI-approved open-source license for every dependency; GSAP's standard license is a custom no-charge license. Consider [motion-canvas](motion-canvas.md), [react-bits](react-bits.md). Complementary tools include [hyperframes](hyperframes.md), [three-js](three-js.md), [huashu-motion](huashu-motion.md).
+Skip if your project requires an OSI-approved open-source license for every dependency; GSAP's standard license is a custom no-charge license. Consider [motion-canvas](motion-canvas.md), [react-bits](react-bits.md), [motion](motion.md), [theatre](theatre.md). Complementary tools include [hyperframes](hyperframes.md), [three-js](three-js.md), [huashu-motion](huashu-motion.md), [matter-js](matter-js.md), [motionmaxxing](motionmaxxing.md), [reanimate](reanimate.md).
 
 kit/framecap seeks GSAP pages by pausing gsap.globalTimeline (tested). HyperFrames lists GSAP as an animation runtime; huashu-motion vendors GSAP.
 
@@ -64,7 +64,7 @@ For both, save the inputs and output evidence with the selected version. Use a s
 
 ## Smoke test
 
-**passed**. gsap 3.13.0 from jsDelivr in kit/framecap's gsapTimeline test: a seeked tween lands within 0.054 px of its expected position in all 24 frames.
+**passed**. gsap 3.13.0 from jsDelivr in kit/framecap's gsapTimeline test: a seeked tween lands within 0.054 px of its expected position in all 24 frames. fixtures/expressive-motion gsap-vs-motion-ownership: GSAP owns x within 0.0003 px beside Motion on opacity; when both animate x the last writer wins silently and GSAP's cache goes stale.
 
 ## Security, privacy and licensing
 

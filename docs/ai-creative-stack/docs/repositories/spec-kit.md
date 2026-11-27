@@ -2,7 +2,7 @@
 
 Use for running spec-driven development with a coding agent: write a constitution and spec, then turn it into a plan, tasks and code, with optional bug-fix and idea-assessment processes.
 
-> Supplementary research candidates · Supplementary · smoke test: **passed**
+> #59 · Supplementary research candidates · Supplementary · smoke test: **passed**
 
 ## Evidence and maintenance
 

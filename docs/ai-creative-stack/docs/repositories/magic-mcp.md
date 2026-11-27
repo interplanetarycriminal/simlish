@@ -2,7 +2,7 @@
 
 Use when remote component discovery or generation is authorized.
 
-> Frontend components and creative coding · Source A · smoke test: **not run**
+> #07 · Frontend components and creative coding · Source A · smoke test: **not run**
 
 ## Evidence and maintenance
 

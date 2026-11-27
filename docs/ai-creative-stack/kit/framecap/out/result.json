@@ -1,6 +1,6 @@
 {
   "tool": "framecap",
-  "date": "2026-11-26T09:55:28.863Z",
+  "date": "2026-11-27T04:44:51.178Z",
   "checks": {
     "cssPosition": {
       "pass": true,
@@ -52,7 +52,7 @@
         }
       ],
       "mp4Bytes": 9748,
-      "captureSeconds": 12.275
+      "captureSeconds": 11.225
     },
     "alphaMov": {
       "pass": true,
@@ -126,6 +126,6 @@
       }
     }
   },
-  "outBytes": 241362,
+  "outBytes": 241359,
   "pass": true
 }

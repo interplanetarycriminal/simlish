@@ -2,7 +2,7 @@
 
 Use for having Claude Code or Codex turn real product page captures into an editable Remotion promo film with shot recipes, beat sync and sound design.
 
-> Supplementary research candidates · Supplementary · smoke test: **not run**
+> #64 · Supplementary research candidates · Supplementary · smoke test: **not run**
 
 ## Evidence and maintenance
 

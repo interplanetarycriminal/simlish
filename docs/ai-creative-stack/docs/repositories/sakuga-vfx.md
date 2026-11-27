@@ -2,7 +2,7 @@
 
 Use for an isolated anime-style interaction that fits the visual direction.
 
-> Frontend components and creative coding · Source B · smoke test: **not run**
+> #17 · Frontend components and creative coding · Source B, also listed in Source F (expressive motion) · smoke test: **not run**
 
 ## Evidence and maintenance
 

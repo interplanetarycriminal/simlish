@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2036 614" role="img" aria-labelledby="title desc">
+<title id="title">Game asset imports</title><desc id="desc">Editor originals stay separate from runtime imports. Each arrow names the format that crosses.</desc>
+<style>
+svg{font-family:system-ui,-apple-system,sans-serif} .bg{fill:#fbfcff} text{fill:#152137} .sub{fill:#465773} .line{stroke:#62738d;fill:none;stroke-width:2} .dash{stroke-dasharray:6 5} .panel{fill:#fff;stroke:#d0d9e7} .lab{fill:#fbfcff} .arrow{fill:#62738d}
+@media(prefers-color-scheme:dark){.bg{fill:#101829} text{fill:#f2f5fb} .sub{fill:#c2cee1} .line{stroke:#a4b7d1} .panel{fill:#182439;stroke:#435570} .lab{fill:#101829} .arrow{fill:#a4b7d1}}
+</style>
+<defs><marker id="end" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path class="arrow" d="M0 0 7 3.5 0 7z"/></marker></defs>
+<rect width="2036" height="614" rx="22" class="bg"/>
+<text x="36" y="48" font-size="29" font-weight="750">Game asset imports</text>
+<text x="37" y="75" font-size="15" font-weight="450" class="sub">Editor originals stay separate from runtime imports. Each arrow names the format that crosses.</text>
+<path d="M266 180 V212 H642 V242" class="line" marker-end="url(#end)"/>
+<path d="M642 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M1018 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M1394 180 V242" class="line" marker-end="url(#end)"/>
+<path d="M1770 180 V212 H1394 V242" class="line" marker-end="url(#end)"/>
+<path d="M642 316 V348 H1018 V378" class="line" marker-end="url(#end)"/>
+<path d="M1018 316 V378" class="line" marker-end="url(#end)"/>
+<path d="M1394 316 V348 H1018 V378" class="line" marker-end="url(#end)"/>
+<path d="M1018 434 V496" class="line" marker-end="url(#end)"/>
+<rect x="272" y="190" width="83" height="20" rx="5" class="lab"/><text x="278" y="204" font-size="12.5" font-weight="560" class="sub">PNG sheets</text>
+<rect x="648" y="203" width="83" height="20" rx="5" class="lab"/><text x="654" y="217" font-size="12.5" font-weight="560" class="sub">PNG + JSON</text>
+<rect x="1024" y="203" width="40" height="20" rx="5" class="lab"/><text x="1030" y="217" font-size="12.5" font-weight="560" class="sub">JSON</text>
+<rect x="1400" y="203" width="40" height="20" rx="5" class="lab"/><text x="1406" y="217" font-size="12.5" font-weight="560" class="sub">glTF</text>
+<rect x="1727" y="190" width="33" height="20" rx="5" class="lab"/><text x="1733" y="204" font-size="12.5" font-weight="560" class="sub">GLB</text>
+<rect x="116" y="108" width="300" height="72" rx="13" class="panel"/><rect x="128" y="132" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="144" y="140" font-size="16.5" font-weight="720">Pixelorama</text><text x="144" y="160" font-size="13" font-weight="450" class="sub">sprites and tiles</text>
+<rect x="492" y="108" width="300" height="72" rx="13" class="panel"/><rect x="504" y="132" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="520" y="140" font-size="16.5" font-weight="720">pixelfx</text><text x="520" y="160" font-size="13" font-weight="450" class="sub">effects</text>
+<rect x="868" y="108" width="300" height="72" rx="13" class="panel"/><rect x="880" y="132" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="896" y="140" font-size="16.5" font-weight="720">LDtk</text><text x="896" y="160" font-size="13" font-weight="450" class="sub">levels and entities</text>
+<rect x="1244" y="108" width="300" height="72" rx="13" class="panel"/><rect x="1256" y="132" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="1272" y="140" font-size="16.5" font-weight="720">Blockbench</text><text x="1272" y="160" font-size="13" font-weight="450" class="sub">low-poly models</text>
+<rect x="1620" y="108" width="300" height="72" rx="13" class="panel"/><rect x="1632" y="132" width="7" height="24" rx="3.5" fill="#a05212"/>
+<text x="1648" y="150" font-size="17" font-weight="720">Blender and the 3D asset factory</text>
+<rect x="492" y="244" width="300" height="72" rx="13" class="panel"/><rect x="504" y="268" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="520" y="276" font-size="16.5" font-weight="720">Sprite atlas</text><text x="520" y="296" font-size="13" font-weight="450" class="sub">PNG + frame JSON</text>
+<rect x="868" y="244" width="300" height="72" rx="13" class="panel"/><rect x="880" y="268" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="896" y="276" font-size="16.5" font-weight="720">Level data</text><text x="896" y="296" font-size="13" font-weight="450" class="sub">LDtk JSON + tilesets</text>
+<rect x="1244" y="244" width="300" height="72" rx="13" class="panel"/><rect x="1256" y="268" width="7" height="24" rx="3.5" fill="#596b84"/>
+<text x="1272" y="276" font-size="16.5" font-weight="720">Models</text><text x="1272" y="296" font-size="13" font-weight="450" class="sub">glTF or GLB + textures</text>
+<rect x="868" y="380" width="300" height="54" rx="13" class="panel"/><rect x="880" y="395" width="7" height="24" rx="3.5" fill="#2363cf"/>
+<text x="896" y="413" font-size="17" font-weight="720">Engine importer or reviewed adapter</text>
+<rect x="868" y="498" width="300" height="72" rx="13" class="panel"/><rect x="880" y="522" width="7" height="24" rx="3.5" fill="#198047"/>
+<text x="896" y="530" font-size="16.5" font-weight="720">In-engine checks</text><text x="896" y="550" font-size="13" font-weight="450" class="sub">pivots, filtering, scale, collisions</text>
+</svg>

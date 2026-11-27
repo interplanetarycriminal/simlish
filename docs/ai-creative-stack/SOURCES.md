@@ -1,8 +1,8 @@
 # Sources and provenance
 
-Where all 53 references came from, how sure that attribution is, and how each URL was checked. Attribution and verification are tracked separately: a repository can be fully verified while its source attribution stays provisional.
+Where all 75 references came from, how sure that attribution is, and how each URL was checked. Attribution and verification are tracked separately: a repository can be fully verified while its source attribution stays provisional.
 
-![Collection provenance from three posts and a separate research list](docs/diagrams/collection-provenance.svg)
+![Collection provenance from six posts and a separate research list](docs/diagrams/collection-provenance.svg)
 
 ## Counts
 
@@ -12,21 +12,26 @@ Where all 53 references came from, how sure that attribution is, and how each UR
 | Source B only | 10 | Provisional |
 | Shared by A and B | 5 | Provisional |
 | **First two collections** | **25** | 15 + 15 − 5 shared |
-| Source C | 7 | Confirmed from the user-supplied transcript |
-| **Post-associated** | **32** | |
-| Added by the user | 9 | Supplied directly on 2026-11-26, not from a post |
+| Source C: 3D post | 7 | Confirmed from the user-supplied transcript |
+| Source D: cinematic post | 9 new (18 listed) | User-supplied transcript; repeats not identified |
+| Source E: game-development post | 16 | User-supplied transcript |
+| Source F: expressive-animation post | 6 new (12 listed) | User-supplied transcript; 6 repeats recorded as associations |
+| **Post-associated** | **63** | |
 | Supplementary candidates | 12 | Not attributable to any post |
-| **Working registry** | **53** | |
+| **Working registry** | **75** | Numbered 01–75 as in the V7 manual |
 
 The validator recomputes these counts from [the registry](registry/repositories.json) and fails if they change without this page.
 
-## The three posts
+## The posts
 
 | Source | Post | How the list was obtained |
 | --- | --- | --- |
 | A | https://x.com/0xnicc0/status/2125567907522379841 | Recovered from a likely matching mirrored post. 15 references. |
 | B | https://x.com/flxrnc/status/2125681086722097551 | Recovered from a likely matching mirrored post. 15 references. |
 | C | https://x.com/thegreatest_sv/status/2125614738943934706 | A transcript supplied by the user, naming exactly seven repositories. |
+| D | Not supplied | A transcript of a cinematic-production post supplied by the user: 18 names, 9 new. |
+| E | Not supplied | A transcript of a game-development post supplied by the user: 16 names, all new. |
+| F | Not supplied | A transcript of an expressive-animation post supplied by the user: 12 names, 6 new. |
 
 The posts themselves were not readable from this environment. The A/B split below follows the order of the seed list in the `simlish` README and catalogue v1, where the first 15 entries form one set. Treat which set belongs to which post as provisional until someone checks the posts.
 
@@ -84,21 +89,63 @@ None of these duplicates a URL from sources A or B.
 | [ComfyUI-3D-Pack (Comfy3D)](docs/repositories/comfyui-3d-pack.md) | https://github.com/MrForExample/ComfyUI-3D-Pack | verified |
 | [Gaussian Splatting](docs/repositories/gaussian-splatting.md) | https://github.com/graphdeco-inria/gaussian-splatting | verified |
 
-## Added by the user (9, direct)
+## Source D: cinematic post (9 new of 18 listed)
 
-Nine references supplied directly in the conversation on 2026-11-26, alongside the existing 44. They are attributed to the user, not to any post, and were verified the same way.
+A transcript supplied by the user on 2026-11-26 listed 18 tools; nine were new to the catalogue. The V7 manual identifies the post only as the fourth collection, without a URL, and does not say which nine entries were repeats, so no repeat association is recorded for D. These nine were first catalogued as "added by the user"; V7 reattributes them to this post.
 
-| Reference | Original URL | Verification |
-| --- | --- | --- |
-| [huashu-motion](docs/repositories/huashu-motion.md) | https://github.com/alchaincyf/huashu-motion | verified |
-| [anything2explainer](docs/repositories/anything2explainer.md) | https://github.com/Vincentwei1021/anything2explainer | verified |
-| [OpenScreen](docs/repositories/openscreen.md) | https://github.com/getopenscreen/openscreen | verified |
-| [onetake](docs/repositories/onetake.md) | https://github.com/feitangyuan/onetake | verified |
-| [Lemo-Opuscar](docs/repositories/lemo-opuscar.md) | https://github.com/lemomo-ai/lemo-opuscar | verified |
-| [EffectCraft](docs/repositories/effectcraft.md) | https://github.com/storytold/effectcraft | verified |
-| [GSAP (GreenSock Animation Platform)](docs/repositories/gsap.md) | https://github.com/greensock/GSAP | verified |
-| [ComfyUI](docs/repositories/comfyui.md) | https://github.com/Comfy-Org/ComfyUI | verified |
-| [Remotion Agent Skills](docs/repositories/remotion-skills.md) | https://github.com/remotion-dev/skills | verified |
+| # | Reference | Original URL | Verification |
+| --- | --- | --- | --- |
+| 33 | [Huashu Motion](docs/repositories/huashu-motion.md) | https://github.com/alchaincyf/huashu-motion | verified |
+| 34 | [anything2explainer](docs/repositories/anything2explainer.md) | https://github.com/Vincentwei1021/anything2explainer | verified |
+| 35 | [OpenScreen](docs/repositories/openscreen.md) | https://github.com/getopenscreen/openscreen | verified |
+| 36 | [OneTake](docs/repositories/onetake.md) | https://github.com/feitangyuan/onetake | verified |
+| 37 | [Lemo Opuscar](docs/repositories/lemo-opuscar.md) | https://github.com/lemomo-ai/lemo-opuscar | verified |
+| 38 | [EffectCraft](docs/repositories/effectcraft.md) | https://github.com/storytold/effectcraft | verified |
+| 39 | [GSAP](docs/repositories/gsap.md) | https://github.com/greensock/GSAP | verified |
+| 40 | [ComfyUI](docs/repositories/comfyui.md) | https://github.com/Comfy-Org/ComfyUI | verified |
+| 41 | [Remotion skills](docs/repositories/remotion-skills.md) | https://github.com/remotion-dev/skills | verified |
+
+## Source E: game-development post (16)
+
+A transcript supplied by the user on 2026-11-27, without a post URL. All 16 are new; none duplicates an earlier URL. Every repository was resolved through the GitHub API and pinned on 2026-11-27.
+
+| # | Reference | Original URL | Verification |
+| --- | --- | --- | --- |
+| 42 | [Godot Engine](docs/repositories/godot.md) | https://github.com/godotengine/godot | verified |
+| 43 | [Godot MCP](docs/repositories/godot-mcp.md) | https://github.com/Coding-Solo/godot-mcp | verified |
+| 44 | [Phaser](docs/repositories/phaser.md) | https://github.com/phaserjs/phaser | verified |
+| 45 | [Bevy](docs/repositories/bevy.md) | https://github.com/bevyengine/bevy | verified |
+| 46 | [Babylon.js](docs/repositories/babylonjs.md) | https://github.com/BabylonJS/Babylon.js | verified |
+| 47 | [Rapier](docs/repositories/rapier.md) | https://github.com/dimforge/rapier | verified |
+| 48 | [Jolt Physics](docs/repositories/jolt-physics.md) | https://github.com/jrouwe/JoltPhysics | verified |
+| 49 | [Matter.js](docs/repositories/matter-js.md) | https://github.com/liabru/matter-js | verified |
+| 50 | [Pixelorama](docs/repositories/pixelorama.md) | https://github.com/Orama-Interactive/Pixelorama | verified |
+| 51 | [Blockbench](docs/repositories/blockbench.md) | https://github.com/JannisX11/blockbench | verified |
+| 52 | [LDtk (Level Designer Toolkit)](docs/repositories/ldtk.md) | https://github.com/deepnight/ldtk | verified |
+| 53 | [howler.js](docs/repositories/howler.md) | https://github.com/goldfire/howler.js | verified |
+| 54 | [jsfxr](docs/repositories/jsfxr.md) | https://github.com/chr15m/jsfxr | verified |
+| 55 | [ink (inkle)](docs/repositories/ink.md) | https://github.com/inkle/ink | verified |
+| 56 | [Colyseus](docs/repositories/colyseus.md) | https://github.com/colyseus/colyseus | verified |
+| 57 | [Nakama](docs/repositories/nakama.md) | https://github.com/heroiclabs/nakama | verified |
+
+## Source F: expressive-animation post (6 new of 12 listed)
+
+A transcript supplied by the user on 2026-11-27, without a post URL. It lists 12 tools. Six are new:
+
+| # | Reference | Original URL | Verification |
+| --- | --- | --- | --- |
+| 70 | [pixelfx](docs/repositories/pixelfx.md) | https://github.com/patch-gg/pixelfx | verified |
+| 71 | [motionmaxxing](docs/repositories/motionmaxxing.md) | https://github.com/Tejashmakwana/motionmaxxing | verified |
+| 72 | [reanimate](docs/repositories/reanimate.md) | https://github.com/NiazMorshed2007/reanimate | verified |
+| 73 | [Motion (formerly Framer Motion)](docs/repositories/motion.md) | https://github.com/motiondivision/motion | verified |
+| 74 | [Theatre.js](docs/repositories/theatre.md) | https://github.com/theatre-js/theatre | verified |
+| 75 | [React Three Fiber (@react-three/fiber)](docs/repositories/react-three-fiber.md) | https://github.com/pmndrs/react-three-fiber | verified |
+
+The other six repeat existing references, which keep their original source group and gain F in `source_associations`: [Hallmark](docs/repositories/hallmark.md), [Blender MCP](docs/repositories/blender-mcp.md), [Line Art Animation](docs/repositories/line-art-animation.md), [Sakuga VFX](docs/repositories/sakuga-vfx.md), [Rough.js](docs/repositories/rough-js.md), [GSAP](docs/repositories/gsap.md).
+
+## Strategy article (source pending, no references)
+
+https://x.com/0xcodio/status/2109275834984915150 prompted the [strategy layer](docs/strategy/README.md). Its body could not be retrieved, directly or through mirrors, so its identity and contents are unconfirmed. Nothing in the catalogue is attributed to it, and it adds no repository. Social-media summaries found during that research are not treated as evidence. The strategy practices are this catalogue's own proposal, tested only through [kit/workledger](kit/workledger/README.md).
 
 ## Supplementary candidates (12, not from any post)
 
@@ -121,10 +168,10 @@ Identified during related research. Kept as a separate collection: they are eval
 
 ## Verification method
 
-On 2026-11-26, for every reference:
+On 2026-11-26 for the first 53 references, and on 2026-11-27 for the 22 from sources E and F:
 
 1. Resolved the original URL through the GitHub API, recording the canonical owner and repository and the default branch.
-2. Recorded the head commit of the default branch as the inspected commit. Every documentation link in a guide is pinned to that commit.
+2. Recorded the head commit of the default branch as the inspected commit. Every documentation link in a guide is pinned to that commit, except a source read at a named release tag (Godot's 4.4-stable changelog), which the validator allows explicitly.
 3. Read the README, license and the manifests, requirements or setup files needed for runtime and hardware facts, at that commit. Hugging Face API metadata was used for model sizes, gating and model licenses.
 4. Recorded archive state and last push as maintenance signals.
 5. Ran a smoke test where it needed no gated or multi-gigabyte download. See [smoke tests](docs/examples/smoke-tests.md).
@@ -139,4 +186,7 @@ On 2026-11-26, for every reference:
 | https://github.com/ahujasid/mcp-for-blender | Resolves. Catalogue v1 noted the Python package is now published as `mcp-for-blender`. | Unchanged | Pinned README |
 | https://github.com/21st-dev/magic-mcp | Resolves. Upstream points new setups to the 21st MCP. | Unchanged | Pinned README |
 
-All other URLs resolved to themselves. 52 references are `verified` and 1 is `redirected`; none is unavailable.
+| https://github.com/NiazMorshed2007/reanimate | The V7 draft says its GitHub page could not be fetched and confirms the path from the project site. | Unchanged, `verified` | The GitHub API resolves it; the pinned commit has `skills/reanimate/SKILL.md` and an MIT license. |
+| Godot's Jolt claims in the V7 draft | 4.4 introduced Jolt; 4.6 makes it the default. | Confirmed, with a nuance | 4.4-stable CHANGELOG adds Jolt; the pinned ProjectSettings.xml says new projects from 4.6 use Jolt, but the setting's DEFAULT still maps to GodotPhysics3D for older projects or ones made outside the editor. The pinned commit is 4.8 rc. |
+
+All other URLs resolved to themselves. 74 references are `verified` and 1 is `redirected`; none is unavailable. Where the [V7 draft](AI_CREATIVE_STACK_V7_DRAFT.md) and the registry differ, the registry is correct.

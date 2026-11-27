@@ -297,12 +297,12 @@
         "max": 0
       },
       "deterministic": true,
-      "sort_ms": 4.299999952316284
+      "sort_ms": 0.5999999046325684
     }
   },
   "chrome": "Chrome/158.0.8127.37",
   "synth.ply_bytes": 3264448,
   "box.ply_bytes": 2040448,
   "failures": [],
-  "seconds": 23.965
+  "seconds": 14.28
 }

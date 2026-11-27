@@ -2,7 +2,7 @@
 
 Use for turning a codebase, plus its docs, PDFs, images and media, into a local knowledge graph that coding agents query instead of grepping files.
 
-> Supplementary research candidates · Supplementary · smoke test: **not run**
+> #58 · Supplementary research candidates · Supplementary · smoke test: **not run**
 
 ## Evidence and maintenance
 
